@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, H1, H2, H3, H4, H5, H6, Input, Textarea } from "@/components";
+import { Button, H1, H2, H3, H4, H5, H6, Input, Textarea, Accordion, BasicCard, ProductCard } from "@/components";
 
 export default function page() {
   return (
@@ -30,10 +30,15 @@ export default function page() {
         </div>
 
         <div>
-          <H3>Forms</H3>
-          <Input />
+          <H3>Accordions</H3>
+          <Accordion />
+        </div>
+
+        <div>
+          <H3>Cards</H3>
+          <BasicCard />
           <div className="h-4"></div>
-          <Textarea />
+          <ProductCard />
         </div>
       </div>
     </div>
