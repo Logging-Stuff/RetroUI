@@ -18,7 +18,7 @@ import { Login } from "@/components/Login";
 
 export default function page() {
   return (
-    <div className="container max-w-6xl mx-auto mb-10">
+    <div className="container max-w-6xl mx-auto mb-96">
       <H1>Welcome to RetroUI</H1>
 
       <div className="space-y-8 mt-12">

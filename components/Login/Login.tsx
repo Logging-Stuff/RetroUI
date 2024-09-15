@@ -1,59 +1,38 @@
-"use client";
-import React, { ReactElement, useState } from "react";
+import React from "react";
+import { H2 } from "../Typography";
+import { Input } from "../Form";
+import { Button } from "../Buttons";
+import Link from "next/link";
 
-export function Login(): ReactElement {
-  const [customClass, setCustomClass] = useState(false);
-
-  const handleClick = () => {
-    setCustomClass(true);
-    setTimeout(() => {
-      setCustomClass(false);
-    }, 150);
-  };
+export function Login() {
   return (
-    <div className="max-w-80 bg-rose-400  border-2 border-black shadow-md ">
-      <div className="font-head text-3xl text-center px-4 py-2 my-2 ">
-        Login
+    <div className="max-w-80 p-4  border-2 border-black shadow-md space-y-3">
+      <div className="text-center">
+        <H2>Login</H2>
       </div>
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-        }}
-        className="flex flex-col gap-8"
-      >
+      <form className="flex flex-col gap-5 ">
         <div className="flex flex-col items-center justify-center">
           <label htmlFor="email" className="w-11/12">
             Email
           </label>
-          <input
-            id="email"
-            type="email"
-            placeholder="Email"
-            className="px-4 py-2 w-11/12 font-body  border-2 border-black shadow-md transition focus:outline-none focus:shadow-xs "
-          />
+          <Input id="email" type="email" placeholder="email" />
         </div>
         <div className="flex flex-col items-center justify-center">
-          <label htmlFor="email" className="w-11/12">
+          <label htmlFor="password" className="w-11/12">
             Password
           </label>
-          <input
-            type="password"
-            placeholder="Password"
-            className={`px-4 py-2 w-11/12 font-body  border-2 border-black shadow-md transition focus:outline-none focus:shadow-xs`}
-          />
+          <Input id="password" type="password" placeholder="password" />
         </div>
-        <div className="flex flex-col items-center justify-center py-4">
-          <button
-            onClick={handleClick}
-            className={`px-6 py-2 w-1/2 text-sm font-head bg-primary-400  rounded-full border-2 border-black shadow-md  transition-all ${
-              customClass ? "bg-primary-500 scale-95 shadow-xs" : ""
-            }`}
-          >
-            submit
-          </button>
-          <p className="px-4 py-2 ">
-            Don&apos;t have an account? <a href="/">sign-in</a>
-          </p>
+        <div className="flex flex-col items-center justify-center py-4 gap-1">
+          <Button className="rounded-full active:shadow-none active:scale-95">
+            Submit
+          </Button>
+          <div className="px-4 py-2 space-x-1">
+            <span>Don&apos;t have an account?</span>
+            <Link href="/" className="text-primary-700 hover:underline">
+              sign-in
+            </Link>
+          </div>
         </div>
       </form>
     </div>
