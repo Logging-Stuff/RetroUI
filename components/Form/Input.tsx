@@ -1,11 +1,15 @@
-import React from "react";
+import React, { InputHTMLAttributes } from "react";
 
-export function Input({
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+  className?: string;
+}
+
+export const Input: React.FC<InputProps> = ({
   type = "text",
   placeholder = "Enter text",
   className = "",
   ...props
-}) {
+}) => {
   return (
     <input
       type={type}
@@ -14,4 +18,4 @@ export function Input({
       {...props}
     />
   );
-}
+};

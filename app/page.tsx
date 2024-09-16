@@ -1,9 +1,24 @@
 import React from "react";
-import { Button, H1, H2, H3, H4, H5, H6, Input, Textarea, Accordion, BasicCard, ProductCard, Avatar } from "@/components";
+import {
+  Button,
+  H1,
+  H2,
+  H3,
+  H4,
+  H5,
+  H6,
+  Input,
+  Textarea,
+  Accordion,
+  BasicCard,
+  ProductCard,
+  Avatar,
+} from "@/components";
+import { Login } from "@/components/Login";
 
 export default function page() {
   return (
-    <div className="container max-w-6xl mx-auto">
+    <div className="container max-w-6xl mx-auto mb-96">
       <H1>Welcome to RetroUI</H1>
 
       <div className="space-y-8 mt-12">
@@ -45,6 +60,11 @@ export default function page() {
           <BasicCard />
           <div className="h-4"></div>
           <ProductCard />
+        </div>
+
+        <div>
+          <H3>Login</H3>
+          <Login />
         </div>
       </div>
     </div>
