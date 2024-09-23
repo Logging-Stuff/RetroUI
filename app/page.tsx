@@ -13,9 +13,9 @@ import {
   BasicCard,
   ProductCard,
   Avatar,
-} from "@/components";
-import { Login } from "@/components/Login";
-import { Badge } from "@/components/Badges";
+  Badge
+} from "@/packages/ui";
+import { Login } from "@/packages/ui/Login";
 
 export default function page() {
   return (
