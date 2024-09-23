@@ -15,6 +15,7 @@ import {
   Avatar,
 } from "@/components";
 import { Login } from "@/components/Login";
+import { Badge } from "@/components/Badges";
 
 export default function page() {
   return (
@@ -41,6 +42,16 @@ export default function page() {
         <div>
           <H3>Buttons</H3>
           <Button>Primary Button</Button>
+        </div>
+
+        <div>
+          <H3>Badges</H3>
+          <div className="space-x-2 mt-2">
+            <Badge>Default Badge</Badge>
+            <Badge variant="error">Error Badge</Badge>
+            <Badge variant="success">Success Badge</Badge>
+            <Badge className="rounded-full">Rounded Badge</Badge>
+          </div>
         </div>
 
         <div>
