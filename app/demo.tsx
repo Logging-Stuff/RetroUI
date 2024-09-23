@@ -25,7 +25,6 @@ export default function page() {
       <div className="space-y-8 mt-12">
         <div>
           <H3>Typography</H3>
-
           <H1>This is H1</H1>
           <H2>This is H2</H2>
           <H3>This is H3</H3>
