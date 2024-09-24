@@ -47,10 +47,10 @@ export default function Home() {
 
       {/* Features Section */}
       <section className="container max-w-6xl mx-auto ">
-        <div className="grid grid-cols-2 gap-6 items-center">
+        <div className="grid grid-cols-2 items-center">
           <div>
             <H3>Why Use RetroUI?</H3>
-            <H2 className="text-9xl mt-4">Coz We C0000l!! </H2>
+            <H1 className="mt-4">Coz We C00l!!</H1>
           </div>
 
           <img
