@@ -14,9 +14,9 @@ export function Button({
   ...props
 }: ButtonProps) {
   const sizeClasses = {
-    sm: "px-2 py-1 text-sm",
-    md: "px-4 py-2 text-base",
-    lg: "px-6 py-3 text-lg",
+    sm: "px-4 py-1 text-sm",
+    md: "px-6 py-2 text-base",
+    lg: "px-8 py-3 text-lg",
   };
 
   const variantClasses = {
@@ -28,7 +28,7 @@ export function Button({
 
   return (
     <button
-      className={`border-2 border-black shadow-md hover:shadow-xs transition-all ${sizeClasses[size]} ${variantClasses[variant]} ${className}`}
+      className={`font-head border-2 border-black shadow-md hover:shadow-xs transition-all ${sizeClasses[size]} ${variantClasses[variant]} ${className}`}
       {...props}
     >
       {children}
