@@ -17,7 +17,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="space-y-36">
-      <section className="container max-w-6xl mx-auto mt-36 px-4 text-center text-gray-900">
+      <section className="container max-w-6xl mx-auto mt-36 text-center text-gray-900">
         <H1>Make your projects</H1>
         <H1 className="text-outlined">stand out!</H1>
 
@@ -132,7 +132,7 @@ export default function Home() {
       <footer className="bg-black py-8">
         <div className="container max-w-6xl mx-auto flex justify-between items-center">
           <p className="text-gray-300 text-sm">
-            Built by <a className="text-primary-500">Arif Hossain</a>.
+            Built by <a href="https://twitter.com/ariflogs" className="text-primary-500">Arif Hossain</a>.
           </p>
           <div className="flex justify-center space-x-4 mb-6">
             <a
