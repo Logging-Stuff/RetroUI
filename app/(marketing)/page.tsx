@@ -47,7 +47,7 @@ export default function Home() {
 
       {/* Features Section */}
       <section className="container max-w-6xl mx-auto ">
-        <div className="grid grid-cols-2 items-center">
+        <div className="grid gird-cols-1 lg:grid-cols-2 items-center">
           <div>
             <H3>Why Use RetroUI?</H3>
             <H1 className="mt-4">Coz We C00l!!</H1>
@@ -67,7 +67,7 @@ export default function Home() {
           Our components look both old school and modern! ✨
         </H2>
 
-        <div className="grid gap-4 grid-cols-4 mb-8">
+        <div className="grid gap-4 grid-cols-2 lg:grid-cols-4 mb-8">
           <div className="space-y-4">
             <H4>Button</H4>
             <Button>Click Me</Button>
@@ -88,7 +88,7 @@ export default function Home() {
             <Input />
           </div>
         </div>
-        <div className="grid gap-8 grid-cols-3">
+        <div className="grid gap-8 grid-cols-1 lg:grid-cols-3">
           <div className="space-y-4">
             <H4>Textarea</H4>
             <Textarea />
@@ -111,13 +111,15 @@ export default function Home() {
           Inspired, if you will... 💅
         </H2>
 
-        <div className="grid grid-cols-3 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 items-center">
           <img
             src="/images/our_product_card.png"
             alt="our product card"
             className="w-80"
           />
-          <div className="space-y-4">
+          <H3 className="lg:hidden mt-2 mb-12">👆 RetroUI Card</H3>
+
+          <div className="hidden lg:block space-y-4">
             <H3>👈 RetroUI Card</H3>
             <H3>Gumroad's Card 👉</H3>
           </div>
@@ -126,15 +128,13 @@ export default function Home() {
             alt="our product card"
             className="w-80"
           />
+          <H3 className="lg:hidden mt-2">👆 Gumroad's Card</H3>
         </div>
       </section>
 
       <footer className="bg-black py-8">
-        <div className="container max-w-6xl mx-auto flex justify-between items-center">
-          <p className="text-gray-300 text-sm">
-            Built by <a href="https://twitter.com/ariflogs" className="text-primary-500">Arif Hossain</a>.
-          </p>
-          <div className="flex justify-center space-x-4 mb-6">
+        <div className="container max-w-6xl mx-auto flex flex-col lg:flex-row space-y-4 lg:space-y-0 justify-between items-center">
+          <div className="flex justify-center space-x-4">
             <a
               href="https://twitter.com/ariflogs"
               className="text-primary-500 mx-2"
@@ -151,6 +151,14 @@ export default function Home() {
               Documentation
             </a>
           </div>
+
+          <p className="text-gray-300 text-sm">
+            Built by{" "}
+            <a href="https://twitter.com/ariflogs" className="text-primary-500">
+              Arif Hossain
+            </a>
+            .
+          </p>
         </div>
       </footer>
     </main>
