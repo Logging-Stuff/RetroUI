@@ -6,7 +6,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "outline" | "link";
 }
 
-export function Button({
+export function IconButton({
   children,
   size = "md",
   className = "",
@@ -14,9 +14,9 @@ export function Button({
   ...props
 }: ButtonProps) {
   const sizeClasses = {
-    sm: "px-4 py-1 text-sm",
-    md: "px-6 py-2 text-base",
-    lg: "px-8 py-3 text-lg",
+    sm: "p-2",
+    md: "p-3",
+    lg: "p-4",
   };
 
   const variantClasses = {
