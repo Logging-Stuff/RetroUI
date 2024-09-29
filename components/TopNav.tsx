@@ -3,6 +3,7 @@ import Link from "next/link";
 import { GitBranchIcon, GithubIcon } from "lucide-react";
 import HamburgerMenu from "./HamburgerMenu";
 import { Button } from "@/packages/ui";
+import { navConfig } from "@/config/navigation";
 
 export default function TopNav() {
   return (
@@ -26,18 +27,15 @@ export default function TopNav() {
 
           {/* Navigation Links */}
           <div className="hidden md:flex space-x-8">
-            <a
-              href="/components"
-              className="hover:text-primary-500 transition-all"
-            >
-              Documentation
-            </a>
-            <a
-              href="/components/buttons"
-              className="hover:text-primary-500 transition-all"
-            >
-              Components
-            </a>
+            {navConfig.topNavItems.map((item) => (
+              <Link
+                key={item.title}
+                href={item.href}
+                className="hover:text-primary-500 transition-all"
+              >
+                {item.title}
+              </Link>
+            ))}
           </div>
 
           <div className="flex items-center space-x-4 lg:hidden">
@@ -46,7 +44,7 @@ export default function TopNav() {
               target="_blank"
               rel="noopener noreferrer"
             >
-                <GithubIcon />
+              <GithubIcon />
             </Link>
             <HamburgerMenu />
           </div>

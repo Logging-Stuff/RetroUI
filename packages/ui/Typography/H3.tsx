@@ -6,7 +6,7 @@ interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
 
 export function H3({ children, className }: HeadingProps) {
   return (
-    <h3 className={`font-head text-2xl lg:text-3xl font-medium ${className}`}>
+    <h3 className={`font-head text-2xl font-medium ${className}`}>
       {children}
     </h3>
   );
