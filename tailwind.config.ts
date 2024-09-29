@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      textColor: {
+        muted: "var(--muted)"
+      },
       fontFamily: {
         head: ["var(--font-head)"],
         sans: ["var(--font-sans)"],

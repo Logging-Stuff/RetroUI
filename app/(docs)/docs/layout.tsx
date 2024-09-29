@@ -1,10 +1,21 @@
-import SideNav from '@/components/SideNav'
-import React from 'react'
+import SideNav from "@/components/SideNav";
+import { Metadata } from "next";
 
-export default function layout() {
+export const metadata: Metadata = {
+  title: "Getting Started | RetroUI",
+};
+
+export default function ComponentLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <div>
+    <div className="relative">
+      <div className="hidden lg:block">
         <SideNav />
-        layout</div>
-  )
+      </div>
+      <div className="lg:ml-72 mt-20 px-4">{children}</div>
+    </div>
+  );
 }

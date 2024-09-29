@@ -1,5 +1,13 @@
-import React, { ReactNode } from "react";
+import React, { HTMLAttributes } from "react";
 
-export function H4({ children }: { children: ReactNode }) {
-  return <h4 className="font-head text-xl lg:text-2xl font-medium">{children}</h4>;
+interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
+  className?: string;
+}
+
+export function H4({ children, className }: HeadingProps) {
+  return (
+    <h3 className={`font-head text-xl font-medium ${className}`}>
+      {children}
+    </h3>
+  );
 }
