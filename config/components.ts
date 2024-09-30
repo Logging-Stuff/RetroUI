@@ -81,14 +81,27 @@ export const componentConfig = {
     className="px-4 py-2 w-full border-2 border-black shadow-md transition focus:outline-none focus:shadow-xs"
 />`,
     },
-    "textarea-style-default": {
-      name: "textarea-style-default",
-      preview: lazy(() => import("@/preview/components/textarea-style-default")),
-      codeHtml: `<textarea
-    placeholder="Enter text..."
-    rows="4"
-    class="px-4 py-2 w-full border-2 border-black shadow-md transition focus:outline-none focus:shadow-xs"
-/>`,
+    "typography-headings": {
+      name: "typography-headings",
+      preview: lazy(() => import("@/preview/components/typography-headings")),
+      codeHtml: `<div className="space-y-4">
+  <h1 className="font-head text-5xl lg:text-6xl font-bold">This is H1</h1>
+  <h2 className="font-head text-4xl font-semibold">This is H2</h2>
+  <h3 className="font-head text-2xl font-semibold">This is H3</h3>
+  <h4 className="font-head text-xl font-medium">This is H4</h4>
+  <h5 className="font-head text-lg font-medium">This is H5</h5>
+  <h6 className="font-head font-medium">This is H6</h6>
+</div>`,
+    },
+    "typography-p": {
+      name: "typography-p",
+      preview: lazy(() => import("@/preview/components/typography-p")),
+      codeHtml: `<p className="font-sans">
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eos,
+  doloremque inventore nesciunt quo sequi veniam impedit alias libero
+  dolorem tempore quia esse fugit fuga iste aliquam expedita molestias
+  iusto?
+</p>`,
     },
   },
 };
