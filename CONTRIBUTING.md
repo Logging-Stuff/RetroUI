@@ -1,3 +1,5 @@
+> ⚠️ This guide is old and may not be still relevant! I'll update this soon. 🙏
+
 # Contributing to RetroUI
 
 Thank you for your interest in contributing to RetroUI 🙏. I hope this guide to help you get started.

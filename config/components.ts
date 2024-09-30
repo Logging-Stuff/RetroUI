@@ -59,7 +59,7 @@ export const componentConfig = {
     },
     "button-style-default": {
       name: "button-style-default",
-      preview: lazy(() => import("@/preview/components/badge-style-default")),
+      preview: lazy(() => import("@/preview/components/button-style-default")),
       codeHtml: `<button className="bg-primary-400 text-black px-6 py-2 text-base font-head border-2 border-black shadow-md hover:shadow-xs hover:bg-primary-500 transition-all">
     Click Me!
 </button>`,
@@ -79,6 +79,15 @@ export const componentConfig = {
     type="text"
     placeholder="type something..."
     className="px-4 py-2 w-full border-2 border-black shadow-md transition focus:outline-none focus:shadow-xs"
+/>`,
+    },
+    "textarea-style-default": {
+      name: "textarea-style-default",
+      preview: lazy(() => import("@/preview/components/textarea-style-default")),
+      codeHtml: `<textarea
+    placeholder="Enter text..."
+    rows="4"
+    class="px-4 py-2 w-full border-2 border-black shadow-md transition focus:outline-none focus:shadow-xs"
 />`,
     },
   },
