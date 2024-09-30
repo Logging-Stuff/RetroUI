@@ -39,9 +39,9 @@ export const componentConfig = {
     </details>
 </div>`,
     },
-    "avatar-style-round": {
-      name: "avatar-style-round",
-      preview: lazy(() => import("@/preview/components/avatar-style-round")),
+    "avatar-style-circle": {
+      name: "avatar-style-circle",
+      preview: lazy(() => import("@/preview/components/avatar-style-circle")),
       codeHtml: `<div className="inline-block w-14 h-14 border-2 border-black rounded-full overflow-hidden">
     <img
         className="w-full h-full"
