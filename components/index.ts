@@ -1,1 +1,2 @@
-export * from "./ComponentShowcase"
+export * from "./ComponentShowcase";
+export * from "./JoinNewsletter";

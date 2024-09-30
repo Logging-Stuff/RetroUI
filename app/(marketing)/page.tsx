@@ -1,3 +1,6 @@
+"use client";
+
+import { JoinNewsletter } from "@/components";
 import {
   Accordion,
   Avatar,
@@ -50,7 +53,7 @@ export default function Home() {
         <div className="grid gird-cols-1 lg:grid-cols-2 items-center">
           <div>
             <H3>Why Use RetroUI?</H3>
-            <H1 className="mt-4">Coz We C00l!!</H1>
+            <H1 className="mt-4">Coz We C000l!!</H1>
           </div>
 
           <img
@@ -104,7 +107,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container max-w-6xl mx-auto ">
+      <section className="container max-w-6xl mx-auto">
         <H2 className="mb-16">
           And NO! We didn't just copy Gumroad!
           <br />
@@ -120,18 +123,19 @@ export default function Home() {
           <H3 className="lg:hidden mt-2 mb-12">👆 RetroUI Card</H3>
 
           <div className="hidden lg:block space-y-4">
-            <H3>👈 RetroUI Card</H3>
-            <H3>Gumroad's Card 👉</H3>
+            <H2 className="text-left">👈 RetroUI Card</H2>
+            <H2 className="text-right">Gumroad's Card 👉</H2>
           </div>
           <img
             src="/images/gumroad_product_card.png"
             alt="our product card"
-            className="w-80"
+            className="w-72 ml-auto"
           />
           <H3 className="lg:hidden mt-2">👆 Gumroad's Card</H3>
         </div>
       </section>
 
+      <JoinNewsletter />
       <footer className="bg-black py-8">
         <div className="container max-w-6xl mx-auto flex flex-col lg:flex-row space-y-4 lg:space-y-0 justify-between items-center">
           <div className="flex justify-center space-x-4">
