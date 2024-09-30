@@ -1,11 +1,12 @@
 import React from "react";
 import { allDocs } from "contentlayer/generated";
 import { notFound } from "next/navigation";
-import {format} from "date-fns"
+import { format } from "date-fns";
 import MDX from "@/components/MDX";
-import { H1, H2, H3, H4 } from "@/packages/ui";
+import { H2 } from "@/packages/ui";
 
-async function getDocParams(slug: string) {
+function getDocParams(slug: string) {
+  console.log(slug);
   const doc = allDocs.find((doc) => doc.url === slug);
 
   if (!doc) {
@@ -15,9 +16,9 @@ async function getDocParams(slug: string) {
   return doc;
 }
 
-export default async function page({ params }: { params: { slug: string[] } }) {
-  const slug = params.slug?.join("/") || "/docs";
-  const doc = await getDocParams(slug);
+export default function page({ params }: { params: { slug: string[] } }) {
+  const slug = `/docs${params.slug ? `/${params.slug.join("/")}` : ""}`;
+  const doc = getDocParams(slug);
 
   if (!doc) {
     return notFound();
@@ -32,7 +33,9 @@ export default async function page({ params }: { params: { slug: string[] } }) {
       <div>
         <MDX code={doc.body.code} />
       </div>
-      <p className="text-right">Last Updated: {format(doc.lastUpdated, "dd MMM, YYY")}</p>
+      <p className="text-right">
+        Last Updated: {format(doc.lastUpdated, "dd MMM, yyy")}
+      </p>
     </div>
   );
 }
