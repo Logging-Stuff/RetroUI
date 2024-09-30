@@ -1,5 +1,3 @@
-"use client";
-
 import { JoinNewsletter } from "@/components";
 import {
   Accordion,
@@ -12,9 +10,9 @@ import {
   H3,
   H4,
   Input,
-  ProductCard,
   Textarea,
 } from "@/packages/ui";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -31,12 +29,16 @@ export default function Home() {
         </p>
 
         <div className="max-w-96 grid gap-4 mx-auto grid-cols-2">
-          <Link href="/components" passHref>
+          <Link href="/docs" passHref>
             <Button className="w-full" aria-label="Get Started with RetroUI">
               Get Started
             </Button>
           </Link>
-          <Link href="/components" passHref>
+          <Link
+            href="https://github.com/ariflogs/retroui"
+            target="_blank"
+            passHref
+          >
             <Button
               className="w-full"
               variant="outline"
@@ -109,29 +111,32 @@ export default function Home() {
 
       <section className="container max-w-6xl mx-auto">
         <H2 className="mb-16">
-          And NO! We didn't just copy Gumroad!
+          And NO! We didn&apos;t just copy Gumroad!
           <br />
           Inspired, if you will... 💅
         </H2>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 items-center">
-          <img
+          <Image
             src="/images/our_product_card.png"
             alt="our product card"
-            className="w-80"
+            width={300}
+            height={500}
           />
           <H3 className="lg:hidden mt-2 mb-12">👆 RetroUI Card</H3>
 
           <div className="hidden lg:block space-y-4">
             <H2 className="text-left">👈 RetroUI Card</H2>
-            <H2 className="text-right">Gumroad's Card 👉</H2>
+            <H2 className="text-right">Gumroad&apos;s Card 👉</H2>
           </div>
-          <img
+          <Image
             src="/images/gumroad_product_card.png"
             alt="our product card"
-            className="w-72 ml-auto"
+            className="ml-auto"
+            width={300}
+            height={600}
           />
-          <H3 className="lg:hidden mt-2">👆 Gumroad's Card</H3>
+          <H3 className="lg:hidden mt-2">👆 Gumroad&apos;s Card</H3>
         </div>
       </section>
 
@@ -139,19 +144,16 @@ export default function Home() {
       <footer className="bg-black py-8">
         <div className="container max-w-6xl mx-auto flex flex-col lg:flex-row space-y-4 lg:space-y-0 justify-between items-center">
           <div className="flex justify-center space-x-4">
-            <a
-              href="https://twitter.com/ariflogs"
-              className="text-primary-500 mx-2"
-            >
+            <a href="https://twitter.com/ariflogs" className="text-primary-500">
               Twitter
             </a>
             <a
               href="https://github.com/ariflogs/retroui"
-              className="text-primary-500 mx-2"
+              className="text-primary-500"
             >
               GitHub
             </a>
-            <a href="/docs" className="text-primary-500 mx-2">
+            <a href="/docs" className="text-primary-500">
               Documentation
             </a>
           </div>

@@ -1,3 +1,5 @@
+"use client"
+
 import { Button, H2, Input } from "@/packages/ui";
 import { useState } from "react";
 
@@ -114,8 +116,6 @@ export function JoinNewsletter() {
         localStorage.setItem("loops-form-timestamp", "");
       });
   };
-
-  const isInline = formStyles.formStyle === "inline";
 
   switch (formState) {
     case SUCCESS:

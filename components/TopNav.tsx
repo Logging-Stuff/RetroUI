@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { GitBranchIcon, GithubIcon } from "lucide-react";
+import Image from "next/image";
+import { GithubIcon } from "lucide-react";
 import HamburgerMenu from "./HamburgerMenu";
 import { Button } from "@/packages/ui";
 import { navConfig } from "@/config/navigation";
@@ -16,10 +17,12 @@ export default function TopNav() {
               href="/"
               className="text-black font-head text-2xl flex items-end"
             >
-              <img
+              <Image
                 src="/images/logo_full.png"
                 alt="retro ui logo"
-                className="w-16 mr-2"
+                className="mr-2"
+                height={30}
+                width={60}
               />
               RetroUI
             </a>

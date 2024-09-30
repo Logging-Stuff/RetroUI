@@ -81,6 +81,15 @@ export const componentConfig = {
     className="px-4 py-2 w-full border-2 border-black shadow-md transition focus:outline-none focus:shadow-xs"
 />`,
     },
+    "textarea-style-default": {
+      name: "textarea-style-default",
+      preview: lazy(() => import("@/preview/components/textarea-style-default")),
+      codeHtml: `<textarea
+    rows="4"
+    placeholder="type something..."
+    className="px-4 py-2 w-full border-2 border-black shadow-md transition focus:outline-none focus:shadow-xs"
+/>`,
+    },
     "typography-headings": {
       name: "typography-headings",
       preview: lazy(() => import("@/preview/components/typography-headings")),
