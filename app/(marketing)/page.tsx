@@ -133,7 +133,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container max-w-6xl mx-auto border-2 bg-primary-300 border-black p-16">
+      <section className="container max-w-6xl mx-auto border-2 bg-primary-400 border-black p-16">
         <H2 className="mb-8 text-center">
           And did I mention it&apos;s Free and Open Source?
         </H2>
