@@ -6,7 +6,6 @@ import MDX from "@/components/MDX";
 import { H2 } from "@/packages/ui";
 
 function getDocParams(slug: string) {
-  console.log(slug);
   const doc = allDocs.find((doc) => doc.url === slug);
 
   if (!doc) {
