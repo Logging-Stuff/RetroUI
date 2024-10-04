@@ -9,33 +9,33 @@ export const componentConfig = {
       ),
       codeHtml: `<div class="space-y-4 mx-auto">
     <details class="border-2 border-black shadow-md hover:shadow-sm transition-all overflow-hidden">
-    <summary class="px-4 py-2 font-head text-black cursor-pointer focus:outline-none">
-        Accordion Item 1
-    </summary>
-    <div class="px-4 py-2 font-body bg-white text-gray-700">
-        This is the content of the first accordion item. It is styled with
-        Tailwind CSS.
-    </div>
+      <summary class="px-4 py-2 font-head text-black cursor-pointer focus:outline-none">
+          Accordion Item 1
+      </summary>
+      <div class="px-4 py-2 font-body bg-white text-gray-700">
+          This is the content of the first accordion item. It is styled with
+          Tailwind CSS.
+      </div>
     </details>
 
     <details class="border-2 border-black shadow-md hover:shadow-sm transition-all overflow-hidden">
-    <summary class="px-4 py-2 font-head text-black cursor-pointer focus:outline-none">
-        Accordion Item 2
-    </summary>
-    <div class="px-4 py-2 font-body bg-white text-gray-700">
-        This is the content of the second accordion item. It has a similar
-        style to maintain consistency.
-    </div>
+      <summary class="px-4 py-2 font-head text-black cursor-pointer focus:outline-none">
+          Accordion Item 2
+      </summary>
+      <div class="px-4 py-2 font-body bg-white text-gray-700">
+          This is the content of the second accordion item. It has a similar
+          style to maintain consistency.
+      </div>
     </details>
 
     <details class="border-2 border-black shadow-md hover:shadow-sm transition-all overflow-hidden">
-    <summary class="px-4 py-2 font-head text-black cursor-pointer focus:outline-none">
-        Accordion Item 3
-    </summary>
-    <div class="px-4 py-2 font-body bg-white text-gray-700">
-        This is the content of the third accordion item. The details element
-        handles the toggle behavior.
-    </div>
+      <summary class="px-4 py-2 font-head text-black cursor-pointer focus:outline-none">
+          Accordion Item 3
+      </summary>
+      <div class="px-4 py-2 font-body bg-white text-gray-700">
+          This is the content of the third accordion item. The details element
+          handles the toggle behavior.
+      </div>
     </details>
 </div>`,
     },
@@ -54,6 +54,20 @@ export const componentConfig = {
       name: "badge-style-default",
       preview: lazy(() => import("@/preview/components/badge-style-default")),
       codeHtml: `<span className="border-black text-black border-2 px-2 py-1 text-sm">
+    Badge
+</span>`,
+    },
+    "badge-style-success": {
+      name: "badge-style-default",
+      preview: lazy(() => import("@/preview/components/badge-style-success")),
+      codeHtml: `<span className="border-green-600 text-green-600 bg-green-50 border-2 px-2 py-1 text-sm">
+    Badge
+</span>`,
+    },
+    "badge-style-error": {
+      name: "badge-style-default",
+      preview: lazy(() => import("@/preview/components/badge-style-error")),
+      codeHtml: `<span className="border-red-600 text-red-600 bg-red-50 border-2 px-2 py-1 text-sm">
     Badge
 </span>`,
     },
