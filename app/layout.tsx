@@ -39,7 +39,7 @@ export default function RootLayout({
       <body
         className={`${shareTech.className} ${archivoBlack.variable} ${shareTech.variable} ${shareTechMono.variable}`}
       >
-        <div className="mb-8 relative z-10">
+        <div className="mb-20 relative z-10">
           <TopNav />
         </div>
         {children}

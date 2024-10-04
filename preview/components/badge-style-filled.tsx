@@ -3,6 +3,6 @@ import React from "react";
 
 export default function BadgeStyleSuccess() {
   return (
-    <Badge variant="success">Success</Badge>
+    <Badge variant="filled">Filled</Badge>
   );
 }

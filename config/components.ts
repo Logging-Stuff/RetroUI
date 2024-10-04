@@ -60,14 +60,21 @@ export const componentConfig = {
     "badge-style-success": {
       name: "badge-style-default",
       preview: lazy(() => import("@/preview/components/badge-style-success")),
-      codeHtml: `<span className="border-green-600 text-green-600 bg-green-50 border-2 px-2 py-1 text-sm">
+      codeHtml: `<span className="border-2 border-green-600 text-green-600 px-2.5 py-1 text-sm">
     Badge
 </span>`,
     },
     "badge-style-error": {
       name: "badge-style-default",
       preview: lazy(() => import("@/preview/components/badge-style-error")),
-      codeHtml: `<span className="border-red-600 text-red-600 bg-red-50 border-2 px-2 py-1 text-sm">
+      codeHtml: `<span className="border-2 border-red-600 text-red-600 px-2.5 py-1 text-sm">
+    Badge
+</span>`,
+    },
+    "badge-style-filled": {
+      name: "badge-style-default",
+      preview: lazy(() => import("@/preview/components/badge-style-filled")),
+      codeHtml: `<span className="border-2 bg-primary-400 border-black text-black px-2.5 py-1 text-sm">
     Badge
 </span>`,
     },
@@ -97,7 +104,9 @@ export const componentConfig = {
     },
     "textarea-style-default": {
       name: "textarea-style-default",
-      preview: lazy(() => import("@/preview/components/textarea-style-default")),
+      preview: lazy(
+        () => import("@/preview/components/textarea-style-default")
+      ),
       codeHtml: `<textarea
     rows="4"
     placeholder="type something..."

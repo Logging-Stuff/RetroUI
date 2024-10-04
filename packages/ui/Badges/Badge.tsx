@@ -1,16 +1,30 @@
+import { cn } from "@/lib/utils";
+import { cva, VariantProps } from "class-variance-authority";
 import React, { HTMLAttributes } from "react";
 
-const variants = {
-  default: "border-black text-black",
-  error: "border-red-600 text-red-600",
-  success: "border-green-600 text-green-600",
-};
+const badgeVariants = cva("font-semibold border-2", {
+  variants: {
+    variant: {
+      default: "border-black text-black",
+      error: "border-red-600 text-red-600",
+      success: "border-green-600 text-green-600",
+      filled: "bg-primary-400 border-black text-black",
+    },
+    size: {
+      sm: "px-2 py-.5 text-xs",
+      md: "px-2.5 py-1 text-sm",
+      lg: "px-3 py-1.5 text-base",
+    },
+  },
+  defaultVariants: {
+    variant: "default",
+    size: "md",
+  },
+});
 
-interface ButtonProps extends HTMLAttributes<HTMLSpanElement> {
-  size?: "sm" | "md" | "lg";
-  variant?: keyof typeof variants;
-  className?: string;
-}
+interface ButtonProps
+  extends HTMLAttributes<HTMLSpanElement>,
+    VariantProps<typeof badgeVariants> {}
 
 export function Badge({
   children,
@@ -19,15 +33,9 @@ export function Badge({
   className = "",
   ...props
 }: ButtonProps) {
-  const sizeClasses = {
-    sm: "px-4 py-1 text-sm",
-    md: "px-2 py-1 text-sm",
-    lg: "px-8 py-3 text-lg",
-  };
-
   return (
     <span
-      className={`text-primary-foreground border-2 ${variants[variant]} ${sizeClasses[size]} ${className}`}
+      className={cn(badgeVariants({ variant, size }), className)}
       {...props}
     >
       {children}
