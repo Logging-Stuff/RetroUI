@@ -4,8 +4,14 @@ import { notFound } from "next/navigation";
 import { format } from "date-fns";
 import MDX from "@/components/MDX";
 import { H2 } from "@/packages/ui";
+import { Metadata } from "next";
 
-function getDocParams(slug: string) {
+interface IProps {
+  params: { slug: string[] };
+}
+
+function getDocParams({ params }: IProps) {
+  const slug = `/docs${params.slug ? `/${params.slug.join("/")}` : ""}`;
   const doc = allDocs.find((doc) => doc.url === slug);
 
   if (!doc) {
@@ -15,9 +21,23 @@ function getDocParams(slug: string) {
   return doc;
 }
 
-export default function page({ params }: { params: { slug: string[] } }) {
-  const slug = `/docs${params.slug ? `/${params.slug.join("/")}` : ""}`;
-  const doc = getDocParams(slug);
+export async function generateMetadata({ params }: IProps): Promise<Metadata> {
+  const doc = getDocParams({ params });
+
+  if (!doc) {
+    return {
+      title: "Not Found | Retro UI",
+    };
+  }
+
+  return {
+    title: `${doc.title} | Retro UI`,
+    description: doc.description
+  };
+}
+
+export default function page({ params }: IProps) {
+  const doc = getDocParams({ params });
 
   if (!doc) {
     return notFound();

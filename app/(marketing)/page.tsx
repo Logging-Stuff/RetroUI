@@ -1,4 +1,3 @@
-import { JoinNewsletter } from "@/components";
 import {
   Accordion,
   Avatar,

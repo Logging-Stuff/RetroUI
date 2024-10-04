@@ -1,6 +1,7 @@
 import TopNav from "@/components/TopNav";
 import "./global.css";
 import { Archivo_Black, Share_Tech, Share_Tech_Mono } from "next/font/google";
+import { Metadata } from "next";
 
 const archivoBlack = Archivo_Black({
   subsets: ["latin"],
@@ -19,6 +20,14 @@ const shareTechMono = Share_Tech_Mono({
   weight: "400",
   variable: "--font-mono",
 });
+
+export const metadata: Metadata = {
+  title: "Retro Styled Tailwind UI Library | Retro UI",
+  description: "RetroUI - Retro styled TailwindCSS component library for modern web apps.",
+  openGraph: {
+    images: ['/banner.png']
+  }
+};
 
 export default function RootLayout({
   children,
