@@ -2,6 +2,8 @@ import path from "path";
 import fs from "fs";
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
 import { visit } from "unist-util-visit";
+import rehypePrettyCode from "rehype-pretty-code";
+import rehypeSlug from "rehype-slug";
 import { u } from "unist-builder";
 import { UnistNode } from "./types/unist";
 import { componentConfig } from "./config";
@@ -25,6 +27,7 @@ export const Doc = defineDocumentType(() => ({
 
 export default makeSource({
   mdx: {
+    remarkPlugins: [],
     rehypePlugins: [
       () => (tree) => {
         visit(tree, (node: UnistNode) => {
@@ -75,6 +78,13 @@ export default makeSource({
         });
         return null;
       },
+      rehypeSlug,
+      [
+        rehypePrettyCode as any,
+        {
+          theme: "dracula-soft",
+        },
+      ],
     ],
   },
   contentDirPath: "./content",

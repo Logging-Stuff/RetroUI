@@ -21,7 +21,7 @@ export function ComponentShowcase({ name, children }: IComponentShowcase) {
 
       <div>
         <H5>Code</H5>
-        <div className="relative rounded  overflow-auto">{Code}</div>
+        <div className="relative rounded overflow-auto">{Code}</div>
       </div>
     </div>
   );
