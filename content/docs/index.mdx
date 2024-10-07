@@ -1,22 +1,29 @@
 ---
 title: Getting Started
 description: This guide will help you get started with RetroUI, a retro styled UI library based on Tailwind CSS.
-lastUpdated: 29 Sep, 2024
+lastUpdated: 08 Oct, 2024
 ---
 
 ### 1. Add the fonts
-We are useing `Archivo Black` for headings and `Share Tech` for everything else.
+
+<br />
+
+We are using `Archivo Black` for headings and `Share Tech` for everything else.
 
 Installation form Google Fonts:
-```
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Share+Tech&display=swap" rel="stylesheet">    
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Share+Tech&display=swap"
+  rel="stylesheet"
+/>
 ```
 
 Save the fonts in `global.css`:
 
-```
+```css
 :root {
   --font-head: "Archivo Black", sans-serif;
   --font-sans: "Share Tech", sans-serif;
@@ -27,7 +34,7 @@ Save the fonts in `global.css`:
 
 ### 2. Add the theme to your tailwind.config.js file.
 
-```
+```ts
 import type { Config } from "tailwindcss";
 
 const config = {
@@ -38,8 +45,8 @@ const config = {
         sans: ["var(--font-sans)"],
       },
       boxShadow: {
-        "xs": "1px 1px 0 0 #000",
-        "md": "3px 3px 0 0 #000",
+        xs: "1px 1px 0 0 #000",
+        md: "3px 3px 0 0 #000",
         "3xl": "10px 10px 0 0 #000",
       },
       colors: {
@@ -63,5 +70,4 @@ export default config;
 ```
 
 <br />
-    
 ### 3. Now start copy-pasting the components!

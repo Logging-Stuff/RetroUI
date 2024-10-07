@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function TypographyHeadings() {
   return (
     <div className="space-y-4">

@@ -1,8 +1,7 @@
-import { Badge } from "@/packages/ui";
-import React from "react";
-
 export default function BadgeStyleDefault() {
   return (
-    <Badge>Default Badge</Badge>
+    <span className="px-2.5 py-1 text-sm font-semibold border-2 border-black text-black">
+      Default Badge
+    </span>
   );
 }

@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function BasicCard() {
   return (
     <div className="inline-block border-2 border-black p-4 shadow-md cursor-pointer transition-all hover:shadow-xs">

@@ -4,6 +4,7 @@ export const componentConfig = {
   registry: {
     "accordion-style-default": {
       name: "accordion-style-default",
+      filePath: "preview/components/accordion-style-default.tsx",
       preview: lazy(
         () => import("@/preview/components/accordion-style-default")
       ),
@@ -41,6 +42,7 @@ export const componentConfig = {
     },
     "avatar-style-circle": {
       name: "avatar-style-circle",
+      filePath: "preview/components/avatar-style-circle.tsx",
       preview: lazy(() => import("@/preview/components/avatar-style-circle")),
       codeHtml: `<div className="inline-block w-14 h-14 border-2 border-black rounded-full overflow-hidden">
     <img
@@ -52,6 +54,7 @@ export const componentConfig = {
     },
     "badge-style-default": {
       name: "badge-style-default",
+      filePath: "preview/components/badge-style-default.tsx",
       preview: lazy(() => import("@/preview/components/badge-style-default")),
       codeHtml: `<span className="border-black text-black border-2 px-2 py-1 text-sm">
     Badge
@@ -59,6 +62,7 @@ export const componentConfig = {
     },
     "badge-style-success": {
       name: "badge-style-default",
+      filePath: "preview/components/badge-style-success.tsx",
       preview: lazy(() => import("@/preview/components/badge-style-success")),
       codeHtml: `<span className="border-2 border-green-600 text-green-600 px-2.5 py-1 text-sm">
     Badge
@@ -66,6 +70,7 @@ export const componentConfig = {
     },
     "badge-style-error": {
       name: "badge-style-default",
+      filePath: "preview/components/badge-style-error.tsx",
       preview: lazy(() => import("@/preview/components/badge-style-error")),
       codeHtml: `<span className="border-2 border-red-600 text-red-600 px-2.5 py-1 text-sm">
     Badge
@@ -73,6 +78,7 @@ export const componentConfig = {
     },
     "badge-style-filled": {
       name: "badge-style-default",
+      filePath: "preview/components/badge-style-filled.tsx",
       preview: lazy(() => import("@/preview/components/badge-style-filled")),
       codeHtml: `<span className="border-2 bg-primary-400 border-black text-black px-2.5 py-1 text-sm">
     Badge
@@ -80,13 +86,12 @@ export const componentConfig = {
     },
     "button-style-default": {
       name: "button-style-default",
+      filePath: "preview/components/button-style-default.tsx",
       preview: lazy(() => import("@/preview/components/button-style-default")),
-      codeHtml: `<button className="bg-primary-400 text-black px-6 py-2 text-base font-head border-2 border-black shadow-md hover:shadow-xs hover:bg-primary-500 transition-all">
-    Click Me!
-</button>`,
     },
     "card-style-default": {
       name: "card-style-default",
+      filePath: "preview/components/card-style-default.tsx",
       preview: lazy(() => import("@/preview/components/card-style-default")),
       codeHtml: `<div className="inline-block border-2 border-black p-4 shadow-md cursor-pointer transition-all hover:shadow-xs">
     <h4 className="font-head text-2xl font-medium mb-1">This is card Title</h4>
@@ -95,6 +100,7 @@ export const componentConfig = {
     },
     "input-style-default": {
       name: "input-style-default",
+      filePath: "preview/components/input-style-default.tsx",
       preview: lazy(() => import("@/preview/components/input-style-default")),
       codeHtml: `<input
     type="text"
@@ -104,6 +110,7 @@ export const componentConfig = {
     },
     "textarea-style-default": {
       name: "textarea-style-default",
+      filePath: "preview/components/textarea-style-default.tsx",
       preview: lazy(
         () => import("@/preview/components/textarea-style-default")
       ),
@@ -115,6 +122,7 @@ export const componentConfig = {
     },
     "typography-headings": {
       name: "typography-headings",
+      filePath: "preview/components/typography-headings.tsx",
       preview: lazy(() => import("@/preview/components/typography-headings")),
       codeHtml: `<div className="space-y-4">
   <h1 className="font-head text-5xl lg:text-6xl font-bold">This is H1</h1>
@@ -127,6 +135,7 @@ export const componentConfig = {
     },
     "typography-p": {
       name: "typography-p",
+      filePath: "preview/components/typography-p.tsx",
       preview: lazy(() => import("@/preview/components/typography-p")),
       codeHtml: `<p className="font-sans">
   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eos,

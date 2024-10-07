@@ -1,8 +1,7 @@
-import { Badge } from "@/packages/ui";
-import React from "react";
-
-export default function BadgeStyleSuccess() {
+export default function BadgeStyleFilled() {
   return (
-    <Badge variant="filled">Filled</Badge>
+    <span className="px-2.5 py-1 text-sm font-semibold border-2 bg-primary-400 border-black text-black">
+      Filled
+    </span>
   );
 }
