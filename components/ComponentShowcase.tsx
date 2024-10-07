@@ -7,7 +7,7 @@ interface IComponentShowcase extends HTMLAttributes<HTMLDivElement> {
 }
 
 export function ComponentShowcase({ name, children }: IComponentShowcase) {
-  const { preview: Preview, codeHtml } = componentConfig.registry[name];
+  const { preview: Preview } = componentConfig.registry[name];
   const Code = React.Children.toArray(children)[0];
 
   return (

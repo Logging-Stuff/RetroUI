@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function AccordionStyleDefault() {
   return (
     <div className="space-y-4 mx-auto">
@@ -35,5 +33,3 @@ export default function AccordionStyleDefault() {
     </div>
   );
 }
-
-AccordionStyleDefault.displayName = "AccordionStyleDefault";
