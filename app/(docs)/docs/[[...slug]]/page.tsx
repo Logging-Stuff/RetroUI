@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: IProps): Promise<Metadata> {
 
   return {
     title: `${doc.title} | Retro UI`,
-    description: doc.description
+    description: doc.description,
   };
 }
 

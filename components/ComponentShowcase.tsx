@@ -13,7 +13,7 @@ export function ComponentShowcase({ name, children }: IComponentShowcase) {
 
   return (
     <TabGroup>
-      <TabList className="space-x-4 mb-4">
+      <TabList className="space-x-4 ">
         <Tab className="text-lg px-1 border-black data-[selected]:border-b-2">
           Preview
         </Tab>
@@ -23,7 +23,7 @@ export function ComponentShowcase({ name, children }: IComponentShowcase) {
       </TabList>
       <TabPanels>
         <TabPanel>
-          <div className="border rounded p-6">
+          <div className="border rounded p-6 mt-4">
             <Preview />
           </div>
         </TabPanel>
