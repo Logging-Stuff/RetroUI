@@ -66,5 +66,10 @@ export const componentConfig = {
       filePath: "preview/components/typography-p.tsx",
       preview: lazy(() => import("@/preview/components/typography-p")),
     },
+    "tab-style-default": {
+      name: "typography-p",
+      filePath: "preview/components/tab-style-default.tsx",
+      preview: lazy(() => import("@/preview/components/tab-style-default")),
+    },
   },
 };

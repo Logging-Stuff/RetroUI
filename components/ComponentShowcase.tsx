@@ -1,5 +1,6 @@
 import { componentConfig } from "@/config";
 import { H5 } from "@/packages/ui";
+import { TabGroup, TabList, TabPanels, TabPanel, Tab } from "@headlessui/react";
 import React, { HTMLAttributes } from "react";
 
 interface IComponentShowcase extends HTMLAttributes<HTMLDivElement> {
@@ -11,18 +12,25 @@ export function ComponentShowcase({ name, children }: IComponentShowcase) {
   const Code = React.Children.toArray(children)[0];
 
   return (
-    <div className="space-y-6">
-      <div>
-        <H5>Preview</H5>
-        <div className="mt-2 border rounded p-6">
-          <Preview />
-        </div>
-      </div>
-
-      <div>
-        <H5>Code</H5>
-        <div className="relative rounded overflow-auto">{Code}</div>
-      </div>
-    </div>
+    <TabGroup>
+      <TabList className="space-x-4 mb-4">
+        <Tab className="text-lg px-1 border-black data-[selected]:border-b-2">
+          Preview
+        </Tab>
+        <Tab className="text-lg px-1 border-black data-[selected]:border-b-2">
+          Code
+        </Tab>
+      </TabList>
+      <TabPanels>
+        <TabPanel>
+          <div className="border rounded p-6">
+            <Preview />
+          </div>
+        </TabPanel>
+        <TabPanel>
+          <div className="relative rounded overflow-auto">{Code}</div>
+        </TabPanel>
+      </TabPanels>
+    </TabGroup>
   );
 }

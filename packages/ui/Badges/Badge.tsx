@@ -2,13 +2,13 @@ import { cn } from "@/lib/utils";
 import { cva, VariantProps } from "class-variance-authority";
 import React, { HTMLAttributes } from "react";
 
-const badgeVariants = cva("font-semibold border-2", {
+const badgeVariants = cva("font-semibold ", {
   variants: {
     variant: {
-      default: "border-black text-black",
-      error: "border-red-600 text-red-600",
-      success: "border-green-600 text-green-600",
-      filled: "bg-primary-400 border-black text-black",
+      default: "border-2 border-black text-black",
+      error: "border-2 border-red-600 text-red-600",
+      success: "border-2 border-green-600 text-green-600",
+      filled: "bg-purple-200 text-purple-600 rounded",
     },
     size: {
       sm: "px-2 py-.5 text-xs",
