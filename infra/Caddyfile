@@ -1,0 +1,3 @@
+retroui.dev {
+    reverse_proxy retroui:3000
+}

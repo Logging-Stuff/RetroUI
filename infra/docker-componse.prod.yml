@@ -1,0 +1,19 @@
+services:
+  web:
+    image: devarifhossain/retroui:1.02
+    container_name: retroui
+    expose:
+      - "3000"
+    ports:
+      - "3000:3000"
+  caddy:
+    image: caddy:latest
+    container_name: caddy_proxy
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+    depends_on:
+      - web
