@@ -9,7 +9,7 @@ import { navConfig } from "@/config/navigation";
 export default function TopNav() {
   return (
     <nav className="fixed top-0 h-16 left-0 right-0 w-full border-b-2 border-black bg-white">
-      <div className="container max-w-6xl mx-auto">
+      <div className="container max-w-6xl px-4 lg:px-0 mx-auto">
         <div className="flex justify-between items-center h-16">
           {/* Logo Section */}
           <div className="flex-shrink-0">

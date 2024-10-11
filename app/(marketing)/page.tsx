@@ -18,8 +18,8 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="space-y-36">
-      <section className="container max-w-6xl mx-auto mt-36 text-gray-900 flex justify-center items-center">
-        <div className="w-2/3">
+      <section className="container max-w-6xl mx-auto px-4 lg:px-0 mt-36 text-gray-900 flex justify-center items-center">
+        <div className="text-center lg:text-left w-full lg:w-2/3">
           <H1>Make your projects</H1>
           <H1 className="text-outlined">stand out!</H1>
 
@@ -29,7 +29,7 @@ export default function Home() {
             {/* <br /> Now available for both HTML and React! */}
           </p>
 
-          <div className="max-w-96 grid gap-4 grid-cols-2">
+          <div className="max-w-96 grid gap-4 grid-cols-2 mx-auto lg:mx-0">
             <Link href="/docs" passHref>
               <Button className="w-full" aria-label="Get Started with RetroUI">
                 Get Started
@@ -50,7 +50,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="w-1/3">
+        <div className="hidden lg:block lg:w-1/3">
           <img
             alt="orange cool cat"
             src="/images/orange_boos.png"
@@ -59,7 +59,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container max-w-6xl mx-auto ">
+      <section className="container max-w-6xl mx-auto px-4 lg:px-0">
         <H2 className="mb-16 text-center">
           Our components look both old school and modern! ✨
         </H2>
@@ -71,7 +71,7 @@ export default function Home() {
           </div>
           <div className="space-y-4">
             <H4>Badge</H4>
-            <div className="space-x-2">
+            <div className="flex flex-wrap space-y-2 lg:space-y-0 space-x-2">
               <Badge>Default Badge</Badge>
               <Badge variant="error">Error Badge</Badge>
             </div>
@@ -101,7 +101,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container max-w-6xl mx-auto">
+      <section className="container max-w-6xl mx-auto px-4 lg:px-0">
         <H2 className="mb-16 text-center">
           And NO! We didn&apos;t just copy Gumroad!
           <br />
@@ -124,7 +124,7 @@ export default function Home() {
           <Image
             src="/images/gumroad_product_card.png"
             alt="our product card"
-            className="ml-auto"
+            className="mr-auto lg:ml-auto"
             width={300}
             height={600}
           />
@@ -132,11 +132,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container max-w-6xl mx-auto border-2 bg-primary-400 border-black p-16">
+      <section className="container max-w-6xl mx-auto border-2 bg-primary-400 border-black py-16 px-4 lg:p-16">
         <H2 className="mb-8 text-center">
           And did I mention it&apos;s Free and Open Source?
         </H2>
-        <div className="flex justify-center space-x-4">
+        <div className="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
           <Link
             href="https://github.com/ariflogs/retroui"
             target="_blank"
