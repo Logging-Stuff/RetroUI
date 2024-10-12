@@ -36,7 +36,7 @@ export default function Home() {
               </Button>
             </Link>
             <Link
-              href="https://github.com/ariflogs/retroui"
+              href="https://github.com/Logging-Stuff/retroui"
               target="_blank"
               passHref
             >
@@ -138,7 +138,7 @@ export default function Home() {
         </H2>
         <div className="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
           <Link
-            href="https://github.com/ariflogs/retroui"
+            href="https://github.com/Logging-Stuff/retroui"
             target="_blank"
             passHref
           >
@@ -163,7 +163,7 @@ export default function Home() {
               Twitter
             </a>
             <a
-              href="https://github.com/ariflogs/retroui"
+              href="https://github.com/Logging-Stuff/retroui"
               className="text-primary-500"
             >
               GitHub
