@@ -14,10 +14,10 @@ export function ComponentShowcase({ name, children }: IComponentShowcase) {
   return (
     <TabGroup>
       <TabList className="space-x-4 ">
-        <Tab className="text-lg px-1 border-black data-[selected]:border-b-2">
+        <Tab className="text-lg px-1 border-black data-[selected]:border-b-2 focus:outline-none">
           Preview
         </Tab>
-        <Tab className="text-lg px-1 border-black data-[selected]:border-b-2">
+        <Tab className="text-lg px-1 border-black data-[selected]:border-b-2 focus:outline-none">
           Code
         </Tab>
       </TabList>

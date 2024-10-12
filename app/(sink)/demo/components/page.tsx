@@ -1,4 +1,5 @@
 import {
+  Avatar,
   Badge,
   Button,
   Tabs,
@@ -24,6 +25,22 @@ export default function page() {
         <Badge variant="filled">Badge</Badge>
       </div>
 
+      <div className="flex items-center space-x-4">
+        <Avatar>
+          <Avatar.Image src="/images/avatar.jpeg" alt="Arif Logs" />
+          <Avatar.Fallback>AH</Avatar.Fallback>
+        </Avatar>
+
+        <Avatar className="rounded-none">
+          <Avatar.Image src="/images/avatar.jpeg" alt="Arif Logs" />
+          <Avatar.Fallback>AH</Avatar.Fallback>
+        </Avatar>
+
+        <Avatar className="rounded-none h-20 w-20">
+          <Avatar.Image src="/images/avatar.jpeg" alt="Arif Logs" />
+          <Avatar.Fallback>AH</Avatar.Fallback>
+        </Avatar>
+      </div>
       <div>
         <Tabs>
           <TabsTriggerList>
