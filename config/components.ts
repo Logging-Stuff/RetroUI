@@ -20,6 +20,20 @@ export const componentConfig = {
       filePath: "preview/components/avatar-style-circle.tsx",
       preview: lazy(() => import("@/preview/components/avatar-style-circle")),
     },
+    "avatar-style-circle-fallbacks": {
+      name: "avatar-style-fallbacks",
+      filePath: "preview/components/avatar-style-circle-fallbacks.tsx",
+      preview: lazy(
+        () => import("@/preview/components/avatar-style-circle-fallbacks")
+      ),
+    },
+    "avatar-style-circle-sizes": {
+      name: "avatar-style-circle-sizes",
+      filePath: "preview/components/avatar-style-circle-sizes.tsx",
+      preview: lazy(
+        () => import("@/preview/components/avatar-style-circle-sizes")
+      ),
+    },
     "badge-style-default": {
       name: "badge-style-default",
       filePath: "preview/components/badge-style-default.tsx",
