@@ -1,7 +1,17 @@
 import { lazy } from "react";
 
 export const componentConfig = {
-  registry: {
+  core: {
+    avatar: {
+      name: "avatar",
+      filePath: "packages/ui/Avatars/Avatar.tsx",
+    },
+    button: {
+      name: "button",
+      filePath: "packages/ui/Buttons/Button.tsx",
+    },
+  },
+  examples: {
     "accordion-style-default": {
       name: "accordion-style-default",
       filePath: "preview/components/accordion-style-default.tsx",
@@ -13,6 +23,20 @@ export const componentConfig = {
       name: "avatar-style-circle",
       filePath: "preview/components/avatar-style-circle.tsx",
       preview: lazy(() => import("@/preview/components/avatar-style-circle")),
+    },
+    "avatar-style-circle-fallbacks": {
+      name: "avatar-style-fallbacks",
+      filePath: "preview/components/avatar-style-circle-fallbacks.tsx",
+      preview: lazy(
+        () => import("@/preview/components/avatar-style-circle-fallbacks")
+      ),
+    },
+    "avatar-style-circle-sizes": {
+      name: "avatar-style-circle-sizes",
+      filePath: "preview/components/avatar-style-circle-sizes.tsx",
+      preview: lazy(
+        () => import("@/preview/components/avatar-style-circle-sizes")
+      ),
     },
     "badge-style-default": {
       name: "badge-style-default",

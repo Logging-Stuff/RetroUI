@@ -44,8 +44,8 @@ export default function page({ params }: IProps) {
   }
 
   return (
-    <div className="space-y-12 pb-8">
-      <div>
+    <div className="space-y-12 py-8">
+      <div className="border-b border-black pb-4">
         <H2>{doc.title}</H2>
         <p className="text-lg text-muted">{doc.description}</p>
       </div>

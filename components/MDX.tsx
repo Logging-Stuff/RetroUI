@@ -3,14 +3,19 @@ import { useMDXComponent } from "next-contentlayer/hooks";
 import React, { HTMLAttributes } from "react";
 import { ComponentShowcase } from "./ComponentShowcase";
 import { cn } from "@/lib/utils";
+import { ComponentSource } from "./ComponentSource";
 
 const components = {
   h1: H1,
   h2: (props: HTMLAttributes<HTMLHeadingElement>) => (
-    <H2 className="mb-2" {...props} />
+    <H2 className="border-b lg:text-3xl pb-1 mb-6" {...props} />
   ),
-  h3: H3,
-  h4: H4,
+  h3: (props: HTMLAttributes<HTMLHeadingElement>) => (
+    <H3 className="mb-4" {...props} />
+  ),
+  h4: (props: HTMLAttributes<HTMLHeadingElement>) => (
+    <H4 className="mb-2" {...props} />
+  ),
   h5: H5,
   h6: H6,
   pre: ({
@@ -44,6 +49,7 @@ const components = {
     </code>
   ),
   ComponentShowcase,
+  ComponentSource,
 };
 
 export default function MDX({ code }: { code: string }) {

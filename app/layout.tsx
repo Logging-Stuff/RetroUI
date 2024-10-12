@@ -25,16 +25,6 @@ export const metadata: Metadata = {
   title: "Retro Styled Tailwind UI Library | Retro UI",
   description:
     "RetroUI - Retro styled TailwindCSS component library for modern web apps.",
-  openGraph: {
-    images: ["/banner.png"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Retro Styled Tailwind UI Library | Retro UI",
-    description:
-      "RetroUI - Retro styled TailwindCSS component library for modern web apps.",
-    images: ["/banner.png"],
-  },
 };
 
 export default function RootLayout({
@@ -54,7 +44,7 @@ export default function RootLayout({
       <body
         className={`${shareTech.className} ${archivoBlack.variable} ${shareTech.variable} ${shareTechMono.variable}`}
       >
-        <div className="mb-20 relative z-10">
+        <div className="relative z-10">
           <TopNav />
         </div>
         {children}

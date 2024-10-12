@@ -1,9 +1,9 @@
 import { Avatar } from "@/packages/ui";
 
-export default function AvatarStyleCircle() {
+export default function AvatarStyleFallback() {
   return (
     <Avatar>
-      <Avatar.Image src="/images/avatar.jpeg" alt="Arif Logs" />
+      <Avatar.Image src="broken-link" alt="Arif Logs" />
       <Avatar.Fallback>AH</Avatar.Fallback>
     </Avatar>
   );

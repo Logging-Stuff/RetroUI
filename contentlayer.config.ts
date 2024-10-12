@@ -31,15 +31,51 @@ export default makeSource({
     rehypePlugins: [
       () => (tree) => {
         visit(tree, (node: UnistNode) => {
-          if (node.name === "ComponentShowcase" && node.attributes) {
+          if (node.name === "ComponentSource" && node.attributes) {
             const name = getNodeAttributeByName(node, "name")
-              ?.value as keyof typeof componentConfig.registry;
+              ?.value as keyof typeof componentConfig.core;
 
             if (!name) {
               return null;
             }
 
-            const component = componentConfig.registry[name];
+            const component = componentConfig.core[name];
+            const filePath = path.join(process.cwd(), component.filePath);
+            const source = fs.readFileSync(filePath, "utf8");
+
+            node.children?.push(
+              u("element", {
+                tagName: "pre",
+                properties: {
+                  __src__: source,
+                },
+                children: [
+                  u("element", {
+                    tagName: "code",
+                    properties: {
+                      className: ["language-tsx"],
+                    },
+                    children: [
+                      {
+                        type: "text",
+                        value: source,
+                      },
+                    ],
+                  }),
+                ],
+              })
+            );
+          }
+
+          if (node.name === "ComponentShowcase" && node.attributes) {
+            const name = getNodeAttributeByName(node, "name")
+              ?.value as keyof typeof componentConfig.examples;
+
+            if (!name) {
+              return null;
+            }
+
+            const component = componentConfig.examples[name];
             const filePath = path.join(process.cwd(), component.filePath);
             const source = fs.readFileSync(filePath, "utf8");
             // const cleanedJSX = source
