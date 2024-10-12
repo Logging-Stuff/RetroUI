@@ -3,6 +3,7 @@ import { useMDXComponent } from "next-contentlayer/hooks";
 import React, { HTMLAttributes } from "react";
 import { ComponentShowcase } from "./ComponentShowcase";
 import { cn } from "@/lib/utils";
+import { ComponentSource } from "./ComponentSource";
 
 const components = {
   h1: H1,
@@ -48,6 +49,7 @@ const components = {
     </code>
   ),
   ComponentShowcase,
+  ComponentSource,
 };
 
 export default function MDX({ code }: { code: string }) {

@@ -1,7 +1,13 @@
 import { lazy } from "react";
 
 export const componentConfig = {
-  registry: {
+  core: {
+    avatar: {
+      name: "avatar",
+      filePath: "packages/ui/Avatars/Avatar.tsx",
+    },
+  },
+  examples: {
     "accordion-style-default": {
       name: "accordion-style-default",
       filePath: "preview/components/accordion-style-default.tsx",

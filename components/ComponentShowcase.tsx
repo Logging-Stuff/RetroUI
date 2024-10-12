@@ -4,11 +4,11 @@ import { TabGroup, TabList, TabPanels, TabPanel, Tab } from "@headlessui/react";
 import React, { HTMLAttributes } from "react";
 
 interface IComponentShowcase extends HTMLAttributes<HTMLDivElement> {
-  name: keyof typeof componentConfig.registry;
+  name: keyof typeof componentConfig.examples;
 }
 
 export function ComponentShowcase({ name, children }: IComponentShowcase) {
-  const { preview: Preview } = componentConfig.registry[name];
+  const { preview: Preview } = componentConfig.examples[name];
   const Code = React.Children.toArray(children)[0];
 
   return (
