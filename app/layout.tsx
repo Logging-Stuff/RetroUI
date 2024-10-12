@@ -25,16 +25,6 @@ export const metadata: Metadata = {
   title: "Retro Styled Tailwind UI Library | Retro UI",
   description:
     "RetroUI - Retro styled TailwindCSS component library for modern web apps.",
-  openGraph: {
-    images: ["/banner.png"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Retro Styled Tailwind UI Library | Retro UI",
-    description:
-      "RetroUI - Retro styled TailwindCSS component library for modern web apps.",
-    images: ["/banner.png"],
-  },
 };
 
 export default function RootLayout({

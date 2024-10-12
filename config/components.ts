@@ -6,6 +6,10 @@ export const componentConfig = {
       name: "avatar",
       filePath: "packages/ui/Avatars/Avatar.tsx",
     },
+    button: {
+      name: "button",
+      filePath: "packages/ui/Buttons/Button.tsx",
+    },
   },
   examples: {
     "accordion-style-default": {
