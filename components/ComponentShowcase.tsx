@@ -2,6 +2,7 @@ import { componentConfig } from "@/config";
 import { H5 } from "@/packages/ui";
 import { TabGroup, TabList, TabPanels, TabPanel, Tab } from "@headlessui/react";
 import React, { HTMLAttributes } from "react";
+import { CopyButton } from "./CopyButton";
 
 interface IComponentShowcase extends HTMLAttributes<HTMLDivElement> {
   name: keyof typeof componentConfig.examples;
@@ -28,7 +29,10 @@ export function ComponentShowcase({ name, children }: IComponentShowcase) {
           </div>
         </TabPanel>
         <TabPanel>
-          <div className="relative rounded overflow-auto">{Code}</div>
+          <div className="relative rounded overflow-auto">
+            <CopyButton value={Code.toString()} />
+            {Code}
+          </div>
         </TabPanel>
       </TabPanels>
     </TabGroup>

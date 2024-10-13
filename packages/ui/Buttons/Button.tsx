@@ -23,7 +23,7 @@ const buttonVariants = cva("font-head  transition-all", {
   },
 });
 
-interface ButtonProps
+export interface IButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {}
 
@@ -33,7 +33,7 @@ export function Button({
   className = "",
   variant = "default",
   ...props
-}: ButtonProps) {
+}: IButtonProps) {
   return (
     <button
       className={cn(buttonVariants({ variant, size }), className)}
