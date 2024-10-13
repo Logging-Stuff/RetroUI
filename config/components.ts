@@ -68,6 +68,11 @@ export const componentConfig = {
       filePath: "preview/components/button-style-outline.tsx",
       preview: lazy(() => import("@/preview/components/button-style-outline")),
     },
+    "button-style-link": {
+      name: "button-style-link",
+      filePath: "preview/components/button-style-link.tsx",
+      preview: lazy(() => import("@/preview/components/button-style-link")),
+    },
     "card-style-default": {
       name: "card-style-default",
       filePath: "preview/components/card-style-default.tsx",
