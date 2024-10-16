@@ -47,7 +47,7 @@ export default makeSource({
               u("element", {
                 tagName: "pre",
                 properties: {
-                  __src__: source,
+                  __src__: filePath,
                 },
                 children: [
                   u("element", {
@@ -65,6 +65,8 @@ export default makeSource({
                 ],
               })
             );
+
+            return;
           }
 
           if (node.name === "ComponentShowcase" && node.attributes) {
@@ -78,21 +80,13 @@ export default makeSource({
             const component = componentConfig.examples[name];
             const filePath = path.join(process.cwd(), component.filePath);
             const source = fs.readFileSync(filePath, "utf8");
-            // const cleanedJSX = source
-            //   .replace(/export default function \w+\(\) \{\n?/g, "") // removes function wrapper
-            //   .replace(/return\s*\(\s*/g, "") // removes return statement
-            //   .replace(/\n\s*\);?\s*\}\s*$/g, "") // Removes closing parenthesis, semicolon, and closing brace at the end of the function
-            //   .replace(/\n\s*\n/g, "\n") // removes extra new lines
-            //   .trim()
-            //   .split("\n")
-            //   .map((line) => line.replace(/^ {4}/gm, ""))
-            //   .join("\n");
 
             node.children?.push(
               u("element", {
                 tagName: "pre",
                 properties: {
                   __src__: component.filePath,
+                  __rawString__: source,
                 },
                 children: [
                   u("element", {
@@ -110,6 +104,8 @@ export default makeSource({
                 ],
               })
             );
+
+            return;
           }
         });
         return null;

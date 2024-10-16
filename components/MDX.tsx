@@ -1,9 +1,12 @@
+"use client";
+
 import { H1, H2, H3, H4, H5, H6 } from "@/packages/ui";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import React, { HTMLAttributes } from "react";
 import { ComponentShowcase } from "./ComponentShowcase";
 import { cn } from "@/lib/utils";
 import { ComponentSource } from "./ComponentSource";
+import { CodeBlock } from "./CodeBlock";
 
 const components = {
   h1: H1,
@@ -18,21 +21,7 @@ const components = {
   ),
   h5: H5,
   h6: H6,
-  pre: ({
-    className,
-    children,
-    ...props
-  }: React.HTMLAttributes<HTMLElement>) => (
-    <pre
-      className={cn(
-        "overflow-x-auto rounded bg-[#282A36] mt-3 mb-6 p-4",
-        className
-      )}
-      {...props}
-    >
-      {children}
-    </pre>
-  ),
+  pre: CodeBlock,
   code: ({
     className,
     children,

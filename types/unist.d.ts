@@ -1,14 +1,14 @@
-import { Node } from "unist-builder"
+import { Node } from "unist-builder";
 
 export interface UnistNode extends Node {
-  type: string
-  name?: string
-  tagName?: string
-  value?: string
+  type: string;
+  name?: string;
+  tagName?: string;
+  value?: string;
   attributes?: {
-    name: string
-    value: unknown
-    type?: string
-  }[]
-  children?: UnistNode[]
+    name: string;
+    value: unknown;
+    type?: string;
+  }[];
+  children?: UnistNode[];
 }
