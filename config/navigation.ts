@@ -1,6 +1,7 @@
 import { INavigationConfig } from "@/types";
 
 const componentsRoute = "/docs/components";
+const utilsRoute = "/docs/utils";
 
 export const navConfig: INavigationConfig = {
   topNavItems: [
@@ -25,6 +26,10 @@ export const navConfig: INavigationConfig = {
         { title: "Textarea", href: `${componentsRoute}/textarea` },
         { title: "Typography", href: `${componentsRoute}/typography` },
       ],
+    },
+    {
+      title: "Utilities",
+      children: [{ title: "cn", href: `${utilsRoute}/cn` }],
     },
   ],
 };

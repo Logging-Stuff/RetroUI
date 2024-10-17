@@ -7,18 +7,21 @@ const archivoBlack = Archivo_Black({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-head",
+  display: "swap",
 });
 
 const shareTech = Share_Tech({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-sans",
+  display: "swap",
 });
 
 const shareTechMono = Share_Tech_Mono({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-mono",
+  display: "swap",
 });
 
 export const metadata: Metadata = {

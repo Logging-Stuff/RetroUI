@@ -29,7 +29,7 @@ const components = {
   }: React.HTMLAttributes<HTMLElement>) => (
     <code
       className={cn(
-        "relative rounded bg-[#282A36] py-1 px-2 text-primary-500 text-sm",
+        "relative rounded bg-[#282A36] p-1 text-primary-500 text-sm",
         className
       )}
       {...props}
