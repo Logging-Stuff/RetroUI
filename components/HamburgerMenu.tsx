@@ -7,7 +7,7 @@ import { Button } from "@/packages/ui";
 
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
-
+  
   return (
     <div>
       <Button
@@ -17,7 +17,7 @@ export default function HamburgerMenu() {
       >
         {isOpen ? <X /> : <AlignJustify />}
       </Button>
-      {isOpen && <SideNav />}
+      {isOpen && <div className=" w-44"> <SideNav /> </div> }
     </div>
   );
 }
