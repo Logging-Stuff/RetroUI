@@ -11,6 +11,7 @@ import {
   Input,
   Textarea,
 } from "@/packages/ui";
+import AccordionStyleDefault from "@/preview/components/accordion-style-default";
 import { GithubIcon, MessageCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -96,7 +97,7 @@ export default function Home() {
           </div>
           <div className="space-y-4">
             <H4>Accordion</H4>
-            <Accordion />
+            <AccordionStyleDefault />
           </div>
         </div>
       </section>
