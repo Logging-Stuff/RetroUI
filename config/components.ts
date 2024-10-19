@@ -2,6 +2,10 @@ import { lazy } from "react";
 
 export const componentConfig = {
   core: {
+    accordion: {
+      name: "accordion",
+      filePath: "packages/ui/Accordions/Accordion.tsx",
+    },
     avatar: {
       name: "avatar",
       filePath: "packages/ui/Avatars/Avatar.tsx",

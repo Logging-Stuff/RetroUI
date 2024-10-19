@@ -1,4 +1,7 @@
+"use client";
+
 import {
+  Accordion,
   Avatar,
   Badge,
   Button,
@@ -54,6 +57,15 @@ export default function page() {
             <TabsContent>Content 3</TabsContent>
           </TabsPanels>
         </Tabs>
+      </div>
+
+      <div>
+        <Accordion type="single" collapsible>
+          <Accordion.Item value="item-1">
+            <Accordion.Header>Head...</Accordion.Header>
+            <Accordion.Content>Content...</Accordion.Content>
+          </Accordion.Item>
+        </Accordion>
       </div>
     </div>
   );

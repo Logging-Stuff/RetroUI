@@ -1,37 +1,67 @@
-import React from "react";
+"use client";
 
-export function Accordion() {
-  return (
-    <div className="space-y-4 mx-auto">
-      <details className="border-2 border-black shadow-md hover:shadow-sm transition-all overflow-hidden">
-        <summary className="px-4 py-2 font-head text-black cursor-pointer focus:outline-none">
-          Accordion Item 1
-        </summary>
-        <div className="px-4 py-2 font-body bg-white text-gray-700">
-          This is the content of the first accordion item. It is styled with
-          Tailwind CSS.
-        </div>
-      </details>
+import * as React from "react";
+import * as AccordionPrimitive from "@radix-ui/react-accordion";
+import { ChevronDown } from "lucide-react";
 
-      <details className="border-2 border-black shadow-md hover:shadow-sm transition-all overflow-hidden">
-        <summary className="px-4 py-2 font-head text-black cursor-pointer focus:outline-none">
-          Accordion Item 2
-        </summary>
-        <div className="px-4 py-2 font-body bg-white text-gray-700">
-          This is the content of the second accordion item. It has a similar
-          style to maintain consistency.
-        </div>
-      </details>
+import { cn } from "@/lib/utils";
 
-      <details className="border-2 border-black shadow-md hover:shadow-sm transition-all overflow-hidden">
-        <summary className="px-4 py-2 font-head text-black cursor-pointer focus:outline-none">
-          Accordion Item 3
-        </summary>
-        <div className="px-4 py-2 font-body bg-white text-gray-700">
-          This is the content of the third accordion item. The details element
-          handles the toggle behavior.
-        </div>
-      </details>
-    </div>
-  );
-}
+const Accordion = AccordionPrimitive.Root;
+
+const AccordionItem = React.forwardRef<
+  React.ElementRef<typeof AccordionPrimitive.Item>,
+  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>
+>(({ className, ...props }, ref) => (
+  <AccordionPrimitive.Item
+    ref={ref}
+    className={cn(
+      "border-2 border-black shadow-md hover:shadow-sm data-[state=open]:shadow-sm transition-all overflow-hidden",
+      className
+    )}
+    {...props}
+  />
+));
+AccordionItem.displayName = AccordionPrimitive.Item.displayName;
+
+const AccordionHeader = React.forwardRef<
+  React.ElementRef<typeof AccordionPrimitive.Trigger>,
+  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
+>(({ className, children, ...props }, ref) => (
+  <AccordionPrimitive.Header className="flex">
+    <AccordionPrimitive.Trigger
+      ref={ref}
+      className={cn(
+        "flex flex-1 items-start justify-between px-4 py-2 font-head text-black cursor-pointer focus:outline-none",
+        className
+      )}
+      {...props}
+    >
+      {children}
+      <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
+    </AccordionPrimitive.Trigger>
+  </AccordionPrimitive.Header>
+));
+AccordionHeader.displayName = AccordionPrimitive.Header.displayName;
+
+const AccordionContent = React.forwardRef<
+  React.ElementRef<typeof AccordionPrimitive.Content>,
+  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Content>
+>(({ className, children, ...props }, ref) => (
+  <AccordionPrimitive.Content
+    ref={ref}
+    className="overflow-hidden px-4 py-2 font-body bg-white text-gray-700 transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+    {...props}
+  >
+    <div className={cn("pb-4 pt-0", className)}>{children}</div>
+  </AccordionPrimitive.Content>
+));
+
+AccordionContent.displayName = AccordionPrimitive.Content.displayName;
+
+const AccordionComponent = Object.assign(Accordion, {
+  Item: AccordionItem,
+  Header: AccordionHeader,
+  Content: AccordionContent,
+});
+
+export { AccordionComponent as Accordion };
