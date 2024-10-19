@@ -11,7 +11,13 @@ export default function TopNav() {
     <nav className="fixed top-0 h-16 left-0 right-0 w-full border-b-2 border-black bg-white">
       <div className="container max-w-6xl px-4 lg:px-0 mx-auto">
         <div className="flex justify-between items-center h-16">
+          
           {/* Logo Section */}
+
+          
+          <div className="flex items-center  lg:hidden"> 
+            <HamburgerMenu />
+          </div>
           <div className="flex-shrink-0">
             <a
               href="/"
@@ -48,8 +54,7 @@ export default function TopNav() {
               rel="noopener noreferrer"
             >
               <GithubIcon />
-            </Link>
-            <HamburgerMenu />
+            </Link> 
           </div>
           <div className="hidden lg:flex items-center">
             <Link
