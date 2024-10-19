@@ -20,11 +20,11 @@ export default function HamburgerMenu() {
       </Button>
       
       {isOpen && (
-        <div className="absolute top-0 z-40 w-full h-screen bg-black opacity-50" onClick={() => setIsOpen(false)} />
+        <div className="absolute top-0 z-30 w-full h-screen bg-black opacity-50" onClick={() => setIsOpen(false)} />
       )}
       
       {isOpen && (
-        <div className="absolute top-0 left-0 z-50">
+        <div className="absolute top-0 left-0 z-40">
           <SideNav />
         </div>
       )}
