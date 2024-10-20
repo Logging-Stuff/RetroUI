@@ -11,6 +11,7 @@ import {
   TabsTrigger,
   TabsTriggerList,
 } from "@/packages/ui";
+import { Card } from "@/packages/ui/Cards/Card";
 import React from "react";
 
 export default function page() {
@@ -60,6 +61,21 @@ export default function page() {
       </div>
 
       <div>
+        <Accordion type="single" collapsible>
+          <Accordion.Item value="item-1">
+            <Accordion.Header>Head...</Accordion.Header>
+            <Accordion.Content>Content...</Accordion.Content>
+          </Accordion.Item>
+        </Accordion>
+      </div>
+
+      <div>
+        <Card>
+          <Card.Header>
+            <Card.Title>Card Title</Card.Title>
+            <Card.Description>Card Description</Card.Description>
+          </Card.Header>
+        </Card>
         <Accordion type="single" collapsible>
           <Accordion.Item value="item-1">
             <Accordion.Header>Head...</Accordion.Header>
