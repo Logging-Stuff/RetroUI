@@ -14,6 +14,10 @@ export const componentConfig = {
       name: "button",
       filePath: "packages/ui/Buttons/Button.tsx",
     },
+    card: {
+      name: "card",
+      filePath: "packages/ui/Cards/Card.tsx",
+    },
   },
   examples: {
     "accordion-style-default": {
@@ -81,6 +85,11 @@ export const componentConfig = {
       name: "card-style-default",
       filePath: "preview/components/card-style-default.tsx",
       preview: lazy(() => import("@/preview/components/card-style-default")),
+    },
+    "card-style-commerce": {
+      name: "card-style-commerce",
+      filePath: "preview/components/card-style-commerce.tsx",
+      preview: lazy(() => import("@/preview/components/card-style-commerce")),
     },
     "input-style-default": {
       name: "input-style-default",

@@ -1,5 +1,4 @@
 import {
-  Accordion,
   Avatar,
   Badge,
   BasicCard,

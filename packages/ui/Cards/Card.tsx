@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { HTMLAttributes } from "react";
 import { H3 } from "../Typography";
+import { Content } from "next/font/google";
 
 interface ICardProps extends HTMLAttributes<HTMLDivElement> {
   className?: string;
@@ -35,10 +36,15 @@ const CardDescription = ({ className, ...props }: ICardProps) => (
   <p className={cn("text-muted", className)} {...props} />
 );
 
+const CardContent = ({ className, ...props }: ICardProps) => {
+  return <div className={cn("p-4", className)} {...props} />;
+};
+
 const CardComponent = Object.assign(Card, {
   Header: CardHeader,
   Title: CardTitle,
   Description: CardDescription,
+  Content: CardContent,
 });
 
 export { CardComponent as Card };
