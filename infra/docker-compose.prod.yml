@@ -1,6 +1,6 @@
 services:
   web:
-    image: devarifhossain/retroui:1.04
+    image: devarifhossain/retroui:1.05
     container_name: retroui
     expose:
       - "3000"
