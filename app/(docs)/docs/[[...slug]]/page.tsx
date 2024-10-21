@@ -3,7 +3,7 @@ import { allDocs } from "contentlayer/generated";
 import { notFound } from "next/navigation";
 import { format } from "date-fns";
 import MDX from "@/components/MDX";
-import { H2 } from "@/packages/ui";
+import { Typography } from "@/packages/ui";
 import { Metadata } from "next";
 
 interface IProps {
@@ -46,7 +46,9 @@ export default function page({ params }: IProps) {
   return (
     <div className="space-y-12 py-8">
       <div className="border-b border-black pb-4">
-        <H2>{doc.title}</H2>
+        <Typography variant="h2" component="h2">
+          {doc.title}
+        </Typography>
         <p className="text-lg text-muted">{doc.description}</p>
       </div>
       <div>
