@@ -18,9 +18,9 @@ export const componentConfig = {
       name: "card",
       filePath: "packages/ui/Cards/Card.tsx",
     },
-    typography: {
-      name: "typography",
-      filePath: "packages/ui/Typography/Typography.tsx",
+    text: {
+      name: "text",
+      filePath: "packages/ui/Text/Text.tsx",
     },
   },
   examples: {
@@ -107,15 +107,15 @@ export const componentConfig = {
         () => import("@/preview/components/textarea-style-default")
       ),
     },
-    "typography-examples": {
-      name: "typography-examples",
-      filePath: "preview/components/typography-examples.tsx",
-      preview: lazy(() => import("@/preview/components/typography-examples")),
+    "text-examples": {
+      name: "text-examples",
+      filePath: "preview/components/text-examples.tsx",
+      preview: lazy(() => import("@/preview/components/text-examples")),
     },
-    "typography-headings": {
-      name: "typography-headings",
-      filePath: "preview/components/typography-headings.tsx",
-      preview: lazy(() => import("@/preview/components/typography-headings")),
+    "text-headings": {
+      name: "text-headings",
+      filePath: "preview/components/text-headings.tsx",
+      preview: lazy(() => import("@/preview/components/text-headings")),
     },
     "typography-p": {
       name: "typography-p",

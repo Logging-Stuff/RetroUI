@@ -3,7 +3,7 @@ import {
   Badge,
   BasicCard,
   Button,
-  Typography,
+  Text,
   Input,
   Textarea,
 } from "@/packages/ui";
@@ -17,8 +17,12 @@ export default function Home() {
     <main className="space-y-36">
       <section className="container max-w-6xl mx-auto px-4 lg:px-0 mt-36 text-gray-900 flex justify-center items-center">
         <div className="text-center lg:text-left w-full lg:w-2/3">
-          <Typography>Make your projects</Typography>
-          <Typography className="text-outlined">stand out!</Typography>
+          <Text tag="h1" variant="h1">
+            Make your projects
+          </Text>
+          <Text tag="h1" variant="h1" className="text-outlined">
+            stand out!
+          </Text>
 
           <p className="text-lg text-muted mb-8 mt-4">
             Retro styled component library for modern web apps. Comes with 20+
@@ -57,67 +61,67 @@ export default function Home() {
       </section>
 
       <section className="container max-w-6xl mx-auto px-4 lg:px-0">
-        <Typography variant="h2" component="h2" className="mb-16 text-center">
+        <Text variant="h2" tag="h2" className="mb-16 text-center">
           Our components look both old school and modern! ✨
-        </Typography>
+        </Text>
 
         <div className="grid gap-4 grid-cols-2 lg:grid-cols-4 mb-8">
           <div className="space-y-4">
-            <Typography variant="h4" component="h3">
+            <Text variant="h4" tag="h3">
               Button
-            </Typography>
+            </Text>
             <Button>Click Me</Button>
           </div>
           <div className="space-y-4">
-            <Typography variant="h4" component="h3">
+            <Text variant="h4" tag="h3">
               Badge
-            </Typography>
+            </Text>
             <div className="flex flex-wrap space-y-2 lg:space-y-0 space-x-2">
               <Badge>Default Badge</Badge>
               <Badge variant="error">Error Badge</Badge>
             </div>
           </div>
           <div className="space-y-4">
-            <Typography variant="h4" component="h3">
+            <Text variant="h4" tag="h3">
               Avatar
-            </Typography>
+            </Text>
             <Avatar />
           </div>
           <div className="space-y-4">
-            <Typography variant="h4" component="h3">
+            <Text variant="h4" tag="h3">
               Input
-            </Typography>
+            </Text>
             <Input />
           </div>
         </div>
         <div className="grid gap-8 grid-cols-1 lg:grid-cols-3">
           <div className="space-y-4">
-            <Typography variant="h4" component="h3">
+            <Text variant="h4" tag="h3">
               Textarea
-            </Typography>
+            </Text>
             <Textarea />
           </div>
           <div className="space-y-4">
-            <Typography variant="h4" component="h3">
+            <Text variant="h4" tag="h3">
               Basic Card
-            </Typography>
+            </Text>
             <BasicCard />
           </div>
           <div className="space-y-4">
-            <Typography variant="h4" component="h3">
+            <Text variant="h4" tag="h3">
               Accordion
-            </Typography>
+            </Text>
             <AccordionStyleDefault />
           </div>
         </div>
       </section>
 
       <section className="container max-w-6xl mx-auto px-4 lg:px-0">
-        <Typography variant="h2" component="h2" className="mb-16 text-center">
+        <Text variant="h2" tag="h2" className="mb-16 text-center">
           And NO! We didn&apos;t just copy Gumroad!
           <br />
           Inspired, if you will... 💅
-        </Typography>
+        </Text>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 items-center">
           <Image
@@ -126,21 +130,17 @@ export default function Home() {
             width={300}
             height={500}
           />
-          <Typography
-            variant="h3"
-            component="h3"
-            className="lg:hidden mt-2 mb-12"
-          >
+          <Text variant="h3" tag="h3" className="lg:hidden mt-2 mb-12">
             👆 RetroUI Card
-          </Typography>
+          </Text>
 
           <div className="hidden lg:block space-y-4">
-            <Typography variant="h2" component="h2" className="text-left">
+            <Text variant="h2" tag="h2" className="text-left">
               👈 RetroUI Card
-            </Typography>
-            <Typography variant="h2" component="h2" className="text-right">
+            </Text>
+            <Text variant="h2" tag="h2" className="text-right">
               Gumroad&apos;s Card 👉
-            </Typography>
+            </Text>
           </div>
           <Image
             src="/images/gumroad_product_card.png"
@@ -149,16 +149,16 @@ export default function Home() {
             width={300}
             height={600}
           />
-          <Typography component="h3" variant="h3" className="lg:hidden mt-2">
+          <Text tag="h3" variant="h3" className="lg:hidden mt-2">
             👆 Gumroad&apos;s Card
-          </Typography>
+          </Text>
         </div>
       </section>
 
       <section className="container max-w-6xl mx-auto border-2 bg-primary-400 border-black py-16 px-4 lg:p-16">
-        <Typography component="h2" variant="h2" className="mb-8 text-center">
+        <Text tag="h2" variant="h2" className="mb-8 text-center">
           And did I mention it&apos;s Free and Open Source?
-        </Typography>
+        </Text>
         <div className="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
           <Link
             href="https://github.com/Logging-Stuff/retroui"

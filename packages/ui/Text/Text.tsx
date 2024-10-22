@@ -2,7 +2,7 @@ import type { ElementType, HTMLAttributes } from "react";
 import { type VariantProps, cva } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
-const typographyVariants = cva("font-head", {
+const textVariants = cva("font-head", {
   variants: {
     variant: {
       p: "font-sans text-base",
@@ -19,22 +19,20 @@ const typographyVariants = cva("font-head", {
   },
 });
 
-type ComponentsMap = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p";
-interface TypographyProps<T extends ComponentsMap = "p">
+type TagsMap = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p";
+
+interface TextProps<T extends TagsMap = "p">
   extends Omit<HTMLAttributes<HTMLElement>, "className">,
-    VariantProps<typeof typographyVariants> {
+    VariantProps<typeof textVariants> {
   className?: string;
-  component?: T;
+  tag?: T;
 }
 
-export const Typography = (props: TypographyProps) => {
-  const { className, component = "p", variant, ...otherProps } = props;
-  const Tag: ElementType = component;
+export const Text = <T extends TagsMap>(props: TextProps<T>) => {
+  const { className, tag = "p" as T, variant, ...otherProps } = props;
+  const Tag: ElementType = tag;
 
   return (
-    <Tag
-      className={cn(typographyVariants({ variant }), className)}
-      {...otherProps}
-    />
+    <Tag className={cn(textVariants({ variant }), className)} {...otherProps} />
   );
 };

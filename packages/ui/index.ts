@@ -1,6 +1,6 @@
 export * from "./Buttons";
 export * from "./Form";
-export * from "./Typography";
+export * from "./Text";
 export * from "./Accordions";
 export * from "./Cards";
 export * from "./Avatars";
