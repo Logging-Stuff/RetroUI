@@ -50,6 +50,13 @@ export const componentConfig = {
       filePath: "preview/components/alert-style-with-icon.tsx",
       preview: lazy(() => import("@/preview/components/alert-style-with-icon")),
     },
+    "alert-style-all-status": {
+      name: "alert-style-all-status",
+      filePath: "preview/components/alert-style-all-status.tsx",
+      preview: lazy(
+        () => import("@/preview/components/alert-style-all-status")
+      ),
+    },
     "avatar-style-circle": {
       name: "avatar-style-circle",
       filePath: "preview/components/avatar-style-circle.tsx",

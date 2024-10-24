@@ -12,6 +12,12 @@ const alertVariants = cva("relative w-full border-2 border-black p-4", {
       destructive:
         "border-destructive/50 text-destructive dark:border-destructive [&>svg]:text-destructive",
     },
+    status: {
+      error: "bg-red-300 text-red-800 border-red-800",
+      success: "bg-green-300 text-green-800 border-green-800",
+      warning: "bg-yellow-300 text-yellow-800 border-yellow-800",
+      info: "bg-blue-300 text-blue-800 border-blue-800",
+    },
   },
   defaultVariants: {
     variant: "default",
@@ -22,10 +28,10 @@ interface IAlertProps
   extends HtmlHTMLAttributes<HTMLDivElement>,
     VariantProps<typeof alertVariants> {}
 
-const Alert = ({ className, variant, ...props }: IAlertProps) => (
+const Alert = ({ className, variant, status, ...props }: IAlertProps) => (
   <div
     role="alert"
-    className={cn(alertVariants({ variant }), className)}
+    className={cn(alertVariants({ variant, status }), className)}
     {...props}
   />
 );
@@ -33,7 +39,7 @@ Alert.displayName = "Alert";
 
 interface IAlertTitleProps extends HtmlHTMLAttributes<HTMLHeadingElement> {}
 const AlertTitle = ({ className, ...props }: IAlertTitleProps) => (
-  <Text as="h5" className={cn("mb-1", className)} {...props} />
+  <Text as="h5" className={cn(className)} {...props} />
 );
 AlertTitle.displayName = "AlertTitle";
 
