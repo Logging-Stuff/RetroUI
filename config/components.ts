@@ -107,11 +107,6 @@ export const componentConfig = {
         () => import("@/preview/components/textarea-style-default")
       ),
     },
-    "text-examples": {
-      name: "text-examples",
-      filePath: "preview/components/text-examples.tsx",
-      preview: lazy(() => import("@/preview/components/text-examples")),
-    },
     "text-headings": {
       name: "text-headings",
       filePath: "preview/components/text-headings.tsx",

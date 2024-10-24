@@ -150,9 +150,7 @@ export function JoinNewsletter() {
       return (
         <div className="w-full max-w-6xl mx-auto py-16 px-4 border-2 border-black">
           <div className="flex flex-col justify-center items-center text-center">
-            <Text variant="h2" tag="h2">
-              Join Our Newsletter
-            </Text>
+            <Text as="h2">Join Our Newsletter</Text>
             <p className="text-lg text-muted mb-8">
               Get notified about latest updates and new launches.
             </p>

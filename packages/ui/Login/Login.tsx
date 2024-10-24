@@ -8,9 +8,7 @@ export function Login() {
   return (
     <div className="max-w-80 p-4  border-2 border-black shadow-md space-y-3">
       <div className="text-center">
-        <Text variant="h2" tag="h2">
-          Login
-        </Text>
+        <Text as="h2">Login</Text>
       </div>
       <form className="flex flex-col gap-5 ">
         <div className="flex flex-col items-center justify-center">

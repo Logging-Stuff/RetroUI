@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 const textVariants = cva("font-head", {
   variants: {
-    variant: {
+    as: {
       p: "font-sans text-base",
       h1: "text-5xl lg:text-6xl font-bold",
       h2: "text-3xl lg:text-4xl font-semibold",
@@ -15,24 +15,21 @@ const textVariants = cva("font-head", {
     },
   },
   defaultVariants: {
-    variant: "p",
+    as: "p",
   },
 });
 
-type TagsMap = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p";
-
-interface TextProps<T extends TagsMap = "p">
+interface TextProps
   extends Omit<HTMLAttributes<HTMLElement>, "className">,
     VariantProps<typeof textVariants> {
   className?: string;
-  tag?: T;
 }
 
-export const Text = <T extends TagsMap>(props: TextProps<T>) => {
-  const { className, tag = "p" as T, variant, ...otherProps } = props;
-  const Tag: ElementType = tag;
+export const Text = (props: TextProps) => {
+  const { className, as, ...otherProps } = props;
+  const Tag: ElementType = as || "p";
 
   return (
-    <Tag className={cn(textVariants({ variant }), className)} {...otherProps} />
+    <Tag className={cn(textVariants({ as }), className)} {...otherProps} />
   );
 };

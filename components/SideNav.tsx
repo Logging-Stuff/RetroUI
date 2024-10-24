@@ -10,9 +10,7 @@ export default function SideNav() {
       <nav className="flex flex-col items-start pr-6 space-y-4">
         {navConfig.sideNavItems.map((item) => (
           <div key={item.title}>
-            <Text variant="h6" tag="h6">
-              {item.title}
-            </Text>
+            <Text as="h6">{item.title}</Text>
             <div className="flex flex-col space-y-2">
               {item.children.map((child) => (
                 <Link key={child.title} href={child.href}>
