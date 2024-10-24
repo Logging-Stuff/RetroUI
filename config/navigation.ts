@@ -17,6 +17,7 @@ export const navConfig: INavigationConfig = {
       title: "Components",
       children: [
         { title: "Accordion", href: `${componentsRoute}/accordion` },
+        { title: "Alert", href: `${componentsRoute}/alert` },
         { title: "Avatar", href: `${componentsRoute}/avatar` },
         { title: "Badge", href: `${componentsRoute}/badge` },
         { title: "Button", href: `${componentsRoute}/button` },

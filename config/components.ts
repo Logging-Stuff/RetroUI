@@ -6,6 +6,10 @@ export const componentConfig = {
       name: "accordion",
       filePath: "packages/ui/Accordions/Accordion.tsx",
     },
+    alert: {
+      name: "alert",
+      filePath: "packages/ui/Alerts/Alert.tsx",
+    },
     avatar: {
       name: "avatar",
       filePath: "packages/ui/Avatars/Avatar.tsx",
@@ -30,6 +34,11 @@ export const componentConfig = {
       preview: lazy(
         () => import("@/preview/components/accordion-style-default")
       ),
+    },
+    "alert-style-default": {
+      name: "alert-style-default",
+      filePath: "preview/components/alert-style-default.tsx",
+      preview: lazy(() => import("@/preview/components/alert-style-default")),
     },
     "avatar-style-circle": {
       name: "avatar-style-circle",
