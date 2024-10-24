@@ -88,13 +88,13 @@ export default function page() {
           </Alert.Description>
         </Alert>
 
-        <Alert variant="secondary">
+        <Alert variant="solid">
           <Alert.Title>Heads up!</Alert.Title>
           <Alert.Description>
             You can add components to your app using the cli.
           </Alert.Description>
         </Alert>
-        <Alert variant="secondary" className="flex items-center">
+        <Alert variant="solid" className="flex items-center">
           <CheckCircle className="h-4 w-4 mr-4" />
           <div>
             <Alert.Title>Heads up!</Alert.Title>
