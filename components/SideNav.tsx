@@ -1,5 +1,5 @@
 import { navConfig } from "@/config/navigation";
-import { H6 } from "@/packages/ui";
+import { Text } from "@/packages/ui";
 import Link from "next/link";
 
 export default function SideNav() {
@@ -10,7 +10,7 @@ export default function SideNav() {
       <nav className="flex flex-col items-start pr-6 space-y-4">
         {navConfig.sideNavItems.map((item) => (
           <div key={item.title}>
-            <H6>{item.title}</H6>
+            <Text as="h6">{item.title}</Text>
             <div className="flex flex-col space-y-2">
               {item.children.map((child) => (
                 <Link key={child.title} href={child.href}>

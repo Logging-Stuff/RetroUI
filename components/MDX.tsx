@@ -1,6 +1,6 @@
 "use client";
 
-import { H1, H2, H3, H4, H5, H6 } from "@/packages/ui";
+import { Text } from "@/packages/ui";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import React, { HTMLAttributes } from "react";
 import { ComponentShowcase } from "./ComponentShowcase";
@@ -9,18 +9,20 @@ import { ComponentSource } from "./ComponentSource";
 import { CodeBlock } from "./CodeBlock";
 
 const components = {
-  h1: H1,
+  h1: (props: HTMLAttributes<HTMLHeadingElement>) => (
+    <Text as="h1" {...props} />
+  ),
   h2: (props: HTMLAttributes<HTMLHeadingElement>) => (
-    <H2 className="border-b lg:text-3xl pb-1 mb-6" {...props} />
+    <Text as="h2" className="border-b lg:text-3xl pb-1 mb-6" {...props} />
   ),
   h3: (props: HTMLAttributes<HTMLHeadingElement>) => (
-    <H3 className="mb-4" {...props} />
+    <Text as="h3" className="mb-4" {...props} />
   ),
   h4: (props: HTMLAttributes<HTMLHeadingElement>) => (
-    <H4 className="mb-2" {...props} />
+    <Text as="h4" className="mb-2" {...props} />
   ),
-  h5: H5,
-  h6: H6,
+  h5: (props: HTMLAttributes<HTMLHeadElement>) => <Text as="h5" {...props} />,
+  h6: (props: HTMLAttributes<HTMLHeadElement>) => <Text as="h6" {...props} />,
   pre: CodeBlock,
   code: ({
     className,

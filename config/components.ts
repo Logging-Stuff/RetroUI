@@ -18,6 +18,10 @@ export const componentConfig = {
       name: "card",
       filePath: "packages/ui/Cards/Card.tsx",
     },
+    text: {
+      name: "text",
+      filePath: "packages/ui/Text/Text.tsx",
+    },
   },
   examples: {
     "accordion-style-default": {
@@ -103,10 +107,10 @@ export const componentConfig = {
         () => import("@/preview/components/textarea-style-default")
       ),
     },
-    "typography-headings": {
-      name: "typography-headings",
-      filePath: "preview/components/typography-headings.tsx",
-      preview: lazy(() => import("@/preview/components/typography-headings")),
+    "text-headings": {
+      name: "text-headings",
+      filePath: "preview/components/text-headings.tsx",
+      preview: lazy(() => import("@/preview/components/text-headings")),
     },
     "typography-p": {
       name: "typography-p",

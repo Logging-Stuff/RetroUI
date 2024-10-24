@@ -1,5 +1,5 @@
 import React from "react";
-import { H2 } from "../Typography";
+import { Text } from "../Text";
 import { Input } from "../Form";
 import { Button } from "../Buttons";
 import Link from "next/link";
@@ -8,7 +8,7 @@ export function Login() {
   return (
     <div className="max-w-80 p-4  border-2 border-black shadow-md space-y-3">
       <div className="text-center">
-        <H2>Login</H2>
+        <Text as="h2">Login</Text>
       </div>
       <form className="flex flex-col gap-5 ">
         <div className="flex flex-col items-center justify-center">

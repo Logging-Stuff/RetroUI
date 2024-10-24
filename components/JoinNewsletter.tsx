@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { Button, H2, Input } from "@/packages/ui";
+import { Button, Text, Input } from "@/packages/ui";
 import { useState } from "react";
 
 const INIT = "INIT";
@@ -150,7 +150,7 @@ export function JoinNewsletter() {
       return (
         <div className="w-full max-w-6xl mx-auto py-16 px-4 border-2 border-black">
           <div className="flex flex-col justify-center items-center text-center">
-            <H2>Join Our Newsletter</H2>
+            <Text as="h2">Join Our Newsletter</Text>
             <p className="text-lg text-muted mb-8">
               Get notified about latest updates and new launches.
             </p>

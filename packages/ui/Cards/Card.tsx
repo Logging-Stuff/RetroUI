@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { HTMLAttributes } from "react";
-import { H3 } from "../Typography";
+import { Text } from "../Text";
 import { Content } from "next/font/google";
 
 interface ICardProps extends HTMLAttributes<HTMLDivElement> {
@@ -29,7 +29,7 @@ const CardHeader = ({ className, ...props }: ICardProps) => {
 };
 
 const CardTitle = ({ className, ...props }: ICardProps) => {
-  return <H3 className={cn("mb-2", className)} {...props} />;
+  return <Text as="h3" className={cn("mb-2", className)} {...props} />;
 };
 
 const CardDescription = ({ className, ...props }: ICardProps) => (
