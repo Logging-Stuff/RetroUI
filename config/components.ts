@@ -6,6 +6,10 @@ export const componentConfig = {
       name: "accordion",
       filePath: "packages/ui/Accordions/Accordion.tsx",
     },
+    alert: {
+      name: "alert",
+      filePath: "packages/ui/Alerts/Alert.tsx",
+    },
     avatar: {
       name: "avatar",
       filePath: "packages/ui/Avatars/Avatar.tsx",
@@ -29,6 +33,28 @@ export const componentConfig = {
       filePath: "preview/components/accordion-style-default.tsx",
       preview: lazy(
         () => import("@/preview/components/accordion-style-default")
+      ),
+    },
+    "alert-style-default": {
+      name: "alert-style-default",
+      filePath: "preview/components/alert-style-default.tsx",
+      preview: lazy(() => import("@/preview/components/alert-style-default")),
+    },
+    "alert-style-solid": {
+      name: "alert-style-solid",
+      filePath: "preview/components/alert-style-solid.tsx",
+      preview: lazy(() => import("@/preview/components/alert-style-solid")),
+    },
+    "alert-style-with-icon": {
+      name: "alert-style-with-icon",
+      filePath: "preview/components/alert-style-with-icon.tsx",
+      preview: lazy(() => import("@/preview/components/alert-style-with-icon")),
+    },
+    "alert-style-all-status": {
+      name: "alert-style-all-status",
+      filePath: "preview/components/alert-style-all-status.tsx",
+      preview: lazy(
+        () => import("@/preview/components/alert-style-all-status")
       ),
     },
     "avatar-style-circle": {

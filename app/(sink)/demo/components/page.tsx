@@ -2,6 +2,7 @@
 
 import {
   Accordion,
+  Alert,
   Avatar,
   Badge,
   Button,
@@ -12,6 +13,7 @@ import {
   TabsTriggerList,
 } from "@/packages/ui";
 import { Card } from "@/packages/ui/Cards/Card";
+import { Check, CheckCircle, CheckCircle2 } from "lucide-react";
 import React from "react";
 
 export default function page() {
@@ -76,12 +78,28 @@ export default function page() {
             <Card.Description>Card Description</Card.Description>
           </Card.Header>
         </Card>
-        <Accordion type="single" collapsible>
-          <Accordion.Item value="item-1">
-            <Accordion.Header>Head...</Accordion.Header>
-            <Accordion.Content>Content...</Accordion.Content>
-          </Accordion.Item>
-        </Accordion>
+      </div>
+
+      <div className="space-y-6">
+        <Alert>
+          <Alert.Title>Heads up!</Alert.Title>
+          <Alert.Description>
+            You can add components to your app using the cli.
+          </Alert.Description>
+        </Alert>
+
+        <Alert variant="solid">
+          <Alert.Title>Heads up!</Alert.Title>
+          <Alert.Description>
+            You can add components to your app using the cli.
+          </Alert.Description>
+        </Alert>
+        <Alert variant="solid" className="flex items-center">
+          <CheckCircle className="h-4 w-4 mr-4" />
+          <div>
+            <Alert.Title>Heads up!</Alert.Title>
+          </div>
+        </Alert>
       </div>
     </div>
   );

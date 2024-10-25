@@ -7,22 +7,29 @@ import { Button } from "@/packages/ui";
 
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   return (
     <div>
       <Button
         size="sm"
         variant="outline"
+        className="p-2"
         onClick={() => setIsOpen((prev) => !prev)}
-        className="z-50 absolute top-3 left-2 mb-3"
       >
-        {isOpen ? <X /> : <AlignJustify />}
+        {isOpen ? (
+          <X className="h-4 w-4" />
+        ) : (
+          <AlignJustify className="h-4 w-4" />
+        )}
       </Button>
-      
+
       {isOpen && (
-        <div className="absolute top-0 z-30 w-full h-screen bg-black opacity-50" onClick={() => setIsOpen(false)} />
+        <div
+          className="absolute top-0 left-0 right-0 w-full h-screen bg-black opacity-50"
+          onClick={() => setIsOpen(false)}
+        />
       )}
-      
+
       {isOpen && (
         <div className="absolute top-0 left-0 z-40">
           <SideNav />
