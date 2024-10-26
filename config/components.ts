@@ -134,5 +134,12 @@ export const componentConfig = {
         () => import("@/preview/components/dialog-style-with-footer")
       ),
     },
+    "dialog-style-width-variant": {
+      name: "new-component",
+      filePath: "preview/components/dialog-style-width-variant.tsx",
+      preview: lazy(
+        () => import("@/preview/components/dialog-style-width-variant")
+      ),
+    },
   },
 };
