@@ -44,12 +44,13 @@ export function DialogHeader({
   children,
   className,
   position,
+  variant,
   asChild,
   ...props
 }: IDialogHeaderProps) {
   return (
     <div
-      className={cn(dialogHeaderVariants({ position }), className)}
+      className={cn(dialogHeaderVariants({ position, variant }), className)}
       {...props}
     >
       {asChild ? (
