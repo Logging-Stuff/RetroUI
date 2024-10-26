@@ -13,13 +13,37 @@ lastUpdated: 25 Oct, 2024
 #### 1. Install dependencies:
 
 ```sh
-npm install @radix-ui/react-dialog @radix-ui/react-visually-hidden
+npm install @radix-ui/react-dialog @radix-ui/react-visually-hidden tailwindcss-animate
+```
+
+#### 2. Configure your `tailwind.config.ts` add:
+
+```sh
+{
+  content: [...],
+  theme: [...],
+
+  // add plugin
+  plugins: [require("tailwindcss-animate")],
+}
 ```
 
 <br />
 
 ## Example
 
-#### Simple confirm dialog message
+#### Confirm dialog message
 
 <ComponentShowcase name="dialog-style-default" />
+
+<br />
+
+#### Confirm dialog with footer
+
+<ComponentShowcase name="dialog-style-with-footer" />
+
+<br />
+
+#### Dialog `size` variants
+
+<ComponentShowcase name="dialog-style-width-variants" />
