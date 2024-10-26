@@ -122,5 +122,10 @@ export const componentConfig = {
       filePath: "preview/components/tab-style-default.tsx",
       preview: lazy(() => import("@/preview/components/tab-style-default")),
     },
+    "dialog-style-default": {
+      name: "new-component",
+      filePath: "preview/components/dialog-style-default.tsx",
+      preview: lazy(() => import("@/preview/components/dialog-style-default")),
+    },
   },
 };
