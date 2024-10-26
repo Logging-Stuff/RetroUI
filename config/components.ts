@@ -123,19 +123,19 @@ export const componentConfig = {
       preview: lazy(() => import("@/preview/components/tab-style-default")),
     },
     "dialog-style-default": {
-      name: "new-component",
+      name: "dialog-style-default",
       filePath: "preview/components/dialog-style-default.tsx",
       preview: lazy(() => import("@/preview/components/dialog-style-default")),
     },
     "dialog-style-with-footer": {
-      name: "new-component",
+      name: "dialog-style-with-footer",
       filePath: "preview/components/dialog-style-with-footer.tsx",
       preview: lazy(
         () => import("@/preview/components/dialog-style-with-footer")
       ),
     },
     "dialog-style-width-variant": {
-      name: "new-component",
+      name: "dialog-style-width-variant",
       filePath: "preview/components/dialog-style-width-variant.tsx",
       preview: lazy(
         () => import("@/preview/components/dialog-style-width-variant")
