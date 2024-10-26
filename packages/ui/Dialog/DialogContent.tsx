@@ -8,7 +8,7 @@ import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 const dialogVariants = cva(
   `fixed z-50 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
   flex flex-col border-2 border-black shadow-md gap-4 overflow-y-auto bg-white
-  w-full h-fit max-h-[80vh] max-w-[90%] duration-300
+  w-full h-fit max-h-[80vh] max-w-[97%] duration-300
   data-[state=open]:animate-in 
   data-[state=open]:slide-in-from-left-1/2 
   data-[state=open]:slide-in-from-top-[48%]
@@ -30,7 +30,7 @@ const dialogVariants = cva(
         "2xl": "lg:max-w-[70%]",
         "3xl": "lg:max-w-[80%]",
         "4xl": "lg:max-w-[90%]",
-        screen: "lg:max-w-[100%]",
+        screen: "max-w-[100%]",
       },
     },
     defaultVariants: {
