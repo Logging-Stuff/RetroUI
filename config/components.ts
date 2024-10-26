@@ -141,5 +141,12 @@ export const componentConfig = {
         () => import("@/preview/components/dialog-style-width-variant")
       ),
     },
+    "dialog-style-with-form": {
+      name: "dialog-style-with-form",
+      filePath: "preview/components/dialog-style-with-form.tsx",
+      preview: lazy(
+        () => import("@/preview/components/dialog-style-with-form")
+      ),
+    },
   },
 };
