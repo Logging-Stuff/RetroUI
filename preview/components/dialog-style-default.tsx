@@ -9,7 +9,7 @@ import {
 
 export default function DialogStyleDefault() {
   return (
-    <Dialog defaultOpen>
+    <Dialog>
       <DialogTrigger asChild>
         <Button>Open Dialog</Button>
       </DialogTrigger>
