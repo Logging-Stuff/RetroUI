@@ -127,5 +127,12 @@ export const componentConfig = {
       filePath: "preview/components/dialog-style-default.tsx",
       preview: lazy(() => import("@/preview/components/dialog-style-default")),
     },
+    "dialog-style-with-footer": {
+      name: "new-component",
+      filePath: "preview/components/dialog-style-with-footer.tsx",
+      preview: lazy(
+        () => import("@/preview/components/dialog-style-with-footer")
+      ),
+    },
   },
 };
