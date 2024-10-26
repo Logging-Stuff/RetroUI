@@ -6,3 +6,4 @@ export * from "./Cards";
 export * from "./Avatars";
 export * from "./Badges";
 export * from "./Tabs";
+export * from "./Dialog";
