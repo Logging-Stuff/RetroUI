@@ -9,8 +9,6 @@ const alertVariants = cva("relative w-full border-2 border-black p-4", {
     variant: {
       default: "bg-primary-300 text-foreground",
       solid: "bg-black text-white",
-      destructive:
-        "border-destructive/50 text-destructive dark:border-destructive [&>svg]:text-destructive",
     },
     status: {
       error: "bg-red-300 text-red-800 border-red-800",
