@@ -1,24 +1,15 @@
-import {
-  Button,
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTrigger,
-  Input,
-  Text,
-} from "@/packages/ui";
-import { DialogFooter } from "@/packages/ui/Dialog/DialogFooter";
+import { Button, Dialog, Input, Text } from "@/packages/ui";
 
 export default function DialogStyleWithForm() {
   return (
     <Dialog>
-      <DialogTrigger asChild>
+      <Dialog.Trigger asChild>
         <Button>Open Form</Button>
-      </DialogTrigger>
-      <DialogContent size={"md"}>
-        <DialogHeader position={"fixed"}>
+      </Dialog.Trigger>
+      <Dialog.Content size={"md"}>
+        <Dialog.Header position={"fixed"}>
           <Text as="h5">Contact Us</Text>
-        </DialogHeader>
+        </Dialog.Header>
         <form className="flex flex-col gap-4">
           <div className="flex flex-col p-4 gap-4">
             <div className="flex-col gap-2">
@@ -34,13 +25,13 @@ export default function DialogStyleWithForm() {
               <Input placeholder="Type your name" required />
             </div>
           </div>
-          <DialogFooter>
-            <DialogTrigger asChild>
+          <Dialog.Footer>
+            <Dialog.Trigger asChild>
               <Button type="submit">Submit</Button>
-            </DialogTrigger>
-          </DialogFooter>
+            </Dialog.Trigger>
+          </Dialog.Footer>
         </form>
-      </DialogContent>
+      </Dialog.Content>
     </Dialog>
   );
 }
