@@ -22,6 +22,10 @@ export const componentConfig = {
       name: "text",
       filePath: "packages/ui/Text/Text.tsx",
     },
+    dialog: {
+      name: "dialog",
+      filePath: "packages/ui/Dialog/Dialog.tsx",
+    },
   },
   examples: {
     "accordion-style-default": {
