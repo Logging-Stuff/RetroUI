@@ -26,6 +26,10 @@ export const componentConfig = {
       name: "text",
       filePath: "packages/ui/Text/Text.tsx",
     },
+    dialog: {
+      name: "dialog",
+      filePath: "packages/ui/Dialog/Dialog.tsx",
+    },
   },
   examples: {
     "accordion-style-default": {
@@ -147,6 +151,32 @@ export const componentConfig = {
       name: "typography-p",
       filePath: "preview/components/tab-style-default.tsx",
       preview: lazy(() => import("@/preview/components/tab-style-default")),
+    },
+    "dialog-style-default": {
+      name: "dialog-style-default",
+      filePath: "preview/components/dialog-style-default.tsx",
+      preview: lazy(() => import("@/preview/components/dialog-style-default")),
+    },
+    "dialog-style-with-footer": {
+      name: "dialog-style-with-footer",
+      filePath: "preview/components/dialog-style-with-footer.tsx",
+      preview: lazy(
+        () => import("@/preview/components/dialog-style-with-footer")
+      ),
+    },
+    "dialog-style-width-variant": {
+      name: "dialog-style-width-variant",
+      filePath: "preview/components/dialog-style-width-variant.tsx",
+      preview: lazy(
+        () => import("@/preview/components/dialog-style-width-variant")
+      ),
+    },
+    "dialog-style-with-form": {
+      name: "dialog-style-with-form",
+      filePath: "preview/components/dialog-style-with-form.tsx",
+      preview: lazy(
+        () => import("@/preview/components/dialog-style-with-form")
+      ),
     },
   },
 };

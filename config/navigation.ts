@@ -26,6 +26,7 @@ export const navConfig: INavigationConfig = {
         { title: "Tab", href: `${componentsRoute}/tab` },
         { title: "Textarea", href: `${componentsRoute}/textarea` },
         { title: "Text", href: `${componentsRoute}/text` },
+        { title: "Dialog", href: `${componentsRoute}/dialog` },
       ],
     },
     {
