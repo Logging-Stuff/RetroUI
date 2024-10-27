@@ -1,11 +1,4 @@
-import {
-  Button,
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTrigger,
-  Text,
-} from "@/packages/ui";
+import { Button, Dialog, Text } from "@/packages/ui";
 import { useState } from "react";
 
 type Variants =
@@ -36,13 +29,13 @@ export default function DialogStyleWidthVariant() {
 
   return (
     <Dialog>
-      <DialogTrigger asChild>
+      <Dialog.Trigger asChild>
         <Button>Open Dialog</Button>
-      </DialogTrigger>
-      <DialogContent size={variant}>
-        <DialogHeader>
+      </Dialog.Trigger>
+      <Dialog.Content size={variant}>
+        <Dialog.Header>
           <Text as="h5">Dialog with variants</Text>
-        </DialogHeader>
+        </Dialog.Header>
         <section className="flex flex-col gap-4 p-4">
           <section className="text-xl">
             <p>Choose your width size</p>
@@ -60,7 +53,7 @@ export default function DialogStyleWidthVariant() {
             </section>
           </section>
         </section>
-      </DialogContent>
+      </Dialog.Content>
     </Dialog>
   );
 }
