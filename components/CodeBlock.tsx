@@ -37,6 +37,8 @@ export function CodeBlock({ className, children, ...props }: ICodeBlock) {
       {...props}
     >
       <Button
+        id="cody-copy-button"
+        data-umami-event="copy-code-button"
         disabled={hasCopied}
         className="absolute top-4 right-4 z-10"
         size="sm"
