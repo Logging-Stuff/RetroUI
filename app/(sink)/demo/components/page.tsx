@@ -13,6 +13,7 @@ import {
   TabsTriggerList,
 } from "@/packages/ui";
 import { Card } from "@/packages/ui/Cards/Card";
+import BadgeStyleVariants from "@/preview/components/badge-style-variants";
 import { Check, CheckCircle, CheckCircle2 } from "lucide-react";
 import React from "react";
 
@@ -25,10 +26,7 @@ export default function page() {
         <Button variant="link">Link Button</Button>
       </div>
       <div className="space-x-4">
-        <Badge>Badge</Badge>
-        <Badge variant="success">Badge</Badge>
-        <Badge variant="error">Badge</Badge>
-        <Badge variant="filled">Badge</Badge>
+        <BadgeStyleVariants />
       </div>
 
       <div className="flex items-center space-x-4">

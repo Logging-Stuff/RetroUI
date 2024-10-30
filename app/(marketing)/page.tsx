@@ -8,6 +8,7 @@ import {
   Textarea,
 } from "@/packages/ui";
 import AccordionStyleDefault from "@/preview/components/accordion-style-default";
+import BadgeStyleVariants from "@/preview/components/badge-style-variants";
 import { GithubIcon, MessageCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -71,8 +72,7 @@ export default function Home() {
           <div className="space-y-4">
             <Text as="h4">Badge</Text>
             <div className="flex flex-wrap space-y-2 lg:space-y-0 space-x-2">
-              <Badge>Default Badge</Badge>
-              <Badge variant="error">Error Badge</Badge>
+              <BadgeStyleVariants />
             </div>
           </div>
           <div className="space-y-4">
