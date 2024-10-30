@@ -14,6 +14,10 @@ export const componentConfig = {
       name: "avatar",
       filePath: "packages/ui/Avatars/Avatar.tsx",
     },
+    badge: {
+      name: "badge",
+      filePath: "packages/ui/Badges/Badge.tsx",
+    },
     button: {
       name: "button",
       filePath: "packages/ui/Buttons/Button.tsx",
@@ -85,20 +89,20 @@ export const componentConfig = {
       filePath: "preview/components/badge-style-default.tsx",
       preview: lazy(() => import("@/preview/components/badge-style-default")),
     },
-    "badge-style-success": {
-      name: "badge-style-default",
-      filePath: "preview/components/badge-style-success.tsx",
-      preview: lazy(() => import("@/preview/components/badge-style-success")),
+    "badge-style-variants": {
+      name: "badge-style-variants",
+      filePath: "preview/components/badge-style-variants.tsx",
+      preview: lazy(() => import("@/preview/components/badge-style-variants")),
     },
-    "badge-style-error": {
+    "badge-style-rounded": {
       name: "badge-style-default",
-      filePath: "preview/components/badge-style-error.tsx",
-      preview: lazy(() => import("@/preview/components/badge-style-error")),
+      filePath: "preview/components/badge-style-rounded.tsx",
+      preview: lazy(() => import("@/preview/components/badge-style-rounded")),
     },
-    "badge-style-filled": {
-      name: "badge-style-default",
-      filePath: "preview/components/badge-style-filled.tsx",
-      preview: lazy(() => import("@/preview/components/badge-style-filled")),
+    "badge-style-sizes": {
+      name: "badge-style-sizes",
+      filePath: "preview/components/badge-style-sizes.tsx",
+      preview: lazy(() => import("@/preview/components/badge-style-sizes")),
     },
     "button-style-default": {
       name: "button-style-default",
