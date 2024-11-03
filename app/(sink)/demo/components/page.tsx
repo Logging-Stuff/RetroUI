@@ -14,7 +14,7 @@ import {
 } from "@/packages/ui";
 import { Card } from "@/packages/ui/Cards/Card";
 import BadgeStyleVariants from "@/preview/components/badge-style-variants";
-import { Check, CheckCircle, CheckCircle2 } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import React from "react";
 
 export default function page() {
