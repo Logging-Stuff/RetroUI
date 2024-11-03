@@ -1,12 +1,26 @@
 import path from "path";
 import fs from "fs";
-import { defineDocumentType, makeSource } from "contentlayer/source-files";
+import {
+  defineDocumentType,
+  defineNestedType,
+  makeSource,
+} from "contentlayer/source-files";
 import { visit } from "unist-util-visit";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
 import { u } from "unist-builder";
 import { UnistNode } from "./types/unist";
 import { componentConfig } from "./config";
+
+const Links = defineNestedType(() => {
+  return {
+    name: "Links",
+    fields: {
+      source: { type: "string", required: false },
+      api_reference: { type: "string", required: false },
+    },
+  };
+});
 
 export const Doc = defineDocumentType(() => ({
   name: "Doc",
@@ -16,6 +30,11 @@ export const Doc = defineDocumentType(() => ({
     title: { type: "string", required: true },
     description: { type: "string", required: true },
     lastUpdated: { type: "date", required: true },
+    links: {
+      type: "nested",
+      of: Links,
+      required: false,
+    },
   },
   computedFields: {
     url: {

@@ -5,6 +5,7 @@ import { format } from "date-fns";
 import MDX from "@/components/MDX";
 import { Text } from "@/packages/ui";
 import { Metadata } from "next";
+import { MoveRightIcon, MoveUpRightIcon } from "lucide-react";
 
 interface IProps {
   params: { slug: string[] };
@@ -45,9 +46,31 @@ export default function page({ params }: IProps) {
 
   return (
     <div className="space-y-12 py-8">
-      <div className="border-b border-black pb-4">
+      <div className="border-b border-black pb-6">
         <Text as="h2">{doc.title}</Text>
         <p className="text-lg text-muted">{doc.description}</p>
+        {doc.links && (
+          <div className="flex space-x-4 text-sm mt-4">
+            {doc.links?.api_reference && (
+              <a
+                className="flex items-center bg-gray-200 px-1.5 py-.5"
+                href={doc.links.api_reference}
+                target="_blank"
+              >
+                API Reference <MoveUpRightIcon className="h-3 w-3 ml-1" />
+              </a>
+            )}
+            {doc.links && doc.links?.source && (
+              <a
+                className="flex items-center bg-gray-200 px-1.5 py-.5"
+                href={doc.links.source}
+                target="_blank"
+              >
+                Source <MoveUpRightIcon className="h-3 w-3 ml-1" />
+              </a>
+            )}
+          </div>
+        )}
       </div>
       <div>
         <MDX code={doc.body.code} />
