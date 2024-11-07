@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { cva, VariantProps } from "class-variance-authority";
 import React, { ButtonHTMLAttributes } from "react";
 
-const buttonVariants = cva("font-head transition-all", {
+const buttonVariants = cva("font-head transition-all outline-none", {
   variants: {
     variant: {
       default:
@@ -39,6 +39,7 @@ export const Button = React.forwardRef<HTMLButtonElement, IButtonProps>(
     forwardedRef
   ) => (
     <button
+      ref={forwardedRef}
       className={cn(buttonVariants({ variant, size }), className)}
       {...props}
     >

@@ -22,11 +22,12 @@ export const navConfig: INavigationConfig = {
         { title: "Badge", href: `${componentsRoute}/badge` },
         { title: "Button", href: `${componentsRoute}/button` },
         { title: "Card", href: `${componentsRoute}/card` },
+        { title: "Dialog", href: `${componentsRoute}/dialog` },
         { title: "Input", href: `${componentsRoute}/input` },
+        { title: "Menu", href: `${componentsRoute}/menu` },
         { title: "Tab", href: `${componentsRoute}/tab` },
         { title: "Textarea", href: `${componentsRoute}/textarea` },
         { title: "Text", href: `${componentsRoute}/text` },
-        { title: "Dialog", href: `${componentsRoute}/dialog` },
       ],
     },
     {

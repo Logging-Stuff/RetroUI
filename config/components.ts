@@ -26,13 +26,18 @@ export const componentConfig = {
       name: "card",
       filePath: "packages/ui/Cards/Card.tsx",
     },
-    text: {
-      name: "text",
-      filePath: "packages/ui/Text/Text.tsx",
-    },
+
     dialog: {
       name: "dialog",
       filePath: "packages/ui/Dialog/Dialog.tsx",
+    },
+    menu: {
+      name: "menu",
+      filePath: "packages/ui/Menu/Menu.tsx",
+    },
+    text: {
+      name: "text",
+      filePath: "packages/ui/Text/Text.tsx",
     },
   },
   examples: {
@@ -133,6 +138,11 @@ export const componentConfig = {
       name: "input-style-default",
       filePath: "preview/components/input-style-default.tsx",
       preview: lazy(() => import("@/preview/components/input-style-default")),
+    },
+    "menu-style-default": {
+      name: "menu-style-default",
+      filePath: "preview/components/menu-style-default.tsx",
+      preview: lazy(() => import("@/preview/components/menu-style-default")),
     },
     "textarea-style-default": {
       name: "textarea-style-default",

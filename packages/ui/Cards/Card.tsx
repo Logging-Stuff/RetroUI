@@ -1,7 +1,6 @@
 import { cn } from "@/lib/utils";
 import { HTMLAttributes } from "react";
 import { Text } from "../Text";
-import { Content } from "next/font/google";
 
 interface ICardProps extends HTMLAttributes<HTMLDivElement> {
   className?: string;

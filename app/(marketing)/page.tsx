@@ -8,6 +8,7 @@ import {
   Textarea,
 } from "@/packages/ui";
 import AccordionStyleDefault from "@/preview/components/accordion-style-default";
+import AvatarStyleCircleSizes from "@/preview/components/avatar-style-circle-sizes";
 import BadgeStyleVariants from "@/preview/components/badge-style-variants";
 import { GithubIcon, MessageCircle } from "lucide-react";
 import Image from "next/image";
@@ -64,10 +65,13 @@ export default function Home() {
           Our components look both old school and modern! ✨
         </Text>
 
-        <div className="grid gap-4 grid-cols-2 lg:grid-cols-4 mb-8">
+        <div className="grid gap-8 grid-cols-1 lg:grid-cols-2 mb-8">
           <div className="space-y-4">
             <Text as="h4">Button</Text>
-            <Button>Click Me</Button>
+            <div className="flex space-x-4">
+              <Button>Click Me</Button>
+              <Button variant="outline">Click Me</Button>
+            </div>
           </div>
           <div className="space-y-4">
             <Text as="h4">Badge</Text>
@@ -77,21 +81,19 @@ export default function Home() {
           </div>
           <div className="space-y-4">
             <Text as="h4">Avatar</Text>
-            <Avatar />
+            <AvatarStyleCircleSizes />
+          </div>
+          <div className="space-y-4">
+            <Text as="h4">Basic Card</Text>
+            <BasicCard />
           </div>
           <div className="space-y-4">
             <Text as="h4">Input</Text>
             <Input />
           </div>
-        </div>
-        <div className="grid gap-8 grid-cols-1 lg:grid-cols-3">
           <div className="space-y-4">
             <Text as="h4">Textarea</Text>
             <Textarea />
-          </div>
-          <div className="space-y-4">
-            <Text as="h4">Basic Card</Text>
-            <BasicCard />
           </div>
           <div className="space-y-4">
             <Text as="h4">Accordion</Text>
