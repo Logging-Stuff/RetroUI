@@ -6,7 +6,7 @@ RetroUI is a retro-styled Tailwind CSS component library for modern web apps.
 
 ### [Why Another UI Library?](https://www.youtube.com/watch?v=7goHwy6k3gU)
 
-### [Documentation](https://ui.ariflogs.com/components)
+### [Documentation](https://retroui.dev/docs)
 
 ### [Contributing Guide](./CONTRIBUTING.md)
 
