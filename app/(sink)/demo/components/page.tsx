@@ -106,11 +106,6 @@ export default function page() {
           <Menu.Trigger asChild>
             <Button>Menu</Button>
           </Menu.Trigger>
-          {/* <Menu.Trigger asChild>
-            <button className="IconButton" aria-label="Customise options">
-              Click Me
-            </button>
-          </Menu.Trigger> */}
           <Menu.Content className="min-w-36">
             <Menu.Item>Menu Item 1</Menu.Item>
             <Menu.Item>Menu Item 2</Menu.Item>

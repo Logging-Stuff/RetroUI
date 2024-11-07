@@ -27,7 +27,7 @@ const Content = ({ className, ...props }: IMenuContent) => (
 
 const MenuItem = (props: any) => (
   <DropdownMenu.Item
-    className="p-2 hover:bg-primary-300 outline-none cursor-pointer "
+    className="p-2 hover:bg-primary-400 outline-none cursor-pointer "
     {...props}
   />
 );
