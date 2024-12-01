@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { GithubIcon } from "lucide-react";
+import { GithubIcon, HeartIcon } from "lucide-react";
 import HamburgerMenu from "./HamburgerMenu";
 import { Button } from "@/packages/ui";
 import { navConfig } from "@/config/navigation";
@@ -47,13 +47,13 @@ export default function TopNav() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <GithubIcon />
+              <HeartIcon />
             </Link>
             <HamburgerMenu />
           </div>
 
           <div className="hidden lg:flex items-center">
-            <Link
+            {/* <Link
               href="https://github.com/Logging-Stuff/retroui"
               target="_blank"
               rel="noopener noreferrer"
@@ -61,6 +61,16 @@ export default function TopNav() {
               <Button className="flex items-center" variant="outline" size="sm">
                 <GithubIcon size="16" className="mr-2" />
                 Star on GitHub
+              </Button>
+            </Link> */}
+            <Link
+              href="https://opencollective.com/retroui"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="flex items-center" size="sm" variant="outline">
+                <HeartIcon size="16" className="mr-2" />
+                Support Us
               </Button>
             </Link>
           </div>

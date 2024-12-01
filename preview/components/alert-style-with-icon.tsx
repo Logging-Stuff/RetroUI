@@ -1,7 +1,7 @@
 import { Alert } from "@/packages/ui";
 import { CheckCircle } from "lucide-react";
 
-export default function AlertStyleDefault() {
+export default function AlertStyleDefaultIcon() {
   return (
     <Alert className="flex">
       <CheckCircle className="h-5 w-5 mr-4 mt-2" />

@@ -7,7 +7,7 @@ const textVariants = cva("font-head", {
     as: {
       p: "font-sans text-base",
       h1: "text-5xl lg:text-6xl font-bold",
-      h2: "text-3xl lg:text-4xl font-semibold",
+      h2: "text-3xl lg:text-5xl font-semibold",
       h3: "text-2xl font-medium",
       h4: "text-xl font-medium",
       h5: "text-lg font-medium",
