@@ -44,7 +44,7 @@ export default async function Home() {
 
   return (
     <main>
-      <div className="bg-[url('/images/banner_void_2.svg')] bg-cover bg-no-repeat bg-center flex flex-col items-center h-[1400px]">
+      <div className="bg-[url('/images/banner_void_2.svg')] bg-cover bg-no-repeat bg-center flex flex-col items-center h-[1900px] lg:h-[1400px]">
         <section className="container max-w-6xl mx-auto px-4 lg:px-0 text-gray-900 flex justify-center items-center lg:gap-28 xl:gap-32 my-28">
           <div className="text-center lg:text-left w-full lg:w-2/3">
             <Text as="h1">Make your projects</Text>
@@ -90,7 +90,7 @@ export default async function Home() {
             />
           </div>
         </section>
-        <section className="container max-w-6xl mx-auto px-4 lg:px-0 my-36">
+        <section className="container max-w-6xl mx-auto px-4 lg:px-0 lg:my-36">
           {/* <Text as="h2" className="mb-16 text-center">
             Old school with modern twist! ✨
           </Text> */}
@@ -153,8 +153,8 @@ export default async function Home() {
         </section>
       </div>
 
-      <section className="container max-w-6xl mx-auto px-4 lg:px-0 flex lg:gap-16 lg:grid-cols-2 my-36">
-        <div className="w-3/5">
+      <section className="container max-w-6xl mx-auto px-4 lg:px-0 flex flex-col lg:flex-row gap-12 lg:gap-16 lg:grid-cols-2 my-36">
+        <div className="w-full lg:w-3/5">
           <Text as="h2">Easily Customize to Your Own Needs! 🛠️</Text>
           <div className="flex flex-col space-y-1 mt-6 mb-8 text-muted">
             <Text className="text-xl">
@@ -171,7 +171,7 @@ export default async function Home() {
             <Button>See Examples</Button>
           </Link>
         </div>
-        <div className="w-2/5">
+        <div className="w-full lg:w-2/5">
           <Image
             src="/images/code_show.svg"
             width={600}
@@ -189,7 +189,7 @@ export default async function Home() {
           RetroUI core is free and open-source, and it is made possible by our
           awesome contributors.
         </Text>
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap justify-center gap-2 lg:gap-4">
           {contributors.map((contributor) => (
             <Link
               key={contributor.username}
@@ -198,7 +198,7 @@ export default async function Home() {
               passHref
               className="flex flex-col items-center"
             >
-              <Avatar className="h-16 w-16">
+              <Avatar className="h-12 w-12 lg:h-16 lg:w-16">
                 <Avatar.Image
                   src={contributor.avatar}
                   alt={contributor.username}
