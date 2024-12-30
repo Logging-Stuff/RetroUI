@@ -29,24 +29,26 @@ export function CodeBlock({ className, children, ...props }: ICodeBlock) {
     }
   };
   return (
-    <pre
-      className={cn(
-        "relative overflow-x-auto rounded bg-[#282A36] mt-3 mb-6 p-4",
-        className
-      )}
-      {...props}
-    >
-      <Button
-        id="cody-copy-button"
-        data-umami-event="copy-code-button"
-        disabled={hasCopied}
-        className="absolute top-4 right-4 z-10"
-        size="sm"
-        onClick={handleClickCopy}
+    <div className="relative">
+      <pre
+        className={cn(
+          "overflow-x-auto rounded bg-[#282A36] mt-3 mb-6 p-4",
+          className
+        )}
+        {...props}
       >
-        {hasCopied ? "Copied" : "Copy"}
-      </Button>
-      <span ref={preRef}>{children}</span>
-    </pre>
+        <Button
+          id="cody-copy-button"
+          data-umami-event="copy-code-button"
+          disabled={hasCopied}
+          className="absolute top-4 right-4 z-10"
+          size="sm"
+          onClick={handleClickCopy}
+        >
+          {hasCopied ? "Copied" : "Copy"}
+        </Button>
+        <span ref={preRef}>{children}</span>
+      </pre>
+    </div>
   );
 }
