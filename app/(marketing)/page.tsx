@@ -53,9 +53,9 @@ export default async function Home() {
             </Text>
 
             <p className="text-lg text-muted mb-8 mt-4">
-              Retro styled component library for modern web apps. Comes with 20+
-              free UI components that you can just copy paste into your
-              projects. {/* <br /> Now available for both HTML and React! */}
+              Retro styled component library based on React and TailwindCSS.
+              Comes with 40+ free UI components that you can just copy paste
+              into your projects.
             </p>
 
             <div className="max-w-96 grid gap-4 grid-cols-2 mx-auto lg:mx-0">
@@ -181,6 +181,45 @@ export default async function Home() {
         </div>
       </section>
 
+      <section className="container max-w-6xl mx-auto bg-[url('/images/starts_bg.svg')] bg-cover bg-no-repeat py-12">
+        <Text as="h2" className="text-center mb-28">
+          A Growing Community of <br /> Developers and Designers.
+        </Text>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-2xl mx-auto">
+          <div className="flex flex-col items-start relative mx-auto">
+            <Text as="h3" className="mb-2 font-sans">
+              Github Stars
+            </Text>
+            <Text as="h1" className="text-outlined text-7xl lg:text-8xl">
+              150+
+            </Text>
+            <Image
+              src="/images/shooting_star.svg"
+              width={120}
+              height={120}
+              alt="shotting stars"
+              className="absolute -top-[80px] -left-[80px]"
+            />
+          </div>
+          <div className="flex flex-col items-start relative mx-auto">
+            <Text as="h3" className="mb-2 font-sans">
+              Discord Members
+            </Text>
+            <Text as="h1" className="text-outlined text-7xl lg:text-8xl">
+              100+
+            </Text>
+            <Image
+              src="/images/shooting_star.svg"
+              width={120}
+              height={120}
+              alt="shotting stars"
+              className="absolute -right-[80px] -bottom-[80px] rotate-180"
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="container max-w-6xl mx-auto border-2 bg-primary-400 border-black py-16 px-4 lg:p-16 my-36">
         <Text as="h2" className="text-center mb-2">
           Community Contributors
@@ -209,13 +248,13 @@ export default async function Home() {
         </div>
         <div className="flex flex-col lg:flex-row items-center justify-center gap-4 mt-12">
           <Link
-            href="https://opencollective.com/retroui"
+            href="github.com/logging-stuff/retroui"
             target="_blank"
             passHref
           >
             <Button className="flex items-center bg-white" variant="outline">
-              <HeartIcon size="16" className="mr-2" />
-              Sponsor RetroUI
+              <GithubIcon size="16" className="mr-2" />
+              Star on Github
             </Button>
           </Link>
           <Link href="https://discord.gg/Jum3NJxK6Q" target="_blank" passHref>
