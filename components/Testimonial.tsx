@@ -16,7 +16,7 @@ export default function TestimonialCard({
   return (
     <Card className="w-full max-w-[400px] shadow-none hover:shadow-md">
       <Card.Content>
-        <Text className="text-lg">" {quote} "</Text>
+        <Text className="text-lg">{quote}</Text>
 
         <div className="flex items-center space-x-2 mt-6">
           <Avatar className="h-10 w-10">
