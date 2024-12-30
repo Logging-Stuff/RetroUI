@@ -134,6 +134,13 @@ export const componentConfig = {
       filePath: "preview/components/card-style-commerce.tsx",
       preview: lazy(() => import("@/preview/components/card-style-commerce")),
     },
+    "card-style-testimonial": {
+      name: "card-style-testimonial",
+      filePath: "preview/components/card-style-testimonial.tsx",
+      preview: lazy(
+        () => import("@/preview/components/card-style-testimonial")
+      ),
+    },
     "input-style-default": {
       name: "input-style-default",
       filePath: "preview/components/input-style-default.tsx",

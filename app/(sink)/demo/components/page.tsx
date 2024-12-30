@@ -15,6 +15,7 @@ import {
 } from "@/packages/ui";
 import { Card } from "@/packages/ui/Cards/Card";
 import BadgeStyleVariants from "@/preview/components/badge-style-variants";
+import TestimonialCard from "@/preview/components/card-style-testimonial";
 import { CheckCircle } from "lucide-react";
 import React from "react";
 
@@ -113,6 +114,8 @@ export default function page() {
           </Menu.Content>
         </Menu>
       </div>
+
+      <TestimonialCard />
 
       <div className="h-36"></div>
     </div>
