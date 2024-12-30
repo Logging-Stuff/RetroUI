@@ -5,7 +5,7 @@ export default function TestimonialCard() {
     <Card className="w-full max-w-[400px] shadow-none hover:shadow-md">
       <Card.Content>
         <Text className="text-lg">
-          " RetroUI is the cooling looking UI library out there! "
+          &quot; RetroUI is the cooling looking UI library out there! &quot;
         </Text>
 
         <div className="flex items-center space-x-2 mt-6">
