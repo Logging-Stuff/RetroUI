@@ -155,7 +155,10 @@ export default async function Home() {
 
       <section className="container max-w-6xl mx-auto px-4 lg:px-0 flex flex-col lg:flex-row gap-12 lg:gap-16 lg:grid-cols-2 my-36">
         <div className="w-full lg:w-3/5">
-          <Text as="h2">Easily Customize to Your Own Needs! 🛠️</Text>
+          <Text as="h2">
+            Easily <span className="text-outlined">Customize</span> to Your Own
+            Needs! 🛠️
+          </Text>
           <div className="flex flex-col space-y-1 mt-6 mb-8 text-muted">
             <Text className="text-xl">
               Copy-Paste Ready: Components that you can just copy paste.
@@ -183,7 +186,8 @@ export default async function Home() {
 
       <section className="container max-w-6xl mx-auto bg-[url('/images/starts_bg.svg')] bg-cover bg-no-repeat py-12">
         <Text as="h2" className="text-center mb-28">
-          A Growing Community of <br /> Developers and Designers.
+          A <span className="text-outlined">Growing</span> Community of <br />{" "}
+          Developers and Designers.
         </Text>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-2xl mx-auto">
@@ -192,7 +196,7 @@ export default async function Home() {
               Github Stars
             </Text>
             <Text as="h1" className="text-outlined text-7xl lg:text-8xl">
-              150+
+              230+
             </Text>
             <Image
               src="/images/shooting_star.svg"
@@ -217,6 +221,83 @@ export default async function Home() {
               className="absolute -right-[80px] -bottom-[80px] rotate-180"
             />
           </div>
+        </div>
+      </section>
+
+      <section className="container max-w-6xl mx-auto px-4 lg:px-0 my-48">
+        <Text as="h2" className="text-center mb-28">
+          Works With Both <span className="text-outlined">SSR</span> and{" "}
+          <span className="text-outlined">SPA</span> Applications.
+        </Text>
+
+        <div className="grid grid-cols-5 lg:grid-cols-5 gap-8 lg:gap-6 max-w-2xl mx-auto items-center">
+          <Image
+            src="/images/logos/vite.png"
+            alt="vite"
+            width={60}
+            height={60}
+          />
+          <Image
+            src="/images/logos/nextjs.png"
+            alt="nextjs"
+            width={60}
+            height={60}
+          />
+          <Image
+            src="/images/logos/remix.png"
+            alt="remix"
+            width={55}
+            height={55}
+          />
+          <Image
+            src="/images/logos/astro.png"
+            alt="astro"
+            width={55}
+            height={55}
+          />
+          <Image
+            src="/images/logos/gatsby.png"
+            alt="gatsby"
+            width={60}
+            height={60}
+          />
+        </div>
+      </section>
+
+      <section className="container max-w-6xl mx-auto px-4 lg:px-0 grid grid-cols-1 lg:grid-cols-2 items-center my-36">
+        <div className="w-full">
+          <Text as="h2">
+            The <span className="text-outlined">Figma</span> UI Kit You Were
+            Looking For!
+          </Text>
+          <div className="flex flex-col space-y-1 mt-6 mb-8 text-muted">
+            <Text className="text-xl">
+              - Based on the design foundation of RetroUI.
+            </Text>
+            <Text className="text-xl">
+              - Comes with 60+ UI elements like cards, modals, stats, etc .
+            </Text>
+            <Text className="text-xl">
+              - Get Lifetime update of new versions.
+            </Text>
+          </div>
+
+          <Button id="checkout-figma-kit" data-umami-event="checkout-figma-kit">
+            <Link
+              href="https://buy.polar.sh/polar_cl_lDjYITXPX3VSsoGl2UfxIZqiinJ9xVn4y9YAP1ApYcJ"
+              target="_blank"
+            >
+              Checkout Now
+            </Link>
+          </Button>
+        </div>
+        <div className="w-full">
+          <Image
+            src="/images/figma-banner.png"
+            width={800}
+            height={800}
+            alt="retroui code showcase"
+          />
         </div>
       </section>
 
