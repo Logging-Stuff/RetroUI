@@ -1,18 +1,31 @@
 "use server";
 
-import { Button, Text, Input, Textarea, Card, Avatar } from "@/packages/ui";
+import {
+  Button,
+  Text,
+  Input,
+  Textarea,
+  Card,
+  Avatar,
+  Badge,
+} from "@/packages/ui";
 import AccordionStyleDefault from "@/preview/components/accordion-style-default";
 import AlertStyleDefaultIcon from "@/preview/components/alert-style-with-icon";
 import AvatarStyleCircle from "@/preview/components/avatar-style-circle-sizes";
 import BadgeStyleVariants from "@/preview/components/badge-style-variants";
-import { GithubIcon, HeartIcon, MessageCircle } from "lucide-react";
+import {
+  ArrowRightIcon,
+  GithubIcon,
+  HeartIcon,
+  MessageCircle,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 async function getContributors(): Promise<
   { avatar: string; username: string; url: string }[]
 > {
-  let request = await fetch(
+  const request = await fetch(
     `https://api.github.com/repos/Logging-Stuff/RetroUI/contributors`,
     {
       method: "GET",
@@ -22,7 +35,7 @@ async function getContributors(): Promise<
     }
   );
 
-  let contributorsList = await request.json();
+  const contributorsList = await request.json();
   return [
     {
       avatar: "https://avatars.githubusercontent.com/u/58097221?v=4",
@@ -47,6 +60,19 @@ export default async function Home() {
       <div className="bg-[url('/images/banner_void_2.svg')] bg-cover bg-no-repeat bg-center flex flex-col items-center h-[1900px] lg:h-[1400px]">
         <section className="container max-w-6xl mx-auto px-4 lg:px-0 text-gray-900 flex justify-center items-center lg:gap-28 xl:gap-32 my-28">
           <div className="text-center lg:text-left w-full lg:w-2/3">
+            <Link
+              id="checkout-figma-kit"
+              data-umami-event="checkout-figma-kit"
+              href="https://buy.polar.sh/polar_cl_lDjYITXPX3VSsoGl2UfxIZqiinJ9xVn4y9YAP1ApYcJ"
+              target="_blank"
+              className="mb-6 inline-block"
+            >
+              <Badge>
+                Checkout Retro UI Figma Kit{" "}
+                <ArrowRightIcon className="ml-2 h-4 w-4 inline-block" />
+              </Badge>
+            </Link>
+
             <Text as="h1">Make your projects</Text>
             <Text as="h1" className="text-outlined">
               stand out!
@@ -282,14 +308,14 @@ export default async function Home() {
             </Text>
           </div>
 
-          <Button id="checkout-figma-kit" data-umami-event="checkout-figma-kit">
-            <Link
-              href="https://buy.polar.sh/polar_cl_lDjYITXPX3VSsoGl2UfxIZqiinJ9xVn4y9YAP1ApYcJ"
-              target="_blank"
-            >
-              Checkout Now
-            </Link>
-          </Button>
+          <Link
+            id="checkout-figma-kit"
+            data-umami-event="checkout-figma-kit"
+            href="https://buy.polar.sh/polar_cl_lDjYITXPX3VSsoGl2UfxIZqiinJ9xVn4y9YAP1ApYcJ"
+            target="_blank"
+          >
+            <Button>Checkout Now</Button>
+          </Link>
         </div>
         <div className="w-full">
           <Image
