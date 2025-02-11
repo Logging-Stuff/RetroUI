@@ -44,6 +44,35 @@ export const Doc = defineDocumentType(() => ({
   },
 }));
 
+const Author = defineNestedType(() => ({
+  name: "Author",
+  fields: {
+    name: { type: "string", required: true },
+    avatar: { type: "string", required: true },
+  },
+}));
+
+export const Blog = defineDocumentType(() => ({
+  name: "Blog",
+  filePathPattern: `blogs/**/*.mdx`,
+  contentType: "mdx",
+  fields: {
+    title: { type: "string", required: true },
+    description: { type: "string", required: true },
+    coverImage: { type: "string", required: true },
+    publishedAt: { type: "date" },
+    author: { type: "nested", required: true, of: Author },
+    tags: { type: "list", required: true, of: { type: "string" } },
+    status: { type: "enum", options: ["draft", "published"], default: "draft" },
+  },
+  computedFields: {
+    url: {
+      type: "string",
+      resolve: (doc) => `/${doc._raw.flattenedPath}`,
+    },
+  },
+}));
+
 export default makeSource({
   mdx: {
     remarkPlugins: [],
@@ -139,7 +168,7 @@ export default makeSource({
     ],
   },
   contentDirPath: "./content",
-  documentTypes: [Doc],
+  documentTypes: [Doc, Blog],
 });
 
 const getNodeAttributeByName = (node: UnistNode, name: string) => {
