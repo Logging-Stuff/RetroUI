@@ -14,8 +14,8 @@ function page() {
       </Text>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
         {blogs.map((blog) => (
-          <Link href={`${blog.url}`}>
-            <Card key={blog._id}>
+          <Link href={`${blog.url}`} key={blog._id}>
+            <Card>
               <Card.Header>
                 <Image
                   src={blog.coverImage}

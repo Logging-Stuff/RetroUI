@@ -29,12 +29,12 @@ export default function TopNav() {
           </div>
 
           {/* Navigation Links */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-6">
             {navConfig.topNavItems.map((item) => (
               <Link
                 key={item.title}
                 href={item.href}
-                className="hover:text-primary-500 transition-all"
+                className="hover:underline decoration-primary-500 underline-offset-2 transition-all"
               >
                 {item.title}
               </Link>
@@ -47,13 +47,13 @@ export default function TopNav() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <HeartIcon />
+              <GithubIcon />
             </Link>
             <HamburgerMenu />
           </div>
 
           <div className="hidden lg:flex items-center">
-            {/* <Link
+            <Link
               href="https://github.com/Logging-Stuff/retroui"
               target="_blank"
               rel="noopener noreferrer"
@@ -61,16 +61,6 @@ export default function TopNav() {
               <Button className="flex items-center" variant="outline" size="sm">
                 <GithubIcon size="16" className="mr-2" />
                 Star on GitHub
-              </Button>
-            </Link> */}
-            <Link
-              href="https://opencollective.com/retroui"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button className="flex items-center" size="sm" variant="outline">
-                <HeartIcon size="16" className="mr-2" />
-                Support Us
               </Button>
             </Link>
           </div>

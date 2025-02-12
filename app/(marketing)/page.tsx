@@ -63,7 +63,7 @@ export default async function Home() {
             <Link
               id="checkout-figma-kit"
               data-umami-event="checkout-figma-kit"
-              href="https://buy.polar.sh/polar_cl_lDjYITXPX3VSsoGl2UfxIZqiinJ9xVn4y9YAP1ApYcJ"
+              href="https://dub.sh/retroui-figma"
               target="_blank"
               className="mb-6 inline-block"
             >
@@ -311,7 +311,7 @@ export default async function Home() {
           <Link
             id="checkout-figma-kit"
             data-umami-event="checkout-figma-kit"
-            href="https://buy.polar.sh/polar_cl_lDjYITXPX3VSsoGl2UfxIZqiinJ9xVn4y9YAP1ApYcJ"
+            href="https://dub.sh/retroui-figma"
             target="_blank"
           >
             <Button>Checkout Now</Button>

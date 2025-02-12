@@ -49,6 +49,7 @@ const Author = defineNestedType(() => ({
   fields: {
     name: { type: "string", required: true },
     avatar: { type: "string", required: true },
+    x: { type: "string", required: false },
   },
 }));
 
