@@ -26,7 +26,10 @@ export const componentConfig = {
       name: "card",
       filePath: "packages/ui/Cards/Card.tsx",
     },
-
+    checkbox: {
+      name: "checkbox",
+      filePath: "packages/ui/Form/Checkbox.tsx",
+    },
     dialog: {
       name: "dialog",
       filePath: "packages/ui/Dialog/Dialog.tsx",
@@ -140,6 +143,28 @@ export const componentConfig = {
       preview: lazy(
         () => import("@/preview/components/card-style-testimonial")
       ),
+    },
+    "checkbox-style-default": {
+      name: "checkbox-style-default",
+      filePath: "preview/components/checkbox-style-default.tsx",
+      preview: lazy(
+        () => import("@/preview/components/checkbox-style-default")
+      ),
+    },
+    "checkbox-style-variants": {
+      name: "checkbox-style-toggle",
+      filePath: "preview/components/checkbox-style-variants.tsx",
+      preview: lazy(
+        () => import("@/preview/components/checkbox-style-variants")
+      ),
+    },
+    "checkbox-style-sizes": {
+      name: "checkbox-style-default",
+      filePath: "preview/components/checkbox-style-sizes.tsx",
+      preview: lazy(() => import("@/preview/components/checkbox-style-sizes")),
+    },
+    "dropdown-style-default": {
+      name: "dropdown-style-default",
     },
     "input-style-default": {
       name: "input-style-default",

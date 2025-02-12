@@ -15,7 +15,7 @@ export default function ComponentLayout({
       <div className="hidden lg:block">
         <SideNav />
       </div>
-      <div className="lg:ml-72 mt-16 px-4 lg:px-0">{children}</div>
+      <div className="lg:ml-72 px-4 lg:px-0">{children}</div>
     </div>
   );
 }

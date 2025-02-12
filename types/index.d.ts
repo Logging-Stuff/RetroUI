@@ -1,6 +1,7 @@
 export interface INavItem {
   title: string;
   href: string;
+  tag?: string;
 }
 
 export interface INavItemWithChildren {

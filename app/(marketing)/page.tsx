@@ -222,7 +222,7 @@ export default async function Home() {
               Github Stars
             </Text>
             <Text as="h1" className="text-outlined text-7xl lg:text-8xl">
-              230+
+              300+
             </Text>
             <Image
               src="/images/shooting_star.svg"
