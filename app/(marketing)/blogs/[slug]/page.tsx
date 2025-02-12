@@ -36,6 +36,10 @@ export async function generateMetadata({ params }: IProps): Promise<Metadata> {
   return {
     title: `${blog.title} | RetroUI Blogs`,
     description: blog.description,
+    openGraph: {
+      images: blog.coverImage,
+      title: `${blog.title} | RetroUI Blogs`,
+    },
   };
 }
 

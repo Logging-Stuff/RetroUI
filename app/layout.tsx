@@ -25,9 +25,13 @@ const shareTechMono = Share_Tech_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Retro Styled Tailwind UI Library | Retro UI",
+  title: "Retro Styled React UI Library | Retro UI",
   description:
-    "RetroUI - Retro styled TailwindCSS component library for modern web apps.",
+    "RetroUI - Retro styled component library built with React and TailwindCSS for modern web apps.",
+  openGraph: {
+    images: "/banner.png",
+    title: "Retro Styled React UI Library | Retro UI",
+  },
 };
 
 export default function RootLayout({
