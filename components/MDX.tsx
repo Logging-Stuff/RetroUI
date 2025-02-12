@@ -2,19 +2,23 @@
 
 import { Text } from "@/packages/ui";
 import { useMDXComponent } from "next-contentlayer/hooks";
-import React, { HTMLAttributes } from "react";
+import React, { AnchorHTMLAttributes, HTMLAttributes } from "react";
 import { ComponentShowcase } from "./ComponentShowcase";
 import { cn } from "@/lib/utils";
 import { ComponentSource } from "./ComponentSource";
 import { CodeBlock } from "./CodeBlock";
+import Link from "next/link";
 
-const components = {
+const components = (type: "doc" | "blog") => ({
   h1: (props: HTMLAttributes<HTMLHeadingElement>) => (
     <Text as="h1" {...props} />
   ),
-  h2: (props: HTMLAttributes<HTMLHeadingElement>) => (
-    <Text as="h2" className="border-b lg:text-3xl pb-1 mb-6" {...props} />
-  ),
+  h2: (props: HTMLAttributes<HTMLHeadingElement>) =>
+    type === "blog" ? (
+      <Text as="h2" className="mb-4" {...props} />
+    ) : (
+      <Text as="h2" className="border-b pb-1 mb-6" {...props} />
+    ),
   h3: (props: HTMLAttributes<HTMLHeadingElement>) => (
     <Text as="h3" className="mb-4" {...props} />
   ),
@@ -23,6 +27,50 @@ const components = {
   ),
   h5: (props: HTMLAttributes<HTMLHeadElement>) => <Text as="h5" {...props} />,
   h6: (props: HTMLAttributes<HTMLHeadElement>) => <Text as="h6" {...props} />,
+  p: (props: HTMLAttributes<HTMLHeadElement>) =>
+    type === "blog" ? (
+      <Text {...props} className="text-lg text-zinc-600" />
+    ) : (
+      <Text {...props} />
+    ),
+  li: (props: HTMLAttributes<HTMLHeadElement>) =>
+    type === "blog" ? (
+      <Text
+        as="li"
+        {...props}
+        className="text-lg text-zinc-600 ml-4 lg:ml-8 mb-2"
+      />
+    ) : (
+      <Text as="li" {...props} />
+    ),
+  img: (props: HTMLAttributes<HTMLImageElement>) => (
+    <img className="mx-auto w-full max-w-[600px] my-8" {...props} />
+  ),
+  a: (props: AnchorHTMLAttributes<HTMLAnchorElement>) => {
+    const { href, target, rel, ...rest } = props;
+
+    if (!href) {
+      return <a {...rest} />;
+    }
+
+    const isExternal = href.startsWith("http");
+
+    return isExternal ? (
+      <a
+        href={href}
+        target={target || "_blank"}
+        rel={rel || "noopener noreferrer"}
+        className="underline underline-offset-4 hover:decoration-primary-500"
+        {...rest}
+      />
+    ) : (
+      <Link
+        href={href}
+        className="underline underline-offset-4 hover:decoration-primary-500"
+        {...rest}
+      />
+    );
+  },
   pre: CodeBlock,
   code: ({
     className,
@@ -41,10 +89,16 @@ const components = {
   ),
   ComponentShowcase,
   ComponentSource,
-};
+});
 
-export default function MDX({ code }: { code: string }) {
+export default function MDX({
+  code,
+  type = "doc",
+}: {
+  code: string;
+  type?: "doc" | "blog";
+}) {
   const Content = useMDXComponent(code);
 
-  return <Content components={components} />;
+  return <Content components={components(type)} />;
 }

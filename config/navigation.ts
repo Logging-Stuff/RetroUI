@@ -7,6 +7,7 @@ export const navConfig: INavigationConfig = {
   topNavItems: [
     { title: "Documentation", href: "/docs" },
     { title: "Components", href: `${componentsRoute}/button` },
+    { title: "Blogs", href: "/blogs" },
   ],
   sideNavItems: [
     {
