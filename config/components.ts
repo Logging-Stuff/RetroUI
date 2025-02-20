@@ -1,6 +1,21 @@
 import { lazy } from "react";
 
-export const componentConfig = {
+export const componentConfig: {
+  core: {
+    [key: string]: {
+      name: string;
+      filePath: string;
+      preview?: React.LazyExoticComponent<() => JSX.Element>;
+    };
+  };
+  examples: {
+    [key: string]: {
+      name: string;
+      filePath: string;
+      preview: React.LazyExoticComponent<() => JSX.Element>;
+    };
+  };
+} = {
   core: {
     accordion: {
       name: "accordion",
@@ -37,6 +52,10 @@ export const componentConfig = {
     menu: {
       name: "menu",
       filePath: "packages/ui/Menu/Menu.tsx",
+    },
+    radio: {
+      name: "radio",
+      filePath: "packages/ui/Form/Radio.tsx",
     },
     text: {
       name: "text",
@@ -163,9 +182,11 @@ export const componentConfig = {
       filePath: "preview/components/checkbox-style-sizes.tsx",
       preview: lazy(() => import("@/preview/components/checkbox-style-sizes")),
     },
-    "dropdown-style-default": {
-      name: "dropdown-style-default",
-    },
+    // "dropdown-style-default": {
+    //   name: "dropdown-style-default",
+    //   filePath: "preview/components/dropdown-style-default.tsx",
+    //   preview: lazy(() => import("@/preview/components/dropdown-style-default")),
+    // },
     "input-style-default": {
       name: "input-style-default",
       filePath: "preview/components/input-style-default.tsx",
@@ -175,6 +196,21 @@ export const componentConfig = {
       name: "menu-style-default",
       filePath: "preview/components/menu-style-default.tsx",
       preview: lazy(() => import("@/preview/components/menu-style-default")),
+    },
+    "radio-style-default": {
+      name: "radio-style-default",
+      filePath: "preview/components/radio-style-default.tsx",
+      preview: lazy(() => import("@/preview/components/radio-style-default")),
+    },
+    "radio-style-variants": {
+      name: "radio-style-variants",
+      filePath: "preview/components/radio-style-variants.tsx",
+      preview: lazy(() => import("@/preview/components/radio-style-variants")),
+    },
+    "radio-style-sizes": {
+      name: "radio-style-sizes",
+      filePath: "preview/components/radio-style-sizes.tsx",
+      preview: lazy(() => import("@/preview/components/radio-style-sizes")),
     },
     "textarea-style-default": {
       name: "textarea-style-default",

@@ -6,7 +6,7 @@ import { Check } from "lucide-react";
 const checkboxVariants = cva("border-black border-2", {
   variants: {
     variant: {
-      default: " data-[state=checked]:bg-primary-400",
+      default: " data-[state=checked]:bg-primary-500",
       outline: "",
       solid: "data-[state=checked]:bg-black *:text-white",
     },

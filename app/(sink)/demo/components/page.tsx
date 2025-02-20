@@ -15,6 +15,7 @@ import {
   TabsTriggerList,
 } from "@/packages/ui";
 import { Card } from "@/packages/ui/Cards/Card";
+import { RadioGroup } from "@/packages/ui/Form/Radio";
 import BadgeStyleVariants from "@/preview/components/badge-style-variants";
 import TestimonialCard from "@/preview/components/card-style-testimonial";
 import { CheckCircle } from "lucide-react";
@@ -39,6 +40,14 @@ export default function page() {
         <Checkbox size="sm" />
         <Checkbox size="md" />
         <Checkbox size="lg" />
+      </div>
+
+      <div className="space-x-4">
+        <RadioGroup>
+          <RadioGroup.Item value="1">Option 1</RadioGroup.Item>
+          <RadioGroup.Item value="2">Option 2</RadioGroup.Item>
+          <RadioGroup.Item value="3">Option 3</RadioGroup.Item>
+        </RadioGroup>
       </div>
 
       <div className="flex items-center space-x-4">
