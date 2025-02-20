@@ -9,5 +9,5 @@ export default function BlogsLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div className="max-w-6xl mx-auto pt-12">{children}</div>;
+  return <div className="max-w-6xl mx-auto pt-12 px-4 lg:px-0">{children}</div>;
 }

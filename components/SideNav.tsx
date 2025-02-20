@@ -1,5 +1,5 @@
 import { navConfig } from "@/config/navigation";
-import { Text } from "@/packages/ui";
+import { Badge, Text } from "@/packages/ui";
 import Link from "next/link";
 
 export default function SideNav() {
@@ -15,6 +15,11 @@ export default function SideNav() {
               {item.children.map((child) => (
                 <Link key={child.title} href={child.href}>
                   {child.title}
+                  {child.tag && (
+                    <Badge size="sm" className="ml-2">
+                      {child.tag}
+                    </Badge>
+                  )}
                 </Link>
               ))}
             </div>

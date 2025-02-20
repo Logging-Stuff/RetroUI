@@ -6,6 +6,7 @@ import {
   Avatar,
   Badge,
   Button,
+  Checkbox,
   Menu,
   Tabs,
   TabsContent,
@@ -29,6 +30,15 @@ export default function page() {
       </div>
       <div className="space-x-4">
         <BadgeStyleVariants />
+      </div>
+
+      <div className="space-x-4">
+        <Checkbox />
+        <Checkbox variant="outline" />
+        <Checkbox variant="solid" />
+        <Checkbox size="sm" />
+        <Checkbox size="md" />
+        <Checkbox size="lg" />
       </div>
 
       <div className="flex items-center space-x-4">
