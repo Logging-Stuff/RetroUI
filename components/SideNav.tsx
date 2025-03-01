@@ -5,9 +5,9 @@ import Link from "next/link";
 export default function SideNav() {
   return (
     <div
-      className={`fixed right-auto border-r-2 border-black h-full transition-transform transform md:translate-x-0 w-64 bg-white flex md:justify-start justify-center  py-14 md:py-8`}
+      className={`fixed right-auto border-r-2 border-black h-full overflow-y-scroll transition-transform transform md:translate-x-0 w-64 bg-white flex flex-col justify-center md:justify-start py-14 md:py-8`}
     >
-      <nav className="flex flex-col items-start pr-6 space-y-4">
+      <nav className="flex flex-col items-start pr-6 h-full pb-24 overflow-scroll space-y-4">
         {navConfig.sideNavItems.map((item) => (
           <div key={item.title}>
             <Text as="h6">{item.title}</Text>

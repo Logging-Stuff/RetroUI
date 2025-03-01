@@ -4,6 +4,8 @@
 
 :root {
   --muted: #606067;
+  --background: "#fff";
+  --foreground: "#000";
 }
 
 .text-outlined {

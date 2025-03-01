@@ -8,6 +8,7 @@ import {
   Button,
   Checkbox,
   Menu,
+  Select,
   Tabs,
   TabsContent,
   TabsPanels,
@@ -43,11 +44,18 @@ export default function page() {
       </div>
 
       <div className="space-x-4">
-        <RadioGroup>
-          <RadioGroup.Item value="1">Option 1</RadioGroup.Item>
-          <RadioGroup.Item value="2">Option 2</RadioGroup.Item>
-          <RadioGroup.Item value="3">Option 3</RadioGroup.Item>
-        </RadioGroup>
+        <Select>
+          <Select.Trigger>
+            <Select.Value placeholder="Select an option" />
+          </Select.Trigger>
+          <Select.Content>
+            <Select.Group>
+              <Select.Item value="1">Option 1</Select.Item>
+              <Select.Item value="2">Option 2</Select.Item>
+              <Select.Item value="3">Option 3</Select.Item>
+            </Select.Group>
+          </Select.Content>
+        </Select>
       </div>
 
       <div className="flex items-center space-x-4">
