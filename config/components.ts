@@ -57,6 +57,10 @@ export const componentConfig: {
       name: "radio",
       filePath: "packages/ui/Form/Radio.tsx",
     },
+    select: {
+      name: "select",
+      filePath: "packages/ui/Form/Select.tsx",
+    },
     text: {
       name: "text",
       filePath: "packages/ui/Text/Text.tsx",
@@ -211,6 +215,11 @@ export const componentConfig: {
       name: "radio-style-sizes",
       filePath: "preview/components/radio-style-sizes.tsx",
       preview: lazy(() => import("@/preview/components/radio-style-sizes")),
+    },
+    "select-style-default": {
+      name: "select-style-default",
+      filePath: "preview/components/select-style-default.tsx",
+      preview: lazy(() => import("@/preview/components/select-style-default")),
     },
     "textarea-style-default": {
       name: "textarea-style-default",

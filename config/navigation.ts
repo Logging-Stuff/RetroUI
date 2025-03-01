@@ -12,7 +12,7 @@ export const navConfig: INavigationConfig = {
   sideNavItems: [
     {
       title: "Getting Started",
-      children: [{ title: "Introduction", href: "/docs" }],
+      children: [{ title: "Introduction", href: "/docs", tag: "Updated" }],
     },
     {
       title: "Components",
@@ -23,11 +23,12 @@ export const navConfig: INavigationConfig = {
         { title: "Badge", href: `${componentsRoute}/badge` },
         { title: "Button", href: `${componentsRoute}/button` },
         { title: "Card", href: `${componentsRoute}/card` },
-        { title: "Checkbox", href: `${componentsRoute}/checkbox`, tag: "New" },
+        { title: "Checkbox", href: `${componentsRoute}/checkbox` },
         { title: "Dialog", href: `${componentsRoute}/dialog` },
         { title: "Input", href: `${componentsRoute}/input` },
         { title: "Menu", href: `${componentsRoute}/menu` },
-        { title: "Radio", href: `${componentsRoute}/radio`, tag: "New" },
+        { title: "Radio", href: `${componentsRoute}/radio` },
+        { title: "Select", href: `${componentsRoute}/select`, tag: "New" },
         { title: "Tab", href: `${componentsRoute}/tab` },
         { title: "Textarea", href: `${componentsRoute}/textarea` },
         { title: "Text", href: `${componentsRoute}/text` },
