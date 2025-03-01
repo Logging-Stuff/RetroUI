@@ -12,7 +12,7 @@ export const navConfig: INavigationConfig = {
   sideNavItems: [
     {
       title: "Getting Started",
-      children: [{ title: "Introduction", href: "/docs" }],
+      children: [{ title: "Introduction", href: "/docs", tag: "Updated" }],
     },
     {
       title: "Components",
@@ -27,8 +27,6 @@ export const navConfig: INavigationConfig = {
         { title: "Dialog", href: `${componentsRoute}/dialog` },
         { title: "Input", href: `${componentsRoute}/input` },
         { title: "Menu", href: `${componentsRoute}/menu` },
-        { title: "Radio", href: `${componentsRoute}/radio` },
-        { title: "Radio", href: `${componentsRoute}/radio` },
         { title: "Radio", href: `${componentsRoute}/radio` },
         { title: "Select", href: `${componentsRoute}/select`, tag: "New" },
         { title: "Tab", href: `${componentsRoute}/tab` },
