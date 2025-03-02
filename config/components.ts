@@ -59,11 +59,11 @@ export const componentConfig: {
     },
     select: {
       name: "select",
-      filePath: "packages/ui/Form/select.tsx",
+      filePath: "packages/ui/Form/Select.tsx",
     },
     switch: {
       name: "switch",
-      filePath: "packages/ui/Form/switch.tsx",
+      filePath: "packages/ui/Form/Switch.tsx",
     },
     text: {
       name: "text",
