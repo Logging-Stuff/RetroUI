@@ -29,6 +29,7 @@ export const navConfig: INavigationConfig = {
         { title: "Menu", href: `${componentsRoute}/menu` },
         { title: "Radio", href: `${componentsRoute}/radio` },
         { title: "Select", href: `${componentsRoute}/select`, tag: "New" },
+        { title: "Switch", href: `${componentsRoute}/switch`, tag: "New" },
         { title: "Tab", href: `${componentsRoute}/tab` },
         { title: "Textarea", href: `${componentsRoute}/textarea` },
         { title: "Text", href: `${componentsRoute}/text` },

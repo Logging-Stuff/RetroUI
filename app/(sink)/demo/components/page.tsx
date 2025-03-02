@@ -9,6 +9,7 @@ import {
   Checkbox,
   Menu,
   Select,
+  Switch,
   Tabs,
   TabsContent,
   TabsPanels,
@@ -56,6 +57,10 @@ export default function page() {
             </Select.Group>
           </Select.Content>
         </Select>
+      </div>
+
+      <div className="space-x-4">
+        <Switch />
       </div>
 
       <div className="flex items-center space-x-4">

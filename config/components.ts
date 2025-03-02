@@ -59,7 +59,11 @@ export const componentConfig: {
     },
     select: {
       name: "select",
-      filePath: "packages/ui/Form/Select.tsx",
+      filePath: "packages/ui/Form/select.tsx",
+    },
+    switch: {
+      name: "switch",
+      filePath: "packages/ui/Form/switch.tsx",
     },
     text: {
       name: "text",
@@ -220,6 +224,16 @@ export const componentConfig: {
       name: "select-style-default",
       filePath: "preview/components/select-style-default.tsx",
       preview: lazy(() => import("@/preview/components/select-style-default")),
+    },
+    "switch-style-default": {
+      name: "switch-style-default",
+      filePath: "preview/components/switch-style-default.tsx",
+      preview: lazy(() => import("@/preview/components/switch-style-default")),
+    },
+    "switch-style-disabled": {
+      name: "switch-style-disabled",
+      filePath: "preview/components/switch-style-disabled.tsx",
+      preview: lazy(() => import("@/preview/components/switch-style-disabled")),
     },
     "textarea-style-default": {
       name: "textarea-style-default",
