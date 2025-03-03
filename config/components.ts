@@ -49,6 +49,10 @@ export const componentConfig: {
       name: "dialog",
       filePath: "packages/ui/Dialog/Dialog.tsx",
     },
+    input: {
+      name: "input",
+      filePath: "packages/ui/Input.tsx",
+    },
     menu: {
       name: "menu",
       filePath: "packages/ui/Menu/Menu.tsx",
@@ -199,6 +203,18 @@ export const componentConfig: {
       name: "input-style-default",
       filePath: "preview/components/input-style-default.tsx",
       preview: lazy(() => import("@/preview/components/input-style-default")),
+    },
+    "input-style-with-label": {
+      name: "input-style-with-label",
+      filePath: "preview/components/input-style-with-label.tsx",
+      preview: lazy(
+        () => import("@/preview/components/input-style-with-label")
+      ),
+    },
+    "input-style-error": {
+      name: "input-style-error",
+      filePath: "preview/components/input-style-error.tsx",
+      preview: lazy(() => import("@/preview/components/input-style-error")),
     },
     "menu-style-default": {
       name: "menu-style-default",
