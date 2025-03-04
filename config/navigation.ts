@@ -25,7 +25,7 @@ export const navConfig: INavigationConfig = {
         { title: "Card", href: `${componentsRoute}/card` },
         { title: "Checkbox", href: `${componentsRoute}/checkbox` },
         { title: "Dialog", href: `${componentsRoute}/dialog` },
-        { title: "Input", href: `${componentsRoute}/input` },
+        { title: "Input", href: `${componentsRoute}/input`, tag: "Updated" },
         { title: "Menu", href: `${componentsRoute}/menu` },
         { title: "Radio", href: `${componentsRoute}/radio` },
         { title: "Select", href: `${componentsRoute}/select`, tag: "New" },
