@@ -12,11 +12,11 @@ export function ComponentShowcase({ name, children }: IComponentShowcase) {
 
   return (
     <TabGroup>
-      <TabList className="space-x-4 ">
-        <Tab className="text-lg px-1 border-black data-[selected]:border-b-2 focus:outline-none">
+      <TabList className="space-x-4 border-b mb-6">
+        <Tab className="min-w-12 text-lg relative px-2 py-1 border-b-2 border-b-transparent bg-transparent data-[selected]:border-primary-500 data-[selected]:text-foreground focus:outline-none">
           Preview
         </Tab>
-        <Tab className="text-lg px-1 border-black data-[selected]:border-b-2 focus:outline-none">
+        <Tab className="min-w-12 text-lg relative px-2 py-1 border-b-2 border-b-transparent bg-transparent data-[selected]:border-primary-500 data-[selected]:text-foreground focus:outline-none">
           Code
         </Tab>
       </TabList>
