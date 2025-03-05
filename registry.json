@@ -1,0 +1,211 @@
+{
+    "$schema": "https://ui.shadcn.com/schema/registry.json",
+    "name": "retro ui",
+    "homepage": "https://retroui.dev",
+    "items": [
+        {
+            "name": "accordion",
+            "type": "registry:component",
+            "title": "Accordion",
+            "description": "This collapsible component let's your users read only the content they care about. 😌",
+            "files": [
+                {
+                    "path": "packages/ui/Accordions/Accordion.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "alert",
+            "type": "registry:component",
+            "title": "Alert",
+            "description": "Notify your users about important events and updates. 📣",
+            "files": [
+                {
+                    "path": "packages/ui/Alerts/Alert.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "avatar",
+            "type": "registry:component",
+            "title": "Avatar",
+            "description": "Default rounded avatar that can show your users profile picture. ✨",
+            "files": [
+                {
+                    "path": "packages/ui/Avatars/Avatar.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "badge",
+            "type": "registry:component",
+            "title": "Badge",
+            "description": "The component that looks like a button but isn't clickable!",
+            "files": [
+                {
+                    "path": "packages/ui/Badges/Badge.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button",
+            "type": "registry:component",
+            "title": "Retro Button",
+            "description": "This bold button makes sure your users click on it and perform the actions you want!",
+            "files": [
+                {
+                    "path": "packages/ui/Buttons/Button.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "card",
+            "type": "registry:component",
+            "title": "Card",
+            "description": "A customizable card component to visualize your content. 📝",
+            "files": [
+                {
+                    "path": "packages/ui/Cards/Card.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "checkbox",
+            "type": "registry:component",
+            "title": "Checkbox",
+            "description": "Let users confirm or reject an option.",
+            "files": [
+                {
+                    "path": "packages/ui/Form/Checkbox.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "dialog",
+            "type": "registry:component",
+            "title": "Dialog",
+            "description": "An impactful dialog that ensures your important messages and actions get the attention they deserve! 💬✨",
+            "files": [
+                {
+                    "path": "packages/ui/Dialog/Dialog.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input",
+            "type": "registry:component",
+            "title": "Input",
+            "description": "This pretty input makes your users want to type stuff! ⌨️",
+            "files": [
+                {
+                    "path": "packages/ui/Form/Input.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "label",
+            "type": "registry:component",
+            "title": "Label",
+            "description": "Label for form fields",
+            "files": [
+                {
+                    "path": "packages/ui/Form/Label.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "menu",
+            "type": "registry:component",
+            "title": "Menu",
+            "description": "Show your users a list of actions they can take. 📋",
+            "files": [
+                {
+                    "path": "packages/ui/Menu/Menu.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "radio",
+            "type": "registry:component",
+            "title": "Radio",
+            "description": "Sometimes you need to pick multiple options! That's where the Radio component comes into play.",
+            "files": [
+                {
+                    "path": "packages/ui/Form/Radio.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "select",
+            "type": "registry:component",
+            "title": "Select",
+            "description": "Let your users pick what they want.",
+            "files": [
+                {
+                    "path": "packages/ui/Form/Select.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch",
+            "type": "registry:component",
+            "title": "Switch",
+            "description": "Let users to turn on or off your marketing emails or notifications.",
+            "files": [
+                {
+                    "path": "packages/ui/Form/Switch.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tab",
+            "type": "registry:component",
+            "title": "Tab",
+            "description": "Switch between different views using tabs.",
+            "files": [
+                {
+                    "path": "packages/ui/Tabs/Tab.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "text",
+            "type": "registry:component",
+            "title": "text",
+            "description": "Show your texts in different styles. 💅",
+            "files": [
+                {
+                    "path": "packages/ui/Text/Text.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "textarea",
+            "type": "registry:component",
+            "title": "textarea",
+            "description": "This pretty input makes your users want to type lots of stuff! ⌨️ ⌨",
+            "files": [
+                {
+                    "path": "packages/ui/Form/Textarea.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        }
+    ]
+}

@@ -8,6 +8,8 @@ import { cn } from "@/lib/utils";
 import { ComponentSource } from "./ComponentSource";
 import { CodeBlock } from "./CodeBlock";
 import Link from "next/link";
+import { ComponentInstall } from "./ComponentInstall";
+import { TabGroup } from "@headlessui/react";
 
 const components = (type: "doc" | "blog") => ({
   h1: (props: HTMLAttributes<HTMLHeadingElement>) => (
@@ -89,6 +91,7 @@ const components = (type: "doc" | "blog") => ({
   ),
   ComponentShowcase,
   ComponentSource,
+  ComponentInstall,
 });
 
 export default function MDX({

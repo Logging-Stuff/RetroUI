@@ -5,6 +5,7 @@ export const componentConfig: {
     [key: string]: {
       name: string;
       filePath: string;
+      dependencies?: string[];
       preview?: React.LazyExoticComponent<() => JSX.Element>;
     };
   };
@@ -19,6 +20,7 @@ export const componentConfig: {
   core: {
     accordion: {
       name: "accordion",
+      dependencies: ["@radix-ui/react-accordion", "lucide-react"],
       filePath: "packages/ui/Accordions/Accordion.tsx",
     },
     alert: {
@@ -51,7 +53,7 @@ export const componentConfig: {
     },
     input: {
       name: "input",
-      filePath: "packages/ui/Input.tsx",
+      filePath: "packages/ui/Form/Input.tsx",
     },
     menu: {
       name: "menu",

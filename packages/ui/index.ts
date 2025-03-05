@@ -9,5 +9,3 @@ export * from "./Badges";
 export * from "./Tabs";
 export * from "./Dialog";
 export * from "./Menu";
-export * from "./Input";
-export * from "./Label";
