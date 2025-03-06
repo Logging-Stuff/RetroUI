@@ -4,13 +4,32 @@
     "homepage": "https://retroui.dev",
     "items": [
         {
+            "name": "utils",
+            "type": "registry:lib",
+            "title": "Utils",
+            "dependencies": [
+                "clsx",
+                "tailwind-merge"
+            ],
+            "files": [
+                {
+                    "path": "lib/utils.ts",
+                    "type": "registry:lib"
+                }
+            ]
+        },
+        {
             "name": "accordion",
             "type": "registry:component",
             "title": "Accordion",
             "description": "This collapsible component let's your users read only the content they care about. 😌",
+            "dependencies": [
+                "@radix-ui/react-accordion",
+                "lucide-react"
+            ],
             "files": [
                 {
-                    "path": "packages/ui/Accordions/Accordion.tsx",
+                    "path": "components/ui/Accordions/Accordion.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -20,9 +39,12 @@
             "type": "registry:component",
             "title": "Alert",
             "description": "Notify your users about important events and updates. 📣",
+            "dependencies": [
+                "class-variance-authority"
+            ],
             "files": [
                 {
-                    "path": "packages/ui/Alerts/Alert.tsx",
+                    "path": "components/ui/Alerts/Alert.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -32,9 +54,12 @@
             "type": "registry:component",
             "title": "Avatar",
             "description": "Default rounded avatar that can show your users profile picture. ✨",
+            "dependencies": [
+                "@radix-ui/react-avatar"
+            ],
             "files": [
                 {
-                    "path": "packages/ui/Avatars/Avatar.tsx",
+                    "path": "components/ui/Avatars/Avatar.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -44,9 +69,12 @@
             "type": "registry:component",
             "title": "Badge",
             "description": "The component that looks like a button but isn't clickable!",
+            "dependencies": [
+                "class-variance-authority"
+            ],
             "files": [
                 {
-                    "path": "packages/ui/Badges/Badge.tsx",
+                    "path": "components/ui/Badges/Badge.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -56,9 +84,12 @@
             "type": "registry:component",
             "title": "Retro Button",
             "description": "This bold button makes sure your users click on it and perform the actions you want!",
+            "dependencies": [
+                "class-variance-authority"
+            ],
             "files": [
                 {
-                    "path": "packages/ui/Buttons/Button.tsx",
+                    "path": "components/ui/Buttons/Button.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -70,7 +101,7 @@
             "description": "A customizable card component to visualize your content. 📝",
             "files": [
                 {
-                    "path": "packages/ui/Cards/Card.tsx",
+                    "path": "components/ui/Cards/Card.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -80,9 +111,14 @@
             "type": "registry:component",
             "title": "Checkbox",
             "description": "Let users confirm or reject an option.",
+            "dependencies": [
+                "@radix-ui/react-checkbox",
+                "class-variance-authority",
+                "lucide-react"
+            ],
             "files": [
                 {
-                    "path": "packages/ui/Form/Checkbox.tsx",
+                    "path": "components/ui/Form/Checkbox.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -92,9 +128,15 @@
             "type": "registry:component",
             "title": "Dialog",
             "description": "An impactful dialog that ensures your important messages and actions get the attention they deserve! 💬✨",
+            "dependencies": [
+                "@radix-ui/react-dialog",
+                "@radix-ui/react-visually-hidden",
+                "class-variance-authority",
+                "lucide-react"
+            ],
             "files": [
                 {
-                    "path": "packages/ui/Dialog/Dialog.tsx",
+                    "path": "components/ui/Dialog/Dialog.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -106,7 +148,7 @@
             "description": "This pretty input makes your users want to type stuff! ⌨️",
             "files": [
                 {
-                    "path": "packages/ui/Form/Input.tsx",
+                    "path": "components/ui/Form/Input.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -116,9 +158,13 @@
             "type": "registry:component",
             "title": "Label",
             "description": "Label for form fields",
+            "dependencies": [
+                "@radix-ui/react-label",
+                "class-variance-authority"
+            ],
             "files": [
                 {
-                    "path": "packages/ui/Form/Label.tsx",
+                    "path": "components/ui/Form/Label.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -128,9 +174,12 @@
             "type": "registry:component",
             "title": "Menu",
             "description": "Show your users a list of actions they can take. 📋",
+            "dependencies": [
+                "@radix-ui/react-dropdown-menu"
+            ],
             "files": [
                 {
-                    "path": "packages/ui/Menu/Menu.tsx",
+                    "path": "components/ui/Menu/Menu.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -140,9 +189,13 @@
             "type": "registry:component",
             "title": "Radio",
             "description": "Sometimes you need to pick multiple options! That's where the Radio component comes into play.",
+            "dependencies": [
+                "@radix-ui/react-radio-group",
+                "class-variance-authority"
+            ],
             "files": [
                 {
-                    "path": "packages/ui/Form/Radio.tsx",
+                    "path": "components/ui/Form/Radio.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -152,9 +205,13 @@
             "type": "registry:component",
             "title": "Select",
             "description": "Let your users pick what they want.",
+            "dependencies": [
+                "@radix-ui/react-select",
+                "lucide-react"
+            ],
             "files": [
                 {
-                    "path": "packages/ui/Form/Select.tsx",
+                    "path": "components/ui/Form/Select.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -164,9 +221,12 @@
             "type": "registry:component",
             "title": "Switch",
             "description": "Let users to turn on or off your marketing emails or notifications.",
+            "dependencies": [
+                "@radix-ui/react-switch"
+            ],
             "files": [
                 {
-                    "path": "packages/ui/Form/Switch.tsx",
+                    "path": "components/ui/Form/Switch.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -176,9 +236,12 @@
             "type": "registry:component",
             "title": "Tab",
             "description": "Switch between different views using tabs.",
+            "dependencies": [
+                "@headlessui/react"
+            ],
             "files": [
                 {
-                    "path": "packages/ui/Tabs/Tab.tsx",
+                    "path": "components/ui/Tabs/Tab.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -188,9 +251,12 @@
             "type": "registry:component",
             "title": "text",
             "description": "Show your texts in different styles. 💅",
+            "dependencies": [
+                "class-variance-authority"
+            ],
             "files": [
                 {
-                    "path": "packages/ui/Text/Text.tsx",
+                    "path": "components/ui/Text/Text.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -202,7 +268,7 @@
             "description": "This pretty input makes your users want to type lots of stuff! ⌨️ ⌨",
             "files": [
                 {
-                    "path": "packages/ui/Form/Textarea.tsx",
+                    "path": "components/ui/Form/Textarea.tsx",
                     "type": "registry:component"
                 }
             ]

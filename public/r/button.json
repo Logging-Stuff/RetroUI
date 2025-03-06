@@ -4,9 +4,12 @@
   "type": "registry:component",
   "title": "Retro Button",
   "description": "This bold button makes sure your users click on it and perform the actions you want!",
+  "dependencies": [
+    "class-variance-authority"
+  ],
   "files": [
     {
-      "path": "packages/ui/Buttons/Button.tsx",
+      "path": "components/ui/Buttons/Button.tsx",
       "content": "import { cn } from \"@/lib/utils\";\nimport { cva, VariantProps } from \"class-variance-authority\";\nimport React, { ButtonHTMLAttributes } from \"react\";\n\nconst buttonVariants = cva(\"font-head transition-all outline-none\", {\n  variants: {\n    variant: {\n      default:\n        \"shadow-md hover:shadow-xs bg-primary-400 text-black border-2 border-black hover:bg-primary-500\",\n      outline:\n        \"shadow-md hover:shadow-xs bg-transparent text-black border-2 border-black\",\n      link: \"bg-transparent text-black hover:underline\",\n    },\n    size: {\n      sm: \"px-4 py-1 text-sm\",\n      md: \"px-6 py-2 text-base\",\n      lg: \"px-8 py-3 text-lg\",\n    },\n  },\n  defaultVariants: {\n    size: \"md\",\n    variant: \"default\",\n  },\n});\n\nexport interface IButtonProps\n  extends ButtonHTMLAttributes<HTMLButtonElement>,\n    VariantProps<typeof buttonVariants> {}\n\nexport const Button = React.forwardRef<HTMLButtonElement, IButtonProps>(\n  (\n    {\n      children,\n      size = \"md\",\n      className = \"\",\n      variant = \"default\",\n      ...props\n    }: IButtonProps,\n    forwardedRef\n  ) => (\n    <button\n      ref={forwardedRef}\n      className={cn(buttonVariants({ variant, size }), className)}\n      {...props}\n    >\n      {children}\n    </button>\n  )\n);\n\nButton.displayName = \"Button\";\n",
       "type": "registry:component"
     }

@@ -1,6 +1,6 @@
 "use client";
 
-import { Text } from "@/packages/ui";
+import { Alert, Badge, Card, Text } from "@/components/ui";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import React, { AnchorHTMLAttributes, HTMLAttributes } from "react";
 import { ComponentShowcase } from "./ComponentShowcase";
@@ -9,7 +9,8 @@ import { ComponentSource } from "./ComponentSource";
 import { CodeBlock } from "./CodeBlock";
 import Link from "next/link";
 import { ComponentInstall } from "./ComponentInstall";
-import { TabGroup } from "@headlessui/react";
+import Image from "next/image";
+import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 
 const components = (type: "doc" | "blog") => ({
   h1: (props: HTMLAttributes<HTMLHeadingElement>) => (
@@ -89,6 +90,16 @@ const components = (type: "doc" | "blog") => ({
       {children}
     </code>
   ),
+  TabGroup,
+  TabList,
+  Tab,
+  TabPanels,
+  TabPanel,
+  Link,
+  Badge,
+  Image,
+  Card,
+  Alert,
   ComponentShowcase,
   ComponentSource,
   ComponentInstall,

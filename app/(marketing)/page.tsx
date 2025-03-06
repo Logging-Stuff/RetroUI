@@ -8,7 +8,7 @@ import {
   Card,
   Avatar,
   Badge,
-} from "@/packages/ui";
+} from "@/components/ui";
 import AccordionStyleDefault from "@/preview/components/accordion-style-default";
 import AlertStyleDefaultIcon from "@/preview/components/alert-style-with-icon";
 import AvatarStyleCircle from "@/preview/components/avatar-style-circle-sizes";
@@ -73,8 +73,10 @@ export default async function Home() {
               </Badge>
             </Link>
 
-            <Text as="h1">Make your projects</Text>
-            <Text as="h1" className="text-outlined">
+            <Text as="h1" className="text-5xl lg:text-6xl">
+              Make your projects
+            </Text>
+            <Text as="h1" className="text-5xl lg:text-6xl text-outlined">
               stand out!
             </Text>
 

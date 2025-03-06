@@ -1,6 +1,6 @@
 "use client";
 
-import { Accordion } from "@/packages/ui";
+import { Accordion } from "@/components/ui";
 
 export default function AccordionStyleDefault() {
   return (

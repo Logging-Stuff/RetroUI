@@ -1,4 +1,4 @@
-import { Badge } from "@/packages/ui";
+import { Badge } from "@/components/ui";
 
 export default function BadgeStyleDefault() {
   return <Badge>Default Badge</Badge>;

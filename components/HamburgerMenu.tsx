@@ -3,7 +3,7 @@
 import { useState } from "react";
 import SideNav from "./SideNav";
 import { AlignJustify, X } from "lucide-react";
-import { Button } from "@/packages/ui";
+import { Button } from "@/components/ui";
 
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);

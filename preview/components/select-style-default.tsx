@@ -1,4 +1,4 @@
-import { Select } from "@/packages/ui";
+import { Select } from "@/components/ui";
 import React from "react";
 
 export default function SelectStyleDefault() {

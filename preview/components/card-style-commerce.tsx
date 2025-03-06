@@ -1,4 +1,4 @@
-import { Button, Card } from "@/packages/ui";
+import { Button, Card } from "@/components/ui";
 
 export default function CommerceCard() {
   return (

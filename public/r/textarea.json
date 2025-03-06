@@ -6,7 +6,7 @@
   "description": "This pretty input makes your users want to type lots of stuff! ⌨️ ⌨",
   "files": [
     {
-      "path": "packages/ui/Form/Textarea.tsx",
+      "path": "components/ui/Form/Textarea.tsx",
       "content": "import React from \"react\";\n\nexport function Textarea({\n  type = \"text\",\n  placeholder = \"Enter text...\",\n  className = \"\",\n  ...props\n}) {\n  return (\n    <textarea\n        placeholder={placeholder}\n        rows={4}\n        className={`px-4 py-2 w-full border-2 border-black shadow-md transition focus:outline-none focus:shadow-xs ${className}`}\n        {...props}\n    />\n  );\n}\n",
       "type": "registry:component"
     }

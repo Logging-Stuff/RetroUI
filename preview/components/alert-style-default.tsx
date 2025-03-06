@@ -1,4 +1,4 @@
-import { Alert } from "@/packages/ui";
+import { Alert } from "@/components/ui";
 
 export default function AlertStyleDefault() {
   return (

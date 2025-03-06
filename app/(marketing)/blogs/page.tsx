@@ -1,5 +1,5 @@
 import { allBlogs } from "@/.contentlayer/generated";
-import { Card, Text } from "@/packages/ui";
+import { Card, Text } from "@/components/ui";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";

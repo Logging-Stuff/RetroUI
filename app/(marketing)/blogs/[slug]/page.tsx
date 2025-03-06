@@ -3,7 +3,7 @@ import { allBlogs } from "contentlayer/generated";
 import { notFound } from "next/navigation";
 import { format } from "date-fns";
 import MDX from "@/components/MDX";
-import { Avatar, Badge, Button, Text } from "@/packages/ui";
+import { Avatar, Badge, Button, Text } from "@/components/ui";
 import { Metadata } from "next";
 import { MoveRightIcon, MoveUpRightIcon } from "lucide-react";
 import Image from "next/image";

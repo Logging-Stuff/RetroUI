@@ -12,7 +12,14 @@ export const navConfig: INavigationConfig = {
   sideNavItems: [
     {
       title: "Getting Started",
-      children: [{ title: "Introduction", href: "/docs", tag: "Updated" }],
+      children: [
+        { title: "Introduction", href: "/docs", tag: "Updated" },
+        {
+          title: "Installation",
+          href: "/docs/install",
+          tag: "New",
+        },
+      ],
     },
     {
       title: "Components",

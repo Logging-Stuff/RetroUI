@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Text, Input } from "@/packages/ui";
+import { Button, Text, Input } from "@/components/ui";
 import { useState } from "react";
 
 const INIT = "INIT";

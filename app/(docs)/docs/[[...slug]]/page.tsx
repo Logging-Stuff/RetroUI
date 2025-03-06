@@ -3,7 +3,7 @@ import { allDocs } from "contentlayer/generated";
 import { notFound } from "next/navigation";
 import { format } from "date-fns";
 import MDX from "@/components/MDX";
-import { Text } from "@/packages/ui";
+import { Text } from "@/components/ui";
 import { Metadata } from "next";
 import { MoveRightIcon, MoveUpRightIcon } from "lucide-react";
 
@@ -47,8 +47,8 @@ export default function page({ params }: IProps) {
   return (
     <div className="space-y-12 py-8">
       <div className="border-b border-black pb-6">
-        <Text as="h2">{doc.title}</Text>
-        <p className="text-lg text-muted">{doc.description}</p>
+        <Text as="h1">{doc.title}</Text>
+        <p className="text-lg text-muted mt-2">{doc.description}</p>
         {doc.links && (
           <div className="flex space-x-4 text-sm mt-4">
             {doc.links?.api_reference && (

@@ -1,4 +1,4 @@
-import { Input, Label } from "@/packages/ui";
+import { Input, Label } from "@/components/ui";
 
 export default function InputStyleWithLabel() {
   return (

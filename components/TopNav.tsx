@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon, HeartIcon } from "lucide-react";
 import HamburgerMenu from "./HamburgerMenu";
-import { Button } from "@/packages/ui";
+import { Button } from "@/components/ui";
 import { navConfig } from "@/config/navigation";
 
 export default function TopNav() {

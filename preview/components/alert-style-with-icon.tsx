@@ -1,4 +1,4 @@
-import { Alert } from "@/packages/ui";
+import { Alert } from "@/components/ui";
 import { CheckCircle } from "lucide-react";
 
 export default function AlertStyleDefaultIcon() {

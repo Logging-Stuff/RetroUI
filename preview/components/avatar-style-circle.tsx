@@ -1,4 +1,4 @@
-import { Avatar } from "@/packages/ui";
+import { Avatar } from "@/components/ui";
 
 export default function AvatarStyleCircle() {
   return (
