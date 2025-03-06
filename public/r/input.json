@@ -6,7 +6,7 @@
   "description": "This pretty input makes your users want to type stuff! ⌨️",
   "files": [
     {
-      "path": "packages/ui/Form/Input.tsx",
+      "path": "components/ui/Form/Input.tsx",
       "content": "import React, { InputHTMLAttributes } from \"react\";\n\ninterface InputProps extends InputHTMLAttributes<HTMLInputElement> {\n  className?: string;\n}\n\nexport const Input: React.FC<InputProps> = ({\n  type = \"text\",\n  placeholder = \"Enter text\",\n  className = \"\",\n  ...props\n}) => {\n  console.log(props);\n  return (\n    <input\n      type={type}\n      placeholder={placeholder}\n      className={`px-4 py-2 w-full border-2 border-black shadow-md transition focus:outline-none focus:shadow-xs ${\n        props[\"aria-invalid\"]\n          ? \"border-red-500 text-red-500 shadow-xs shadow-red-600\"\n          : \"\"\n      } ${className}`}\n      {...props}\n    />\n  );\n};\n",
       "type": "registry:component"
     }

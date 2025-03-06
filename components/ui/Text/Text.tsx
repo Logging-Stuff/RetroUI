@@ -8,7 +8,7 @@ const textVariants = cva("font-head", {
       p: "font-sans text-base",
       li: "font-sans text-base",
       a: "font-sans text-base hover:underline underline-offset-2 decoration-primary-500",
-      h1: "text-5xl lg:text-6xl font-bold",
+      h1: "text-4xl lg:text-5xl font-bold",
       h2: "text-3xl lg:text-4xl font-semibold",
       h3: "text-2xl font-medium",
       h4: "text-xl font-normal",

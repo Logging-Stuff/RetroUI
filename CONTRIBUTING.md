@@ -37,7 +37,7 @@ Thank you for your interest in contributing to RetroUI 🙏. I hope this guide t
 
 ## Adding a New Component
 
-1. Create the main component in `/packages/ui/NewComponent/NewComponent.tsx`
+1. Create the main component in `/components/ui/NewComponent/NewComponent.tsx`
 
 ```ts
 export function NewComponent() {
@@ -45,7 +45,7 @@ export function NewComponent() {
 }
 ```
 
-2. Export your component in `/packages/ui/NewComponent/index.ts` and `/packages/ui/index.ts`
+2. Export your component in `/components/ui/NewComponent/index.ts` and `/components/ui/index.ts`
 
 ```ts
 export * from "./NewComponent";

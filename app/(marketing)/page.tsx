@@ -73,8 +73,10 @@ export default async function Home() {
               </Badge>
             </Link>
 
-            <Text as="h1">Make your projects</Text>
-            <Text as="h1" className="text-outlined">
+            <Text as="h1" className="text-5xl lg:text-6xl">
+              Make your projects
+            </Text>
+            <Text as="h1" className="text-5xl lg:text-6xl text-outlined">
               stand out!
             </Text>
 
