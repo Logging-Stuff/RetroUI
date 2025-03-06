@@ -1,4 +1,4 @@
-import { RadioGroup } from "@/packages/ui";
+import { RadioGroup } from "@/components/ui";
 
 export default function RadioStyleSizes() {
   return (

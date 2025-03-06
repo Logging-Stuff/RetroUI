@@ -1,6 +1,6 @@
 "use client";
 
-import { Text } from "@/packages/ui";
+import { Text } from "@/components/ui";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import React, { AnchorHTMLAttributes, HTMLAttributes } from "react";
 import { ComponentShowcase } from "./ComponentShowcase";

@@ -1,4 +1,4 @@
-import { Button, Menu } from "@/packages/ui";
+import { Button, Menu } from "@/components/ui";
 
 export default function MenuDefault() {
   return (

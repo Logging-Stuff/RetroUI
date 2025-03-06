@@ -1,5 +1,5 @@
 import { navConfig } from "@/config/navigation";
-import { Badge, Text } from "@/packages/ui";
+import { Badge, Text } from "@/components/ui";
 import Link from "next/link";
 
 export default function SideNav() {

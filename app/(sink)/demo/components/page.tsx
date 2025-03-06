@@ -15,9 +15,9 @@ import {
   TabsPanels,
   TabsTrigger,
   TabsTriggerList,
-} from "@/packages/ui";
-import { Card } from "@/packages/ui/Cards/Card";
-import { RadioGroup } from "@/packages/ui/Form/Radio";
+} from "@/components/ui";
+import { Card } from "@/components/ui/Cards/Card";
+import { RadioGroup } from "@/components/ui/Form/Radio";
 import BadgeStyleVariants from "@/preview/components/badge-style-variants";
 import TestimonialCard from "@/preview/components/card-style-testimonial";
 import { CheckCircle } from "lucide-react";

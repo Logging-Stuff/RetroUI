@@ -1,4 +1,4 @@
-import { Switch } from "@/packages/ui";
+import { Switch } from "@/components/ui";
 import React from "react";
 
 export default function SwitchStyleDisabled() {

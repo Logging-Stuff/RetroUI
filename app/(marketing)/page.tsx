@@ -8,7 +8,7 @@ import {
   Card,
   Avatar,
   Badge,
-} from "@/packages/ui";
+} from "@/components/ui";
 import AccordionStyleDefault from "@/preview/components/accordion-style-default";
 import AlertStyleDefaultIcon from "@/preview/components/alert-style-with-icon";
 import AvatarStyleCircle from "@/preview/components/avatar-style-circle-sizes";

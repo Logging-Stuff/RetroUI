@@ -3,7 +3,7 @@ import { allDocs } from "contentlayer/generated";
 import { notFound } from "next/navigation";
 import { format } from "date-fns";
 import MDX from "@/components/MDX";
-import { Text } from "@/packages/ui";
+import { Text } from "@/components/ui";
 import { Metadata } from "next";
 import { MoveRightIcon, MoveUpRightIcon } from "lucide-react";
 

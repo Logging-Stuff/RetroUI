@@ -1,4 +1,4 @@
-import { Checkbox } from "@/packages/ui";
+import { Checkbox } from "@/components/ui";
 
 export default function CheckboxStyleSizes() {
   return (

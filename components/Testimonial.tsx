@@ -1,4 +1,4 @@
-import { Text, Card, Avatar } from "@/packages/ui";
+import { Text, Card, Avatar } from "@/components/ui";
 
 interface TestimonialCardProps {
   quote: string;

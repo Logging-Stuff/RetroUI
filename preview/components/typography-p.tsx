@@ -1,4 +1,4 @@
-import { Text } from "@/packages/ui";
+import { Text } from "@/components/ui";
 
 export default function TextParagraph() {
   return (

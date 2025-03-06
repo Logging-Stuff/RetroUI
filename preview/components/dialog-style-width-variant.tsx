@@ -1,4 +1,4 @@
-import { Button, Dialog, Text } from "@/packages/ui";
+import { Button, Dialog, Text } from "@/components/ui";
 import { useState } from "react";
 
 type Variants =

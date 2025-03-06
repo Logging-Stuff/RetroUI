@@ -1,4 +1,4 @@
-import { Card } from "@/packages/ui";
+import { Card } from "@/components/ui";
 
 export default function BasicCard() {
   return (

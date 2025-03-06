@@ -1,4 +1,4 @@
-import { Button, Dialog, Input, Text } from "@/packages/ui";
+import { Button, Dialog, Input, Text } from "@/components/ui";
 
 export default function DialogStyleWithForm() {
   return (
