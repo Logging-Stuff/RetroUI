@@ -35,17 +35,19 @@ interface IDialogBackgroupProps
     VariantProps<typeof overlayVariants> {}
 
 const DialogBackdrop = React.forwardRef<HTMLDivElement, IDialogBackgroupProps>(
-  (inputProps: IDialogBackgroupProps, forwardedRef) => {
+  function DialogBackdrop(inputProps: IDialogBackgroupProps, forwardedRef) {
     const { variant = "default", className, ...props } = inputProps;
 
     return (
       <ReactDialog.Overlay
         className={cn(overlayVariants({ variant }), className)}
+        ref={forwardedRef}
         {...props}
       />
     );
   }
 );
+DialogBackdrop.displayName = "DialogBackdrop";
 
 const dialogVariants = cva(
   `fixed z-50 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
@@ -88,7 +90,7 @@ interface IDialogContentProps
 }
 
 const DialogContent = React.forwardRef<HTMLDivElement, IDialogContentProps>(
-  (inputProps: IDialogContentProps, forwardedRef) => {
+  function DialogContent(inputProps: IDialogContentProps, forwardedRef) {
     const {
       children,
       size = "auto",
@@ -114,6 +116,7 @@ const DialogContent = React.forwardRef<HTMLDivElement, IDialogContentProps>(
     );
   }
 );
+DialogContent.displayName = "DialogContent";
 
 interface IDialogDescriptionProps extends HTMLAttributes<HTMLDivElement> {}
 const DialogDescription = ({
