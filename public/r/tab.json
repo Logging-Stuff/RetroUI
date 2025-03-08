@@ -9,9 +9,10 @@
   ],
   "files": [
     {
-      "path": "components/ui/Tabs/Tab.tsx",
+      "path": "components/ui/Tab.tsx",
       "content": "import { cn } from \"@/lib/utils\";\nimport {\n  Tab,\n  TabGroup,\n  TabList,\n  TabListProps,\n  TabPanel,\n  TabPanelProps,\n  TabPanels,\n  TabProps,\n} from \"@headlessui/react\";\n\nconst Tabs = TabGroup;\nconst TabsPanels = TabPanels;\n\ninterface ITabsTriggerList extends TabListProps {\n  className?: string;\n}\nconst TabsTriggerList = ({\n  children,\n  className,\n  ...props\n}: ITabsTriggerList) => {\n  return (\n    <TabList className={cn(\"flex flex-row space-x-2\", className)} {...props}>\n      {children}\n    </TabList>\n  );\n};\n\ninterface ITabsTrigger extends TabProps {\n  className?: string;\n}\nconst TabsTrigger = ({ children, className, ...props }: ITabsTrigger) => {\n  return (\n    <Tab\n      className={cn(\n        \"px-4 py-1 border-2 border-transparent data-[selected]:border-black data-[selected]:bg-primary-400 data-[selected]:font-semibold focus:outline-none\",\n        className\n      )}\n      {...props}\n    >\n      {children}\n    </Tab>\n  );\n};\n\ninterface ITabsContent extends TabPanelProps {\n  className?: string;\n}\nconst TabsContent = ({ children, className, ...props }: ITabsContent) => {\n  return (\n    <TabPanel\n      className={cn(\"border-2 border-black mt-2 p-4\", className)}\n      {...props}\n    >\n      {children}\n    </TabPanel>\n  );\n};\n\nexport { Tabs, TabsPanels, TabsTrigger, TabsContent, TabsTriggerList };\n",
-      "type": "registry:component"
+      "type": "registry:component",
+      "target": "components/retroui/Tab.tsx"
     }
   ]
 }

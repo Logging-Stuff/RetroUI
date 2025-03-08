@@ -10,7 +10,6 @@ export const Input: React.FC<InputProps> = ({
   className = "",
   ...props
 }) => {
-  console.log(props);
   return (
     <input
       type={type}
