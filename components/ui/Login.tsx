@@ -1,7 +1,7 @@
 import React from "react";
-import { Text } from "../Text";
-import { Input } from "../Form";
-import { Button } from "../Buttons";
+import { Text } from "./Text";
+import { Input } from "./Input";
+import { Button } from "./Button";
 import Link from "next/link";
 
 export function Login() {
