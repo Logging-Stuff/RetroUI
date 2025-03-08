@@ -21,59 +21,59 @@ export const componentConfig: {
     accordion: {
       name: "accordion",
       dependencies: ["@radix-ui/react-accordion", "lucide-react"],
-      filePath: "components/ui/Accordions/Accordion.tsx",
+      filePath: "components/ui/Accordion.tsx",
     },
     alert: {
       name: "alert",
-      filePath: "components/ui/Alerts/Alert.tsx",
+      filePath: "components/ui/Alert.tsx",
     },
     avatar: {
       name: "avatar",
-      filePath: "components/ui/Avatars/Avatar.tsx",
+      filePath: "components/ui/Avatar.tsx",
     },
     badge: {
       name: "badge",
-      filePath: "components/ui/Badges/Badge.tsx",
+      filePath: "components/ui/Badge.tsx",
     },
     button: {
       name: "button",
-      filePath: "components/ui/Buttons/Button.tsx",
+      filePath: "components/ui/Button.tsx",
     },
     card: {
       name: "card",
-      filePath: "components/ui/Cards/Card.tsx",
+      filePath: "components/ui/Card.tsx",
     },
     checkbox: {
       name: "checkbox",
-      filePath: "components/ui/Form/Checkbox.tsx",
+      filePath: "components/ui/Checkbox.tsx",
     },
     dialog: {
       name: "dialog",
-      filePath: "components/ui/Dialog/Dialog.tsx",
+      filePath: "components/ui/Dialog.tsx",
     },
     input: {
       name: "input",
-      filePath: "components/ui/Form/Input.tsx",
+      filePath: "components/ui/Input.tsx",
     },
     menu: {
       name: "menu",
-      filePath: "components/ui/Menu/Menu.tsx",
+      filePath: "components/ui/Menu.tsx",
     },
     radio: {
       name: "radio",
-      filePath: "components/ui/Form/Radio.tsx",
+      filePath: "components/ui/Radio.tsx",
     },
     select: {
       name: "select",
-      filePath: "components/ui/Form/Select.tsx",
+      filePath: "components/ui/Select.tsx",
     },
     switch: {
       name: "switch",
-      filePath: "components/ui/Form/Switch.tsx",
+      filePath: "components/ui/Switch.tsx",
     },
     text: {
       name: "text",
-      filePath: "components/ui/Text/Text.tsx",
+      filePath: "components/ui/Text.tsx",
     },
   },
   examples: {

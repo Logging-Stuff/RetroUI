@@ -29,7 +29,8 @@
             ],
             "files": [
                 {
-                    "path": "components/ui/Accordions/Accordion.tsx",
+                    "path": "components/ui/Accordion.tsx",
+                    "target": "components/retroui/Accordion.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -44,7 +45,8 @@
             ],
             "files": [
                 {
-                    "path": "components/ui/Alerts/Alert.tsx",
+                    "path": "components/ui/Alert.tsx",
+                    "target": "components/retroui/Alert.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -59,7 +61,8 @@
             ],
             "files": [
                 {
-                    "path": "components/ui/Avatars/Avatar.tsx",
+                    "path": "components/ui/Avatar.tsx",
+                    "target": "components/retroui/Avatar.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -74,7 +77,8 @@
             ],
             "files": [
                 {
-                    "path": "components/ui/Badges/Badge.tsx",
+                    "path": "components/ui/Badge.tsx",
+                    "target": "components/retroui/Badge.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -89,7 +93,8 @@
             ],
             "files": [
                 {
-                    "path": "components/ui/Buttons/Button.tsx",
+                    "path": "components/ui/Button.tsx",
+                    "target": "components/retroui/Button.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -101,7 +106,8 @@
             "description": "A customizable card component to visualize your content. 📝",
             "files": [
                 {
-                    "path": "components/ui/Cards/Card.tsx",
+                    "path": "components/ui/Card.tsx",
+                    "target": "components/retroui/Card.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -118,7 +124,8 @@
             ],
             "files": [
                 {
-                    "path": "components/ui/Form/Checkbox.tsx",
+                    "path": "components/ui/Checkbox.tsx",
+                    "target": "components/retroui/Checkbox.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -136,7 +143,8 @@
             ],
             "files": [
                 {
-                    "path": "components/ui/Dialog/Dialog.tsx",
+                    "path": "components/ui/Dialog.tsx",
+                    "target": "components/retroui/Dialog.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -148,7 +156,8 @@
             "description": "This pretty input makes your users want to type stuff! ⌨️",
             "files": [
                 {
-                    "path": "components/ui/Form/Input.tsx",
+                    "path": "components/ui/Input.tsx",
+                    "target": "components/retroui/Input.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -164,7 +173,8 @@
             ],
             "files": [
                 {
-                    "path": "components/ui/Form/Label.tsx",
+                    "path": "components/ui/Label.tsx",
+                    "target": "components/retroui/Label.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -179,7 +189,8 @@
             ],
             "files": [
                 {
-                    "path": "components/ui/Menu/Menu.tsx",
+                    "path": "components/ui/Menu.tsx",
+                    "target": "components/retroui/Menu.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -195,7 +206,8 @@
             ],
             "files": [
                 {
-                    "path": "components/ui/Form/Radio.tsx",
+                    "path": "components/ui/Radio.tsx",
+                    "target": "components/retroui/Radio.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -211,7 +223,8 @@
             ],
             "files": [
                 {
-                    "path": "components/ui/Form/Select.tsx",
+                    "path": "components/ui/Select.tsx",
+                    "target": "components/retroui/Select.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -226,7 +239,8 @@
             ],
             "files": [
                 {
-                    "path": "components/ui/Form/Switch.tsx",
+                    "path": "components/ui/Switch.tsx",
+                    "target": "components/retroui/Switch.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -241,7 +255,8 @@
             ],
             "files": [
                 {
-                    "path": "components/ui/Tabs/Tab.tsx",
+                    "path": "components/ui/Tab.tsx",
+                    "target": "components/retroui/Tab.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -256,7 +271,8 @@
             ],
             "files": [
                 {
-                    "path": "components/ui/Text/Text.tsx",
+                    "path": "components/ui/Text.tsx",
+                    "target": "components/retroui/Text.tsx",
                     "type": "registry:component"
                 }
             ]
@@ -268,7 +284,8 @@
             "description": "This pretty input makes your users want to type lots of stuff! ⌨️ ⌨",
             "files": [
                 {
-                    "path": "components/ui/Form/Textarea.tsx",
+                    "path": "components/ui/Textarea.tsx",
+                    "target": "components/retroui/Textarea.tsx",
                     "type": "registry:component"
                 }
             ]
