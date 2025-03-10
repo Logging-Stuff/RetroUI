@@ -314,7 +314,7 @@ export const componentConfig: {
     },
     "slider-style-variants":{
       name:"slider-style-variants",
-      filePath: "preview\components\slider-style-default.tsx",
+      filePath: "preview\components\slider-style-variants.tsx",
       preview: lazy(
         () => import("@/preview/components/Slider-style-variants")
       ),
