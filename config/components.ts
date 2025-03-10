@@ -77,6 +77,7 @@ export const componentConfig: {
     },
     slider: {
       name: "slider",
+      dependencies: ["@radix-ui/react-slider"],
       filePath: "components/ui/Slider.tsx",
     }
   },
