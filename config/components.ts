@@ -308,14 +308,14 @@ export const componentConfig: {
     },
     "slider-style-default":{
       name: "slider-style-default",
-      filePath: "preview\components\slider-style-default.tsx",
+      filePath: "preview/components/slider-style-default.tsx",
       preview: lazy(
         () => import("@/preview/components/slider-style-default")
       ),
     },
     "slider-style-variants":{
       name:"slider-style-variants",
-      filePath: "preview\components\slider-style-variants.tsx",
+      filePath: "preview/components/slider-style-variants.tsx",
       preview: lazy(
         () => import("@/preview/components/slider-style-variants")
       ),
