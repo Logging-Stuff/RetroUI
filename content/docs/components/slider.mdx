@@ -1,0 +1,68 @@
+---
+title: Slider
+description: A customizable slider component with various styles and features.
+lastUpdated: 10 Mar, 2025
+---
+
+### Default
+
+<hr />
+<br />
+<ComponentShowcase name="slider-style-default" />
+
+
+
+## Usage
+
+```tsx
+import { Slider } from "@/components/ui/slider";
+
+export default function Example() {
+  return (
+    <Slider
+      defaultValue={[40]}
+      showValue
+      thumbVariant="defaultThumb"
+      trackVariant="default"
+      onValueChange={(val) => console.log(val)}
+    />
+  );
+}
+```
+
+## Customization
+
+### Value Display
+- `showValue`: Shows the current value as a tooltip above the thumb (default: `true`).
+- `alwaysShowTooltip`: Keeps the value tooltip visible at all times (default: `false`).
+
+```tsx
+<Slider showValue alwaysShowTooltip />
+```
+
+### Thumb & Track Variants
+Modify the appearance using `thumbVariant` and `trackVariant`:
+
+```tsx
+<Slider thumbVariant="largeThumb" trackVariant="thin" />
+```
+
+### Grid Lines
+To enable grid lines, set `showGridLines` to `0` or `1`:
+
+```tsx
+<Slider showGridLines={1} />
+```
+
+### Thumb Color
+Change the thumb color between `white` and `black`:
+
+```tsx
+<Slider thumbColor="black" />
+```
+
+### Variants Examples
+
+<hr />
+<br />
+<ComponentShowcase name="slider-style-variants" />

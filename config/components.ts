@@ -75,6 +75,10 @@ export const componentConfig: {
       name: "text",
       filePath: "components/ui/Text.tsx",
     },
+    slider: {
+      name: "slider",
+      filePath: "components/ui/Slider.tsx",
+    }
   },
   examples: {
     "accordion-style-default": {
@@ -299,6 +303,20 @@ export const componentConfig: {
       filePath: "preview/components/dialog-style-with-form.tsx",
       preview: lazy(
         () => import("@/preview/components/dialog-style-with-form")
+      ),
+    },
+    "slider-style-default":{
+      name: "slider-style-default",
+      filePath: "preview\components\slider-style-default.tsx",
+      preview: lazy(
+        () => import("@/preview/components/Slider-style-default")
+      ),
+    },
+    "slider-style-variants":{
+      name:"slider-style-variants",
+      filePath: "preview\components\slider-style-default.tsx",
+      preview: lazy(
+        () => import("@/preview/components/Slider-style-variants")
       ),
     },
   },
