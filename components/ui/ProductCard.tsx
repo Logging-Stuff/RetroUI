@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "./Button";
 
 export function ProductCard() {
   return (
@@ -11,9 +12,7 @@ export function ProductCard() {
         <h3 className="font-head text-3xl font-medium mb-1">Classic Gameboy</h3>
         <div className="flex justify-between items-center">
           <span className="text-lg font-semibold">$29.99</span>
-          <button className="px-6 py-2 text-sm font-head bg-primary-400 border-2 border-black shadow-md hover:shadow-xs transition-all">
-            Add To Cart
-          </button>
+          <Button>Add To Cart</Button>
         </div>
       </div>
     </div>

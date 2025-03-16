@@ -57,13 +57,15 @@ export default function page({ params }: IProps) {
   return (
     <div className="max-w-3xl mx-auto">
       <div className="border-b border-black pb-6 mb-6">
-        <Text className="text-muted text-sm">
+        <Text className="text-muted-foreground text-sm">
           {format(new Date(blog.publishedAt), "dd, MMMM yyyy")}
         </Text>
         <Text as="h2" className="mb-2">
           {blog.title}
         </Text>
-        <p className="text-lg text-muted  mb-8">{blog.description}</p>
+        <p className="text-lg text-muted-foreground  mb-8">
+          {blog.description}
+        </p>
         <Image
           src={blog.coverImage}
           alt={blog.title}
@@ -82,7 +84,7 @@ export default function page({ params }: IProps) {
               <Link
                 href={`https://x.com/@${blog.author.x}`}
                 target="_blank"
-                className="text-muted"
+                className="text-muted-foreground"
               >
                 @{blog.author.x}
               </Link>

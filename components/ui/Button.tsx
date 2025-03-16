@@ -2,11 +2,11 @@ import { cn } from "@/lib/utils";
 import { cva, VariantProps } from "class-variance-authority";
 import React, { ButtonHTMLAttributes } from "react";
 
-const buttonVariants = cva("font-head transition-all outline-none", {
+const buttonVariants = cva("font-head transition-all outline-hidden", {
   variants: {
     variant: {
       default:
-        "shadow-md hover:shadow-xs bg-primary-400 text-black border-2 border-black hover:bg-primary-500",
+        "shadow-md hover:shadow-xs bg-primary text-black border-2 border-black hover:bg-primary-hover",
       outline:
         "shadow-md hover:shadow-xs bg-transparent text-black border-2 border-black",
       link: "bg-transparent text-black hover:underline",

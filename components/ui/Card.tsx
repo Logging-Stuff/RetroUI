@@ -32,7 +32,7 @@ const CardTitle = ({ className, ...props }: ICardProps) => {
 };
 
 const CardDescription = ({ className, ...props }: ICardProps) => (
-  <p className={cn("text-muted", className)} {...props} />
+  <p className={cn("text-muted-foreground", className)} {...props} />
 );
 
 const CardContent = ({ className, ...props }: ICardProps) => {

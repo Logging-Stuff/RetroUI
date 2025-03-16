@@ -15,7 +15,7 @@ const SelectTrigger = ({
   return (
     <SelectPrimitive.Trigger
       className={cn(
-        "flex h-10 min-w-40 items-center shadow-md justify-between border-2 border-input border-black bg-transparent px-4 py-2 ring-offset-background placeholder:text-muted-foreground focus:outline-none disabled:cursor-not-allowed disabled:opacity-50",
+        "flex h-10 min-w-40 items-center shadow-md justify-between border-2 border-input border-black bg-transparent px-4 py-2 ring-offset-background placeholder:text-muted-foreground focus:outline-hidden disabled:cursor-not-allowed disabled:opacity-50",
         className
       )}
       {...props}
@@ -72,7 +72,7 @@ const SelectItem = ({
 }: SelectPrimitive.SelectItemProps) => (
   <SelectPrimitive.Item
     className={cn(
-      "relative flex w-full cursor-default select-none items-center py-1.5 px-2 outline-none hover:bg-primary-400 data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+      "relative flex w-full cursor-default select-none items-center py-1.5 px-2 outline-hidden hover:bg-primary data-disabled:pointer-events-none data-disabled:opacity-50",
       className
     )}
     {...props}

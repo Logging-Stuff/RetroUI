@@ -175,7 +175,7 @@ const dialogHeaderVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary-400 text-black",
+        default: "bg-primary text-black",
       },
       position: {
         fixed: "sticky top-0",

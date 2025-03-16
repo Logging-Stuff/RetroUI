@@ -63,13 +63,13 @@ const components = (type: "doc" | "blog") => ({
         href={href}
         target={target || "_blank"}
         rel={rel || "noopener noreferrer"}
-        className="underline underline-offset-4 hover:decoration-primary-500"
+        className="underline underline-offset-4 hover:decoration-primary"
         {...rest}
       />
     ) : (
       <Link
         href={href}
-        className="underline underline-offset-4 hover:decoration-primary-500"
+        className="underline underline-offset-4 hover:decoration-primary"
         {...rest}
       />
     );
@@ -82,7 +82,7 @@ const components = (type: "doc" | "blog") => ({
   }: React.HTMLAttributes<HTMLElement>) => (
     <code
       className={cn(
-        "relative rounded bg-[#282A36] p-1 text-primary-500 text-sm",
+        "relative rounded-sm bg-[#282A36] p-1 text-primary text-sm",
         className
       )}
       {...props}

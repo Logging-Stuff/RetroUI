@@ -16,11 +16,11 @@ function ComponentInstallManual({ children }: { children: React.ReactNode }) {
 function ComponentInstall({ children }: IComponentShowcase) {
   return (
     <TabGroup>
-      <TabList className="border-b bg-transparent flex space-x-4 mb-6">
-        <Tab className="text-lg min-w-12 relative px-2 py-1 border-b-2 border-b-transparent bg-transparent data-[selected]:border-primary-500 data-[selected]:text-foreground focus:outline-none">
+      <TabList className="border-b bg-transparent flex space-x-4 mb-6 text-sm">
+        <Tab className="min-w-12 cursor-pointer relative px-2 py-1 bg-transparent data-selected:border data-selected:border-b-0 data-selected:bg-black data-selected:text-white focus:outline-hidden">
           CLI
         </Tab>
-        <Tab className="text-lg min-w-12 relative px-2 py-1 border-b-2 border-b-transparent bg-transparent data-[selected]:border-primary-500 data-[selected]:text-foreground focus:outline-none">
+        <Tab className="min-w-12 cursor-pointer relative px-2 py-1 bg-transparent data-selected:border data-selected:border-b-0 data-selected:bg-black data-selected:text-white focus:outline-hidden">
           Manual
         </Tab>
       </TabList>
