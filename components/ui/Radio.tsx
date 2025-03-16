@@ -24,7 +24,7 @@ const radioVariants = cva("border-black border-2", {
 const radioIndicatorVariants = cva("flex ", {
   variants: {
     variant: {
-      default: "bg-primary-500 border-2 border-black",
+      default: "bg-primary border-2 border-black",
       outline: "border-2 border-black",
       solid: "bg-black",
     },

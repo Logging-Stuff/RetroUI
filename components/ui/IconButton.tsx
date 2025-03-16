@@ -21,9 +21,9 @@ export function IconButton({
 
   const variantClasses = {
     primary:
-      "bg-primary-400 text-black border-2 border-black hover:bg-primary-500",
+      "bg-primary text-black border-2 border-black hover:bg-primary-hover",
     outline: "bg-transparent text-black border-2 border-black",
-    link: "bg-transparent text-primary-400 hover:underline",
+    link: "bg-transparent text-primary hover:underline",
   };
 
   return (

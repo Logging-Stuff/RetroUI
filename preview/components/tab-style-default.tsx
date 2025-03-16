@@ -4,13 +4,13 @@ export default function TabStyleDefault() {
   return (
     <TabGroup>
       <TabList>
-        <Tab className="px-4 py-1 border-2 border-transparent data-[selected]:border-black data-[selected]:bg-primary-400 data-[selected]:font-semibold focus:outline-none">
+        <Tab className="px-4 py-1 border-2 border-transparent data-selected:border-black data-selected:bg-primary data-selected:font-semibold focus:outline-hidden">
           Home
         </Tab>
-        <Tab className="px-4 py-1 border-2 border-transparent data-[selected]:border-black data-[selected]:bg-primary-400 data-[selected]:font-semibold focus:outline-none">
+        <Tab className="px-4 py-1 border-2 border-transparent data-selected:border-black data-selected:bg-primary data-selected:font-semibold focus:outline-hidden">
           About
         </Tab>
-        <Tab className="px-4 py-1 border-2 border-transparent data-[selected]:border-black data-[selected]:bg-primary-400 data-[selected]:font-semibold focus:outline-none">
+        <Tab className="px-4 py-1 border-2 border-transparent data-selected:border-black data-selected:bg-primary data-selected:font-semibold focus:outline-hidden">
           Contact
         </Tab>
       </TabList>

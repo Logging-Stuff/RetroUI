@@ -1,6 +1,6 @@
 import TopNav from "@/components/TopNav";
 import "./global.css";
-import { Archivo_Black, Share_Tech, Share_Tech_Mono } from "next/font/google";
+import { Archivo_Black, Space_Grotesk, Space_Mono } from "next/font/google";
 import { Metadata } from "next";
 
 const archivoBlack = Archivo_Black({
@@ -10,14 +10,14 @@ const archivoBlack = Archivo_Black({
   display: "swap",
 });
 
-const shareTech = Share_Tech({
+const space = Space_Grotesk({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-sans",
   display: "swap",
 });
 
-const shareTechMono = Share_Tech_Mono({
+const spaceMono = Space_Mono({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-mono",
@@ -49,7 +49,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${shareTech.className} ${archivoBlack.variable} ${shareTech.variable} ${shareTechMono.variable}`}
+        className={`${space.className} ${archivoBlack.variable} ${space.variable} ${spaceMono.variable}`}
       >
         <div className="relative z-40 pb-16">
           <TopNav />

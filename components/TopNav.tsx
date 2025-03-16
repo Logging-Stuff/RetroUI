@@ -12,7 +12,7 @@ export default function TopNav() {
       <div className="container max-w-6xl px-4 lg:px-0 mx-auto">
         <div className="flex justify-between items-center h-16">
           {/* Logo Section */}
-          <div className="flex-shrink-0">
+          <div className="shrink-0">
             <a
               href="/"
               className="text-black font-head text-2xl flex items-end"
@@ -34,7 +34,7 @@ export default function TopNav() {
               <Link
                 key={item.title}
                 href={item.href}
-                className="hover:underline decoration-primary-500 underline-offset-2 transition-all"
+                className="hover:underline decoration-primary underline-offset-2 transition-all"
               >
                 {item.title}
               </Link>

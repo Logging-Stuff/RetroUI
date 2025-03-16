@@ -7,7 +7,7 @@ import { Text } from "@/components/ui/Text";
 const alertVariants = cva("relative w-full border-2 border-black p-4", {
   variants: {
     variant: {
-      default: "bg-primary-300 text-foreground",
+      default: "bg-background text-foreground",
       solid: "bg-black text-white",
     },
     status: {
@@ -44,7 +44,7 @@ AlertTitle.displayName = "AlertTitle";
 interface IAlertDescriptionProps
   extends HtmlHTMLAttributes<HTMLParagraphElement> {}
 const AlertDescription = ({ className, ...props }: IAlertDescriptionProps) => (
-  <div className={cn("text-muted", className)} {...props} />
+  <div className={cn("text-muted-foreground", className)} {...props} />
 );
 
 AlertDescription.displayName = "AlertDescription";

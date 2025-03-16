@@ -60,15 +60,9 @@ export default async function Home() {
       <div className="bg-[url('/images/banner_void_2.svg')] bg-cover bg-no-repeat bg-center flex flex-col items-center h-[1900px] lg:h-[1400px]">
         <section className="container max-w-6xl mx-auto px-4 lg:px-0 text-gray-900 flex justify-center items-center lg:gap-28 xl:gap-32 my-28">
           <div className="text-center lg:text-left w-full lg:w-2/3">
-            <Link
-              id="checkout-figma-kit"
-              data-umami-event="checkout-figma-kit"
-              href="https://dub.sh/retroui-figma"
-              target="_blank"
-              className="mb-6 inline-block"
-            >
+            <Link href="/docs" className="mb-6 inline-block">
               <Badge>
-                Checkout Retro UI Figma Kit{" "}
+                We upgraded to TailwindCSS v4{" "}
                 <ArrowRightIcon className="ml-2 h-4 w-4 inline-block" />
               </Badge>
             </Link>
@@ -80,7 +74,7 @@ export default async function Home() {
               stand out!
             </Text>
 
-            <p className="text-lg text-muted mb-8 mt-4">
+            <p className="text-lg text-muted-foreground mb-8 mt-4">
               Retro styled component library based on React and TailwindCSS.
               Comes with 40+ free UI components that you can just copy paste
               into your projects.
@@ -187,14 +181,14 @@ export default async function Home() {
             Easily <span className="text-outlined">Customize</span> to Your Own
             Needs! 🛠️
           </Text>
-          <div className="flex flex-col space-y-1 mt-6 mb-8 text-muted">
-            <Text className="text-xl">
+          <div className="flex flex-col space-y-1 mt-6 mb-8 text-muted-foreground">
+            <Text className="text-lg">
               Copy-Paste Ready: Components that you can just copy paste.
             </Text>
-            <Text className="text-xl">
+            <Text className="text-lg">
               Tailwind Based: Customizable with Tailwind CSS.
             </Text>
-            <Text className="text-xl">
+            <Text className="text-lg">
               Type Safe: Typescript support for all components.
             </Text>
           </div>
@@ -292,20 +286,20 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="container max-w-6xl mx-auto px-4 lg:px-0 grid grid-cols-1 lg:grid-cols-2 items-center my-36">
+      <section className="container max-w-6xl mx-auto px-4 lg:px-0 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center my-36">
         <div className="w-full">
           <Text as="h2">
             The <span className="text-outlined">Figma</span> UI Kit You Were
             Looking For!
           </Text>
-          <div className="flex flex-col space-y-1 mt-6 mb-8 text-muted">
-            <Text className="text-xl">
+          <div className="flex flex-col space-y-1 mt-6 mb-8 text-muted-foreground">
+            <Text className="text-lg">
               - Based on the design foundation of RetroUI.
             </Text>
-            <Text className="text-xl">
+            <Text className="text-lg">
               - Comes with 60+ UI elements like cards, modals, stats, etc .
             </Text>
-            <Text className="text-xl">
+            <Text className="text-lg">
               - Get Lifetime update of new versions.
             </Text>
           </div>
@@ -329,11 +323,11 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="container max-w-6xl mx-auto border-2 bg-primary-400 border-black py-16 px-4 lg:p-16 my-36">
+      <section className="container max-w-6xl mx-auto border-2 bg-primary border-black py-16 px-4 lg:p-16 my-36">
         <Text as="h2" className="text-center mb-2">
           Community Contributors
         </Text>
-        <Text className="text-xl text-center text-muted mb-8">
+        <Text className="text-xl text-center text-muted-foreground mb-8">
           RetroUI core is free and open-source, and it is made possible by our
           awesome contributors.
         </Text>
@@ -378,23 +372,23 @@ export default async function Home() {
       <footer className="bg-black py-8">
         <div className="container max-w-6xl mx-auto flex flex-col lg:flex-row space-y-4 lg:space-y-0 justify-between items-center">
           <div className="flex justify-center space-x-4">
-            <a href="https://twitter.com/ariflogs" className="text-primary-500">
+            <a href="https://twitter.com/ariflogs" className="text-primary">
               Twitter
             </a>
             <a
               href="https://github.com/Logging-Stuff/retroui"
-              className="text-primary-500"
+              className="text-primary"
             >
               GitHub
             </a>
-            <a href="/docs" className="text-primary-500">
+            <a href="/docs" className="text-primary">
               Documentation
             </a>
           </div>
 
           <p className="text-gray-300 text-sm">
             Built by{" "}
-            <a href="https://twitter.com/ariflogs" className="text-primary-500">
+            <a href="https://twitter.com/ariflogs" className="text-primary">
               Arif Hossain
             </a>
             .

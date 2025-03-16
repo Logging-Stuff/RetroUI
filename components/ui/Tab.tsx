@@ -35,7 +35,7 @@ const TabsTrigger = ({ children, className, ...props }: ITabsTrigger) => {
   return (
     <Tab
       className={cn(
-        "px-4 py-1 border-2 border-transparent data-[selected]:border-black data-[selected]:bg-primary-400 data-[selected]:font-semibold focus:outline-none",
+        "px-4 py-1 border-2 border-transparent data-selected:border-black data-selected:bg-primary data-selected:font-semibold focus:outline-hidden",
         className
       )}
       {...props}
