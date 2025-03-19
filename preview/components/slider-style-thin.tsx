@@ -9,15 +9,15 @@ export default function SliderDefault() {
           htmlFor="default-slider" 
           className="block text-sm font-medium mb-2"
         >
-          Volume Control
+          Brightness Control
         </Label>
         <Slider
-          defaultValue={[50]}
+          defaultValue={[70]}
           min={0}
           max={100}
           step={1}
-          variant="default"
-          aria-label="Volume Control"
+          variant="thin"
+          aria-label="Brightness Control"
         />
       </div>
     </div>
