@@ -313,11 +313,11 @@ export const componentConfig: {
         () => import("@/preview/components/slider-style-default")
       ),
     },
-    "slider-style-variants":{
-      name:"slider-style-variants",
-      filePath: "preview/components/slider-style-variants.tsx",
+    "slider-style-thin":{
+      name:"slider-style-thin",
+      filePath: "preview/components/slider-style-thin.tsx",
       preview: lazy(
-        () => import("@/preview/components/slider-style-variants")
+        () => import("@/preview/components/slider-style-thin")
       ),
     },
   },
