@@ -69,9 +69,8 @@ export default async function Home() {
 
             <Text as="h1" className="text-5xl lg:text-6xl">
               Make your projects
-            </Text>
-            <Text as="h1" className="text-5xl lg:text-6xl text-outlined">
-              stand out!
+              <br />
+              <span className="text-outlined">stand out!</span>
             </Text>
 
             <p className="text-lg text-muted-foreground mb-8 mt-4">
@@ -217,7 +216,7 @@ export default async function Home() {
             <Text as="h3" className="mb-2 font-sans">
               Github Stars
             </Text>
-            <Text as="h1" className="text-outlined text-7xl lg:text-8xl">
+            <Text className="text-outlined text-7xl lg:text-8xl font-head">
               350+
             </Text>
             <Image
@@ -232,7 +231,7 @@ export default async function Home() {
             <Text as="h3" className="mb-2 font-sans">
               Discord Members
             </Text>
-            <Text as="h1" className="text-outlined text-7xl lg:text-8xl">
+            <Text className="text-outlined text-7xl lg:text-8xl font-head">
               100+
             </Text>
             <Image
@@ -289,25 +288,27 @@ export default async function Home() {
       <section className="container max-w-6xl mx-auto px-4 lg:px-0 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center my-36">
         <div className="w-full">
           <Text as="h2">
-            The <span className="text-outlined">Figma</span> UI Kit You Were
-            Looking For!
+            Ship Faster With <span className="text-outlined">RetroUI Pro</span>!
           </Text>
           <div className="flex flex-col space-y-1 mt-6 mb-8 text-muted-foreground">
             <Text className="text-lg">
               - Based on the design foundation of RetroUI.
             </Text>
             <Text className="text-lg">
-              - Comes with 60+ UI elements like cards, modals, stats, etc .
+              - Over 50+ premium ready-to-use components.
             </Text>
             <Text className="text-lg">
-              - Get Lifetime update of new versions.
+              - Complete pre-built website templates.
+            </Text>
+            <Text className="text-lg">
+              - Lifetime access to all future updates.
             </Text>
           </div>
 
           <Link
             id="checkout-figma-kit"
             data-umami-event="checkout-figma-kit"
-            href="https://dub.sh/retroui-figma"
+            href="https://dub.sh/retroui-pro"
             target="_blank"
           >
             <Button>Checkout Now</Button>
