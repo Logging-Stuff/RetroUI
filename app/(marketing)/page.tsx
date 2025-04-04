@@ -285,45 +285,6 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="container max-w-6xl mx-auto px-4 lg:px-0 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center my-36">
-        <div className="w-full">
-          <Text as="h2">
-            Ship Faster With <span className="text-outlined">RetroUI Pro</span>!
-          </Text>
-          <div className="flex flex-col space-y-1 mt-6 mb-8 text-muted-foreground">
-            <Text className="text-lg">
-              - Based on the design foundation of RetroUI.
-            </Text>
-            <Text className="text-lg">
-              - Over 50+ premium ready-to-use components.
-            </Text>
-            <Text className="text-lg">
-              - Complete pre-built website templates.
-            </Text>
-            <Text className="text-lg">
-              - Lifetime access to all future updates.
-            </Text>
-          </div>
-
-          <Link
-            id="checkout-figma-kit"
-            data-umami-event="checkout-figma-kit"
-            href="https://dub.sh/retroui-pro"
-            target="_blank"
-          >
-            <Button>Checkout Now</Button>
-          </Link>
-        </div>
-        <div className="w-full">
-          <Image
-            src="/images/figma-banner.png"
-            width={800}
-            height={800}
-            alt="retroui code showcase"
-          />
-        </div>
-      </section>
-
       <section className="container max-w-6xl mx-auto border-2 bg-primary border-black py-16 px-4 lg:p-16 my-36">
         <Text as="h2" className="text-center mb-2">
           Community Contributors
@@ -356,13 +317,13 @@ export default async function Home() {
             target="_blank"
             passHref
           >
-            <Button className="flex items-center bg-white" variant="outline">
+            <Button className="bg-white" variant="outline">
               <GithubIcon size="16" className="mr-2" />
               Star on Github
             </Button>
           </Link>
           <Link href="https://discord.gg/Jum3NJxK6Q" target="_blank" passHref>
-            <Button className="flex items-center bg-white" variant="outline">
+            <Button className="bg-white" variant="outline">
               <MessageCircle size="16" className="mr-2" />
               Join Community
             </Button>
@@ -370,6 +331,45 @@ export default async function Home() {
         </div>
       </section>
 
+      <section className="container max-w-6xl mx-auto px-4 lg:px-0 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center my-36">
+        <div className="w-full">
+          <Text as="h2">
+            🚀 Ship <span className="text-outlined">Faster</span> With Pro
+            Blocks and Templates!
+          </Text>
+          <div className="flex flex-col space-y-1 mt-6 mb-8 text-muted-foreground">
+            <Text className="text-lg">
+              - Based on the design foundation of RetroUI.
+            </Text>
+            <Text className="text-lg">
+              - Over 50+ premium ready-to-use components.
+            </Text>
+            <Text className="text-lg">
+              - Complete pre-built website templates.
+            </Text>
+            <Text className="text-lg">
+              - Lifetime access to all future updates.
+            </Text>
+          </div>
+
+          <Link
+            id="checkout-figma-kit"
+            data-umami-event="checkout-figma-kit"
+            href="https://dub.sh/retroui-pro"
+            target="_blank"
+          >
+            <Button>Explore Blocks</Button>
+          </Link>
+        </div>
+        <div className="w-full">
+          <Image
+            src="/images/figma-banner.png"
+            width={800}
+            height={800}
+            alt="retroui code showcase"
+          />
+        </div>
+      </section>
       <footer className="bg-black py-8">
         <div className="container max-w-6xl mx-auto flex flex-col lg:flex-row space-y-4 lg:space-y-0 justify-between items-center">
           <div className="flex justify-center space-x-4">
