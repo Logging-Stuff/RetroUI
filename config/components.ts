@@ -59,6 +59,10 @@ export const componentConfig: {
       name: "menu",
       filePath: "components/ui/Menu.tsx",
     },
+    progress: {
+      name: "progress",
+      filePath: "components/ui/Progress.tsx",
+    },
     radio: {
       name: "radio",
       filePath: "components/ui/Radio.tsx",
@@ -236,6 +240,13 @@ export const componentConfig: {
       name: "menu-style-default",
       filePath: "preview/components/menu-style-default.tsx",
       preview: lazy(() => import("@/preview/components/menu-style-default")),
+    },
+    "progress-style-default": {
+      name: "progress-style-default",
+      filePath: "preview/components/progress-style-default.tsx",
+      preview: lazy(
+        () => import("@/preview/components/progress-style-default")
+      ),
     },
     "radio-style-default": {
       name: "radio-style-default",
