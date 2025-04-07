@@ -295,7 +295,7 @@
             "title": "accordion-style-default",
             "type": "registry:block",
             "registryDependencies": [
-                "accordion"
+                "https://retroui.dev/r/accordion.json"
             ],
             "files": [
                 {
@@ -310,7 +310,7 @@
             "title": "alert-style-default",
             "type": "registry:block",
             "registryDependencies": [
-                "alert"
+                "https://retroui.dev/r/alert.json"
             ],
             "files": [
                 {
@@ -325,7 +325,7 @@
             "title": "alert-style-solid",
             "type": "registry:block",
             "registryDependencies": [
-                "alert"
+                "https://retroui.dev/r/alert.json"
             ],
             "files": [
                 {
@@ -340,7 +340,7 @@
             "title": "alert-style-with-icon",
             "type": "registry:block",
             "registryDependencies": [
-                "alert"
+                "https://retroui.dev/r/alert.json"
             ],
             "files": [
                 {
@@ -355,7 +355,7 @@
             "title": "alert-style-all-status",
             "type": "registry:block",
             "registryDependencies": [
-                "alert"
+                "https://retroui.dev/r/alert.json"
             ],
             "files": [
                 {
@@ -370,7 +370,7 @@
             "title": "avatar-style-circle",
             "type": "registry:block",
             "registryDependencies": [
-                "avatar"
+                "https://retroui.dev/r/avatar.json"
             ],
             "files": [
                 {
@@ -385,7 +385,7 @@
             "title": "avatar-style-fallbacks",
             "type": "registry:block",
             "registryDependencies": [
-                "avatar"
+                "https://retroui.dev/r/avatar.json"
             ],
             "files": [
                 {
@@ -400,7 +400,7 @@
             "title": "avatar-style-circle-sizes",
             "type": "registry:block",
             "registryDependencies": [
-                "avatar"
+                "https://retroui.dev/r/avatar.json"
             ],
             "files": [
                 {
@@ -415,7 +415,7 @@
             "title": "badge-style-default",
             "type": "registry:block",
             "registryDependencies": [
-                "badge"
+                "https://retroui.dev/r/badge.json"
             ],
             "files": [
                 {
@@ -430,7 +430,7 @@
             "title": "badge-style-variants",
             "type": "registry:block",
             "registryDependencies": [
-                "badge"
+                "https://retroui.dev/r/badge.json"
             ],
             "files": [
                 {
@@ -445,7 +445,7 @@
             "title": "badge-style-default",
             "type": "registry:block",
             "registryDependencies": [
-                "badge"
+                "https://retroui.dev/r/badge.json"
             ],
             "files": [
                 {
@@ -460,7 +460,7 @@
             "title": "badge-style-sizes",
             "type": "registry:block",
             "registryDependencies": [
-                "badge"
+                "https://retroui.dev/r/badge.json"
             ],
             "files": [
                 {
@@ -475,7 +475,7 @@
             "title": "button-style-default",
             "type": "registry:block",
             "registryDependencies": [
-                "button"
+                "https://retroui.dev/r/button.json"
             ],
             "files": [
                 {
@@ -490,7 +490,7 @@
             "title": "button-style-secondary",
             "type": "registry:block",
             "registryDependencies": [
-                "button"
+                "https://retroui.dev/r/button.json"
             ],
             "files": [
                 {
@@ -505,7 +505,7 @@
             "title": "button-style-default",
             "type": "registry:block",
             "registryDependencies": [
-                "button"
+                "https://retroui.dev/r/button.json"
             ],
             "files": [
                 {
@@ -520,7 +520,7 @@
             "title": "button-style-link",
             "type": "registry:block",
             "registryDependencies": [
-                "button"
+                "https://retroui.dev/r/button.json"
             ],
             "files": [
                 {
@@ -535,7 +535,7 @@
             "title": "button-style-with-icon",
             "type": "registry:block",
             "registryDependencies": [
-                "button"
+                "https://retroui.dev/r/button.json"
             ],
             "files": [
                 {
@@ -550,7 +550,7 @@
             "title": "card-style-default",
             "type": "registry:block",
             "registryDependencies": [
-                "card"
+                "https://retroui.dev/r/card.json"
             ],
             "files": [
                 {
@@ -565,7 +565,7 @@
             "title": "card-style-commerce",
             "type": "registry:block",
             "registryDependencies": [
-                "card"
+                "https://retroui.dev/r/card.json"
             ],
             "files": [
                 {
@@ -580,7 +580,7 @@
             "title": "card-style-testimonial",
             "type": "registry:block",
             "registryDependencies": [
-                "card"
+                "https://retroui.dev/r/card.json"
             ],
             "files": [
                 {
@@ -595,7 +595,7 @@
             "title": "checkbox-style-default",
             "type": "registry:block",
             "registryDependencies": [
-                "checkbox"
+                "https://retroui.dev/r/checkbox.json"
             ],
             "files": [
                 {
@@ -610,7 +610,7 @@
             "title": "checkbox-style-toggle",
             "type": "registry:block",
             "registryDependencies": [
-                "checkbox"
+                "https://retroui.dev/r/checkbox.json"
             ],
             "files": [
                 {
@@ -625,7 +625,7 @@
             "title": "checkbox-style-default",
             "type": "registry:block",
             "registryDependencies": [
-                "checkbox"
+                "https://retroui.dev/r/checkbox.json"
             ],
             "files": [
                 {
@@ -640,7 +640,7 @@
             "title": "input-style-default",
             "type": "registry:block",
             "registryDependencies": [
-                "input"
+                "https://retroui.dev/r/input.json"
             ],
             "files": [
                 {
@@ -655,7 +655,7 @@
             "title": "input-style-with-label",
             "type": "registry:block",
             "registryDependencies": [
-                "input"
+                "https://retroui.dev/r/input.json"
             ],
             "files": [
                 {
@@ -670,7 +670,7 @@
             "title": "input-style-error",
             "type": "registry:block",
             "registryDependencies": [
-                "input"
+                "https://retroui.dev/r/input.json"
             ],
             "files": [
                 {
@@ -685,7 +685,7 @@
             "title": "menu-style-default",
             "type": "registry:block",
             "registryDependencies": [
-                "menu"
+                "https://retroui.dev/r/menu.json"
             ],
             "files": [
                 {
@@ -700,7 +700,7 @@
             "title": "progress-style-default",
             "type": "registry:block",
             "registryDependencies": [
-                "progress"
+                "https://retroui.dev/r/progress.json"
             ],
             "files": [
                 {
@@ -715,7 +715,7 @@
             "title": "radio-style-default",
             "type": "registry:block",
             "registryDependencies": [
-                "radio"
+                "https://retroui.dev/r/radio.json"
             ],
             "files": [
                 {
@@ -730,7 +730,7 @@
             "title": "radio-style-variants",
             "type": "registry:block",
             "registryDependencies": [
-                "radio"
+                "https://retroui.dev/r/radio.json"
             ],
             "files": [
                 {
@@ -745,7 +745,7 @@
             "title": "radio-style-sizes",
             "type": "registry:block",
             "registryDependencies": [
-                "radio"
+                "https://retroui.dev/r/radio.json"
             ],
             "files": [
                 {
@@ -760,7 +760,7 @@
             "title": "select-style-default",
             "type": "registry:block",
             "registryDependencies": [
-                "select"
+                "https://retroui.dev/r/select.json"
             ],
             "files": [
                 {
@@ -775,7 +775,7 @@
             "title": "switch-style-default",
             "type": "registry:block",
             "registryDependencies": [
-                "switch"
+                "https://retroui.dev/r/switch.json"
             ],
             "files": [
                 {
@@ -790,7 +790,7 @@
             "title": "switch-style-disabled",
             "type": "registry:block",
             "registryDependencies": [
-                "switch"
+                "https://retroui.dev/r/switch.json"
             ],
             "files": [
                 {
@@ -805,7 +805,7 @@
             "title": "textarea-style-default",
             "type": "registry:block",
             "registryDependencies": [
-                "textarea"
+                "https://retroui.dev/r/textarea.json"
             ],
             "files": [
                 {
@@ -820,7 +820,7 @@
             "title": "text-headings",
             "type": "registry:block",
             "registryDependencies": [
-                "text"
+                "https://retroui.dev/r/text.json"
             ],
             "files": [
                 {
@@ -835,7 +835,7 @@
             "title": "typography-p",
             "type": "registry:block",
             "registryDependencies": [
-                "text"
+                "https://retroui.dev/r/text.json"
             ],
             "files": [
                 {
@@ -850,7 +850,7 @@
             "title": "tab-style-default",
             "type": "registry:block",
             "registryDependencies": [
-                "tab"
+                "https://retroui.dev/r/tab.json"
             ],
             "files": [
                 {
@@ -865,7 +865,7 @@
             "title": "dialog-style-default",
             "type": "registry:block",
             "registryDependencies": [
-                "dialog"
+                "https://retroui.dev/r/dialog.json"
             ],
             "files": [
                 {
@@ -880,7 +880,7 @@
             "title": "dialog-style-with-footer",
             "type": "registry:block",
             "registryDependencies": [
-                "dialog"
+                "https://retroui.dev/r/dialog.json"
             ],
             "files": [
                 {
@@ -895,7 +895,7 @@
             "title": "dialog-style-width-variant",
             "type": "registry:block",
             "registryDependencies": [
-                "dialog"
+                "https://retroui.dev/r/dialog.json"
             ],
             "files": [
                 {
@@ -910,7 +910,7 @@
             "title": "dialog-style-with-form",
             "type": "registry:block",
             "registryDependencies": [
-                "dialog"
+                "https://retroui.dev/r/dialog.json"
             ],
             "files": [
                 {
