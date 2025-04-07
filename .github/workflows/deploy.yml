@@ -24,8 +24,8 @@ jobs:
 
       - name: Build and push to DockerHub
         run: |
-          docker build -t devarifhossain/retroui:1.1.7 ./
-          docker push devarifhossain/retroui:1.1.7
+          docker build -t devarifhossain/retroui:1.1.8 ./
+          docker push devarifhossain/retroui:1.1.8
     
       # - name: Set up SSH
       #   uses: webfactory/ssh-agent@v0.9.0
