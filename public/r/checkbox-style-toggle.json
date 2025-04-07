@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "checkbox-style-toggle",
+  "type": "registry:block",
+  "title": "checkbox-style-toggle",
+  "registryDependencies": [
+    "checkbox"
+  ],
+  "files": [
+    {
+      "path": "preview/components/checkbox-style-variants.tsx",
+      "content": "import { Checkbox, Text } from \"@/components/ui\";\n\nexport default function CheckboxStyleVariants() {\n  return (\n    <div className=\"flex gap-4\">\n      <Checkbox />\n      <Checkbox variant=\"outline\" />\n      <Checkbox variant=\"solid\" />\n    </div>\n  );\n}\n",
+      "type": "registry:block",
+      "target": "components/retroui/preview/checkbox-style-variants.tsx"
+    }
+  ]
+}

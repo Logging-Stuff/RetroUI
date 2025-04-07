@@ -79,7 +79,7 @@ export default async function Home() {
               into your projects.
             </p>
 
-            <div className="max-w-96 grid gap-4 grid-cols-2 mx-auto lg:mx-0">
+            <div className="flex space-x-4">
               <Link href="/docs" passHref>
                 <Button
                   className="w-full"
@@ -88,17 +88,13 @@ export default async function Home() {
                   Get Started
                 </Button>
               </Link>
-              <Link
-                href="https://github.com/Logging-Stuff/retroui"
-                target="_blank"
-                passHref
-              >
+              <Link href="https://pro.retroui.dev/blocks" passHref>
                 <Button
                   className="w-full"
                   variant="outline"
                   aria-label="Get Started with RetroUI"
                 >
-                  Github
+                  Browse Blocks
                 </Button>
               </Link>
             </div>
