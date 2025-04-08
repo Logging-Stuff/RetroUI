@@ -21,3 +21,4 @@ export * from "./Sonner";
 export * from "./Tooltip";
 export * from "./Popover";
 export * from "./ToggleGroup";
+export * from "./Progress";

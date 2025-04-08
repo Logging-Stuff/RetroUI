@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-style-default",
+  "type": "registry:block",
+  "title": "input-style-default",
+  "registryDependencies": [
+    "input"
+  ],
+  "files": [
+    {
+      "path": "preview/components/input-style-default.tsx",
+      "content": "export default function InputStyleDefault() {\n  return (\n    <input\n      type=\"text\"\n      placeholder=\"type something...\"\n      className=\"px-4 py-2 w-full border-2 border-black shadow-md transition focus:outline-hidden focus:shadow-xs\"\n    />\n  );\n}\n",
+      "type": "registry:block",
+      "target": "components/retroui/preview/input-style-default.tsx"
+    }
+  ]
+}

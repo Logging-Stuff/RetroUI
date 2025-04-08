@@ -5,7 +5,7 @@ export default function SelectStyleDefault() {
   return (
     <Select>
       <Select.Trigger className="w-60">
-        <Select.Value placeholder="Pick your favorite Pokemon" />
+        <Select.Value placeholder="Pick your Pokemon" />
       </Select.Trigger>
       <Select.Content>
         <Select.Group>
