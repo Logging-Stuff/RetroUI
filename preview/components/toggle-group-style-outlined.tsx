@@ -3,7 +3,7 @@
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui";
 import { Bold, Italic, Underline } from "lucide-react";
 
-export default function ToogleGroupStyleOutlined() {
+export default function ToggleGroupStyleOutlined() {
     return (
         <ToggleGroup type="multiple" variant="outlined">
             <ToggleGroupItem value="bold">
