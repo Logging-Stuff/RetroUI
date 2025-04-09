@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "menu-style-default",
+  "type": "registry:block",
+  "title": "menu-style-default",
+  "registryDependencies": [
+    "menu"
+  ],
+  "files": [
+    {
+      "path": "preview/components/menu-style-default.tsx",
+      "content": "import { Button, Menu } from \"@/components/ui\";\n\nexport default function MenuDefault() {\n  return (\n    <Menu>\n      <Menu.Trigger asChild>\n        <Button>Menu</Button>\n      </Menu.Trigger>\n      <Menu.Content className=\"min-w-36\">\n        <Menu.Item>Menu Item 1</Menu.Item>\n        <Menu.Item>Menu Item 2</Menu.Item>\n        <Menu.Item>Menu Item 3</Menu.Item>\n      </Menu.Content>\n    </Menu>\n  );\n}\n",
+      "type": "registry:block",
+      "target": "components/retroui/preview/menu-style-default.tsx"
+    }
+  ]
+}

@@ -15,7 +15,7 @@ const Switch = ({ className, ...props }: SwitchPrimitives.SwitchProps) => (
   >
     <SwitchPrimitives.Thumb
       className={cn(
-        "pointer-events-none block h-4 w-4 bg-primary border-2 mx-0.5 border-foreground shadow-lg ring-0 transition-transform data-[state=checked]:translate-x-5 data-[state=unchecked]:translate-x-0 data-[state=checked]:bg-background"
+        "pointer-events-none block h-4 w-4 bg-primary border-2 mx-0.5 border-foreground ring-0 transition-transform data-[state=checked]:translate-x-5 data-[state=unchecked]:translate-x-0 data-[state=checked]:bg-background"
       )}
     />
   </SwitchPrimitives.Root>

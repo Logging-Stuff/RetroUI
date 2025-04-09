@@ -17,3 +17,4 @@ export * from "./Tab";
 export * from "./Dialog";
 export * from "./Menu";
 export * from "./Slider";
+export * from "./Progress";

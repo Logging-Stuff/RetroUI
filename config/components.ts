@@ -59,6 +59,10 @@ export const componentConfig: {
       name: "menu",
       filePath: "components/ui/Menu.tsx",
     },
+    progress: {
+      name: "progress",
+      filePath: "components/ui/Progress.tsx",
+    },
     radio: {
       name: "radio",
       filePath: "components/ui/Radio.tsx",
@@ -155,6 +159,13 @@ export const componentConfig: {
       filePath: "preview/components/button-style-default.tsx",
       preview: lazy(() => import("@/preview/components/button-style-default")),
     },
+    "button-style-secondary": {
+      name: "button-style-secondary",
+      filePath: "preview/components/button-style-secondary.tsx",
+      preview: lazy(
+        () => import("@/preview/components/button-style-secondary")
+      ),
+    },
     "button-style-outline": {
       name: "button-style-default",
       filePath: "preview/components/button-style-outline.tsx",
@@ -164,6 +175,13 @@ export const componentConfig: {
       name: "button-style-link",
       filePath: "preview/components/button-style-link.tsx",
       preview: lazy(() => import("@/preview/components/button-style-link")),
+    },
+    "button-style-with-icon": {
+      name: "button-style-with-icon",
+      filePath: "preview/components/button-style-with-icon.tsx",
+      preview: lazy(
+        () => import("@/preview/components/button-style-with-icon")
+      ),
     },
     "card-style-default": {
       name: "card-style-default",
@@ -227,6 +245,13 @@ export const componentConfig: {
       name: "menu-style-default",
       filePath: "preview/components/menu-style-default.tsx",
       preview: lazy(() => import("@/preview/components/menu-style-default")),
+    },
+    "progress-style-default": {
+      name: "progress-style-default",
+      filePath: "preview/components/progress-style-default.tsx",
+      preview: lazy(
+        () => import("@/preview/components/progress-style-default")
+      ),
     },
     "radio-style-default": {
       name: "radio-style-default",

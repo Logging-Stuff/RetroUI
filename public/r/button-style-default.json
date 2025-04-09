@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-style-default",
+  "type": "registry:block",
+  "title": "button-style-default",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "preview/components/button-style-outline.tsx",
+      "content": "import { Button } from \"@/components/ui\";\n\nexport default function ButtonStyleOutline() {\n  return <Button variant=\"outline\">Click Me!</Button>;\n}\n",
+      "type": "registry:block",
+      "target": "components/retroui/preview/button-style-outline.tsx"
+    }
+  ]
+}

@@ -69,9 +69,8 @@ export default async function Home() {
 
             <Text as="h1" className="text-5xl lg:text-6xl">
               Make your projects
-            </Text>
-            <Text as="h1" className="text-5xl lg:text-6xl text-outlined">
-              stand out!
+              <br />
+              <span className="text-outlined">stand out!</span>
             </Text>
 
             <p className="text-lg text-muted-foreground mb-8 mt-4">
@@ -80,7 +79,7 @@ export default async function Home() {
               into your projects.
             </p>
 
-            <div className="max-w-96 grid gap-4 grid-cols-2 mx-auto lg:mx-0">
+            <div className="flex space-x-4">
               <Link href="/docs" passHref>
                 <Button
                   className="w-full"
@@ -89,17 +88,13 @@ export default async function Home() {
                   Get Started
                 </Button>
               </Link>
-              <Link
-                href="https://github.com/Logging-Stuff/retroui"
-                target="_blank"
-                passHref
-              >
+              <Link href="https://pro.retroui.dev/blocks" passHref>
                 <Button
                   className="w-full"
                   variant="outline"
                   aria-label="Get Started with RetroUI"
                 >
-                  Github
+                  Browse Blocks
                 </Button>
               </Link>
             </div>
@@ -217,7 +212,7 @@ export default async function Home() {
             <Text as="h3" className="mb-2 font-sans">
               Github Stars
             </Text>
-            <Text as="h1" className="text-outlined text-7xl lg:text-8xl">
+            <Text className="text-outlined text-7xl lg:text-8xl font-head">
               350+
             </Text>
             <Image
@@ -232,7 +227,7 @@ export default async function Home() {
             <Text as="h3" className="mb-2 font-sans">
               Discord Members
             </Text>
-            <Text as="h1" className="text-outlined text-7xl lg:text-8xl">
+            <Text className="text-outlined text-7xl lg:text-8xl font-head">
               100+
             </Text>
             <Image
@@ -286,43 +281,6 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="container max-w-6xl mx-auto px-4 lg:px-0 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center my-36">
-        <div className="w-full">
-          <Text as="h2">
-            The <span className="text-outlined">Figma</span> UI Kit You Were
-            Looking For!
-          </Text>
-          <div className="flex flex-col space-y-1 mt-6 mb-8 text-muted-foreground">
-            <Text className="text-lg">
-              - Based on the design foundation of RetroUI.
-            </Text>
-            <Text className="text-lg">
-              - Comes with 60+ UI elements like cards, modals, stats, etc .
-            </Text>
-            <Text className="text-lg">
-              - Get Lifetime update of new versions.
-            </Text>
-          </div>
-
-          <Link
-            id="checkout-figma-kit"
-            data-umami-event="checkout-figma-kit"
-            href="https://dub.sh/retroui-figma"
-            target="_blank"
-          >
-            <Button>Checkout Now</Button>
-          </Link>
-        </div>
-        <div className="w-full">
-          <Image
-            src="/images/figma-banner.png"
-            width={800}
-            height={800}
-            alt="retroui code showcase"
-          />
-        </div>
-      </section>
-
       <section className="container max-w-6xl mx-auto border-2 bg-primary border-black py-16 px-4 lg:p-16 my-36">
         <Text as="h2" className="text-center mb-2">
           Community Contributors
@@ -355,13 +313,13 @@ export default async function Home() {
             target="_blank"
             passHref
           >
-            <Button className="flex items-center bg-white" variant="outline">
+            <Button className="bg-white" variant="outline">
               <GithubIcon size="16" className="mr-2" />
               Star on Github
             </Button>
           </Link>
           <Link href="https://discord.gg/Jum3NJxK6Q" target="_blank" passHref>
-            <Button className="flex items-center bg-white" variant="outline">
+            <Button className="bg-white" variant="outline">
               <MessageCircle size="16" className="mr-2" />
               Join Community
             </Button>
@@ -369,6 +327,45 @@ export default async function Home() {
         </div>
       </section>
 
+      <section className="container max-w-6xl mx-auto px-4 lg:px-0 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center my-36">
+        <div className="w-full">
+          <Text as="h2">
+            🚀 Ship <span className="text-outlined">Faster</span> With Pro
+            Blocks and Templates!
+          </Text>
+          <div className="flex flex-col space-y-1 mt-6 mb-8 text-muted-foreground">
+            <Text className="text-lg">
+              - Based on the design foundation of RetroUI.
+            </Text>
+            <Text className="text-lg">
+              - Over 50+ premium ready-to-use components.
+            </Text>
+            <Text className="text-lg">
+              - Complete pre-built website templates.
+            </Text>
+            <Text className="text-lg">
+              - Lifetime access to all future updates.
+            </Text>
+          </div>
+
+          <Link
+            id="checkout-figma-kit"
+            data-umami-event="checkout-figma-kit"
+            href="https://dub.sh/retroui-pro"
+            target="_blank"
+          >
+            <Button>Explore Blocks</Button>
+          </Link>
+        </div>
+        <div className="w-full">
+          <Image
+            src="/images/figma-banner.png"
+            width={800}
+            height={800}
+            alt="retroui code showcase"
+          />
+        </div>
+      </section>
       <footer className="bg-black py-8">
         <div className="container max-w-6xl mx-auto flex flex-col lg:flex-row space-y-4 lg:space-y-0 justify-between items-center">
           <div className="flex justify-center space-x-4">

@@ -1,8 +1,5 @@
 {
-  "cSpell.words": [
-    "clsx",
-    "rehype"
-  ],
+  "cSpell.words": ["clsx", "rehype", "retroui"],
   "tailwindCSS.experimental.classRegex": [
     ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
     ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
