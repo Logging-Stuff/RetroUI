@@ -112,7 +112,7 @@ export default makeSource({
                     ],
                   }),
                 ],
-              })
+              }),
             );
 
             return;
@@ -151,7 +151,7 @@ export default makeSource({
                     ],
                   }),
                 ],
-              })
+              }),
             );
 
             return;

@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui";
+import { Button } from "@/components/retroui/Button";
 import { Trash } from "lucide-react";
 
 export default function ButtonStyleSecondary() {

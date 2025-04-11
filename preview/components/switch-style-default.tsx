@@ -1,4 +1,4 @@
-import { Switch } from "@/components/ui";
+import { Switch } from "@/components/retroui/Switch";
 import React from "react";
 
 export default function SwitchStyleDefault() {

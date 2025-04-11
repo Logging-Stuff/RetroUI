@@ -4,7 +4,7 @@
   "type": "registry:block",
   "title": "tab-style-default",
   "registryDependencies": [
-    "tab"
+    "https://retroui.dev/r/tab.json"
   ],
   "files": [
     {

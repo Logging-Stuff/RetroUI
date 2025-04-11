@@ -1,7 +1,7 @@
 "use client";
 
 import { navConfig } from "@/config/navigation";
-import { Badge, Text } from "@/components/ui";
+import { Badge, Text } from "@/components/retroui";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 

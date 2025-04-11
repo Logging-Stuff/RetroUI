@@ -1,6 +1,6 @@
 "use client";
 
-import { Alert, Badge, Card, Text } from "@/components/ui";
+import { Alert, Badge, Card, Text } from "@/components/retroui";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import React, { AnchorHTMLAttributes, HTMLAttributes } from "react";
 import { ComponentShowcase } from "./ComponentShowcase";
@@ -83,7 +83,7 @@ const components = (type: "doc" | "blog") => ({
     <code
       className={cn(
         "relative rounded-sm bg-[#282A36] p-1 text-primary text-sm",
-        className
+        className,
       )}
       {...props}
     >

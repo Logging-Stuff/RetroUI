@@ -1,7 +1,7 @@
 import { componentConfig } from "@/config";
 import { TabGroup, TabList, TabPanels, TabPanel, Tab } from "@headlessui/react";
 import React, { HTMLAttributes } from "react";
-import { Button } from "./ui";
+import { Button } from "./retroui";
 
 interface IComponentShowcase extends HTMLAttributes<HTMLDivElement> {
   name: keyof typeof componentConfig.examples;

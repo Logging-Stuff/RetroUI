@@ -25,7 +25,7 @@ const buttonVariants = cva(
       size: "md",
       variant: "default",
     },
-  }
+  },
 );
 
 export interface IButtonProps
@@ -41,7 +41,7 @@ export const Button = React.forwardRef<HTMLButtonElement, IButtonProps>(
       variant = "default",
       ...props
     }: IButtonProps,
-    forwardedRef
+    forwardedRef,
   ) => (
     <button
       ref={forwardedRef}
@@ -50,7 +50,7 @@ export const Button = React.forwardRef<HTMLButtonElement, IButtonProps>(
     >
       {children}
     </button>
-  )
+  ),
 );
 
 Button.displayName = "Button";

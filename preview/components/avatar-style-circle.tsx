@@ -1,4 +1,4 @@
-import { Avatar } from "@/components/ui";
+import { Avatar } from "@/components/retroui/Avatar";
 
 export default function AvatarStyleCircle() {
   return (

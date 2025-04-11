@@ -17,7 +17,7 @@ const Content = ({ className, ...props }: IMenuContent) => (
       align="start"
       className={cn(
         "bg-white border-2 border-black shadow-md absolute top-2 min-w-20",
-        className
+        className,
       )}
       {...props}
     />
@@ -32,7 +32,7 @@ const MenuItem = React.forwardRef<
     ref={ref}
     className={cn(
       "relative flex cursor-default select-none items-center rounded-xs px-2 py-1.5 text-sm outline-hidden transition-colors hover:bg-primary focus:bg-primary data-disabled:pointer-events-none data-disabled:opacity-50",
-      className
+      className,
     )}
     {...props}
   />

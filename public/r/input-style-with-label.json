@@ -4,12 +4,12 @@
   "type": "registry:block",
   "title": "input-style-with-label",
   "registryDependencies": [
-    "input"
+    "https://retroui.dev/r/input.json"
   ],
   "files": [
     {
       "path": "preview/components/input-style-with-label.tsx",
-      "content": "import { Input, Label } from \"@/components/ui\";\n\nexport default function InputStyleWithLabel() {\n  return (\n    <div className=\"grid w-full max-w-sm items-center gap-1.5\">\n      <Label htmlFor=\"pokemon\">Favorite Pokemon</Label>\n      <Input type=\"pokemon\" id=\"pokemon\" placeholder=\"Charmander\" />\n    </div>\n  );\n}\n",
+      "content": "import { Input, Label } from \"@/components/retroui\";\n\nexport default function InputStyleWithLabel() {\n  return (\n    <div className=\"grid w-full max-w-sm items-center gap-1.5\">\n      <Label htmlFor=\"pokemon\">Favorite Pokemon</Label>\n      <Input type=\"pokemon\" id=\"pokemon\" placeholder=\"Charmander\" />\n    </div>\n  );\n}\n",
       "type": "registry:block",
       "target": "components/retroui/preview/input-style-with-label.tsx"
     }

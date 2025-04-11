@@ -1,4 +1,4 @@
-import { Badge } from "@/components/ui";
+import { Badge } from "@/components/retroui/Badge";
 
 export default function BadgeStyleVariants() {
   return (

@@ -1,4 +1,4 @@
-import { Alert } from "@/components/ui";
+import { Alert } from "@/components/retroui/Alert";
 
 export default function AlertStyleDefault() {
   return (
