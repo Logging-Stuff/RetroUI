@@ -4,7 +4,7 @@
   "type": "registry:block",
   "title": "button-style-outline",
   "registryDependencies": [
-    "https://retroui.vercel.app/r/button.json"
+    "https://retroui.dev/r/button.json"
   ],
   "files": [
     {

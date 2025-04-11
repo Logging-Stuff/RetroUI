@@ -4,7 +4,7 @@
   "type": "registry:block",
   "title": "switch-style-disabled",
   "registryDependencies": [
-    "https://retroui.vercel.app/r/switch.json"
+    "https://retroui.dev/r/switch.json"
   ],
   "files": [
     {

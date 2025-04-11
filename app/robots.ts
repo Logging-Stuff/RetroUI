@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://retroui.vercel.app/sitemap.xml",
+    sitemap: "https://retroui.dev/sitemap.xml",
   };
 }

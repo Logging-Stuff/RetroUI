@@ -4,7 +4,7 @@
   "type": "registry:block",
   "title": "select-style-default",
   "registryDependencies": [
-    "https://retroui.vercel.app/r/select.json"
+    "https://retroui.dev/r/select.json"
   ],
   "files": [
     {

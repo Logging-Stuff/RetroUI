@@ -4,7 +4,7 @@
   "type": "registry:block",
   "title": "menu-style-default",
   "registryDependencies": [
-    "https://retroui.vercel.app/r/menu.json"
+    "https://retroui.dev/r/menu.json"
   ],
   "files": [
     {

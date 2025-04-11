@@ -94,7 +94,7 @@ export default function page({ params }: IProps) {
           <Link
             target="_blank"
             href={`https://x.com/share?url=${
-              "https://retroui.vercel.app" + blog.url
+              "https://retroui.dev" + blog.url
             }&text=${blog.title}.%0ACheck it out 👉`}
           >
             <Button size="sm" variant="outline">

@@ -4,7 +4,7 @@
   "type": "registry:block",
   "title": "tab-style-default",
   "registryDependencies": [
-    "https://retroui.vercel.app/r/tab.json"
+    "https://retroui.dev/r/tab.json"
   ],
   "files": [
     {

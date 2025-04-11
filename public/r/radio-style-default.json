@@ -4,7 +4,7 @@
   "type": "registry:block",
   "title": "radio-style-default",
   "registryDependencies": [
-    "https://retroui.vercel.app/r/radio.json"
+    "https://retroui.dev/r/radio.json"
   ],
   "files": [
     {

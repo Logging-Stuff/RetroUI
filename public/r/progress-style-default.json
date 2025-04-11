@@ -4,7 +4,7 @@
   "type": "registry:block",
   "title": "progress-style-default",
   "registryDependencies": [
-    "https://retroui.vercel.app/r/progress.json"
+    "https://retroui.dev/r/progress.json"
   ],
   "files": [
     {

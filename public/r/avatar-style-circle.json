@@ -4,7 +4,7 @@
   "type": "registry:block",
   "title": "avatar-style-circle",
   "registryDependencies": [
-    "https://retroui.vercel.app/r/avatar.json"
+    "https://retroui.dev/r/avatar.json"
   ],
   "files": [
     {

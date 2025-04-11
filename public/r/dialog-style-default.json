@@ -4,7 +4,7 @@
   "type": "registry:block",
   "title": "dialog-style-default",
   "registryDependencies": [
-    "https://retroui.vercel.app/r/dialog.json"
+    "https://retroui.dev/r/dialog.json"
   ],
   "files": [
     {

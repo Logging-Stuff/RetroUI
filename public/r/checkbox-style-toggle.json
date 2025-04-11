@@ -4,7 +4,7 @@
   "type": "registry:block",
   "title": "checkbox-style-toggle",
   "registryDependencies": [
-    "https://retroui.vercel.app/r/checkbox.json"
+    "https://retroui.dev/r/checkbox.json"
   ],
   "files": [
     {

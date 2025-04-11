@@ -4,7 +4,7 @@
   "type": "registry:block",
   "title": "accordion-style-default",
   "registryDependencies": [
-    "https://retroui.vercel.app/r/accordion.json"
+    "https://retroui.dev/r/accordion.json"
   ],
   "files": [
     {

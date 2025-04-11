@@ -4,7 +4,7 @@
   "type": "registry:block",
   "title": "badge-style-sizes",
   "registryDependencies": [
-    "https://retroui.vercel.app/r/badge.json"
+    "https://retroui.dev/r/badge.json"
   ],
   "files": [
     {

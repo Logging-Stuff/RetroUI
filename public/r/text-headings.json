@@ -4,7 +4,7 @@
   "type": "registry:block",
   "title": "text-headings",
   "registryDependencies": [
-    "https://retroui.vercel.app/r/text.json"
+    "https://retroui.dev/r/text.json"
   ],
   "files": [
     {

@@ -4,7 +4,7 @@
   "type": "registry:block",
   "title": "card-style-commerce",
   "registryDependencies": [
-    "https://retroui.vercel.app/r/card.json"
+    "https://retroui.dev/r/card.json"
   ],
   "files": [
     {
