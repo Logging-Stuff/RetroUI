@@ -79,6 +79,11 @@ export const componentConfig: {
       name: "text",
       filePath: "components/retroui/Text.tsx",
     },
+    slider: {
+      name: "slider",
+      dependencies: ["@radix-ui/react-slider"],
+      filePath: "components/ui/Slider.tsx",
+    }
   },
   examples: {
     "accordion-style-default": {
@@ -324,6 +329,20 @@ export const componentConfig: {
       filePath: "preview/components/dialog-style-with-form.tsx",
       preview: lazy(
         () => import("@/preview/components/dialog-style-with-form"),
+      ),
+    },
+    "slider-style-default":{
+      name: "slider-style-default",
+      filePath: "preview/components/slider-style-default.tsx",
+      preview: lazy(
+        () => import("@/preview/components/slider-style-default")
+      ),
+    },
+    "slider-style-thin":{
+      name:"slider-style-thin",
+      filePath: "preview/components/slider-style-thin.tsx",
+      preview: lazy(
+        () => import("@/preview/components/slider-style-thin")
       ),
     },
   },
