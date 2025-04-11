@@ -1,4 +1,5 @@
-import { Button, Menu } from "@/components/ui";
+import { Button } from "@/components/retroui/Button";
+import { Menu } from "@/components/retroui/Menu";
 
 export default function MenuDefault() {
   return (

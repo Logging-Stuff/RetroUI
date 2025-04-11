@@ -1,4 +1,6 @@
-import { Text, Card, Avatar } from "@/components/ui";
+import { Text } from "@/components/retroui/Text";
+import { Card } from "@/components/retroui/Card";
+import { Avatar } from "@/components/retroui/Avatar";
 
 export default function TestimonialCard() {
   return (

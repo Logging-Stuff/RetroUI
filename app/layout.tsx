@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   description:
     "RetroUI - Retro styled component library built with React and TailwindCSS for modern web apps.",
   openGraph: {
-    images: "https://retroui.dev/banner.png",
+    images: "https://retroui.vercel.app/banner.png",
     title: "Retro Styled React UI Library | Retro UI",
   },
 };

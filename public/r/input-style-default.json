@@ -4,7 +4,7 @@
   "type": "registry:block",
   "title": "input-style-default",
   "registryDependencies": [
-    "input"
+    "https://retroui.vercel.app/r/input.json"
   ],
   "files": [
     {

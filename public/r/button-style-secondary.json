@@ -4,12 +4,12 @@
   "type": "registry:block",
   "title": "button-style-secondary",
   "registryDependencies": [
-    "button"
+    "https://retroui.vercel.app/r/button.json"
   ],
   "files": [
     {
       "path": "preview/components/button-style-secondary.tsx",
-      "content": "import { Button } from \"@/components/ui\";\n\nexport default function ButtonStyleSecondary() {\n  return <Button variant=\"secondary\">Click Me!</Button>;\n}\n",
+      "content": "import { Button } from \"@/components/retroui/Button\";\n\nexport default function ButtonStyleSecondary() {\n  return <Button variant=\"secondary\">Click Me!</Button>;\n}\n",
       "type": "registry:block",
       "target": "components/retroui/preview/button-style-secondary.tsx"
     }

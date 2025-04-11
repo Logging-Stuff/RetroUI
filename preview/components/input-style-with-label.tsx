@@ -1,4 +1,4 @@
-import { Input, Label } from "@/components/ui";
+import { Input, Label } from "@/components/retroui";
 
 export default function InputStyleWithLabel() {
   return (

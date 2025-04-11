@@ -8,7 +8,7 @@ import {
   Card,
   Avatar,
   Badge,
-} from "@/components/ui";
+} from "@/components/retroui";
 import AccordionStyleDefault from "@/preview/components/accordion-style-default";
 import AlertStyleDefaultIcon from "@/preview/components/alert-style-with-icon";
 import AvatarStyleCircle from "@/preview/components/avatar-style-circle-sizes";
@@ -32,7 +32,7 @@ async function getContributors(): Promise<
       headers: {
         "Content-Type": "application/json",
       },
-    }
+    },
   );
 
   const contributorsList = await request.json();
@@ -47,7 +47,7 @@ async function getContributors(): Promise<
         avatar: c.avatar_url,
         username: c.login,
         url: c.html_url,
-      })
+      }),
     ),
   ];
 }

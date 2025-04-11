@@ -4,12 +4,12 @@
   "type": "registry:block",
   "title": "avatar-style-circle",
   "registryDependencies": [
-    "avatar"
+    "https://retroui.vercel.app/r/avatar.json"
   ],
   "files": [
     {
       "path": "preview/components/avatar-style-circle.tsx",
-      "content": "import { Avatar } from \"@/components/ui\";\n\nexport default function AvatarStyleCircle() {\n  return (\n    <Avatar>\n      <Avatar.Image src=\"/images/avatar.jpeg\" alt=\"Arif Logs\" />\n      <Avatar.Fallback>AH</Avatar.Fallback>\n    </Avatar>\n  );\n}\n",
+      "content": "import { Avatar } from \"@/components/retroui/Avatar\";\n\nexport default function AvatarStyleCircle() {\n  return (\n    <Avatar>\n      <Avatar.Image src=\"/images/avatar.jpeg\" alt=\"Arif Logs\" />\n      <Avatar.Fallback>AH</Avatar.Fallback>\n    </Avatar>\n  );\n}\n",
       "type": "registry:block",
       "target": "components/retroui/preview/avatar-style-circle.tsx"
     }

@@ -1,4 +1,6 @@
-import { Button, Dialog, Text } from "@/components/ui";
+import { Button } from "@/components/retroui/Button";
+import { Text } from "@/components/retroui/Text";
+import { Dialog } from "@/components/retroui/Dialog";
 
 export default function DialogStyleWithFooter() {
   return (

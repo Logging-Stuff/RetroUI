@@ -11,6 +11,7 @@ Run the init command to create a new Next.js project or to setup an existing one
 ```sh
 npx shadcn@latest init
 ```
+
 <br />
 
 ### 2. Install utilities
@@ -18,7 +19,7 @@ npx shadcn@latest init
 Many components rely on the `cn` utility function. You can install it using the following command:
 
 ```sh
-npx shadcn@latest add https://retroui.dev/r/utils.json
+npx shadcn@latest add https://retroui.vercel.app/r/utils.json
 ```
 
 <br />
@@ -32,7 +33,7 @@ Now you can start using RetroUI components in your project. You can install them
 <ComponentInstall>
   <ComponentInstall.Cli>
     ```sh
-npx shadcn@latest add "https://retroui.dev/r/button.json"
+npx shadcn@latest add "https://retroui.vercel.app/r/button.json"
     ```
   </ComponentInstall.Cli>
   <ComponentInstall.Manual>
@@ -55,7 +56,7 @@ After installing the component in your project, you can then simply import it li
 
 ```tsx
 import { Button } from "@/components/retroui/Button";
- 
+
 export default function ButtonExample() {
   return <Button>Click Me!</Button>;
 }
@@ -72,10 +73,10 @@ You are free to pick your own fonts and theme, but if you'd like to use RetroUI 
 <br />
 
 #### 1. Add Fonts
+
 We are using `Archivo Black` for headings and `Space Grotesk` for everything else. You can install them from Nextjs fonts or manually from Google fonts.
 
 ```tsx
-
 import { Archivo_Black, Space_Grotesk } from "next/font/google";
 
 const archivoBlack = Archivo_Black({
@@ -92,7 +93,6 @@ const space = Space_Grotesk({
   display: "swap",
 });
 
-
 export default function RootLayout({
   children,
 }: {
@@ -100,9 +100,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${archivoBlack.variable} ${space.variable}`}
-      >
+      <body className={`${archivoBlack.variable} ${space.variable}`}>
         {children}
       </body>
     </html>
@@ -161,4 +159,5 @@ Save your theme as CSS variables in `global.css`:
   --border: #000;
 }
 ```
+
 <br />

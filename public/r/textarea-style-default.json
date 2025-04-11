@@ -4,7 +4,7 @@
   "type": "registry:block",
   "title": "textarea-style-default",
   "registryDependencies": [
-    "textarea"
+    "https://retroui.vercel.app/r/textarea.json"
   ],
   "files": [
     {

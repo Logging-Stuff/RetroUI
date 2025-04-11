@@ -1,4 +1,4 @@
-import { Text } from "@/components/ui";
+import { Text } from "@/components/retroui/Text";
 
 export default function TextHeadings() {
   return (

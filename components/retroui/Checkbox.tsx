@@ -38,7 +38,7 @@ export const Checkbox = ({
         size,
         variant,
       }),
-      className
+      className,
     )}
     {...props}
   >

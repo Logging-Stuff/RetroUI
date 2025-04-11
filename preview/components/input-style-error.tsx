@@ -1,4 +1,5 @@
-import { Input, Label } from "@/components/ui";
+import { Input } from "@/components/retroui/Input";
+import { Label } from "@/components/retroui/Label";
 
 export default function InputStyleError() {
   return (

@@ -21,63 +21,63 @@ export const componentConfig: {
     accordion: {
       name: "accordion",
       dependencies: ["@radix-ui/react-accordion", "lucide-react"],
-      filePath: "components/ui/Accordion.tsx",
+      filePath: "components/retroui/Accordion.tsx",
     },
     alert: {
       name: "alert",
-      filePath: "components/ui/Alert.tsx",
+      filePath: "components/retroui/Alert.tsx",
     },
     avatar: {
       name: "avatar",
-      filePath: "components/ui/Avatar.tsx",
+      filePath: "components/retroui/Avatar.tsx",
     },
     badge: {
       name: "badge",
-      filePath: "components/ui/Badge.tsx",
+      filePath: "components/retroui/Badge.tsx",
     },
     button: {
       name: "button",
-      filePath: "components/ui/Button.tsx",
+      filePath: "components/retroui/Button.tsx",
     },
     card: {
       name: "card",
-      filePath: "components/ui/Card.tsx",
+      filePath: "components/retroui/Card.tsx",
     },
     checkbox: {
       name: "checkbox",
-      filePath: "components/ui/Checkbox.tsx",
+      filePath: "components/retroui/Checkbox.tsx",
     },
     dialog: {
       name: "dialog",
-      filePath: "components/ui/Dialog.tsx",
+      filePath: "components/retroui/Dialog.tsx",
     },
     input: {
       name: "input",
-      filePath: "components/ui/Input.tsx",
+      filePath: "components/retroui/Input.tsx",
     },
     menu: {
       name: "menu",
-      filePath: "components/ui/Menu.tsx",
+      filePath: "components/retroui/Menu.tsx",
     },
     progress: {
       name: "progress",
-      filePath: "components/ui/Progress.tsx",
+      filePath: "components/retroui/Progress.tsx",
     },
     radio: {
       name: "radio",
-      filePath: "components/ui/Radio.tsx",
+      filePath: "components/retroui/Radio.tsx",
     },
     select: {
       name: "select",
-      filePath: "components/ui/Select.tsx",
+      filePath: "components/retroui/Select.tsx",
     },
     switch: {
       name: "switch",
-      filePath: "components/ui/Switch.tsx",
+      filePath: "components/retroui/Switch.tsx",
     },
     text: {
       name: "text",
-      filePath: "components/ui/Text.tsx",
+      filePath: "components/retroui/Text.tsx",
     },
   },
   examples: {
@@ -85,7 +85,7 @@ export const componentConfig: {
       name: "accordion-style-default",
       filePath: "preview/components/accordion-style-default.tsx",
       preview: lazy(
-        () => import("@/preview/components/accordion-style-default")
+        () => import("@/preview/components/accordion-style-default"),
       ),
     },
     "alert-style-default": {
@@ -107,7 +107,7 @@ export const componentConfig: {
       name: "alert-style-all-status",
       filePath: "preview/components/alert-style-all-status.tsx",
       preview: lazy(
-        () => import("@/preview/components/alert-style-all-status")
+        () => import("@/preview/components/alert-style-all-status"),
       ),
     },
     "avatar-style-circle": {
@@ -119,14 +119,14 @@ export const componentConfig: {
       name: "avatar-style-fallbacks",
       filePath: "preview/components/avatar-style-circle-fallbacks.tsx",
       preview: lazy(
-        () => import("@/preview/components/avatar-style-circle-fallbacks")
+        () => import("@/preview/components/avatar-style-circle-fallbacks"),
       ),
     },
     "avatar-style-circle-sizes": {
       name: "avatar-style-circle-sizes",
       filePath: "preview/components/avatar-style-circle-sizes.tsx",
       preview: lazy(
-        () => import("@/preview/components/avatar-style-circle-sizes")
+        () => import("@/preview/components/avatar-style-circle-sizes"),
       ),
     },
     "badge-style-default": {
@@ -158,7 +158,7 @@ export const componentConfig: {
       name: "button-style-secondary",
       filePath: "preview/components/button-style-secondary.tsx",
       preview: lazy(
-        () => import("@/preview/components/button-style-secondary")
+        () => import("@/preview/components/button-style-secondary"),
       ),
     },
     "button-style-outline": {
@@ -175,7 +175,7 @@ export const componentConfig: {
       name: "button-style-with-icon",
       filePath: "preview/components/button-style-with-icon.tsx",
       preview: lazy(
-        () => import("@/preview/components/button-style-with-icon")
+        () => import("@/preview/components/button-style-with-icon"),
       ),
     },
     "card-style-default": {
@@ -192,21 +192,21 @@ export const componentConfig: {
       name: "card-style-testimonial",
       filePath: "preview/components/card-style-testimonial.tsx",
       preview: lazy(
-        () => import("@/preview/components/card-style-testimonial")
+        () => import("@/preview/components/card-style-testimonial"),
       ),
     },
     "checkbox-style-default": {
       name: "checkbox-style-default",
       filePath: "preview/components/checkbox-style-default.tsx",
       preview: lazy(
-        () => import("@/preview/components/checkbox-style-default")
+        () => import("@/preview/components/checkbox-style-default"),
       ),
     },
     "checkbox-style-variants": {
       name: "checkbox-style-toggle",
       filePath: "preview/components/checkbox-style-variants.tsx",
       preview: lazy(
-        () => import("@/preview/components/checkbox-style-variants")
+        () => import("@/preview/components/checkbox-style-variants"),
       ),
     },
     "checkbox-style-sizes": {
@@ -228,7 +228,7 @@ export const componentConfig: {
       name: "input-style-with-label",
       filePath: "preview/components/input-style-with-label.tsx",
       preview: lazy(
-        () => import("@/preview/components/input-style-with-label")
+        () => import("@/preview/components/input-style-with-label"),
       ),
     },
     "input-style-error": {
@@ -245,7 +245,7 @@ export const componentConfig: {
       name: "progress-style-default",
       filePath: "preview/components/progress-style-default.tsx",
       preview: lazy(
-        () => import("@/preview/components/progress-style-default")
+        () => import("@/preview/components/progress-style-default"),
       ),
     },
     "radio-style-default": {
@@ -282,7 +282,7 @@ export const componentConfig: {
       name: "textarea-style-default",
       filePath: "preview/components/textarea-style-default.tsx",
       preview: lazy(
-        () => import("@/preview/components/textarea-style-default")
+        () => import("@/preview/components/textarea-style-default"),
       ),
     },
     "text-headings": {
@@ -309,21 +309,21 @@ export const componentConfig: {
       name: "dialog-style-with-footer",
       filePath: "preview/components/dialog-style-with-footer.tsx",
       preview: lazy(
-        () => import("@/preview/components/dialog-style-with-footer")
+        () => import("@/preview/components/dialog-style-with-footer"),
       ),
     },
     "dialog-style-width-variant": {
       name: "dialog-style-width-variant",
       filePath: "preview/components/dialog-style-width-variant.tsx",
       preview: lazy(
-        () => import("@/preview/components/dialog-style-width-variant")
+        () => import("@/preview/components/dialog-style-width-variant"),
       ),
     },
     "dialog-style-with-form": {
       name: "dialog-style-with-form",
       filePath: "preview/components/dialog-style-with-form.tsx",
       preview: lazy(
-        () => import("@/preview/components/dialog-style-with-form")
+        () => import("@/preview/components/dialog-style-with-form"),
       ),
     },
   },

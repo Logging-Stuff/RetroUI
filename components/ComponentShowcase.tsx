@@ -1,7 +1,7 @@
 import { componentConfig } from "@/config";
 import { TabGroup, TabList, TabPanels, TabPanel, Tab } from "@headlessui/react";
 import React, { HTMLAttributes } from "react";
-import { Button } from "./ui";
+import { Button } from "./retroui";
 
 interface IComponentShowcase extends HTMLAttributes<HTMLDivElement> {
   name: keyof typeof componentConfig.examples;
@@ -25,7 +25,7 @@ export function ComponentShowcase({ name, children }: IComponentShowcase) {
         <TabPanel>
           <div className="border rounded-sm px-6 py-24 flex justify-center items-center min-h-80 mt-4 relative">
             <a
-              href={`https://v0.dev/chat/api/open?url=https://retroui.dev/r/${name}.json`}
+              href={`https://v0.dev/chat/api/open?url=https://retroui.vercel.app/r/${name}.json`}
               target="_blank"
             >
               <Button

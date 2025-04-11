@@ -1,3 +1,3 @@
 export const registryDependencyPath = (item: string) => {
-  return `https://retroui.dev/r/${item}.json`;
+  return `https://retroui.vercel.app/r/${item}.json`;
 };

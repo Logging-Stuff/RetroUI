@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui";
+import { Button } from "@/components/retroui";
 
 interface ICodeBlock extends React.HTMLAttributes<HTMLPreElement> {}
 
@@ -33,7 +33,7 @@ export function CodeBlock({ className, children, ...props }: ICodeBlock) {
       <pre
         className={cn(
           "overflow-x-auto rounded-sm bg-[#282A36] mt-3 mb-6 p-4",
-          className
+          className,
         )}
         {...props}
       >

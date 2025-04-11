@@ -1,4 +1,4 @@
-import { Checkbox, Text } from "@/components/ui";
+import { Checkbox } from "@/components/retroui/Checkbox";
 
 export default function CheckboxStyleVariants() {
   return (

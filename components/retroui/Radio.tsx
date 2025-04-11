@@ -65,7 +65,7 @@ export const RadioItem = ({
         size,
         variant,
       }),
-      className
+      className,
     )}
   >
     <RadioPrimitive.Indicator className="flex justify-center items-center">

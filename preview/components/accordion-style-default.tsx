@@ -1,6 +1,6 @@
 "use client";
 
-import { Accordion } from "@/components/ui";
+import { Accordion } from "@/components/retroui/Accordion";
 
 export default function AccordionStyleDefault() {
   return (

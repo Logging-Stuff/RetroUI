@@ -3,7 +3,7 @@ import { allBlogs } from "contentlayer/generated";
 import { notFound } from "next/navigation";
 import { format } from "date-fns";
 import MDX from "@/components/MDX";
-import { Avatar, Badge, Button, Text } from "@/components/ui";
+import { Avatar, Badge, Button, Text } from "@/components/retroui";
 import { Metadata } from "next";
 import { MoveRightIcon, MoveUpRightIcon } from "lucide-react";
 import Image from "next/image";
@@ -94,7 +94,7 @@ export default function page({ params }: IProps) {
           <Link
             target="_blank"
             href={`https://x.com/share?url=${
-              "https://retroui.dev" + blog.url
+              "https://retroui.vercel.app" + blog.url
             }&text=${blog.title}.%0ACheck it out 👉`}
           >
             <Button size="sm" variant="outline">
