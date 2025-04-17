@@ -55,6 +55,10 @@ export const componentConfig: {
       name: "input",
       filePath: "components/retroui/Input.tsx",
     },
+    label: {
+      name: "label",
+      filePath: "components/retroui/Label.tsx",
+    },
     menu: {
       name: "menu",
       filePath: "components/retroui/Menu.tsx",
@@ -82,8 +86,8 @@ export const componentConfig: {
     slider: {
       name: "slider",
       dependencies: ["@radix-ui/react-slider"],
-      filePath: "components/ui/Slider.tsx",
-    }
+      filePath: "components/retroui/Slider.tsx",
+    },
   },
   examples: {
     "accordion-style-default": {
@@ -241,6 +245,11 @@ export const componentConfig: {
       filePath: "preview/components/input-style-error.tsx",
       preview: lazy(() => import("@/preview/components/input-style-error")),
     },
+    "label-style-default": {
+      name: "label-style-default",
+      filePath: "preview/components/label-style-default.tsx",
+      preview: lazy(() => import("@/preview/components/label-style-default")),
+    },
     "menu-style-default": {
       name: "menu-style-default",
       filePath: "preview/components/menu-style-default.tsx",
@@ -331,19 +340,10 @@ export const componentConfig: {
         () => import("@/preview/components/dialog-style-with-form"),
       ),
     },
-    "slider-style-default":{
+    "slider-style-default": {
       name: "slider-style-default",
       filePath: "preview/components/slider-style-default.tsx",
-      preview: lazy(
-        () => import("@/preview/components/slider-style-default")
-      ),
-    },
-    "slider-style-thin":{
-      name:"slider-style-thin",
-      filePath: "preview/components/slider-style-thin.tsx",
-      preview: lazy(
-        () => import("@/preview/components/slider-style-thin")
-      ),
+      preview: lazy(() => import("@/preview/components/slider-style-default")),
     },
   },
 };

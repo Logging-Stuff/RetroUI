@@ -1,7 +1,6 @@
-import { Input } from "@/components/retroui/Input";
-import { Label } from "@/components/retroui/Label";
+import { Input, Label } from "@/components/retroui";
 
-export default function InputStyleWithLabel() {
+export default function LabelStyleDefault() {
   return (
     <div className="grid w-full max-w-sm items-center gap-1.5">
       <Label htmlFor="pokemon">Favorite Pokemon</Label>

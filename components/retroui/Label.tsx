@@ -8,11 +8,9 @@ const labelVariants = cva(
   "leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
 );
 
-const Label = ({
+export const Label = ({
   className,
   ...props
 }: React.ComponentProps<typeof LabelPrimitive.Root>) => (
   <LabelPrimitive.Root className={cn(labelVariants(), className)} {...props} />
 );
-
-export { Label };
