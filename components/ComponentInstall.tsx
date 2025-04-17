@@ -23,9 +23,6 @@ function ComponentInstall({ children }: IComponentShowcase) {
         <Tab className="min-w-12 cursor-pointer relative px-2 py-1 bg-transparent data-selected:border data-selected:border-b-0 data-selected:bg-black data-selected:text-white focus:outline-hidden">
           Manual
         </Tab>
-        <Tab className="min-w-12 cursor-pointer relative px-2 py-1 bg-transparent data-selected:border data-selected:border-b-0 data-selected:bg-black data-selected:text-white focus:outline-hidden">
-          Open in V0
-        </Tab>
       </TabList>
 
       <TabPanels>{children}</TabPanels>
