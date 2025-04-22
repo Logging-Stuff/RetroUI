@@ -2,6 +2,7 @@ import TopNav from "@/components/TopNav";
 import "./global.css";
 import { Archivo_Black, Space_Grotesk, Space_Mono } from "next/font/google";
 import { Metadata } from "next";
+import { Toaster } from "@/components/retroui";
 
 const archivoBlack = Archivo_Black({
   subsets: ["latin"],
@@ -55,6 +56,7 @@ export default function RootLayout({
           <TopNav />
         </div>
         {children}
+        <Toaster />
       </body>
     </html>
   );

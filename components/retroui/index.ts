@@ -17,3 +17,8 @@ export * from "./Tab";
 export * from "./Dialog";
 export * from "./Menu";
 export * from "./Progress";
+export * from "./Popover";
+export * from "./Toggle";
+export * from "./ToggleGroup";
+export * from "./Sonner";
+export * from "./Tooltip";

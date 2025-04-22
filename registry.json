@@ -247,6 +247,24 @@
       ]
     },
     {
+        "name": "popover",
+        "type": "registry:component",
+        "title": "Popover",
+        "description": "A handy small component for your little input needs...😉",
+        "dependencies": [
+            "@radix-ui/react-popover",
+            "class-variance-authority"
+        ],
+        "author": "Ankan Bhattacharya <https://github.com/ankan002>",
+        "files": [
+            {
+                "path": "components/retroui/Popover.tsx",
+                "target": "components/retroui/Popover.tsx",
+                "type": "registry:component"
+            }
+        ]
+    },
+    {
       "name": "radio",
       "type": "registry:component",
       "title": "Radio",
@@ -296,6 +314,24 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+        "name": "sonner",
+        "type": "registry:component",
+        "title": "Sonner",
+        "description": "A beautiful toast component that can grab audience attention from any place.",
+        "dependencies": [
+            "sonner",
+            "lucide-react",
+            "class-variance-authority"
+        ],
+        "files": [
+            {
+                "path": "components/retroui/Sonner.tsx",
+                "target": "components/retroui/Sonner.tsx",
+                "type": "registry:component"
+            }
+        ]
     },
     {
       "name": "switch",
@@ -357,6 +393,96 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+        "name": "toggle",
+        "type": "registry:component",
+        "title": "Toggle",
+        "description": "This crazy toggling button keeps people toggling...😃",
+        "dependencies": [
+            "@radix-ui/react-toggle",
+            "class-variance-authority"
+        ],
+        "author": "Ankan Bhattacharya <https://github.com/ankan002>",
+        "files": [
+            {
+                "path": "components/retroui/Toggle.tsx",
+                "target": "components/retroui/Toggle.tsx",
+                "type": "registry:component",
+                "name": "accordion-style-default",
+                "title": "accordion-style-default",
+                "registryDependencies": [
+            "https://retroui.dev/r/accordion.json"
+                ],
+        "files": [
+            {
+                "path": "preview/components/accordion-style-default.tsx",
+                "target": "components/retroui/preview/accordion-style-default.tsx",
+                "type": "registry:block"
+            }
+        ]
+    },
+    {
+        "name": "toggle-group",
+        "type": "registry:component",
+        "title": "Toggle Group",
+        "description": "Group of toggling buttons...🤙",
+        "dependencies": [
+            "@radix-ui/react-toggle",
+            "@radix-ui/react-toggle-group",
+            "class-variance-authority"
+        ],
+        "author": "Ankan Bhattacharya <https://github.com/ankan002>",
+        "files": [
+            {
+                "path": "components/retroui/Toggle.tsx",
+                "target": "components/retroui/Toggle.tsx",
+                "type": "registry:component"
+            },
+            {
+                "path": "components/retroui/ToggleGroup.tsx",
+                "target": "components/retroui/ToggleGroup.tsx",
+                "type": "registry:component",
+        "name": "alert-style-default",
+        "title": "alert-style-default",
+        "registryDependencies": [
+            "https://retroui.dev/r/alert.json"
+        ],
+        "files": [
+            {
+                "path": "preview/components/alert-style-default.tsx",
+                "target": "components/retroui/preview/alert-style-default.tsx",
+                "type": "registry:block"
+            }
+        ]
+    },
+    {
+        "name": "tooltip",
+        "type": "registry:component",
+        "title": "Tooltip",
+        "description": "A cool way to give your users a hint of what a component does...😉",
+        "dependencies": [
+            "@radix-ui/react-tooltip",
+            "class-variance-authority"
+        ],
+        "author": "Ankan Bhattacharya <https://github.com/ankan002>",
+        "files": [
+            {
+                "path": "components/retroui/Tooltip.tsx",
+                "target": "components/retroui/Tooltip.tsx",
+                "type": "registry:component",
+        "name": "alert-style-solid",
+        "title": "alert-style-solid",
+        "registryDependencies": [
+            "https://retroui.dev/r/alert.json"
+        ],
+        "files": [
+            {
+                "path": "preview/components/alert-style-solid.tsx",
+                "target": "components/retroui/preview/alert-style-solid.tsx",
+                "type": "registry:block"
+            }
+        ]
     },
     {
       "name": "accordion-style-default",

@@ -67,6 +67,10 @@ export const componentConfig: {
       name: "progress",
       filePath: "components/retroui/Progress.tsx",
     },
+    popover: {
+      name: "popover",
+      filePath: "components/retroui/Popover.tsx",
+    },
     radio: {
       name: "radio",
       filePath: "components/retroui/Radio.tsx",
@@ -79,14 +83,30 @@ export const componentConfig: {
       name: "switch",
       filePath: "components/retroui/Switch.tsx",
     },
-    text: {
-      name: "text",
-      filePath: "components/retroui/Text.tsx",
-    },
     slider: {
       name: "slider",
       dependencies: ["@radix-ui/react-slider"],
       filePath: "components/retroui/Slider.tsx",
+    },
+    sonner: {
+      name: "sonner",
+      filePath: "components/retroui/Sonner.tsx",
+    },
+    text: {
+      name: "text",
+      filePath: "components/retroui/Text.tsx",
+    },
+    toggle: {
+      name: "toggle",
+      filePath: "components/retroui/Toggle.tsx",
+    },
+    "toggle-group": {
+      name: "toggle-group",
+      filePath: "components/retroui/ToggleGroup.tsx",
+    },
+    tooltip: {
+      name: "tooltip",
+      filePath: "components/retroui/Tooltip.tsx",
     },
   },
   examples: {
@@ -344,6 +364,98 @@ export const componentConfig: {
       name: "slider-style-default",
       filePath: "preview/components/slider-style-default.tsx",
       preview: lazy(() => import("@/preview/components/slider-style-default")),
+    },
+    "toggle-style-default": {
+      name: "toggle-style-default",
+      filePath: "preview/components/toggle-style-default.tsx",
+      preview: lazy(() => import("@/preview/components/toggle-style-default")),
+    },
+    "toggle-style-outlined": {
+      name: "toggle-style-outlined",
+      filePath: "preview/components/toggle-style-outlined.tsx",
+      preview: lazy(() => import("@/preview/components/toggle-style-outlined")),
+    },
+    "toggle-style-solid": {
+      name: "toggle-style-solid",
+      filePath: "preview/components/toggle-style-solid.tsx",
+      preview: lazy(() => import("@/preview/components/toggle-style-solid")),
+    },
+    "toggle-style-outline-muted": {
+      name: "toggle-style-outline-muted",
+      filePath: "preview/components/toggle-style-outline-muted.tsx",
+      preview: lazy(
+        () => import("@/preview/components/toggle-style-outline-muted"),
+      ),
+    },
+    "sonner-style-default": {
+      name: "sonner-style-default",
+      filePath: "preview/components/sonner-style-default.tsx",
+      preview: lazy(() => import("@/preview/components/sonner-style-default")),
+    },
+    "sonner-style-warning": {
+      name: "sonner-style-warning",
+      filePath: "preview/components/sonner-style-warning.tsx",
+      preview: lazy(() => import("@/preview/components/sonner-style-warning")),
+    },
+    "sonner-style-error": {
+      name: "sonner-style-error",
+      filePath: "preview/components/sonner-style-error.tsx",
+      preview: lazy(() => import("@/preview/components/sonner-style-error")),
+    },
+    "sonner-style-rich-colors": {
+      name: "sonner-style-rich-colors",
+      filePath: "preview/components/sonner-style-rich-colors.tsx",
+      preview: lazy(
+        () => import("@/preview/components/sonner-style-rich-colors"),
+      ),
+    },
+    label: {
+      name: "label",
+      filePath: "preview/components/label.tsx",
+      preview: lazy(() => import("@/preview/components/label")),
+    },
+    "tooltip-style-default": {
+      name: "tooltip-style-default",
+      filePath: "preview/components/tooltip-style-default.tsx",
+      preview: lazy(() => import("@/preview/components/tooltip-style-default")),
+    },
+    "tooltip-style-solid": {
+      name: "tooltip-style-solid",
+      filePath: "preview/components/tooltip-style-solid.tsx",
+      preview: lazy(() => import("@/preview/components/tooltip-style-solid")),
+    },
+    "tooltip-style-primary": {
+      name: "tooltip-style-primary",
+      filePath: "preview/components/tooltip-style-primary.tsx",
+      preview: lazy(() => import("@/preview/components/tooltip-style-primary")),
+    },
+    "toggle-group-style-default": {
+      name: "toggle-group-style-default",
+      filePath: "preview/components/toggle-group-style-default.tsx",
+      preview: lazy(
+        () => import("@/preview/components/toggle-group-style-default"),
+      ),
+    },
+    "toggle-group-style-outlined": {
+      name: "toggle-group-style-outlined",
+      filePath: "preview/components/toggle-group-style-outlined.tsx",
+      preview: lazy(
+        () => import("@/preview/components/toggle-group-style-outlined"),
+      ),
+    },
+    "toggle-group-style-outline-muted": {
+      name: "toggle-group-style-outline-muted",
+      filePath: "preview/components/toggle-group-style-outline-muted.tsx",
+      preview: lazy(
+        () => import("@/preview/components/toggle-group-style-outline-muted"),
+      ),
+    },
+    "toggle-group-style-solid": {
+      name: "toggle-group-style-solid",
+      filePath: "preview/components/toggle-group-style-solid.tsx",
+      preview: lazy(
+        () => import("@/preview/components/toggle-group-style-solid"),
+      ),
     },
   },
 };
