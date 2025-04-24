@@ -401,9 +401,9 @@
       "author": "Ankan Bhattacharya <https://github.com/ankan002>",
       "files": [
         {
-          "path": "preview/components/tooltip.tsx",
-          "target": "components/retroui/preview/tooltip.tsx",
-          "type": "registry:block"
+          "path": "components/retroui/Tooltip.tsx",
+          "target": "components/retroui/Tooltip.tsx",
+          "type": "registry:component"
         }
       ]
     },
