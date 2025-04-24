@@ -1266,7 +1266,7 @@
       "title": "tooltip-style-default",
       "type": "registry:block",
       "registryDependencies": [
-        "https://retroui.dev/r/tooltip.json",
+        "https://retroui.dev/r/tooltip.json"
       ],
       "dependencies": ["lucide-react"],
       "files": [
@@ -1282,7 +1282,7 @@
       "title": "tooltip-style-primary",
       "type": "registry:block",
       "registryDependencies": [
-        "https://retroui.dev/r/tooltip.json",
+        "https://retroui.dev/r/tooltip.json"
       ],
       "dependencies": ["lucide-react"],
       "files": [
@@ -1298,13 +1298,81 @@
       "title": "tooltip-style-solid",
       "type": "registry:block",
       "registryDependencies": [
-        "https://retroui.dev/r/tooltip.json",
+        "https://retroui.dev/r/tooltip.json"
       ],
       "dependencies": ["lucide-react"],
       "files": [
         {
           "path": "preview/components/tooltip-style-solid.tsx",
           "target": "components/retroui/preview/tooltip-style-solid.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "sonner-style-default",
+      "title": "sonner-style-default",
+      "type": "registry:block",
+      "registryDependencies": [
+        "https://retroui.dev/r/sonner.json",
+        "https://retroui.dev/r/button.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "preview/components/sonner-style-default.tsx",
+          "target": "components/retroui/preview/sonner-style-default.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "sonner-style-error",
+      "title": "sonner-style-error",
+      "type": "registry:block",
+      "registryDependencies": [
+        "https://retroui.dev/r/sonner.json",
+        "https://retroui.dev/r/button.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "preview/components/sonner-style-error.tsx",
+          "target": "components/retroui/preview/sonner-style-error.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "sonner-style-warning",
+      "title": "sonner-style-warning",
+      "type": "registry:block",
+      "registryDependencies": [
+        "https://retroui.dev/r/sonner.json",
+        "https://retroui.dev/r/button.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "preview/components/sonner-style-warning.tsx",
+          "target": "components/retroui/preview/sonner-style-warning.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "sonner-style-rich-colors",
+      "title": "sonner-style-rich-colors",
+      "type": "registry:block",
+      "registryDependencies": [
+        "https://retroui.dev/r/sonner.json",
+        "https://retroui.dev/r/button.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "preview/components/sonner-style-rich-colors.tsx",
+          "target": "components/retroui/preview/sonner-style-rich-colors.tsx",
           "type": "registry:block"
         }
       ]
