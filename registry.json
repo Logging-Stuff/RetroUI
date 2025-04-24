@@ -1260,6 +1260,54 @@
           "type": "registry:block"
         }
       ]
+    },
+    {
+      "name": "tooltip-style-default",
+      "title": "tooltip-style-default",
+      "type": "registry:block",
+      "registryDependencies": [
+        "https://retroui.dev/r/tooltip.json",
+      ],
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "preview/components/tooltip-style-default.tsx",
+          "target": "components/retroui/preview/tooltip-style-default.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "tooltip-style-primary",
+      "title": "tooltip-style-primary",
+      "type": "registry:block",
+      "registryDependencies": [
+        "https://retroui.dev/r/tooltip.json",
+      ],
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "preview/components/tooltip-style-primary.tsx",
+          "target": "components/retroui/preview/tooltip-style-primary.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "tooltip-style-solid",
+      "title": "tooltip-style-solid",
+      "type": "registry:block",
+      "registryDependencies": [
+        "https://retroui.dev/r/tooltip.json",
+      ],
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "preview/components/tooltip-style-solid.tsx",
+          "target": "components/retroui/preview/tooltip-style-solid.tsx",
+          "type": "registry:block"
+        }
+      ]
     }
   ]
 }
