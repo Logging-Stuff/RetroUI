@@ -1128,6 +1128,138 @@
           "type": "registry:block"
         }
       ]
+    },
+    {
+      "name": "toggle-style-default",
+      "title": "toggle-style-default",
+      "type": "registry:block",
+      "registryDependencies": [
+          "https://retroui.dev/r/toggle.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "preview/components/toggle-style-default.tsx",
+          "target": "components/retroui/preview/toggle-style-default.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "toggle-style-outline-muted",
+      "title": "toggle-style-outline-muted",
+      "type": "registry:block",
+      "registryDependencies": [
+          "https://retroui.dev/r/toggle.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "preview/components/toggle-style-outline-muted.tsx",
+          "target": "components/retroui/preview/toggle-style-outline-muted.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "toggle-style-outlined",
+      "title": "toggle-style-outlined",
+      "type": "registry:block",
+      "registryDependencies": [
+          "https://retroui.dev/r/toggle.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "preview/components/toggle-style-outlined.tsx",
+          "target": "components/retroui/preview/toggle-style-outlined.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "toggle-style-solid",
+      "title": "toggle-style-solid",
+      "type": "registry:block",
+      "registryDependencies": [
+        "https://retroui.dev/r/toggle.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "preview/components/toggle-style-solid.tsx",
+          "target": "components/retroui/preview/toggle-style-solid.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "toggle-group-style-default",
+      "title": "toggle-group-style-default",
+      "type": "registry:block",
+      "registryDependencies": [
+          "https://retroui.dev/r/toggle.json",
+          "https://retroui.dev/r/toggle-group.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "preview/components/toggle-group-style-default.tsx",
+          "target": "components/retroui/preview/toggle-group-style-default.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "toggle-group-style-outline-muted",
+      "title": "toggle-group-style-outline-muted",
+      "type": "registry:block",
+      "registryDependencies": [
+          "https://retroui.dev/r/toggle.json",
+          "https://retroui.dev/r/toggle-group.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "preview/components/toggle-group-style-outline-muted.tsx",
+          "target": "components/retroui/preview/toggle-group-style-outline-muted.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "toggle-group-style-outlined",
+      "title": "toggle-group-style-outlined",
+      "type": "registry:block",
+      "registryDependencies": [
+          "https://retroui.dev/r/toggle.json",
+          "https://retroui.dev/r/toggle-group.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "preview/components/toggle-group-style-outlined.tsx",
+          "target": "components/retroui/preview/toggle-group-style-outlined.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "toggle-group-style-solid",
+      "title": "toggle-group-style-solid",
+      "type": "registry:block",
+      "registryDependencies": [
+        "https://retroui.dev/r/toggle.json",
+        "https://retroui.dev/r/toggle-group.json"
+      ],
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "preview/components/toggle-style-solid.tsx",
+          "target": "components/retroui/preview/toggle-group-style-solid.tsx",
+          "type": "registry:block"
+        }
+      ]
     }
   ]
 }

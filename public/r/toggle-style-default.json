@@ -1,0 +1,15 @@
+{
+  "name": "toggle-style-default",
+  "title": "toggle-style-default",
+  "type": "registry:block",
+  "registryDependencies": ["https://retroui.dev/r/toggle.json"],
+  "dependencies": ["lucide-react"],
+  "files": [
+    {
+      "path": "preview/components/toggle-style-default.tsx",
+      "target": "components/retroui/preview/toggle-style-default.tsx",
+      "type": "registry:block",
+      "content": "import { Toggle } from \"@/components/retroui\";\nimport { Bold } from \"lucide-react\";\n\nexport default function ToggleStyleDefault() {\n  return (\n    <Toggle>\n      <Bold />\n    </Toggle>\n  );\n}\n"
+    }
+  ]
+}
