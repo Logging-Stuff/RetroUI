@@ -2,7 +2,10 @@
   "name": "tooltip-style-solid",
   "title": "tooltip-style-solid",
   "type": "registry:block",
-  "registryDependencies": ["https://retroui.dev/r/tooltip.json"],
+  "registryDependencies": [
+    "https://retroui.dev/r/tooltip.json",
+    "https://retroui.dev/r/button.json"
+  ],
   "dependencies": ["lucide-react"],
   "files": [
     {
