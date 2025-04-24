@@ -362,9 +362,9 @@
       "author": "Ankan Bhattacharya <https://github.com/ankan002>",
       "files": [
         {
-          "path": "preview/components/toggle.tsx",
-          "target": "components/retroui/preview/toggle.tsx",
-          "type": "registry:block"
+          "path": "components/retroui/Toggle.tsx",
+          "target": "components/retroui/Toggle.tsx",
+          "type": "registry:component"
         }
       ]
     },
