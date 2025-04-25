@@ -1,0 +1,18 @@
+{
+  "name": "tooltip-style-primary",
+  "title": "tooltip-style-primary",
+  "type": "registry:block",
+  "registryDependencies": [
+    "https://retroui.dev/r/tooltip.json",
+    "https://retroui.dev/r/button.json"
+  ],
+  "dependencies": ["lucide-react"],
+  "files": [
+    {
+      "path": "preview/components/tooltip-style-primary.tsx",
+      "target": "components/retroui/preview/tooltip-style-primary.tsx",
+      "type": "registry:block",
+      "content": "\"use client\";\n\nimport {\n  Button,\n  Tooltip,\n  TooltipProvider,\n  TooltipTrigger,\n  TooltipContent,\n} from \"@/components/retroui\";\n\nexport default function TooltipStylePrimary() {\n  return (\n    <TooltipProvider>\n      <Tooltip>\n        <TooltipTrigger asChild>\n          <Button variant=\"outline\">Hover</Button>\n        </TooltipTrigger>\n        <TooltipContent variant=\"primary\">Add to Library</TooltipContent>\n      </Tooltip>\n    </TooltipProvider>\n  );\n}\n"
+    }
+  ]
+}

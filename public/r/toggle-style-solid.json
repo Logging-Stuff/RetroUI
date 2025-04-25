@@ -1,0 +1,15 @@
+{
+  "name": "toggle-style-solid",
+  "title": "toggle-style-solid",
+  "type": "registry:block",
+  "registryDependencies": ["https://retroui.dev/r/toggle.json"],
+  "dependencies": ["lucide-react"],
+  "files": [
+    {
+      "path": "preview/components/toggle-style-solid.tsx",
+      "target": "components/retroui/preview/toggle-style-solid.tsx",
+      "type": "registry:block",
+      "content": "import { Toggle } from \"@/components/retroui\";\nimport { Italic } from \"lucide-react\";\n\nexport default function ToggleStyleSolid() {\n  return (\n    <Toggle variant=\"solid\">\n      <Italic /> Italics\n    </Toggle>\n  );\n}"
+    }
+  ]
+}

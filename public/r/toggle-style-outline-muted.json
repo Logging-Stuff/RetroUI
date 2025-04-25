@@ -1,0 +1,15 @@
+{
+  "name": "toggle-style-outline-muted",
+  "title": "toggle-style-outline-muted",
+  "type": "registry:block",
+  "registryDependencies": ["https://retroui.dev/r/toggle.json"],
+  "dependencies": ["lucide-react"],
+  "files": [
+    {
+      "path": "preview/components/toggle-style-outline-muted.tsx",
+      "target": "components/retroui/preview/toggle-style-outline-muted.tsx",
+      "type": "registry:block",
+      "content": "import { Toggle } from \"@/components/retroui\";\nimport { Bold } from \"lucide-react\";\n\nexport default function ToggleStyleOutlineMuted() {\n  return (\n    <Toggle variant=\"outline-muted\">\n      <Bold />\n    </Toggle>\n  );\n}"
+    }
+  ]
+}
