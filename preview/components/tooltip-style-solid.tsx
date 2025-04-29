@@ -1,22 +1,16 @@
 "use client";
 
-import {
-  Button,
-  Tooltip,
-  TooltipProvider,
-  TooltipTrigger,
-  TooltipContent,
-} from "@/components/retroui";
+import { Button, Tooltip } from "@/components/retroui";
 
 export default function TooltipStyleSolid() {
   return (
-    <TooltipProvider>
+    <Tooltip.Provider>
       <Tooltip>
-        <TooltipTrigger asChild>
+        <Tooltip.Trigger asChild>
           <Button variant="outline">Hover</Button>
-        </TooltipTrigger>
-        <TooltipContent variant="solid">Add to Library</TooltipContent>
+        </Tooltip.Trigger>
+        <Tooltip.Content variant="solid">Add to Library</Tooltip.Content>
       </Tooltip>
-    </TooltipProvider>
+    </Tooltip.Provider>
   );
 }

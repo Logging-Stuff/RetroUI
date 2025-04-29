@@ -1,21 +1,14 @@
 "use client";
 
-import {
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
-  Label,
-  Button,
-  Input,
-} from "@/components/retroui";
+import { Popover, Label, Button, Input } from "@/components/retroui";
 
 export default function PopoverStyleDefaultShadow() {
   return (
     <Popover>
-      <PopoverTrigger asChild>
+      <Popover.Trigger asChild>
         <Button>Open Popover</Button>
-      </PopoverTrigger>
-      <PopoverContent className="w-80 font-sans" variant="default" shadow="md">
+      </Popover.Trigger>
+      <Popover.Content className="w-80 shadow-md">
         <div className="grid gap-4">
           <div className="space-y-2">
             <h4 className="font-medium leading-none">Dimensions</h4>
@@ -46,7 +39,7 @@ export default function PopoverStyleDefaultShadow() {
             </div>
           </div>
         </div>
-      </PopoverContent>
+      </Popover.Content>
     </Popover>
   );
 }
