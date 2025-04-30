@@ -51,7 +51,7 @@ DialogBackdrop.displayName = "DialogBackdrop";
 
 const dialogVariants = cva(
   `fixed z-50 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
-  flex flex-col border-2 border-black shadow-md gap-4 overflow-y-auto bg-white
+  flex flex-col border-2 shadow-md gap-4 overflow-y-auto bg-white
   w-full h-fit max-h-[80vh] max-w-[97%] duration-300
   data-[state=open]:animate-in 
   data-[state=open]:slide-in-from-left-1/2 
@@ -132,7 +132,7 @@ const DialogDescription = ({
 };
 
 const dialogFooterVariants = cva(
-  "flex items-center justify-end border-t-2 border-black min-h-12 gap-4 px-4 py-2",
+  "flex items-center justify-end border-t-2 min-h-12 gap-4 px-4 py-2",
   {
     variants: {
       variant: {
@@ -171,7 +171,7 @@ const DialogFooter = ({
 };
 
 const dialogHeaderVariants = cva(
-  "flex items-center justify-between border-b-2 border-black px-4 min-h-12",
+  "flex items-center justify-between border-b-2 px-4 min-h-12",
   {
     variants: {
       variant: {

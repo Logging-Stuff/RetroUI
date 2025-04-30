@@ -44,13 +44,31 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  const theme = localStorage.getItem('theme');
+                  if (theme === 'dark') {
+                    document.documentElement.classList.add('dark');
+                  } else {
+                    document.documentElement.classList.remove('dark');
+                  }
+                } catch (e) {
+                  console.error('Error applying theme:', e);
+                }
+              })();
+            `,
+          }}
+        />
+        <script
           defer
           src="https://cloud.umami.is/script.js"
           data-website-id="97dd6182-c656-4265-97e0-ee9613b88078"
         />
       </head>
       <body
-        className={`${space.className} ${archivoBlack.variable} ${space.variable} ${spaceMono.variable}`}
+        className={`${space.className} ${archivoBlack.variable} ${space.variable} ${spaceMono.variable} bg-background text-foreground`}
       >
         <div className="relative z-40 pb-16">
           <TopNav />

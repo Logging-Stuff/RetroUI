@@ -10,7 +10,7 @@ export default function SideNav() {
 
   return (
     <div
-      className={`fixed right-auto border-r-2 border-black h-full overflow-y-scroll transition-transform transform md:translate-x-0 w-60 bg-white flex flex-col justify-center md:justify-start py-14 md:py-8`}
+      className={`fixed right-auto border-r-2 h-full overflow-y-scroll transition-transform transform md:translate-x-0 w-60 bg-background flex flex-col justify-center md:justify-start py-14 md:py-8`}
     >
       <nav className="flex flex-col items-start px-6 lg:pl-0 pb-26 space-y-4">
         {navConfig.sideNavItems.map((item) => (
@@ -22,8 +22,7 @@ export default function SideNav() {
                   key={child.title}
                   href={child.href}
                   className={`px-2 py-1 w-full border border-transparent ${
-                    pathname === child.href &&
-                    "bg-primary text-black border-black"
+                    pathname === child.href && "bg-primary text-black"
                   }`}
                 >
                   {child.title}

@@ -1,15 +1,43 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { GithubIcon } from "lucide-react";
+import { GithubIcon, MoonIcon, SunIcon } from "lucide-react";
 import HamburgerMenu from "./HamburgerMenu";
 import { Button, Text } from "@/components/retroui";
 import { navConfig } from "@/config/navigation";
 
 export default function TopNav() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  // Apply the saved theme preference on page load
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      document.documentElement.classList.add("dark");
+      setIsDarkMode(true);
+    } else {
+      document.documentElement.classList.remove("dark");
+      setIsDarkMode(false);
+    }
+  }, []);
+
+  const toggleDarkMode = () => {
+    const htmlElement = document.documentElement;
+    if (htmlElement.classList.contains("dark")) {
+      htmlElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+      setIsDarkMode(false);
+    } else {
+      htmlElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+      setIsDarkMode(true);
+    }
+  };
+
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 w-full border-b-2 border-black bg-white">
+      <nav className="fixed top-0 left-0 right-0 w-full border-b-2 bg-background">
         <div className="w-full bg-black text-white">
           <div className="container max-w-6xl mx-auto px-4 py-2 flex justify-center space-x-4 items-center">
             <Text className="text-sm text-center">
@@ -68,7 +96,7 @@ export default function TopNav() {
               <HamburgerMenu />
             </div>
 
-            <div className="hidden lg:flex items-center">
+            <div className="hidden lg:flex items-center space-x-3">
               <Link
                 href="https://github.com/Logging-Stuff/retroui"
                 target="_blank"
@@ -79,6 +107,9 @@ export default function TopNav() {
                   Star on GitHub
                 </Button>
               </Link>
+              <Button variant="secondary" size="icon" onClick={toggleDarkMode}>
+                {isDarkMode ? <SunIcon size="14" /> : <MoonIcon size="14" />}
+              </Button>
             </div>
           </div>
         </div>

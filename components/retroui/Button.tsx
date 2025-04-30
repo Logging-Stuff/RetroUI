@@ -8,17 +8,18 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "shadow-md hover:shadow-xs bg-primary text-black border-2 border-black transition hover:translate-y-1 hover:bg-primary-hover",
+          "shadow-md hover:shadow-none bg-primary text-black border-2 border-black transition hover:translate-y-1 hover:bg-primary-hover",
         secondary:
-          "shadow-md hover:shadow-xs bg-black shadow-primary text-white border-2 border-black transition hover:translate-y-1",
+          "shadow-md hover:shadow-none bg-secondary shadow-primary text-secondary-foreground border-2 border-black transition hover:translate-y-1",
         outline:
-          "shadow-md hover:shadow-xs bg-transparent text-black border-2 border-black transition hover:translate-y-1",
-        link: "bg-transparent text-black hover:underline",
+          "shadow-md hover:shadow-none bg-transparent border-2 transition hover:translate-y-1",
+        link: "bg-transparent hover:underline",
       },
       size: {
-        sm: "px-3 py-1 text-sm",
+        sm: "px-3 py-1 text-sm shadow hover:shadow-none",
         md: "px-4 py-1.5 text-base",
         lg: "px-8 py-3 text-lg",
+        icon: "p-2",
       },
     },
     defaultVariants: {

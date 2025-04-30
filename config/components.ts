@@ -190,6 +190,11 @@ export const componentConfig: {
         () => import("@/preview/components/button-style-secondary"),
       ),
     },
+    "button-style-icon": {
+      name: "button-style-icon",
+      filePath: "preview/components/button-style-icon.tsx",
+      preview: lazy(() => import("@/preview/components/button-style-icon")),
+    },
     "button-style-outline": {
       name: "button-style-default",
       filePath: "preview/components/button-style-outline.tsx",
