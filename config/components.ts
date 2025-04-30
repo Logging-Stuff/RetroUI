@@ -190,6 +190,11 @@ export const componentConfig: {
         () => import("@/preview/components/button-style-secondary"),
       ),
     },
+    "button-style-icon": {
+      name: "button-style-icon",
+      filePath: "preview/components/button-style-icon.tsx",
+      preview: lazy(() => import("@/preview/components/button-style-icon")),
+    },
     "button-style-outline": {
       name: "button-style-default",
       filePath: "preview/components/button-style-outline.tsx",
@@ -287,23 +292,11 @@ export const componentConfig: {
       filePath: "preview/components/popover-style-default.tsx",
       preview: lazy(() => import("@/preview/components/popover-style-default")),
     },
-    "popover-style-primary": {
-      name: "popover-style-primary",
-      filePath: "preview/components/popover-style-primary.tsx",
-      preview: lazy(() => import("@/preview/components/popover-style-primary")),
-    },
     "popover-style-default-shadow": {
       name: "popover-style-default-shadow",
       filePath: "preview/components/popover-style-default-shadow.tsx",
       preview: lazy(
         () => import("@/preview/components/popover-style-default-shadow"),
-      ),
-    },
-    "popover-style-primary-shadow": {
-      name: "popover-style-primary-shadow",
-      filePath: "preview/components/popover-style-primary-shadow.tsx",
-      preview: lazy(
-        () => import("@/preview/components/popover-style-primary-shadow"),
       ),
     },
     "radio-style-default": {
@@ -416,21 +409,16 @@ export const componentConfig: {
       filePath: "preview/components/sonner-style-default.tsx",
       preview: lazy(() => import("@/preview/components/sonner-style-default")),
     },
-    "sonner-style-warning": {
-      name: "sonner-style-warning",
-      filePath: "preview/components/sonner-style-warning.tsx",
-      preview: lazy(() => import("@/preview/components/sonner-style-warning")),
+    "sonner-style-status": {
+      name: "sonner-style-status",
+      filePath: "preview/components/sonner-style-status.tsx",
+      preview: lazy(() => import("@/preview/components/sonner-style-status")),
     },
-    "sonner-style-error": {
-      name: "sonner-style-error",
-      filePath: "preview/components/sonner-style-error.tsx",
-      preview: lazy(() => import("@/preview/components/sonner-style-error")),
-    },
-    "sonner-style-rich-colors": {
-      name: "sonner-style-rich-colors",
-      filePath: "preview/components/sonner-style-rich-colors.tsx",
+    "sonner-style-colored-status": {
+      name: "sonner-style-colored-status",
+      filePath: "preview/components/sonner-style-colored-status.tsx",
       preview: lazy(
-        () => import("@/preview/components/sonner-style-rich-colors"),
+        () => import("@/preview/components/sonner-style-colored-status"),
       ),
     },
     label: {

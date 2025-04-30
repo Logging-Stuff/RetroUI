@@ -6,8 +6,8 @@ const badgeVariants = cva("font-semibold ", {
   variants: {
     variant: {
       default: "bg-gray-200 text-gray-700",
-      outline: "outline-2 outline-black text-black",
-      solid: "bg-black text-white",
+      outline: "outline-2 outline-foreground text-foreground",
+      solid: "bg-foreground text-background",
       surface: "outline-2 bg-primary text-black",
     },
     size: {

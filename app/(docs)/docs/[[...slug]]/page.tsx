@@ -50,7 +50,7 @@ export default function page({ params }: IProps) {
         <Text as="h1">{doc.title}</Text>
         <p className="text-lg text-muted-foreground mt-2">{doc.description}</p>
         {doc.links && (
-          <div className="flex space-x-4 text-sm mt-4">
+          <div className="flex space-x-4 text-sm mt-4 text-black">
             {doc.links?.api_reference && (
               <a
                 className="flex items-center bg-gray-200 px-1.5 py-.5"

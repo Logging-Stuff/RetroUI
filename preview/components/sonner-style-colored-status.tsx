@@ -3,10 +3,10 @@ import { toast } from "sonner";
 
 export default function SonnerStyleRichColors() {
   const onClick = () => {
-    toast.success("Congrats man 🎉", {
+    toast.success("Congrats man (Colored) 🎉", {
       richColors: true,
     });
   };
 
-  return <Button onClick={onClick}>Show Toast (Rick colors)</Button>;
+  return <Button onClick={onClick}>Congratulate Me</Button>;
 }
