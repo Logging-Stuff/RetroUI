@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-head: var(--font-head);
   --font-sans: var(--font-sans);
@@ -28,6 +30,8 @@
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
+
+  --background-image: var(--background-image);
 }
 
 :root {
@@ -47,9 +51,10 @@
   --destructive: #e63946;
   --destructive-foreground: #fff;
   --border: #000;
+  --background-image: url('/images/banner_void_2.svg');
 }
 .dark {
-  --background: #121212;
+  --background: #000000;
   --foreground: #eaeaea;
   --card: #1e1e1e;
   --card-foreground: #eaeaea;
@@ -65,6 +70,13 @@
   --destructive: #e63946;
   --destructive-foreground: #fff;
   --border: #eee;
+  --background-image: url('/images/bg_void_3.png');
+}
+
+.bg-image{
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
 }
 
 .text-outlined {

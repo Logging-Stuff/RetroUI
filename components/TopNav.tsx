@@ -68,7 +68,7 @@ export default function TopNav() {
                   height={30}
                   width={60}
                 />
-                RetroUI
+                <div className="text-foreground">RetroUI</div>
               </a>
             </div>
 
