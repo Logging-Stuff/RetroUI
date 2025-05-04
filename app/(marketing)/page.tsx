@@ -57,7 +57,7 @@ export default async function Home() {
 
   return (
     <main>
-      <div className="bg-[url('/images/banner_void_2.svg')] bg-cover bg-no-repeat bg-center flex flex-col items-center h-[1900px] lg:h-[1400px]">
+      <div className="bg-image bg-cover bg-no-repeat bg-center flex flex-col items-center h-[1900px] lg:h-[1400px]">
         <section className="container max-w-6xl mx-auto px-4 lg:px-0 text-gray-900 flex justify-center items-center lg:gap-28 xl:gap-32 my-28">
           <div className="text-center lg:text-left w-full lg:w-2/3">
             <Link href="/docs" className="mb-6 inline-block">
@@ -67,7 +67,7 @@ export default async function Home() {
               </Badge>
             </Link>
 
-            <Text as="h1" className="text-5xl lg:text-6xl">
+            <Text as="h1" className="text-5xl text-foreground lg:text-6xl">
               Make your projects
               <br />
               <span className="text-outlined">stand out!</span>
@@ -90,7 +90,7 @@ export default async function Home() {
               </Link>
               <Link href="https://pro.retroui.dev/blocks" passHref>
                 <Button
-                  className="w-full"
+                  className="w-full border-foreground text-foreground bg-background"
                   variant="outline"
                   aria-label="Get Started with RetroUI"
                 >
@@ -100,9 +100,12 @@ export default async function Home() {
             </div>
           </div>
           <div className="hidden lg:block lg:w-1/3">
-            <img
+            <Image
               alt="orange cool cat"
               src="/images/tv_radio.png"
+              layout="responsive"
+              width={500}
+              height={500}
               className="h-full w-full"
             />
           </div>
@@ -112,7 +115,7 @@ export default async function Home() {
             Old school with modern twist! ✨
           </Text> */}
           <div className="grid gap-6 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 mb-8">
-            <Card className="w-full bg-white shadow-none">
+            <Card className="w-full bg-background shadow-none">
               <Card.Header>
                 <Card.Title>Button</Card.Title>
               </Card.Header>
@@ -123,7 +126,7 @@ export default async function Home() {
                 </div>
               </Card.Content>
             </Card>
-            <Card className="w-full bg-white shadow-none">
+            <Card className="w-full bg-background shadow-none">
               <Card.Header>
                 <Card.Title>Badge</Card.Title>
               </Card.Header>
@@ -131,7 +134,7 @@ export default async function Home() {
                 <BadgeStyleVariants />
               </Card.Content>
             </Card>
-            <Card className="w-full bg-white shadow-none">
+            <Card className="w-full bg-background shadow-none">
               <Card.Header>
                 <Card.Title>Avatar</Card.Title>
               </Card.Header>
@@ -139,7 +142,7 @@ export default async function Home() {
                 <AvatarStyleCircle />
               </Card.Content>
             </Card>
-            <Card className="w-full bg-white shadow-none">
+            <Card className="w-full bg-background shadow-none">
               <Card.Header>
                 <Card.Title>Accordion</Card.Title>
               </Card.Header>
@@ -147,18 +150,18 @@ export default async function Home() {
                 <AccordionStyleDefault />
               </Card.Content>
             </Card>
-            <Card className="w-full bg-white shadow-none">
+            <Card className="w-full bg-background shadow-none">
               <Card.Header>
                 <Card.Title>Input & Textarea</Card.Title>
               </Card.Header>
               <Card.Content>
                 <Input />
                 <div className="h-4"></div>
-                <Textarea />
+                <Textarea className="border-foreground" />
               </Card.Content>
             </Card>
 
-            <Card className="w-full bg-white shadow-none">
+            <Card className="w-full bg-background shadow-none">
               <Card.Header>
                 <Card.Title>Alert</Card.Title>
               </Card.Header>
@@ -247,45 +250,104 @@ export default async function Home() {
           <span className="text-outlined">SPA</span> Applications.
         </Text>
 
-        <div className="grid grid-cols-5 lg:grid-cols-5 gap-8 lg:gap-6 max-w-2xl mx-auto items-center">
-          <Image
-            src="/images/logos/vite.png"
-            alt="vite"
-            width={60}
-            height={60}
-          />
-          <Image
-            src="/images/logos/nextjs.png"
-            alt="nextjs"
-            width={60}
-            height={60}
-          />
-          <Image
-            src="/images/logos/remix.png"
-            alt="remix"
-            width={55}
-            height={55}
-          />
-          <Image
-            src="/images/logos/astro.png"
-            alt="astro"
-            width={55}
-            height={55}
-          />
-          <Image
-            src="/images/logos/gatsby.png"
-            alt="gatsby"
-            width={60}
-            height={60}
-          />
+        <div className="grid grid-cols-5 gap-8 lg:gap-6 max-w-2xl mx-auto items-center">
+          {/* Vite */}
+          <div>
+            <Image
+              src="/images/logos/vite.png"
+              alt="vite"
+              width={60}
+              height={60}
+              className="block dark:hidden"
+            />
+            <Image
+              src="/images/logos/vite_white.png"
+              alt="vite dark"
+              width={60}
+              height={60}
+              className="hidden dark:block"
+            />
+          </div>
+
+          {/* Next.js */}
+          <div>
+            <Image
+              src="/images/logos/nextjs.png"
+              alt="nextjs"
+              width={60}
+              height={60}
+              className="block dark:hidden"
+            />
+            <Image
+              src="/images/logos/next_white.png"
+              alt="nextjs dark"
+              width={60}
+              height={60}
+              className="hidden dark:block"
+            />
+          </div>
+
+          {/* Remix */}
+          <div>
+            <Image
+              src="/images/logos/remix.png"
+              alt="remix"
+              width={55}
+              height={55}
+              className="block dark:hidden"
+            />
+            <Image
+              src="/images/logos/remix_white.png"
+              alt="remix dark"
+              width={55}
+              height={55}
+              className="hidden dark:block"
+            />
+          </div>
+
+          {/* Astro */}
+          <div>
+            <Image
+              src="/images/logos/astro.png"
+              alt="astro"
+              width={55}
+              height={55}
+              className="block dark:hidden"
+            />
+            <Image
+              src="/images/logos/astro_white.png"
+              alt="astro dark"
+              width={55}
+              height={55}
+              className="hidden dark:block"
+            />
+          </div>
+
+          {/* Gatsby */}
+          <div>
+            <Image
+              src="/images/logos/gatsby.png"
+              alt="gatsby"
+              width={60}
+              height={60}
+              className="block dark:hidden"
+            />
+            <Image
+              src="/images/logos/gatsby_white.png"
+              alt="gatsby dark"
+              width={60}
+              height={60}
+              className="hidden dark:block"
+            />
+          </div>
         </div>
       </section>
 
       <section className="container max-w-6xl mx-auto border-2 bg-primary border-black py-16 px-4 lg:p-16 my-36">
-        <Text as="h2" className="text-center mb-2">
+        <Text as="h2" className="text-center text-black mb-2">
           Community Contributors
         </Text>
-        <Text className="text-xl text-center text-muted-foreground mb-8">
+        <Text className="text-xl text-center text-black mb-8">
           RetroUI core is free and open-source, and it is made possible by our
           awesome contributors.
         </Text>
@@ -298,7 +360,7 @@ export default async function Home() {
               passHref
               className="flex flex-col items-center"
             >
-              <Avatar className="h-12 w-12 lg:h-16 lg:w-16">
+              <Avatar className="h-12 w-12 border-black lg:h-16 lg:w-16">
                 <Avatar.Image
                   src={contributor.avatar}
                   alt={contributor.username}
@@ -313,13 +375,19 @@ export default async function Home() {
             target="_blank"
             passHref
           >
-            <Button className="bg-white" variant="outline">
+            <Button
+              className="bg-white border-black shadow-black text-black"
+              variant="outline"
+            >
               <GithubIcon size="16" className="mr-2" />
               Star on Github
             </Button>
           </Link>
           <Link href="https://discord.gg/Jum3NJxK6Q" target="_blank" passHref>
-            <Button className="bg-white" variant="outline">
+            <Button
+              className="bg-white border-black shadow-black text-black"
+              variant="outline"
+            >
               <MessageCircle size="16" className="mr-2" />
               Join Community
             </Button>
@@ -327,43 +395,56 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="container max-w-6xl mx-auto px-4 lg:px-0 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center my-36">
-        <div className="w-full">
-          <Text as="h2">
-            🚀 Ship <span className="text-outlined">Faster</span> With Pro
-            Blocks and Templates!
-          </Text>
-          <div className="flex flex-col space-y-1 mt-6 mb-8 text-muted-foreground">
-            <Text className="text-lg">
-              - Based on the design foundation of RetroUI.
-            </Text>
-            <Text className="text-lg">
-              - Over 50+ premium ready-to-use components.
-            </Text>
-            <Text className="text-lg">
-              - Complete pre-built website templates.
-            </Text>
-            <Text className="text-lg">
-              - Lifetime access to all future updates.
-            </Text>
+      <section className="min-h-[50rem] mx-auto px-4 bg-[url('/images/retro_pro_bg_w.jpeg')] dark:bg-[url('/images/retro_pro_bg.jpeg')] bg-cover bg-no-repeat bg-size-[80% auto]">
+        <div className="container max-w-6xl h-full mx-auto py-16 flex flex-col justify-between gap-20">
+          <div className="flex justify-between items-start mt-20">
+            <div className="flex flex-col gap-10 items-start justify-start">
+              <Text as="h2">
+                Ship <span className="text-outlined">Faster</span> With Pro
+                Blocks
+                <br />
+                and Templates 🚀
+              </Text>
+              <div className="flex flex-col space-y-1 text-muted-foreground">
+                <Text className="text-lg">
+                  - Based on the design foundation of RetroUI.
+                </Text>
+                <Text className="text-lg">
+                  - Over 50+ premium ready-to-use components.
+                </Text>
+                <Text className="text-lg">
+                  - Complete pre-built website templates.
+                </Text>
+                <Text className="text-lg">
+                  - Lifetime access to all future updates.
+                </Text>
+              </div>
+            </div>
+            <Link
+              id="checkout-figma-kit"
+              data-umami-event="checkout-figma-kit"
+              href="https://dub.sh/retroui-pro"
+              target="_blank"
+            >
+              <Button>Explore Blocks</Button>
+            </Link>
           </div>
-
-          <Link
-            id="checkout-figma-kit"
-            data-umami-event="checkout-figma-kit"
-            href="https://dub.sh/retroui-pro"
-            target="_blank"
-          >
-            <Button>Explore Blocks</Button>
-          </Link>
-        </div>
-        <div className="w-full">
-          <Image
-            src="/images/figma-banner.png"
-            width={800}
-            height={800}
-            alt="retroui code showcase"
-          />
+          <div className="">
+            <Image
+              src="/images/retro_pro_blocks.png"
+              width={1920}
+              height={1080}
+              alt="retroui code showcase"
+              className="hidden dark:block"
+            />
+            <Image
+              src="/images/retro_pro_blocks_w.png"
+              width={1920}
+              height={1080}
+              alt="retroui code showcase"
+              className="block dark:hidden"
+            />
+          </div>
         </div>
       </section>
       <footer className="bg-black py-8">
