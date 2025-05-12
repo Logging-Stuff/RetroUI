@@ -5,9 +5,7 @@ import { cn } from "@/lib/utils"
 
 const BreadcrumbRoot = React.forwardRef<
   HTMLElement,
-  React.ComponentPropsWithoutRef<"nav"> & {
-    separator?: React.ReactNode
-  }
+  React.ComponentPropsWithoutRef<"nav">
 >(({ className, ...props }, ref) => (
   <nav
     ref={ref}
@@ -65,8 +63,6 @@ const BreadcrumbPage = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <span
     ref={ref}
-    role="link"
-    aria-disabled="true"
     aria-current="page"
     className={cn("text-foreground font-semibold", className)}
     {...props}
@@ -96,7 +92,6 @@ const BreadcrumbEllipsis = ({
 }: React.ComponentProps<"span">) => (
   <span
     role="presentation"
-    aria-hidden="true"
     className={cn("flex h-9 w-9 items-center justify-center", className)}
     {...props}
   >
