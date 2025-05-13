@@ -5,7 +5,6 @@ import { toast } from "sonner";
 
 export default function SonnerStyleDefault() {
   const onClick = () => {
-    console.log("clicked");
     toast("Event has been created", {
       description: "Sunday, December 03, 2025",
       cancel: {
