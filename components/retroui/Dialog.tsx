@@ -51,7 +51,7 @@ DialogBackdrop.displayName = "DialogBackdrop";
 
 const dialogVariants = cva(
   `fixed z-50 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
-  flex flex-col border-2 shadow-md gap-4 overflow-y-auto bg-white
+  flex flex-col border-2 shadow-md gap-4 overflow-y-auto bg-background text-foreground
   w-full h-fit max-h-[80vh] max-w-[97%] duration-300
   data-[state=open]:animate-in 
   data-[state=open]:slide-in-from-left-1/2 
@@ -136,7 +136,7 @@ const dialogFooterVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-white text-black",
+        default: "bg-background text-foreground",
       },
       position: {
         fixed: "sticky bottom-0",
