@@ -68,7 +68,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${space.className} ${archivoBlack.variable} ${space.variable} ${spaceMono.variable} bg-background text-foreground`}
+        className={`${space.className} ${archivoBlack.variable} ${space.variable} ${spaceMono.variable} bg-background text-foreground w-full min-h-dvh overflow-x-hidden size-full relative antialised scroll-smooth`}
       >
         <div className="relative z-40 pb-16">
           <TopNav />
