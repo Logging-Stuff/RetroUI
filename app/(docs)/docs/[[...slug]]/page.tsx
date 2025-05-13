@@ -5,7 +5,7 @@ import { format } from "date-fns";
 import MDX from "@/components/MDX";
 import { Text } from "@/components/retroui/Text";
 import { Metadata } from "next";
-import { MoveRightIcon, MoveUpRightIcon } from "lucide-react";
+import { MoveUpRightIcon } from "lucide-react";
 
 interface IProps {
   params: { slug: string[] };
