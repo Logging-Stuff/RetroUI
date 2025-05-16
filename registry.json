@@ -1362,44 +1362,6 @@
       ]
     },
     {
-      "name": "sonner-style-warning",
-      "title": "sonner-style-warning",
-      "type": "registry:block",
-      "registryDependencies": [
-        "https://retroui.dev/r/sonner.json",
-        "https://retroui.dev/r/button.json"
-      ],
-      "dependencies": [
-        "lucide-react"
-      ],
-      "files": [
-        {
-          "path": "preview/components/sonner-style-warning.tsx",
-          "target": "components/retroui/preview/sonner-style-warning.tsx",
-          "type": "registry:block"
-        }
-      ]
-    },
-    {
-      "name": "sonner-style-rich-colors",
-      "title": "sonner-style-rich-colors",
-      "type": "registry:block",
-      "registryDependencies": [
-        "https://retroui.dev/r/sonner.json",
-        "https://retroui.dev/r/button.json"
-      ],
-      "dependencies": [
-        "lucide-react"
-      ],
-      "files": [
-        {
-          "path": "preview/components/sonner-style-rich-colors.tsx",
-          "target": "components/retroui/preview/sonner-style-rich-colors.tsx",
-          "type": "registry:block"
-        }
-      ]
-    },
-    {
       "name": "popover-style-default",
       "title": "popover-style-default",
       "type": "registry:block",
@@ -1437,48 +1399,6 @@
         {
           "path": "preview/components/popover-style-default-shadow.tsx",
           "target": "components/retroui/preview/popover-style-default-shadow.tsx",
-          "type": "registry:block"
-        }
-      ]
-    },
-    {
-      "name": "popover-style-primary",
-      "title": "popover-style-primary",
-      "type": "registry:block",
-      "registryDependencies": [
-        "https://retroui.dev/r/popover.json",
-        "https://retroui.dev/r/label.json",
-        "https://retroui.dev/r/input.json",
-        "https://retroui.dev/r/button.json"
-      ],
-      "dependencies": [
-        "lucide-react"
-      ],
-      "files": [
-        {
-          "path": "preview/components/popover-style-primary.tsx",
-          "target": "components/retroui/preview/popover-style-primary.tsx",
-          "type": "registry:block"
-        }
-      ]
-    },
-    {
-      "name": "popover-style-primary-shadow",
-      "title": "popover-style-primary-shadow",
-      "type": "registry:block",
-      "registryDependencies": [
-        "https://retroui.dev/r/popover.json",
-        "https://retroui.dev/r/label.json",
-        "https://retroui.dev/r/input.json",
-        "https://retroui.dev/r/button.json"
-      ],
-      "dependencies": [
-        "lucide-react"
-      ],
-      "files": [
-        {
-          "path": "preview/components/popover-style-primary-shadow.tsx",
-          "target": "components/retroui/preview/popover-style-primary-shadow.tsx",
           "type": "registry:block"
         }
       ]

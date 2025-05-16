@@ -1,15 +1,20 @@
 {
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "toggle-style-outline-muted",
-  "title": "toggle-style-outline-muted",
   "type": "registry:block",
-  "registryDependencies": ["https://retroui.dev/r/toggle.json"],
-  "dependencies": ["lucide-react"],
+  "title": "toggle-style-outline-muted",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "https://retroui.dev/r/toggle.json"
+  ],
   "files": [
     {
       "path": "preview/components/toggle-style-outline-muted.tsx",
-      "target": "components/retroui/preview/toggle-style-outline-muted.tsx",
+      "content": "import { Toggle } from \"@/components/retroui\";\nimport { Bold } from \"lucide-react\";\n\nexport default function ToggleStyleOutlineMuted() {\n  return (\n    <Toggle variant=\"outline-muted\">\n      <Bold />\n    </Toggle>\n  );\n}\n",
       "type": "registry:block",
-      "content": "import { Toggle } from \"@/components/retroui\";\nimport { Bold } from \"lucide-react\";\n\nexport default function ToggleStyleOutlineMuted() {\n  return (\n    <Toggle variant=\"outline-muted\">\n      <Bold />\n    </Toggle>\n  );\n}"
+      "target": "components/retroui/preview/toggle-style-outline-muted.tsx"
     }
   ]
 }

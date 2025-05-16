@@ -1,15 +1,20 @@
 {
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "toggle-style-default",
-  "title": "toggle-style-default",
   "type": "registry:block",
-  "registryDependencies": ["https://retroui.dev/r/toggle.json"],
-  "dependencies": ["lucide-react"],
+  "title": "toggle-style-default",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "https://retroui.dev/r/toggle.json"
+  ],
   "files": [
     {
       "path": "preview/components/toggle-style-default.tsx",
-      "target": "components/retroui/preview/toggle-style-default.tsx",
+      "content": "import { Toggle } from \"@/components/retroui\";\nimport { Bold } from \"lucide-react\";\n\nexport default function ToggleStyleDefault() {\n  return (\n    <Toggle>\n      <Bold />\n    </Toggle>\n  );\n}\n",
       "type": "registry:block",
-      "content": "import { Toggle } from \"@/components/retroui\";\nimport { Bold } from \"lucide-react\";\n\nexport default function ToggleStyleDefault() {\n  return (\n    <Toggle>\n      <Bold />\n    </Toggle>\n  );\n}\n"
+      "target": "components/retroui/preview/toggle-style-default.tsx"
     }
   ]
 }

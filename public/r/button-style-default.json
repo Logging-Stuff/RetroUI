@@ -16,12 +16,12 @@
   ],
   "cssVars": {
     "light": {
-      "--primary": "60 100% 60%",
-      "--primary-foreground": "0 0% 0%"
+      "primary": "60 100% 60%",
+      "primary-foreground": "0 0% 0%"
     },
     "dark": {
-      "--primary": "60 100% 50%",
-      "--primary-foreground": "0 0% 0%"
+      "primary": "60 100% 50%",
+      "primary-foreground": "0 0% 0%"
     }
   }
 }
