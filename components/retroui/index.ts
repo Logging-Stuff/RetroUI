@@ -22,3 +22,4 @@ export * from "./Toggle";
 export * from "./ToggleGroup";
 export * from "./Sonner";
 export * from "./Tooltip";
+export * from "./Breadcrumb";

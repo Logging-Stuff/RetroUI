@@ -108,6 +108,10 @@ export const componentConfig: {
       name: "tooltip",
       filePath: "components/retroui/Tooltip.tsx",
     },
+    breadcrumb: {
+      name: "breadcrumb",
+      filePath: "components/retroui/Breadcrumb.tsx",
+    }
   },
   examples: {
     "accordion-style-default": {
@@ -467,6 +471,34 @@ export const componentConfig: {
       filePath: "preview/components/toggle-group-style-solid.tsx",
       preview: lazy(
         () => import("@/preview/components/toggle-group-style-solid"),
+      ),
+    },
+    "breadcrumb-style-default": {
+      name: "breadcrumb-style-default",
+      filePath: "preview/components/breadcrumb-style-default.tsx",
+      preview: lazy(
+        () => import("@/preview/components/breadcrumb-style-default"),
+      ),
+    },
+    "breadcrumb-custom-separator": {
+      name: "breadcrumb-custom-separator",
+      filePath: "preview/components/breadcrumb-custom-separator.tsx",
+      preview: lazy(
+        () => import("@/preview/components/breadcrumb-custom-separator"),
+      ),
+    },
+    "breadcrumb-style-collapsed": {
+      name: "breadcrumb-style-collapsed",
+      filePath: "preview/components/breadcrumb-style-collapsed.tsx",
+      preview: lazy(
+        () => import("@/preview/components/breadcrumb-style-collapsed"),
+      ),
+    },
+    "breadcrumb-link-component": {
+      name: "breadcrumb-link-component",
+      filePath: "preview/components/breadcrumb-link-component.tsx",
+      preview: lazy(
+        () => import("@/preview/components/breadcrumb-link-component"),
       ),
     },
   },
