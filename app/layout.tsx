@@ -3,6 +3,8 @@ import "./global.css";
 import { Archivo_Black, Space_Grotesk, Space_Mono } from "next/font/google";
 import { Metadata } from "next";
 import { Toaster } from "@/components/retroui";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const archivoBlack = Archivo_Black({
   subsets: ["latin"],
@@ -75,6 +77,8 @@ export default function RootLayout({
         </div>
         {children}
         <Toaster />
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
