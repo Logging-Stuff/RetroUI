@@ -62,11 +62,11 @@ export default function TopNav() {
                 className="text-black font-head text-2xl flex items-end"
               >
                 <Image
-                  src="/images/logo_full.png"
+                  src="/images/logo.png"
                   alt="retro ui logo"
                   className="mr-2"
                   height={30}
-                  width={60}
+                  width={30}
                 />
                 <div className="text-foreground">RetroUI</div>
               </a>

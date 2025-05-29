@@ -8,6 +8,7 @@ import {
   Card,
   Avatar,
   Badge,
+  CommandDisplay,
 } from "@/components/retroui";
 import AccordionStyleDefault from "@/preview/components/accordion-style-default";
 import AlertStyleDefaultIcon from "@/preview/components/alert-style-with-icon";
@@ -74,12 +75,12 @@ export default async function Home() {
             </Text>
 
             <p className="text-lg text-muted-foreground mb-8 mt-4">
-              Retro styled component library based on React and TailwindCSS.
-              Comes with 40+ free UI components that you can just copy paste
-              into your projects.
+              React and TailwindCSS based UI library built for making unique and
+              modern looking web applications. Perfect for any project using
+              Shadcn/ui.
             </p>
 
-            <div className="flex space-x-4">
+            <div className="flex flex-col md:flex-row items-center gap-4">
               <Link href="/docs" passHref>
                 <Button
                   className="w-full"
@@ -88,15 +89,9 @@ export default async function Home() {
                   Get Started
                 </Button>
               </Link>
-              <Link href="https://pro.retroui.dev/blocks" passHref>
-                <Button
-                  className="w-full border-foreground text-foreground bg-background"
-                  variant="outline"
-                  aria-label="Get Started with RetroUI"
-                >
-                  Browse Blocks
-                </Button>
-              </Link>
+              <div className="w-full max-w-90 shadow shadow-primary">
+                <CommandDisplay command='npx shadcn add "retroui.dev/r/button.json"' />
+              </div>
             </div>
           </div>
           <div className="hidden lg:block lg:w-1/3">
@@ -112,8 +107,8 @@ export default async function Home() {
         </section>
         <section className="container max-w-6xl mx-auto px-4 lg:px-0 lg:my-36">
           {/* <Text as="h2" className="mb-16 text-center">
-            Old school with modern twist! ✨
-          </Text> */}
+              Old school with modern twist! ✨
+            </Text> */}
           <div className="grid gap-6 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 mb-8">
             <Card className="w-full bg-background shadow-none">
               <Card.Header>
@@ -216,7 +211,7 @@ export default async function Home() {
               Github Stars
             </Text>
             <Text className="text-outlined text-7xl lg:text-8xl font-head">
-              350+
+              500+
             </Text>
             <Image
               src="/images/shooting_star.svg"
@@ -395,58 +390,45 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="min-h-[50rem] mx-auto px-4 bg-[url('/images/retro_pro_bg_w.jpeg')] dark:bg-[url('/images/retro_pro_bg.jpeg')] bg-cover bg-no-repeat bg-size-[80% auto]">
+      <section className="mx-auto px-4">
         <div className="container max-w-6xl h-full mx-auto py-16 flex flex-col justify-between gap-20">
-          <div className="flex justify-between items-start mt-20">
-            <div className="flex flex-col gap-10 items-start justify-start">
-              <Text as="h2">
-                Ship <span className="text-outlined">Faster</span> With Pro
-                Blocks
+          <div className="flex flex-col md:flex-row items-center gap-10">
+            <div className="w-full md:w-3/5">
+              <Text as="h1">
+                Ship <span className="text-outlined">Faster</span> With Blocks
                 <br />
                 and Templates 🚀
               </Text>
-              <div className="flex flex-col space-y-1 text-muted-foreground">
-                <Text className="text-lg">
-                  - Based on the design foundation of RetroUI.
-                </Text>
-                <Text className="text-lg">
-                  - Over 50+ premium ready-to-use components.
-                </Text>
-                <Text className="text-lg">
-                  - Complete pre-built website templates.
-                </Text>
-                <Text className="text-lg">
-                  - Lifetime access to all future updates.
-                </Text>
+              <Text
+                as="p"
+                className="text-muted-foreground font-medium text-xl mt-2 mb-8"
+              >
+                Get access to 100+ premium blocks, templates and figma kit,
+                ready to make your project stand out.
+              </Text>
+
+              <div className="flex gap-3">
+                <Link href="https://pro.retroui.dev/blocks" target="_blank">
+                  <Button>Explore Blocks</Button>
+                </Link>
+                <Link href="https://pro.retroui.dev/templates" target="_blank">
+                  <Button variant="secondary">Explore Templates</Button>
+                </Link>
               </div>
             </div>
-            <Link
-              id="checkout-figma-kit"
-              data-umami-event="checkout-figma-kit"
-              href="https://dub.sh/retroui-pro"
-              target="_blank"
-            >
-              <Button>Explore Blocks</Button>
-            </Link>
-          </div>
-          <div className="">
-            <Image
-              src="/images/retro_pro_blocks.png"
-              width={1920}
-              height={1080}
-              alt="retroui code showcase"
-              className="hidden dark:block"
-            />
-            <Image
-              src="/images/retro_pro_blocks_w.png"
-              width={1920}
-              height={1080}
-              alt="retroui code showcase"
-              className="block dark:hidden"
-            />
+
+            <div className="w-full md:w-2/5">
+              <Image
+                src="/images/pro_showcase.svg"
+                width={1920}
+                height={1080}
+                alt="retroui code showcase"
+              />
+            </div>
           </div>
         </div>
       </section>
+
       <footer className="bg-black py-8">
         <div className="container max-w-6xl mx-auto flex flex-col lg:flex-row space-y-4 lg:space-y-0 justify-between items-center">
           <div className="flex justify-center space-x-4">
