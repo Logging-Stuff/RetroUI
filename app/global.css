@@ -51,7 +51,7 @@
   --destructive: #e63946;
   --destructive-foreground: #fff;
   --border: #000;
-  --background-image: url('/images/banner_void_2.svg');
+  --background-image: url("/images/banner_void_2.svg");
 }
 .dark {
   --background: #000000;
@@ -70,10 +70,10 @@
   --destructive: #e63946;
   --destructive-foreground: #fff;
   --border: #eee;
-  --background-image: url('/images/bg_void_3.png');
+  --background-image: url("/images/bg_void_3.png");
 }
 
-.bg-image{
+.bg-image {
   background-image: var(--background-image);
   background-size: cover;
   background-position: center;
