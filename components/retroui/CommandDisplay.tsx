@@ -20,28 +20,18 @@ export function CommandDisplay({ command }: CommandDisplayProps) {
     }
   };
 
+  const defaultColors = [
+    "text-blue-300",
+    "text-yellow-300",
+    "text-green-300",
+    "text-purple-300",
+  ];
+
   // Split the command into parts for syntax highlighting
   const parts = command.split(" ").map((part, index) => {
-    if (index === 0)
-      return (
-        <span key={index} className="text-blue-300">
-          {part}
-        </span>
-      );
-    if (index === 1)
-      return (
-        <span key={index} className="text-yellow-300">
-          {part}
-        </span>
-      );
-    if (index === 2)
-      return (
-        <span key={index} className="text-green-300">
-          {part}
-        </span>
-      );
+    const color = defaultColors[index % defaultColors.length];
     return (
-      <span key={index} className="text-purple-300">
+      <span key={index} className={color}>
         {part}
       </span>
     );
