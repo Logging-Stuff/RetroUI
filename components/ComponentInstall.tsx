@@ -40,11 +40,11 @@ export function CliCommand({
   const isNpx = npmCommand.includes("npx");
   if (isNpx) {
     pnpmCommand = pnpmCommand ?? npmCommand.replace("npx", "pnpm dlx");
-    yarnCommand = yarnCommand ?? npmCommand.replace("npx", "yarn");
+    yarnCommand = yarnCommand ?? npmCommand.replace("npx", "yarn dlx");
     bunCommand = bunCommand ?? npmCommand.replace("npx", "bunx");
   } else {
     pnpmCommand = pnpmCommand ?? npmCommand.replace("npm", "pnpm");
-    yarnCommand = yarnCommand ?? npmCommand.replace("npm", "yarn");
+    yarnCommand = yarnCommand ?? npmCommand.replace("npm install", "yarn add");
     bunCommand = bunCommand ?? npmCommand.replace("npm", "bun");
   }
 

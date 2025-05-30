@@ -11,7 +11,6 @@ import rehypeSlug from "rehype-slug";
 import { u } from "unist-builder";
 import { UnistNode } from "./types/unist";
 import { componentConfig } from "./config";
-import { rehypeNpmCommand } from "./lib/rehype-npm-command";
 
 const Links = defineNestedType(() => {
   return {
