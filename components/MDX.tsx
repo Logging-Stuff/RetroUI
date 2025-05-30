@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 import { ComponentSource } from "./ComponentSource";
 import { CodeBlock } from "./CodeBlock";
 import Link from "next/link";
-import { ComponentInstall } from "./ComponentInstall";
+import { ComponentInstall, CliCommand } from "./ComponentInstall";
 import Image from "next/image";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 
@@ -103,6 +103,7 @@ const components = (type: "doc" | "blog") => ({
   ComponentShowcase,
   ComponentSource,
   ComponentInstall,
+  CliCommand,
 });
 
 export default function MDX({
