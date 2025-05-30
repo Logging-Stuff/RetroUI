@@ -8,9 +8,7 @@ lastUpdated: 30 May, 2025
 
 Start by creating a new React project using vite. Select the React + TypeScript template:
 
-```sh
-npm create vite@latest
-```
+<CliCommand npmCommand="npm create vite@latest" />
 
 <br />
 
@@ -18,9 +16,7 @@ npm create vite@latest
 
 Install Tailwind CSS using the following command:
 
-```sh
-npm install tailwindcss @tailwindcss/vite
-```
+<CliCommand npmCommand="npm install tailwindcss @tailwindcss/vite" />
 
 Replace everything in src/index.css with the following:
 
@@ -82,9 +78,7 @@ Add the following code to the tsconfig.app.json file to resolve paths, for your 
 
 Add the following code to the vite.config.ts so your app can resolve paths without error:
 
-```sh
-npm install -D @types/node
-```
+<CliCommand npmCommand="npm install -D @types/node" />
 
 vite.config.ts
 ```ts
@@ -109,9 +103,7 @@ export default defineConfig({
 ### 6. Install Shadcn
 Run the `shadcn init` command to setup your project:
 
-```sh
-npx shadcn@latest init
-```
+<CliCommand npmCommand="npx shadcn@latest init" />
 
 You will be asked a few questions to configure components.json. Select the option you want to use.
 
@@ -224,17 +216,11 @@ Now you can start using RetroUI components in your project. You can install them
 <br />
 
 <ComponentInstall>
-  <ComponentInstall.Cli>
-    ```sh
-npx shadcn@latest add "https://retroui.dev/r/button.json"
-    ```
-  </ComponentInstall.Cli>
+  <ComponentInstall.Cli npmCommand="npx shadcn@latest add 'https://retroui.dev/r/button.json'" />
   <ComponentInstall.Manual>
 #### 1. Install dependencies:
 
-```sh
-npm install class-variance-authority
-```
+<CliCommand npmCommand="npm install class-variance-authority" />
 
 <br />
 

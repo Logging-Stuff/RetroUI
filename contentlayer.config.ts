@@ -11,6 +11,7 @@ import rehypeSlug from "rehype-slug";
 import { u } from "unist-builder";
 import { UnistNode } from "./types/unist";
 import { componentConfig } from "./config";
+import { rehypeNpmCommand } from "./lib/rehype-npm-command";
 
 const Links = defineNestedType(() => {
   return {
@@ -78,6 +79,8 @@ export default makeSource({
   mdx: {
     remarkPlugins: [],
     rehypePlugins: [
+      rehypeSlug,
+
       () => (tree) => {
         visit(tree, (node: UnistNode) => {
           if (node.name === "ComponentSource" && node.attributes) {
@@ -114,8 +117,6 @@ export default makeSource({
                 ],
               }),
             );
-
-            return;
           }
 
           if (node.name === "ComponentShowcase" && node.attributes) {
@@ -153,13 +154,9 @@ export default makeSource({
                 ],
               }),
             );
-
-            return;
           }
         });
-        return null;
       },
-      rehypeSlug,
       [
         rehypePrettyCode as any,
         {

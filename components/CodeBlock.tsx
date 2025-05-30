@@ -28,6 +28,7 @@ export function CodeBlock({ className, children, ...props }: ICodeBlock) {
       }, 3000);
     }
   };
+
   return (
     <div className="relative">
       <pre

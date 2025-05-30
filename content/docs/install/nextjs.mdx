@@ -8,9 +8,7 @@ lastUpdated: 6 Mar, 2024
 
 Run the init command to create a new Next.js project or to setup an existing one:
 
-```sh
-npx shadcn@latest init
-```
+<CliCommand npmCommand="npx shadcn@latest init" />
 
 <br />
 
@@ -18,9 +16,7 @@ npx shadcn@latest init
 
 If the `libs/utils.ts` file is not present in your project, you can install it using the following command:
 
-```sh
-npx shadcn@latest add https://retroui.dev/r/utils.json
-```
+<CliCommand npmCommand="npx shadcn@latest add https://retroui.dev/r/utils.json" />
 
 <br />
 
@@ -31,11 +27,7 @@ Now you can start using RetroUI components in your project. You can install them
 <br />
 
 <ComponentInstall>
-  <ComponentInstall.Cli>
-    ```sh
-npx shadcn@latest add "https://retroui.dev/r/button.json"
-    ```
-  </ComponentInstall.Cli>
+  <ComponentInstall.Cli npmCommand="npx shadcn@latest add 'https://retroui.dev/r/button.json'" />
   <ComponentInstall.Manual>
 #### 1. Install dependencies:
 
@@ -52,6 +44,7 @@ npm install class-variance-authority
   </ComponentInstall.Manual>
 </ComponentInstall>
 
+<br />
 After installing the component in your project, you can then simply import it like this:
 
 ```tsx
@@ -63,7 +56,6 @@ export default function ButtonExample() {
 ```
 
 <br />
-<hr />
 <br />
 
 ### Optional
