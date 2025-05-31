@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import * as RadioPrimitive from "@radix-ui/react-radio-group";
 import { cva, VariantProps } from "class-variance-authority";
 
-const radioVariants = cva("border-black border-2", {
+const radioVariants = cva("border-border border-2", {
   variants: {
     variant: {
       default: "",
@@ -24,9 +24,9 @@ const radioVariants = cva("border-black border-2", {
 const radioIndicatorVariants = cva("flex ", {
   variants: {
     variant: {
-      default: "bg-primary border-2 border-black",
-      outline: "border-2 border-black",
-      solid: "bg-black",
+      default: "bg-primary border-2 border-border",
+      outline: "border-2 border-border",
+      solid: "bg-border",
     },
     size: {
       sm: "h-2 w-2",
