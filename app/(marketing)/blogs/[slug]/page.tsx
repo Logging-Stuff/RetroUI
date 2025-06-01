@@ -8,7 +8,7 @@ import { Metadata } from "next";
 import { MoveRightIcon, MoveUpRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
+import Footer from "@/components/footer";
 interface IProps {
   params: { slug: string[] };
 }
@@ -55,12 +55,32 @@ export default function page({ params }: IProps) {
   }
 
   return (
-    <div className="max-w-3xl mx-auto">
+    <div className="max-w-3xl mt-8 mx-auto">
       <div className="border-b border-black pb-6 mb-6">
-        <Text className="text-muted-foreground text-sm">
-          {format(new Date(blog.publishedAt), "dd, MMMM yyyy")}
-        </Text>
-        <Text as="h2" className="mb-2">
+        <div className="flex items-center gap-4 mb-6">
+          <Text className="text-muted-foreground text-sm font-medium">
+            {format(new Date(blog.publishedAt), "dd, MMMM yyyy")}
+          </Text>
+          <Text>|</Text>
+          <div className="flex items-center gap-3">
+            {blog.tags.map((tag) => (
+              <Badge
+                key={tag}
+                size="sm"
+                variant="surface"
+                className={`bg-${
+                  ["red", "green", "blue", "yellow", "purple", "pink"][
+                    blog.tags.indexOf(tag) % 6
+                  ]
+                }-300`}
+              >
+                {tag}
+              </Badge>
+            ))}
+          </div>
+        </div>
+
+        <Text as="h1" className="mb-2">
           {blog.title}
         </Text>
         <p className="text-lg text-muted-foreground  mb-8">
@@ -81,13 +101,24 @@ export default function page({ params }: IProps) {
             </Avatar>
             <div>
               <Text as="h5">{blog.author.name}</Text>
-              <Link
-                href={`https://x.com/@${blog.author.x}`}
-                target="_blank"
-                className="text-muted-foreground"
-              >
-                @{blog.author.x}
-              </Link>
+              {blog.author.linkedin && (
+                <Link
+                  href={`https://www.linkedin.com/in/${blog.author.linkedin}`}
+                  target="_blank"
+                  className="text-muted-foreground"
+                >
+                  @{blog.author.linkedin}
+                </Link>
+              )}
+              {blog.author.x && (
+                <Link
+                  href={`https://x.com/@${blog.author.x}`}
+                  target="_blank"
+                  className="text-muted-foreground"
+                >
+                  @{blog.author.x}
+                </Link>
+              )}
             </div>
           </div>
 

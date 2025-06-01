@@ -18,7 +18,7 @@ const components = (type: "doc" | "blog") => ({
   ),
   h2: (props: HTMLAttributes<HTMLHeadingElement>) =>
     type === "blog" ? (
-      <Text as="h2" className="mb-4" {...props} />
+      <Text as="h2" className="mb-4 mt-8" {...props} />
     ) : (
       <Text as="h2" className="border-b pb-1 mb-6" {...props} />
     ),
