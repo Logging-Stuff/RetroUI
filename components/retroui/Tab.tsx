@@ -35,7 +35,7 @@ const TabsTrigger = ({ children, className, ...props }: ITabsTrigger) => {
   return (
     <Tab
       className={cn(
-        "px-4 py-1 border-2 border-transparent data-selected:border-black data-selected:bg-primary data-selected:font-semibold focus:outline-hidden",
+        "px-4 py-1 border-2 border-transparent data-selected:border-border data-selected:bg-primary data-selected:font-semibold focus:outline-hidden",
         className,
       )}
       {...props}
@@ -51,7 +51,7 @@ interface ITabsContent extends TabPanelProps {
 const TabsContent = ({ children, className, ...props }: ITabsContent) => {
   return (
     <TabPanel
-      className={cn("border-2 border-black mt-2 p-4", className)}
+      className={cn("border-2 border-border mt-2 p-4", className)}
       {...props}
     >
       {children}

@@ -1,27 +1,21 @@
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
+import { Tabs, TabsPanels, TabsTrigger, TabsContent, TabsTriggerList } from "@/components/retroui/Tab";
 
 export default function TabStyleDefault() {
   return (
-    <TabGroup>
-      <TabList>
-        <Tab className="px-4 py-1 border-2 border-transparent data-selected:border-black data-selected:bg-primary data-selected:font-semibold focus:outline-hidden">
-          Home
-        </Tab>
-        <Tab className="px-4 py-1 border-2 border-transparent data-selected:border-black data-selected:bg-primary data-selected:font-semibold focus:outline-hidden">
-          About
-        </Tab>
-        <Tab className="px-4 py-1 border-2 border-transparent data-selected:border-black data-selected:bg-primary data-selected:font-semibold focus:outline-hidden">
-          Contact
-        </Tab>
-      </TabList>
-      <TabPanels className="border-2 border-black mt-2 p-4">
-        <TabPanel>
+    <Tabs>
+      <TabsTriggerList>
+        <TabsTrigger>Home</TabsTrigger>
+        <TabsTrigger>About</TabsTrigger>
+        <TabsTrigger>Contact</TabsTrigger>
+      </TabsTriggerList>
+      <TabsPanels>
+        <TabsContent>
           Welcome to RetroUI, a retro styled UI library built with React,
           Tailwind CSS & Headless UI.
-        </TabPanel>
-        <TabPanel>This is the about section!</TabPanel>
-        <TabPanel>And, this is the contact section!</TabPanel>
-      </TabPanels>
-    </TabGroup>
+        </TabsContent>
+        <TabsContent>This is the about section!</TabsContent>
+        <TabsContent>And, this is the contact section!</TabsContent>
+      </TabsPanels>
+    </Tabs>
   );
 }
