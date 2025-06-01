@@ -15,7 +15,7 @@ const toggleVariants = cva(
                     "bg-transparent hover:bg-muted/70 hover:text-muted-foreground data-[state=on]:bg-muted",
                 outlined:
                     "border-2 border-input bg-transparent hover:bg-accent hover:text-accent-foreground/80 data-[state=on]:bg-accent data-[state=on]:text-accent-foreground",
-                solid: "border-2 border-input bg-transparent hover:bg-black hover:text-white/90 hover:border-black data-[state=on]:bg-black data-[state=on]:text-white data-[state=on]:border-black",
+                solid: "border-2 border-input bg-transparent hover:bg-secondary hover:text-secondary-foreground hover:border-secondary data-[state=on]:bg-secondary data-[state=on]:text-secondary-foreground data-[state=on]:border-secondary",
                 "outline-muted":
                     "border-2 border-input bg-transparent hover:hover:bg-muted/70 hover:hover:text-muted-foreground data-[state=on]:bg-muted",
             },
