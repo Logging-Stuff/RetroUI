@@ -19,6 +19,9 @@ import {
 import { Card } from "@/components/retroui/Card";
 import BadgeStyleVariants from "@/preview/components/badge-style-variants";
 import TestimonialCard from "@/preview/components/card-style-testimonial";
+import TableStyleDefault from "@/preview/components/table-style-default";
+import TableWithCheckbox from "@/preview/components/table-with-checkbox";
+import TableWithStickyHeader from "@/preview/components/table-with-sticky-header";
 import { CheckCircle } from "lucide-react";
 import React from "react";
 
@@ -147,6 +150,15 @@ export default function page() {
       </div>
 
       <TestimonialCard />
+
+      <div className="h-36"></div>
+      <TableStyleDefault />
+
+      <div className="h-36"></div>
+      <TableWithCheckbox />
+
+      <div className="h-36"></div>
+      <TableWithStickyHeader />
 
       <div className="h-36"></div>
     </div>

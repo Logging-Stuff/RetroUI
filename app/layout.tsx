@@ -6,21 +6,21 @@ import { Toaster } from "@/components/retroui";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const archivoBlack = Archivo_Black({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-head",
-  display: "swap",
-});
-
-const space = Space_Grotesk({
+const sans = Space_Grotesk({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-sans",
   display: "swap",
 });
 
-const spaceMono = Space_Mono({
+const head = Archivo_Black({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-head",
+  display: "swap",
+});
+
+const mono = Space_Mono({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-mono",
@@ -70,7 +70,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${space.className} ${archivoBlack.variable} ${space.variable} ${spaceMono.variable} bg-background text-foreground`}
+        className={`${head.variable} ${sans.variable} ${mono.variable} bg-background text-foreground`}
       >
         <div className="relative z-40 pb-16">
           <TopNav />

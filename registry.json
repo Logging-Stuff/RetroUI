@@ -385,6 +385,19 @@
       ]
     },
     {
+      "name": "table",
+      "type": "registry:component",
+      "title": "Table",
+      "description": "Show your data in a tabular format. 📊",
+      "files": [
+        {
+          "path": "components/retroui/Table.tsx",
+          "target": "components/retroui/Table.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "text",
       "type": "registry:component",
       "title": "text",
@@ -994,6 +1007,51 @@
         {
           "path": "preview/components/switch-style-disabled.tsx",
           "target": "components/retroui/preview/switch-style-disabled.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "table-style-default",
+      "title": "table-style-default",
+      "type": "registry:block",
+      "registryDependencies": [
+        "https://retroui.dev/r/table.json"
+      ],
+      "files": [
+        {
+          "path": "preview/components/table-style-default.tsx",
+          "target": "components/retroui/preview/table-style-default.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "table-with-checkbox",
+      "title": "table-with-checkbox",
+      "type": "registry:block",
+      "registryDependencies": [
+        "https://retroui.dev/r/table.json"
+      ],
+      "files": [
+        {
+          "path": "preview/components/table-with-checkbox.tsx",
+          "target": "components/retroui/preview/table-with-checkbox.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "table-with-sticky-header",
+      "title": "table-with-sticky-header",
+      "type": "registry:block",
+      "registryDependencies": [
+        "https://retroui.dev/r/table.json"
+      ],
+      "files": [
+        {
+          "path": "preview/components/table-with-sticky-header.tsx",
+          "target": "components/retroui/preview/table-with-sticky-header.tsx",
           "type": "registry:block"
         }
       ]
