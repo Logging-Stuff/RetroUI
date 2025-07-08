@@ -1,3 +1,4 @@
+import { table } from "console";
 import { lazy } from "react";
 
 export const componentConfig: {
@@ -91,6 +92,10 @@ export const componentConfig: {
     sonner: {
       name: "sonner",
       filePath: "components/retroui/Sonner.tsx",
+    },
+    table: {
+      name: "table",
+      filePath: "components/retroui/Table.tsx",
     },
     text: {
       name: "text",
@@ -332,6 +337,21 @@ export const componentConfig: {
       name: "switch-style-disabled",
       filePath: "preview/components/switch-style-disabled.tsx",
       preview: lazy(() => import("@/preview/components/switch-style-disabled")),
+    },
+    "table-style-default": {
+      name: "table-style-default",
+      filePath: "preview/components/table-style-default.tsx",
+      preview: lazy(() => import("@/preview/components/table-style-default")),
+    },
+    "table-with-checkbox": {
+      name: "table-with-checkbox",
+      filePath: "preview/components/table-with-checkbox.tsx",
+      preview: lazy(() => import("@/preview/components/table-with-checkbox")),
+    },
+    "table-with-sticky-header": {
+      name: "table-with-sticky-header",
+      filePath: "preview/components/table-with-sticky-header.tsx",
+      preview: lazy(() => import("@/preview/components/table-with-sticky-header")),
     },
     "textarea-style-default": {
       name: "textarea-style-default",

@@ -30,7 +30,6 @@
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
-
   --background-image: var(--background-image);
 }
 
@@ -72,6 +71,10 @@
   --destructive-foreground: #fff;
   --border: #3a3a3a;
   --background-image: url("/images/bg_void_3.svg"); /* Optional: A different image for dark mode */
+}
+
+body {
+  font-family: var(--font-sans);
 }
 
 .bg-image {

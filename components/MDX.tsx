@@ -41,10 +41,10 @@ const components = (type: "doc" | "blog") => ({
       <Text
         as="li"
         {...props}
-        className="text-lg text-zinc-600 ml-4 lg:ml-8 mb-2"
+        className="text-lg text-zinc-600 ml-4 lg:ml-8 mb-4"
       />
     ) : (
-      <Text as="li" {...props} />
+      <Text as="li" className="mb-2" {...props} />
     ),
   img: (props: HTMLAttributes<HTMLImageElement>) => (
     <img className="mx-auto w-full max-w-[600px] my-8" {...props} />
