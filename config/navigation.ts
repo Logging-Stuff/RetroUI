@@ -1,6 +1,7 @@
 import { INavigationConfig } from "@/types";
 
 const componentsRoute = "/docs/components";
+const chartsRoute = "/docs/charts";
 const utilsRoute = "/docs/utils";
 
 export const navConfig: INavigationConfig = {
@@ -64,6 +65,15 @@ export const navConfig: INavigationConfig = {
           title: "Tooltip",
           href: `${componentsRoute}/tooltip`,
         },
+      ],
+    },
+    {
+      title: "Chart",
+      children: [
+        { title: "Bar Chart", href: `${chartsRoute}/bar-chart` },
+        { title: "Line Chart", href: `${chartsRoute}/line-chart` },
+        { title: "Area Chart", href: `${chartsRoute}/area-chart` },
+        { title: "Pie Chart", href: `${chartsRoute}/pie-chart` },
       ],
     },
     {

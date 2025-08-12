@@ -1,0 +1,79 @@
+---
+title: Bar Chart
+description: A customizable bar chart component to visualize your data with support for multiple categories, custom colors, and horizontal alignment. 📊
+lastUpdated: 12 Aug, 2025
+---
+
+<ComponentShowcase name="bar-chart-style-default" />
+<br />
+<br />
+
+## Installation
+
+<ComponentInstall>
+  <ComponentInstall.Cli npmCommand="npx shadcn@latest add 'https://retroui.dev/r/bar-chart.json'" />
+  <ComponentInstall.Manual>
+
+#### 1. Install dependencies:
+
+```sh
+npm install recharts
+```
+
+<br />
+
+#### 2. Copy the code 👇 into your project:
+
+<ComponentSource name="barChart" />
+
+  </ComponentInstall.Manual>
+</ComponentInstall>
+
+<br />
+<br />
+
+## Examples
+
+### Default
+
+<ComponentShowcase name="bar-chart-style-default" />
+<br />
+<br />
+
+### Multiple Categories
+
+<ComponentShowcase name="bar-chart-style-multiple" />
+<br />
+<br />
+
+### Grouped Data
+
+<ComponentShowcase name="bar-chart-style-grouped" />
+<br />
+<br />
+
+### Horizontal Alignment
+
+<ComponentShowcase name="bar-chart-style-horizontal" />
+<br />
+<br />
+
+## Props
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| data | `Record<string, any>[]` | `[]` | Array of data objects to display |
+| index | `string` | - | Key for the x-axis (category) data |
+| categories | `string[]` | `[]` | Array of keys for the data values to display as bars |
+| alignment | `"vertical" \| "horizontal"` | `"vertical"` | Orientation of the bars |
+| strokeColors | `string[]` | `["var(--foreground)"]` | Array of stroke colors for the bars |
+| fillColors | `string[]` | `["var(--primary)"]` | Array of fill colors for the bars |
+| tooltipBgColor | `string` | `"var(--background)"` | Background color for tooltips |
+| tooltipBorderColor | `string` | `"var(--border)"` | Border color for tooltips |
+| gridColor | `string` | `"var(--muted)"` | Color for the grid lines |
+| valueFormatter | `(value: number) => string` | `(value) => value.toString()` | Function to format values |
+| showGrid | `boolean` | `true` | Whether to show grid lines |
+| showTooltip | `boolean` | `true` | Whether to show tooltips on hover |
+| className | `string` | - | Additional CSS classes |
+
+

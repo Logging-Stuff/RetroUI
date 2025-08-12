@@ -12,7 +12,7 @@ export default function SideNav() {
     <div
       className={`fixed right-auto border-r-2 h-full overflow-y-scroll transition-transform transform md:translate-x-0 w-60 bg-background flex flex-col justify-center md:justify-start py-14 md:py-8`}
     >
-      <nav className="flex flex-col items-start px-6 lg:pl-0 pb-26 space-y-4">
+      <nav className="flex flex-col items-start px-6 lg:pl-0 pb-24 space-y-4" aria-label="Main navigation">
         {navConfig.sideNavItems.map((item) => (
           <div key={item.title} className="w-full">
             <Text as="h6">{item.title}</Text>
@@ -21,8 +21,8 @@ export default function SideNav() {
                 <Link
                   key={child.title}
                   href={child.href}
-                  className={`px-2 py-1 w-full border border-transparent ${
-                    pathname === child.href && "bg-primary text-black"
+                  className={`px-2 py-1 w-full border border-transparent text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors ${
+                    pathname === child.href && "bg-primary text-primary-foreground"
                   }`}
                 >
                   {child.title}
