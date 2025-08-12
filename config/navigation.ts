@@ -50,7 +50,7 @@ export const navConfig: INavigationConfig = {
         },
         { title: "Switch", href: `${componentsRoute}/switch` },
         { title: "Tab", href: `${componentsRoute}/tab` },
-        { title: "Table", href: `${componentsRoute}/table`, tag: "New" },
+        { title: "Table", href: `${componentsRoute}/table`, tag: "Updated" },
         { title: "Textarea", href: `${componentsRoute}/textarea` },
         { title: "Text", href: `${componentsRoute}/text` },
         {
@@ -70,10 +70,10 @@ export const navConfig: INavigationConfig = {
     {
       title: "Chart",
       children: [
-        { title: "Bar Chart", href: `${chartsRoute}/bar-chart` },
-        { title: "Line Chart", href: `${chartsRoute}/line-chart` },
-        { title: "Area Chart", href: `${chartsRoute}/area-chart` },
-        { title: "Pie Chart", href: `${chartsRoute}/pie-chart` },
+        { title: "Bar Chart", href: `${chartsRoute}/bar-chart`, tag: "New" },
+        { title: "Line Chart", href: `${chartsRoute}/line-chart`, tag: "New" },
+        { title: "Area Chart", href: `${chartsRoute}/area-chart`, tag: "New" },
+        { title: "Pie Chart", href: `${chartsRoute}/pie-chart`, tag: "New" },
       ],
     },
     {
