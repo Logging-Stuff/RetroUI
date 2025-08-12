@@ -10,9 +10,10 @@ export default function SideNav() {
 
   return (
     <div
-      className={`fixed right-auto border-r-2 h-full overflow-y-scroll transition-transform transform md:translate-x-0 w-60 bg-background flex flex-col justify-center md:justify-start py-14 md:py-8`}
+      className={`lg:fixed top-0 bottom-0 border-r-2 h-screen overflow-y-scroll transition-transform transform md:translate-x-0 w-60 bg-background flex flex-col justify-start md:justify-start py-14 md:py-8`}
+      // className={`border-r-2 h-screen overflow-y-scroll w-60 bg-background flex flex-col justify-start py-8`}
     >
-      <nav className="flex flex-col items-start px-6 lg:pl-0 pb-24 space-y-4" aria-label="Main navigation">
+      <nav className="flex flex-col items-start max-lg:px-6 lg:pr-6 lg:pt-26 space-y-4" aria-label="Main navigation">
         {navConfig.sideNavItems.map((item) => (
           <div key={item.title} className="w-full">
             <Text as="h6">{item.title}</Text>

@@ -97,25 +97,6 @@ const components = (type: "doc" | "blog") => ({
   TabPanels,
   TabPanel,
   Table,
-  // table: (props: HTMLAttributes<HTMLTableElement>) => {
-  //   console.log(props);
-  //   return <table className="w-full caption-bottom text-sm border-2 shadow-lg" {...props} />
-  // },
-  // thead: (props: HTMLAttributes<HTMLTableSectionElement>) => (
-  //   <thead className="[&_tr]:border-b bg-primary text-primary-foreground font-head" {...props} />
-  // ),
-  // tbody: (props: HTMLAttributes<HTMLTableSectionElement>) => (
-  //   <tbody className="[&_tr:last-child]:border-0" {...props} />
-  // ),
-  // tr: (props: HTMLAttributes<HTMLTableRowElement>) => (
-  //   <tr className="border-b transition-colors hover:bg-primary/50 hover:text-primary-foreground data-[state=selected]:bg-muted" {...props} />
-  // ),
-  // th: (props: HTMLAttributes<HTMLTableCellElement>) => (
-  //   <th className="h-12 px-4 text-left align-middle font-medium text-primary-foreground [&:has([role=checkbox])]:pr-0" {...props} />
-  // ),
-  // td: (props: HTMLAttributes<HTMLTableCellElement>) => (
-  //   <td className="p-3 align-middle [&:has([role=checkbox])]:pr-0" {...props} />
-  // ),
   Link,
   Badge,
   Image,

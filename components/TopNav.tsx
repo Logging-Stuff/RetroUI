@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { GithubIcon, MoonIcon, SunIcon } from "lucide-react";
+import { ArrowUpRight, GithubIcon, MoonIcon, SunIcon } from "lucide-react";
 import HamburgerMenu from "./HamburgerMenu";
 import { Button, Text } from "@/components/retroui";
 import { navConfig } from "@/config/navigation";
@@ -40,15 +40,16 @@ export default function TopNav() {
       <nav className="fixed top-0 left-0 right-0 w-full border-b-2 bg-background">
         <div className="w-full bg-black text-white">
           <div className="container max-w-6xl mx-auto px-4 py-2 flex justify-center space-x-4 items-center">
-            <Text className="text-sm text-center">
+            <Text className="text-sm lg:text-center">
               Ship faster with premium blocks and templates!
             </Text>
             <a href="https://dub.sh/retroui-pro" target="_blank">
               <Button
                 size="sm"
-                className="shadow-none font-sans font-bold px-2 py-1 w-24"
+                className="shadow-none font-sans font-bold px-2 py-1 w-30"
               >
-                Learn More
+                RetroUI Pro
+                <ArrowUpRight className="ml-auto h-4 w-4 inline-block" />
               </Button>
             </a>
           </div>
