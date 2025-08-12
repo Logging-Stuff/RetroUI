@@ -157,3 +157,31 @@ code.hljs {
 .hljs-emphasis {
   font-style: italic;
 }
+
+/* Generic expand/collapse height  for radix animations */
+@keyframes expand-height {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes collapse-height {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+/* Attribute-targeted helpers for Radix state */
+.collapsible-height[data-state="open"] {
+  animation: expand-height 300ms ease-out both;
+}
+
+.collapsible-height[data-state="closed"] {
+  animation: collapse-height 300ms ease-out both;
+}
