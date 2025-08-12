@@ -14,6 +14,7 @@ export default function AreaChartStyleStacked() {
         <AreaChart
             data={data}
             index="name"
+            showGrid={false}
             categories={["mobile", "desktop", "tablet"]}
             strokeColors={["var(--primary)", "var(--secondary)", "var(--accent)"]}
             fillColors={["var(--primary)", "var(--secondary)", "var(--accent)"]}

@@ -24,7 +24,7 @@ npm install recharts
 
 #### 2. Copy the code 👇 into your project:
 
-<ComponentSource name="barChart" />
+##<ComponentSource name="barChart" />
 
   </ComponentInstall.Manual>
 </ComponentInstall>
@@ -40,12 +40,6 @@ npm install recharts
 <br />
 <br />
 
-### Multiple Categories
-
-<ComponentShowcase name="bar-chart-style-multiple" />
-<br />
-<br />
-
 ### Grouped Data
 
 <ComponentShowcase name="bar-chart-style-grouped" />
@@ -58,22 +52,95 @@ npm install recharts
 <br />
 <br />
 
-## Props
+## API Reference
 
-| Prop | Type | Default | Description |
-|------|------|---------|-------------|
-| data | `Record<string, any>[]` | `[]` | Array of data objects to display |
-| index | `string` | - | Key for the x-axis (category) data |
-| categories | `string[]` | `[]` | Array of keys for the data values to display as bars |
-| alignment | `"vertical" \| "horizontal"` | `"vertical"` | Orientation of the bars |
-| strokeColors | `string[]` | `["var(--foreground)"]` | Array of stroke colors for the bars |
-| fillColors | `string[]` | `["var(--primary)"]` | Array of fill colors for the bars |
-| tooltipBgColor | `string` | `"var(--background)"` | Background color for tooltips |
-| tooltipBorderColor | `string` | `"var(--border)"` | Border color for tooltips |
-| gridColor | `string` | `"var(--muted)"` | Color for the grid lines |
-| valueFormatter | `(value: number) => string` | `(value) => value.toString()` | Function to format values |
-| showGrid | `boolean` | `true` | Whether to show grid lines |
-| showTooltip | `boolean` | `true` | Whether to show tooltips on hover |
-| className | `string` | - | Additional CSS classes |
-
-
+<Table>
+  <Table.Header>
+    <Table.Row>
+      <Table.Head>Prop</Table.Head>
+      <Table.Head>Type</Table.Head>
+      <Table.Head>Default</Table.Head>
+      <Table.Head>Description</Table.Head>
+    </Table.Row>
+  </Table.Header>
+  <Table.Body>
+    <Table.Row>
+      <Table.Cell className="font-medium">data</Table.Cell>
+      <Table.Cell className="*:text-xs">`Record<string, any>[]`</Table.Cell>
+      <Table.Cell className="*:text-xs">`[]`</Table.Cell>
+      <Table.Cell>Array of data objects to display</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell className="font-medium">index</Table.Cell>
+      <Table.Cell className="*:text-xs">`string`</Table.Cell>
+      <Table.Cell className="*:text-xs">-</Table.Cell>
+      <Table.Cell>Key for the x-axis (category) data</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell className="font-medium">categories</Table.Cell>
+      <Table.Cell className="*:text-xs">`string[]`</Table.Cell>
+      <Table.Cell className="*:text-xs">`[]`</Table.Cell>
+      <Table.Cell>Array of keys for the data values to display as bars</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell className="font-medium">alignment</Table.Cell>
+      <Table.Cell className="*:text-xs">`"vertical" | "horizontal"`</Table.Cell>
+      <Table.Cell className="*:text-xs">`"vertical"`</Table.Cell>
+      <Table.Cell>Orientation of the bars</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell className="font-medium">strokeColors</Table.Cell>
+      <Table.Cell className="*:text-xs">`string[]`</Table.Cell>
+      <Table.Cell className="*:text-xs">`["var(--foreground)"]`</Table.Cell>
+      <Table.Cell>Array of stroke colors for the bars</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell className="font-medium">fillColors</Table.Cell>
+      <Table.Cell className="*:text-xs">`string[]`</Table.Cell>
+      <Table.Cell className="*:text-xs">`["var(--primary)"]`</Table.Cell>
+      <Table.Cell>Array of fill colors for the bars</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell className="font-medium">tooltipBgColor</Table.Cell>
+      <Table.Cell className="*:text-xs">`string`</Table.Cell>
+      <Table.Cell className="*:text-xs">`"var(--background)"`</Table.Cell>
+      <Table.Cell>Background color for tooltips</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell className="font-medium">tooltipBorderColor</Table.Cell>
+      <Table.Cell className="*:text-xs">`string`</Table.Cell>
+      <Table.Cell className="*:text-xs">`"var(--border)"`</Table.Cell>
+      <Table.Cell>Border color for tooltips</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell className="font-medium">gridColor</Table.Cell>
+      <Table.Cell className="*:text-xs">`string`</Table.Cell>
+      <Table.Cell className="*:text-xs">`"var(--muted)"`</Table.Cell>
+      <Table.Cell>Color for the grid lines</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell className="font-medium">valueFormatter</Table.Cell>
+      <Table.Cell className="*:text-xs">`(value: number) => string`</Table.Cell>
+      <Table.Cell className="*:text-xs">`(value) => value.toString()`</Table.Cell>
+      <Table.Cell>Function to format values</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell className="font-medium">showGrid</Table.Cell>
+      <Table.Cell className="*:text-xs">`boolean`</Table.Cell>
+      <Table.Cell className="*:text-xs">`true`</Table.Cell>
+      <Table.Cell>Whether to show grid lines</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell className="font-medium">showTooltip</Table.Cell>
+      <Table.Cell className="*:text-xs">`boolean`</Table.Cell>
+      <Table.Cell className="*:text-xs">`true`</Table.Cell>
+      <Table.Cell>Whether to show tooltips on hover</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell className="font-medium">className</Table.Cell>
+      <Table.Cell className="*:text-xs">`string`</Table.Cell>
+      <Table.Cell className="*:text-xs">-</Table.Cell>
+      <Table.Cell>Additional CSS classes</Table.Cell>
+    </Table.Row>
+  </Table.Body>
+</Table>

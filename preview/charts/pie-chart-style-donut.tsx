@@ -13,7 +13,7 @@ export default function PieChartStyleDonut() {
             data={data}
             dataKey="value"
             nameKey="name"
-            innerRadius={60}
+            innerRadius={70}
             colors={["var(--primary)", "var(--secondary)", "var(--destructive)", "var(--muted)"]}
         />
     )

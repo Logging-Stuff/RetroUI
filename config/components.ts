@@ -45,11 +45,11 @@ export const componentConfig: {
       filePath: "components/retroui/Card.tsx",
     },
     areaChart: {
-      name: "area-chart",
+      name: "areaChart",
       filePath: "components/retroui/charts/AreaChart.tsx",
     },
     barChart: {
-      name: "bar-chart",
+      name: "barChart",
       filePath: "components/retroui/charts/BarChart.tsx",
     },
     checkbox: {
@@ -69,7 +69,7 @@ export const componentConfig: {
       filePath: "components/retroui/Label.tsx",
     },
     lineChart: {
-      name: "line-chart",
+      name: "lineChart",
       filePath: "components/retroui/charts/LineChart.tsx",
     },
     menu: {
@@ -77,7 +77,7 @@ export const componentConfig: {
       filePath: "components/retroui/Menu.tsx",
     },
     pieChart: {
-      name: "pie-chart",
+      name: "pieChart",
       filePath: "components/retroui/charts/PieChart.tsx",
     },
     progress: {
@@ -173,6 +173,11 @@ export const componentConfig: {
       name: "area-chart-style-multiple",
       filePath: "preview/charts/area-chart-style-multiple.tsx",
       preview: lazy(() => import("@/preview/charts/area-chart-style-multiple")),
+    },
+    "area-chart-style-stacked": {
+      name: "area-chart-style-stacked",
+      filePath: "preview/charts/area-chart-style-stacked.tsx",
+      preview: lazy(() => import("@/preview/charts/area-chart-style-stacked")),
     },
     "avatar-style-circle": {
       name: "avatar-style-circle",

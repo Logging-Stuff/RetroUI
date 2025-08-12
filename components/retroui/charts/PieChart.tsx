@@ -36,7 +36,7 @@ const PieChart = React.forwardRef<HTMLDivElement, PieChartProps>(
       valueFormatter = (value: number) => value.toString(),
       showTooltip = true,
       innerRadius = 0,
-      outerRadius = 80,
+      outerRadius = 100,
       className,
       ...props
     },
@@ -54,7 +54,8 @@ const PieChart = React.forwardRef<HTMLDivElement, PieChartProps>(
               cy="50%"
               innerRadius={innerRadius}
               outerRadius={outerRadius}
-              paddingAngle={2}
+              isAnimationActive={false}
+              className="w-full h-full"
             >
               {data.map((entry, index) => (
                 <Cell 
