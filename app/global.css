@@ -177,11 +177,24 @@ code.hljs {
   }
 }
 
+/* Reduced motion fallback */
+@media (prefers-reduced-motion: reduce) {
+  .collapsible-height[data-state="open"],
+  .collapsible-height[data-state="closed"] {
+    animation: none;
+    height: auto;
+  }
+}
+
 /* Attribute-targeted helpers for Radix state */
+.collapsible-height {
+  will-change: height;
+}
+
 .collapsible-height[data-state="open"] {
-  animation: expand-height 300ms ease-out both;
+  animation: expand-height 300ms ease-out;
 }
 
 .collapsible-height[data-state="closed"] {
-  animation: collapse-height 300ms ease-out both;
+  animation: collapse-height 300ms ease-out;
 }
