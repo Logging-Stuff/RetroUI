@@ -155,8 +155,8 @@
       "type": "registry:component",
       "title": "Card",
       "description": "A customizable card component to visualize your content. 📝",
-      "dependencies": [
-        "https://retroui.dev/r/text.json"
+      "registryDependencies": [
+        "text"
       ],
       "files": [
         {
@@ -482,6 +482,70 @@
         {
           "path": "components/retroui/Tooltip.tsx",
           "target": "components/retroui/Tooltip.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "area-chart",
+      "type": "registry:component",
+      "title": "Area Chart",
+      "description": "Beautiful area chart for data visualization with retro styling",
+      "dependencies": [
+        "recharts"
+      ],
+      "files": [
+        {
+          "path": "components/retroui/charts/AreaChart.tsx",
+          "target": "components/retroui/charts/AreaChart.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "bar-chart",
+      "type": "registry:component",
+      "title": "Bar Chart",
+      "description": "Beautiful bar chart for data visualization with retro styling",
+      "dependencies": [
+        "recharts"
+      ],
+      "files": [
+        {
+          "path": "components/retroui/charts/BarChart.tsx",
+          "target": "components/retroui/charts/BarChart.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "line-chart",
+      "type": "registry:component",
+      "title": "Line Chart",
+      "description": "Beautiful line chart for data visualization with retro styling",
+      "dependencies": [
+        "recharts"
+      ],
+      "files": [
+        {
+          "path": "components/retroui/charts/LineChart.tsx",
+          "target": "components/retroui/charts/LineChart.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "pie-chart",
+      "type": "registry:component",
+      "title": "Pie Chart",
+      "description": "Beautiful pie chart for data visualization with retro styling",
+      "dependencies": [
+        "recharts"
+      ],
+      "files": [
+        {
+          "path": "components/retroui/charts/PieChart.tsx",
+          "target": "components/retroui/charts/PieChart.tsx",
           "type": "registry:component"
         }
       ]
