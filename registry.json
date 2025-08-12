@@ -155,13 +155,15 @@
       "type": "registry:component",
       "title": "Card",
       "description": "A customizable card component to visualize your content. 📝",
-      "registryDependencies": [
-        "text"
-      ],
       "files": [
         {
           "path": "components/retroui/Card.tsx",
           "target": "components/retroui/Card.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/retroui/Text.tsx",
+          "target": "components/retroui/Text.tsx",
           "type": "registry:component"
         }
       ]
