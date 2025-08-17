@@ -33,7 +33,7 @@ const components = (type: "doc" | "blog") => ({
   h6: (props: HTMLAttributes<HTMLHeadElement>) => <Text as="h6" {...props} />,
   p: (props: HTMLAttributes<HTMLHeadElement>) =>
     type === "blog" ? (
-      <Text {...props} className="text-lg text-zinc-600" />
+      <Text {...props} className="text-lg text-foreground" />
     ) : (
       <Text {...props} />
     ),
@@ -42,7 +42,7 @@ const components = (type: "doc" | "blog") => ({
       <Text
         as="li"
         {...props}
-        className="text-lg text-zinc-600 ml-4 lg:ml-8 mb-4"
+        className="text-lg text-foreground ml-4 lg:ml-8 mb-2"
       />
     ) : (
       <Text as="li" className="mb-2" {...props} />
