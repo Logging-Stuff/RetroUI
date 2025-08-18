@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -156,45 +157,4 @@ code.hljs {
 }
 .hljs-emphasis {
   font-style: italic;
-}
-
-/* Generic expand/collapse height  for radix animations */
-@keyframes expand-height {
-  from {
-    height: 0;
-  }
-  to {
-    height: var(--radix-accordion-content-height);
-  }
-}
-
-@keyframes collapse-height {
-  from {
-    height: var(--radix-accordion-content-height);
-  }
-  to {
-    height: 0;
-  }
-}
-
-/* Reduced motion fallback */
-@media (prefers-reduced-motion: reduce) {
-  .collapsible-height[data-state="open"],
-  .collapsible-height[data-state="closed"] {
-    animation: none;
-    height: auto;
-  }
-}
-
-/* Attribute-targeted helpers for Radix state */
-.collapsible-height {
-  will-change: height;
-}
-
-.collapsible-height[data-state="open"] {
-  animation: expand-height 300ms ease-out;
-}
-
-.collapsible-height[data-state="closed"] {
-  animation: collapse-height 300ms ease-out;
 }
