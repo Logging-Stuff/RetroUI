@@ -172,3 +172,30 @@ code.hljs {
 .hljs-emphasis {
   font-style: italic;
 }
+
+/* Custom scrollbar for sidebar */
+.sidebar-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color 0.3s ease;
+}
+
+.sidebar-scroll:hover {
+  scrollbar-color: var(--color-primary) transparent;
+}
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+.sidebar-scroll::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 2px;
+  transition: background 0.3s ease;
+}

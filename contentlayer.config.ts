@@ -8,6 +8,7 @@ import {
 import { visit } from "unist-util-visit";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
+import remarkToc from 'remark-toc'
 import { u } from "unist-builder";
 import { UnistNode } from "./types/unist";
 import { componentConfig } from "./config";
@@ -40,7 +41,7 @@ export const Doc = defineDocumentType(() => ({
     url: {
       type: "string",
       resolve: (doc) => `/${doc._raw.flattenedPath}`,
-    },
+    }
   },
 }));
 
@@ -77,7 +78,9 @@ export const Blog = defineDocumentType(() => ({
 
 export default makeSource({
   mdx: {
-    remarkPlugins: [],
+    remarkPlugins: [
+      remarkToc
+    ],
     rehypePlugins: [
       rehypeSlug,
 
