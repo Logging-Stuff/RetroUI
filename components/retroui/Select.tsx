@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import * as SelectPrimitive from "@radix-ui/react-select";
-import { Check, ChevronDown } from "lucide-react";
+import { Check, ChevronDown, ChevronUp } from "lucide-react";
 import React from "react";
 
 const Select = SelectPrimitive.Root;
@@ -15,7 +15,7 @@ const SelectTrigger = ({
   return (
     <SelectPrimitive.Trigger
       className={cn(
-        "flex h-10 min-w-40 items-center shadow-md justify-between border-2 border-input border-border bg-transparent px-4 py-2 ring-offset-background placeholder:text-muted-foreground focus:outline-hidden disabled:cursor-not-allowed disabled:opacity-50",
+        "flex h-10 min-w-40 items-center shadow-md justify-between border-2 border-input border-border bg-transparent px-4 py-2 placeholder:text-muted-foreground outline-none focus:outline-none focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50",
         className,
       )}
       {...props}
@@ -50,6 +50,9 @@ const SelectContent = ({
         position={position}
         {...props}
       >
+        <SelectPrimitive.ScrollUpButton className="flex cursor-default items-center justify-center py-1 text-muted-foreground">
+          <ChevronUp className="h-4 w-4" />
+        </SelectPrimitive.ScrollUpButton>
         <SelectPrimitive.Viewport
           className={cn(
             position === "popper" &&
@@ -58,6 +61,9 @@ const SelectContent = ({
         >
           {children}
         </SelectPrimitive.Viewport>
+        <SelectPrimitive.ScrollDownButton className="flex cursor-default items-center justify-center py-1 text-muted-foreground">
+          <ChevronDown className="h-4 w-4" />
+        </SelectPrimitive.ScrollDownButton>
       </SelectPrimitive.Content>
     </SelectPrimitive.Portal>
   );
@@ -72,7 +78,7 @@ const SelectItem = ({
 }: SelectPrimitive.SelectItemProps) => (
   <SelectPrimitive.Item
     className={cn(
-      "relative flex w-full cursor-default select-none items-center py-1.5 px-2 outline-hidden hover:bg-primary hover:text-primary-foreground data-disabled:pointer-events-none data-disabled:opacity-50",
+      "relative flex w-full cursor-default select-none items-center py-1.5 px-2 outline-none data-[highlighted]:bg-primary data-[highlighted]:text-primary-foreground focus:bg-primary focus:text-primary-foreground data-disabled:pointer-events-none data-disabled:opacity-50",
       className,
     )}
     {...props}

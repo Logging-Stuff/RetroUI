@@ -1,13 +1,14 @@
 import { INavigationConfig } from "@/types";
 
 const componentsRoute = "/docs/components";
+const chartsRoute = "/docs/charts";
 const utilsRoute = "/docs/utils";
 
 export const navConfig: INavigationConfig = {
   topNavItems: [
-    { title: "Documentation", href: "/docs" },
+    { title: "Docs", href: "/docs" },
     { title: "Components", href: `${componentsRoute}/button` },
-    { title: "Blogs", href: "/blogs" },
+    { title: "Blog", href: "/blogs" },
   ],
   sideNavItems: [
     {
@@ -18,6 +19,25 @@ export const navConfig: INavigationConfig = {
           title: "Installation",
           href: "/docs/install",
         },
+        // {
+        //   title: "Changelog",
+        //   href: "https://pro.retroui.dev",
+        // },
+        {
+          title: "Blocks",
+          href: "https://pro.retroui.dev/blocks",
+          tag: "Pro",
+        },
+        {
+          title: "Templates",
+          href: "https://pro.retroui.dev/templates",
+          tag: "Pro",
+        },
+        {
+          title: "Figma Kit",
+          href: "https://pro.retroui.dev/figma",
+          tag: "Pro",
+        }
       ],
     },
     {
@@ -49,7 +69,7 @@ export const navConfig: INavigationConfig = {
         },
         { title: "Switch", href: `${componentsRoute}/switch` },
         { title: "Tab", href: `${componentsRoute}/tab` },
-        { title: "Table", href: `${componentsRoute}/table`, tag: "New" },
+        { title: "Table", href: `${componentsRoute}/table`, tag: "Updated" },
         { title: "Textarea", href: `${componentsRoute}/textarea` },
         { title: "Text", href: `${componentsRoute}/text` },
         {
@@ -64,6 +84,15 @@ export const navConfig: INavigationConfig = {
           title: "Tooltip",
           href: `${componentsRoute}/tooltip`,
         },
+      ],
+    },
+    {
+      title: "Chart",
+      children: [
+        { title: "Bar Chart", href: `${chartsRoute}/bar-chart`, tag: "New" },
+        { title: "Line Chart", href: `${chartsRoute}/line-chart`, tag: "New" },
+        { title: "Area Chart", href: `${chartsRoute}/area-chart`, tag: "New" },
+        { title: "Pie Chart", href: `${chartsRoute}/pie-chart`, tag: "New" },
       ],
     },
     {

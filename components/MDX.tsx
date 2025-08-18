@@ -11,6 +11,7 @@ import Link from "next/link";
 import { ComponentInstall, CliCommand } from "./ComponentInstall";
 import Image from "next/image";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
+import { Table } from "./retroui/Table";
 
 const components = (type: "doc" | "blog") => ({
   h1: (props: HTMLAttributes<HTMLHeadingElement>) => (
@@ -32,7 +33,7 @@ const components = (type: "doc" | "blog") => ({
   h6: (props: HTMLAttributes<HTMLHeadElement>) => <Text as="h6" {...props} />,
   p: (props: HTMLAttributes<HTMLHeadElement>) =>
     type === "blog" ? (
-      <Text {...props} className="text-lg text-zinc-600" />
+      <Text {...props} className="text-lg text-foreground" />
     ) : (
       <Text {...props} />
     ),
@@ -41,7 +42,7 @@ const components = (type: "doc" | "blog") => ({
       <Text
         as="li"
         {...props}
-        className="text-lg text-zinc-600 ml-4 lg:ml-8 mb-4"
+        className="text-lg text-foreground ml-4 lg:ml-8 mb-2"
       />
     ) : (
       <Text as="li" className="mb-2" {...props} />
@@ -95,6 +96,7 @@ const components = (type: "doc" | "blog") => ({
   Tab,
   TabPanels,
   TabPanel,
+  Table,
   Link,
   Badge,
   Image,

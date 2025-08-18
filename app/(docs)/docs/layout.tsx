@@ -11,11 +11,8 @@ export default function ComponentLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="relative max-w-6xl mx-auto">
-      <div className="hidden lg:block">
-        <SideNav />
-      </div>
-      <div className="lg:ml-72 mt-16 md:mt-10 px-4 lg:px-0">{children}</div>
+    <div className="relative max-w-7xl mx-auto">
+      <div className="max-lg:px-4">{children}</div>
     </div>
   );
 }

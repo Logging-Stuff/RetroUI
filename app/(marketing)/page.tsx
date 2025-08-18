@@ -16,8 +16,8 @@ import AvatarStyleCircle from "@/preview/components/avatar-style-circle-sizes";
 import BadgeStyleVariants from "@/preview/components/badge-style-variants";
 import {
   ArrowRightIcon,
+  ChartArea,
   GithubIcon,
-  HeartIcon,
   MessageCircle,
 } from "lucide-react";
 import Image from "next/image";
@@ -37,20 +37,13 @@ async function getContributors(): Promise<
   );
 
   const contributorsList = await request.json();
-  return [
-    {
-      avatar: "https://avatars.githubusercontent.com/u/58097221?v=4",
-      username: "MeherabHossain007",
-      url: "https://github.com/MeherabHossain007",
-    },
-    ...contributorsList.map(
-      (c: { avatar_url: string; login: string; html_url: string }) => ({
-        avatar: c.avatar_url,
-        username: c.login,
-        url: c.html_url,
-      }),
-    ),
-  ];
+  return contributorsList.map(
+    (c: { avatar_url: string; login: string; html_url: string }) => ({
+      avatar: c.avatar_url,
+      username: c.login,
+      url: c.html_url,
+    }),
+  );
 }
 
 export default async function Home() {
@@ -58,13 +51,13 @@ export default async function Home() {
 
   return (
     <main>
-      <div className="bg-image bg-cover bg-no-repeat bg-center flex flex-col items-center h-[1900px] lg:h-[1400px]">
+      <div className="bg-image bg-cover bg-no-repeat bg-center flex flex-col items-center min-h-screen">
         <section className="container max-w-6xl mx-auto px-4 lg:px-0 text-gray-900 flex justify-center items-center lg:gap-28 xl:gap-32 my-28">
           <div className="text-center lg:text-left w-full lg:w-2/3">
-            <Link href="/docs" className="mb-6 inline-block">
+            <Link href="/docs/charts/line-chart" className="mb-12 inline-block">
               <Badge>
-                We upgraded to TailwindCSS v4{" "}
-                <ArrowRightIcon className="ml-2 h-4 w-4 inline-block" />
+                Introducing RetroUI Charts!
+                <ChartArea className="ml-2 h-4 w-4 inline-block" />
               </Badge>
             </Link>
 
@@ -199,10 +192,9 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="container max-w-6xl mx-auto bg-[url('/images/starts_bg.svg')] bg-cover bg-no-repeat py-12">
-        <Text as="h2" className="text-center mb-28">
-          A <span className="text-outlined">Growing</span> Community of <br />{" "}
-          Developers and Designers.
+      <section className="container max-w-6xl max-lg:px-4 mx-auto bg-[url('/images/starts_bg.svg')] bg-cover bg-no-repeat py-12">
+        <Text as="h2" className="text-center mb-28 max-w-2xl mx-auto">
+          A <span className="text-outlined">Growing</span> Community of Developers and Designers.
         </Text>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-2xl mx-auto">
@@ -211,7 +203,7 @@ export default async function Home() {
               Github Stars
             </Text>
             <Text className="text-outlined text-7xl lg:text-8xl font-head">
-              500+
+              650+
             </Text>
             <Image
               src="/images/shooting_star.svg"
@@ -240,7 +232,7 @@ export default async function Home() {
       </section>
 
       <section className="container max-w-6xl mx-auto px-4 lg:px-0 my-48">
-        <Text as="h2" className="text-center mb-28">
+        <Text as="h2" className="text-center max-w-2xl mx-auto mb-28">
           Works With Both <span className="text-outlined">SSR</span> and{" "}
           <span className="text-outlined">SPA</span> Applications.
         </Text>
@@ -346,7 +338,7 @@ export default async function Home() {
           RetroUI core is free and open-source, and it is made possible by our
           awesome contributors.
         </Text>
-        <div className="flex flex-wrap justify-center gap-2 lg:gap-4">
+        <div className="max-w-2xl mx-auto flex flex-wrap justify-center gap-2 lg:gap-4">
           {contributors.map((contributor) => (
             <Link
               key={contributor.username}
@@ -355,7 +347,7 @@ export default async function Home() {
               passHref
               className="flex flex-col items-center"
             >
-              <Avatar className="h-12 w-12 border-black lg:h-16 lg:w-16">
+              <Avatar className="h-10 w-10 border-black lg:h-16 lg:w-16">
                 <Avatar.Image
                   src={contributor.avatar}
                   alt={contributor.username}
@@ -407,14 +399,9 @@ export default async function Home() {
                 ready to make your project stand out.
               </Text>
 
-              <div className="flex gap-3">
-                <Link href="https://pro.retroui.dev/blocks" target="_blank">
-                  <Button>Explore Blocks</Button>
-                </Link>
-                <Link href="https://pro.retroui.dev/templates" target="_blank">
-                  <Button variant="secondary">Explore Templates</Button>
-                </Link>
-              </div>
+              <Link href="https://pro.retroui.dev/blocks" target="_blank">
+                <Button>Explore RetroUI Pro</Button>
+              </Link>
             </div>
 
             <div className="w-full md:w-2/5">

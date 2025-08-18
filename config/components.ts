@@ -44,6 +44,14 @@ export const componentConfig: {
       name: "card",
       filePath: "components/retroui/Card.tsx",
     },
+    areaChart: {
+      name: "areaChart",
+      filePath: "components/retroui/charts/AreaChart.tsx",
+    },
+    barChart: {
+      name: "barChart",
+      filePath: "components/retroui/charts/BarChart.tsx",
+    },
     checkbox: {
       name: "checkbox",
       filePath: "components/retroui/Checkbox.tsx",
@@ -60,9 +68,17 @@ export const componentConfig: {
       name: "label",
       filePath: "components/retroui/Label.tsx",
     },
+    lineChart: {
+      name: "lineChart",
+      filePath: "components/retroui/charts/LineChart.tsx",
+    },
     menu: {
       name: "menu",
       filePath: "components/retroui/Menu.tsx",
+    },
+    pieChart: {
+      name: "pieChart",
+      filePath: "components/retroui/charts/PieChart.tsx",
     },
     progress: {
       name: "progress",
@@ -148,6 +164,21 @@ export const componentConfig: {
         () => import("@/preview/components/alert-style-all-status"),
       ),
     },
+    "area-chart-style-default": {
+      name: "chart-style-default",
+      filePath: "preview/charts/area-chart-style-default.tsx",
+      preview: lazy(() => import("@/preview/charts/area-chart-style-default")),
+    },
+    "area-chart-style-multiple": {
+      name: "area-chart-style-multiple",
+      filePath: "preview/charts/area-chart-style-multiple.tsx",
+      preview: lazy(() => import("@/preview/charts/area-chart-style-multiple")),
+    },
+    "area-chart-style-stacked": {
+      name: "area-chart-style-stacked",
+      filePath: "preview/charts/area-chart-style-stacked.tsx",
+      preview: lazy(() => import("@/preview/charts/area-chart-style-stacked")),
+    },
     "avatar-style-circle": {
       name: "avatar-style-circle",
       filePath: "preview/components/avatar-style-circle.tsx",
@@ -186,6 +217,26 @@ export const componentConfig: {
       name: "badge-style-sizes",
       filePath: "preview/components/badge-style-sizes.tsx",
       preview: lazy(() => import("@/preview/components/badge-style-sizes")),
+    },
+    "bar-chart-style-default": {
+      name: "bar-chart-style-default",
+      filePath: "preview/charts/bar-chart-style-default.tsx",
+      preview: lazy(() => import("@/preview/charts/bar-chart-style-default")),
+    },
+    "bar-chart-style-multiple": {
+      name: "bar-chart-style-multiple",
+      filePath: "preview/charts/bar-chart-style-multiple.tsx",
+      preview: lazy(() => import("@/preview/charts/bar-chart-style-multiple")),
+    },
+    "bar-chart-style-grouped": {
+      name: "bar-chart-style-grouped",
+      filePath: "preview/charts/bar-chart-style-grouped.tsx",
+      preview: lazy(() => import("@/preview/charts/bar-chart-style-grouped")),
+    },
+    "bar-chart-style-horizontal": {
+      name: "bar-chart-style-horizontal",
+      filePath: "preview/charts/bar-chart-style-horizontal.tsx",
+      preview: lazy(() => import("@/preview/charts/bar-chart-style-horizontal")),
     },
     "button-style-default": {
       name: "button-style-default",
@@ -284,10 +335,30 @@ export const componentConfig: {
       filePath: "preview/components/label-style-default.tsx",
       preview: lazy(() => import("@/preview/components/label-style-default")),
     },
+    "line-chart-style-default": {
+      name: "line-chart-style-default",
+      filePath: "preview/charts/line-chart-style-default.tsx",
+      preview: lazy(() => import("@/preview/charts/line-chart-style-default")),
+    },
+    "line-chart-style-multiple": {
+      name: "line-chart-style-multiple",
+      filePath: "preview/charts/line-chart-style-multiple.tsx",
+      preview: lazy(() => import("@/preview/charts/line-chart-style-multiple")),
+    },
     "menu-style-default": {
       name: "menu-style-default",
       filePath: "preview/components/menu-style-default.tsx",
       preview: lazy(() => import("@/preview/components/menu-style-default")),
+    },
+    "pie-chart-style-default": {
+      name: "pie-chart-style-default",
+      filePath: "preview/charts/pie-chart-style-default.tsx",
+      preview: lazy(() => import("@/preview/charts/pie-chart-style-default")),
+    },
+    "pie-chart-style-donut": {
+      name: "pie-chart-style-donut",
+      filePath: "preview/charts/pie-chart-style-donut.tsx",
+      preview: lazy(() => import("@/preview/charts/pie-chart-style-donut")),
     },
     "progress-style-default": {
       name: "progress-style-default",
