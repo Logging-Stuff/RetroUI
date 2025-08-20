@@ -132,7 +132,11 @@ export const componentConfig: {
     breadcrumb: {
       name: "breadcrumb",
       filePath: "components/retroui/Breadcrumb.tsx",
-    }
+    },
+    "context-menu": {
+      name: "context-menu",
+      filePath: "components/retroui/ContextMenu.tsx",
+    },
   },
   examples: {
     "accordion-style-default": {
@@ -236,7 +240,9 @@ export const componentConfig: {
     "bar-chart-style-horizontal": {
       name: "bar-chart-style-horizontal",
       filePath: "preview/charts/bar-chart-style-horizontal.tsx",
-      preview: lazy(() => import("@/preview/charts/bar-chart-style-horizontal")),
+      preview: lazy(
+        () => import("@/preview/charts/bar-chart-style-horizontal"),
+      ),
     },
     "button-style-default": {
       name: "button-style-default",
@@ -422,7 +428,9 @@ export const componentConfig: {
     "table-with-sticky-header": {
       name: "table-with-sticky-header",
       filePath: "preview/components/table-with-sticky-header.tsx",
-      preview: lazy(() => import("@/preview/components/table-with-sticky-header")),
+      preview: lazy(
+        () => import("@/preview/components/table-with-sticky-header"),
+      ),
     },
     "textarea-style-default": {
       name: "textarea-style-default",
@@ -590,6 +598,13 @@ export const componentConfig: {
       filePath: "preview/components/breadcrumb-link-component.tsx",
       preview: lazy(
         () => import("@/preview/components/breadcrumb-link-component"),
+      ),
+    },
+    "context-menu-style-default": {
+      name: "context-menu-style-default",
+      filePath: "preview/components/context-menu-style-default.tsx",
+      preview: lazy(
+        () => import("@/preview/components/context-menu-style-default"),
       ),
     },
   },

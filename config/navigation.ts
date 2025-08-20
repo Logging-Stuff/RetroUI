@@ -37,7 +37,7 @@ export const navConfig: INavigationConfig = {
           title: "Figma Kit",
           href: "https://pro.retroui.dev/figma",
           tag: "Pro",
-        }
+        },
       ],
     },
     {
@@ -55,6 +55,7 @@ export const navConfig: INavigationConfig = {
         { title: "Input", href: `${componentsRoute}/input` },
         { title: "Label", href: `${componentsRoute}/label` },
         { title: "Menu", href: `${componentsRoute}/menu` },
+        { title: "Context Menu", href: `${componentsRoute}/context-menu` },
         {
           title: "Popover",
           href: `${componentsRoute}/popover`,
