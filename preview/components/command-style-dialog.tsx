@@ -11,7 +11,6 @@ import {
   Smile,
   User,
 } from "lucide-react";
-import { CommandDialog, CommandGroup, CommandItem, CommandList } from "cmdk";
 
 export default function Component() {
   const [open, setOpen] = React.useState(false);
