@@ -6,7 +6,11 @@ export default function ContextMenuStyleDefault() {
   return (
     <div className="flex items-center justify-center min-h-[200px] p-8">
       <ContextMenu>
-        <ContextMenu.Trigger className="flex h-[150px] w-[300px] items-center justify-center border-2 border-dashed border-border text-sm bg-background transition-all ">
+        <ContextMenu.Trigger
+          className="flex h-[150px] w-[300px] items-center justify-center 
+            border-2 border-dashed border-border text-sm bg-background 
+            transition-all"
+        >
           Right click here
         </ContextMenu.Trigger>
         <ContextMenu.Content>
