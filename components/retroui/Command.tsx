@@ -14,7 +14,7 @@ function Command({
   return (
     <CommandPrimitive
       className={cn(
-        "flex h-full w-full flex-col overflow-hidden rounded-md bg-background text-foreground border-2 border-border shadow-md",
+        "flex h-full w-full flex-col overflow-hidden rounded-md bg-background text-foreground  border-border shadow-md",
         className,
       )}
       {...props}
@@ -32,7 +32,10 @@ const CommandDialog = ({
   return (
     <Dialog {...props}>
       <Dialog.Content
-        className={cn("overflow-hidden p-0 shadow-lg", className)}
+        className={cn(
+          "overflow-hidden p-0 shadow-lg w-full max-w-md",
+          className,
+        )}
       >
         <Command className="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-muted-foreground [&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 [&_[cmdk-group]]:px-2 [&_[cmdk-input-wrapper]_svg]:h-5 [&_[cmdk-input-wrapper]_svg]:w-5 [&_[cmdk-input]]:h-12 [&_[cmdk-item]]:px-2 [&_[cmdk-item]]:py-3 [&_[cmdk-item]_svg]:h-5 [&_[cmdk-item]_svg]:w-5">
           {children}
@@ -74,12 +77,7 @@ function CommandList({
       className={cn(
         "max-h-[400px] overflow-auto overscroll-contain transition-[height]  h-[calc(min(300px,var(--cmdk-list-height)))] bg-background",
         className,
-        "*:border *:border-red-500",
       )}
-      // style={{
-      //   height: "var(--cmdk-list-height)",
-      //   transition: "height 100ms ease-out",
-      // }}
       {...props}
     />
   );

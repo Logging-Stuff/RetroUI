@@ -135,7 +135,6 @@ export const componentConfig: {
     },
     command: {
       name: "command",
-      dependencies: ["cmdk", "@radix-ui/react-dialog", "lucide-react"],
       filePath: "components/retroui/Command.tsx",
     },
   },
@@ -605,6 +604,11 @@ export const componentConfig: {
       name: "command-style-default",
       filePath: "preview/components/command-style-default.tsx",
       preview: lazy(() => import("@/preview/components/command-style-default")),
+    },
+    "command-style-dialog": {
+      name: "command-style-dialog",
+      filePath: "preview/components/command-style-dialog.tsx",
+      preview: lazy(() => import("@/preview/components/command-style-dialog")),
     },
   },
 };

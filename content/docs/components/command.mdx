@@ -1,166 +1,40 @@
 ---
 title: Command
 description: A command palette component for quick navigation and actions
-lastUpdated: 08 Oct, 2024
+lastUpdated: 21 Aug, 2025
+links:
+  source: https://github.com/Logging-Stuff/RetroUI/blob/main/components/retroui/Command.tsx
 ---
 
-The Command component provides a command palette interface that allows users to quickly search and execute commands. It's built on top of cmdk and follows the RetroUI design system.
-
-## Usage
-
 <ComponentShowcase name="command-style-default" />
+<br />
+<br />
 
-## API Reference
+<ComponentInstall>
+  <ComponentInstall.Cli npmCommand="npx shadcn@latest add 'https://retroui.dev/r/command.json'" />
+  <ComponentInstall.Manual>
+#### 1. Install dependencies:
 
-### Command
-
-The main command component that wraps all command functionality.
-
-```tsx
-import { Command } from "@/components/retroui/Command";
-
-<Command>
-  <Command.Input placeholder="Search..." />
-  <Command.List>
-    <Command.Item>Item 1</Command.Item>
-  </Command.List>
-</Command>;
+```sh
+npm install class-variance-authority
 ```
 
-### Command.Dialog
+<br />
 
-A dialog wrapper for the command component.
+#### 2. Copy the code 👇 into your project:
 
-```tsx
-<Command.Dialog open={open} onOpenChange={setOpen}>
-  <Command.Input />
-  <Command.List>{/* Command items */}</Command.List>
-</Command.Dialog>
-```
+<ComponentSource name="command" />
 
-### Command.Input
+  </ComponentInstall.Manual>
+</ComponentInstall>
 
-The search input field for the command palette.
-
-```tsx
-<Command.Input placeholder="Type a command..." />
-```
-
-### Command.List
-
-Container for command items and groups.
-
-```tsx
-<Command.List>
-  <Command.Empty>No results found</Command.Empty>
-  <Command.Group heading="Suggestions">
-    <Command.Item>Item 1</Command.Item>
-  </Command.Group>
-</Command.List>
-```
-
-### Command.Item
-
-Individual command items that can be selected.
-
-```tsx
-<Command.Item>
-  <Icon className="mr-2 h-4 w-4" />
-  Command Name
-</Command.Item>
-```
-
-### Command.Group
-
-Groups related command items together.
-
-```tsx
-<Command.Group heading="Settings">
-  <Command.Item>Profile</Command.Item>
-  <Command.Item>Preferences</Command.Item>
-</Command.Group>
-```
-
-### Command.Empty
-
-Displayed when no search results are found.
-
-```tsx
-<Command.Empty>No results found.</Command.Empty>
-```
-
-### Command.Separator
-
-Visual separator between command groups.
-
-```tsx
-<Command.Separator />
-```
-
-### Command.Shortcut
-
-Display keyboard shortcuts for commands.
-
-```tsx
-<Command.Item>
-  Copy
-  <Command.Shortcut>⌘C</Command.Shortcut>
-</Command.Item>
-```
-
-### Command.Check
-
-Display a checkmark for selected items.
-
-```tsx
-<Command.Item>
-  Option
-  <Command.Check />
-</Command.Item>
-```
+<br />
+<br />
 
 ## Examples
 
-### Basic Command Palette
+### Default
 
-```tsx
-import { useState } from "react";
-import { Command } from "@/components/retroui/Command";
-import { Button } from "@/components/retroui/Button";
-
-export function CommandDialogExample() {
-  const [open, setOpen] = useState(false);
-
-  return (
-    <>
-      <Button onClick={() => setOpen(true)}>Open Command</Button>
-
-      <Command.Dialog open={open} onOpenChange={setOpen}>
-        <Command.Input placeholder="Search..." />
-        <Command.List>
-          <Command.Empty>No results found.</Command.Empty>
-          <Command.Item>Settings</Command.Item>
-          <Command.Item>Profile</Command.Item>
-        </Command.List>
-      </Command.Dialog>
-    </>
-  );
-}
-```
-
-## Styling
-
-The Command component follows the RetroUI design system with:
-
-- `border-2 border-border` for consistent thick borders
-- `shadow-md` for medium shadows
-- `bg-background` and `text-foreground` for colors
-- `font-body` for consistent typography
-- Hover states with `hover:bg-accent hover:text-accent-foreground`
-- Smooth transitions with `transition-all`
-
-## Dependencies
-
-- `cmdk` - Command palette functionality
-- `@radix-ui/react-dialog` - Dialog component
-- `lucide-react` - Icons
+<ComponentShowcase name="command-style-dialog" />
+<br />
+<br />
