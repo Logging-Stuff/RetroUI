@@ -1,5 +1,6 @@
-import { Loader } from "@/components/retroui/newComponent/Loader"
+import { Loader } from "@/components/retroui/Loader";
 
 export default function LoaderPreview() {
-  return <Loader />
+  return <Loader />;
 }
+

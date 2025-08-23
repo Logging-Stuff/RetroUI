@@ -68,6 +68,10 @@ export const componentConfig: {
       name: "label",
       filePath: "components/retroui/Label.tsx",
     },
+    loader: {
+      name: "loader",
+      filePath: "components/retroui/Loader.tsx",
+    },
     lineChart: {
       name: "lineChart",
       filePath: "components/retroui/charts/LineChart.tsx",
