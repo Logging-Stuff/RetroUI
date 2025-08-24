@@ -54,14 +54,15 @@ export default async function Home() {
       <div className="bg-image bg-cover bg-no-repeat bg-center flex flex-col items-center min-h-screen">
         <section className="container max-w-6xl mx-auto px-4 lg:px-0 text-gray-900 flex justify-center items-center lg:gap-28 xl:gap-32 my-28">
           <div className="text-center lg:text-left w-full lg:w-2/3">
-            <Link href="/docs/charts/line-chart" className="mb-12 inline-block">
-              <Badge>
+            {/* <Link href="/docs/charts/line-chart" className="mb-12 inline-block"> */}
+              {/* <Badge>
                 Introducing RetroUI Charts!
                 <ChartArea className="ml-2 h-4 w-4 inline-block" />
-              </Badge>
-            </Link>
+              </Badge> */}
+              <a href="https://www.producthunt.com/products/retro-ui?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-retroui&#0045;pro" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1006866&theme=light&t=1756013775683" alt="RetroUI&#0032;Pro - Not&#0032;Every&#0032;Website&#0032;Has&#0032;To&#0032;Look&#0032;The&#0032;Same&#0033; | Product Hunt" style={{width: "250px", height: "54px"}} width="250" height="54" /></a>
+            {/* </Link> */}
 
-            <Text as="h1" className="text-5xl text-foreground lg:text-6xl">
+            <Text as="h1" className="text-5xl text-foreground lg:text-6xl mt-8">
               Make your projects
               <br />
               <span className="text-outlined">stand out!</span>
