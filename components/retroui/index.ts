@@ -25,3 +25,4 @@ export * from "./Tooltip";
 export * from "./Breadcrumb";
 export * from "./CommandDisplay";
 export * from "./Command";
+export * from "./Loader";

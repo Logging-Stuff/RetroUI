@@ -68,6 +68,10 @@ export const componentConfig: {
       name: "label",
       filePath: "components/retroui/Label.tsx",
     },
+    loader: {
+      name: "loader",
+      filePath: "components/retroui/Loader.tsx",
+    },
     lineChart: {
       name: "lineChart",
       filePath: "components/retroui/charts/LineChart.tsx",
@@ -609,6 +613,30 @@ export const componentConfig: {
       name: "command-style-dialog",
       filePath: "preview/components/command-style-dialog.tsx",
       preview: lazy(() => import("@/preview/components/command-style-dialog")),
+    "loader-style-default": {
+      name: "loader-style-default",
+      filePath: "preview/components/loader-style-default.tsx",
+      preview: lazy(() => import("@/preview/components/loader-style-default")),
+    },
+    "loader-style-solid": {
+      name: "loader-style-solid",
+      filePath: "preview/components/loader-style-solid.tsx",
+      preview: lazy(() => import("@/preview/components/loader-style-solid")),
+    },
+    "loader-style-outline": {
+      name: "loader-style-outline",
+      filePath: "preview/components/loader-style-outline.tsx",
+      preview: lazy(() => import("@/preview/components/loader-style-outline")),
+    },
+    "loader-style-sizes": {
+      name: "loader-style-sizes",
+      filePath: "preview/components/loader-style-sizes.tsx",
+      preview: lazy(() => import("@/preview/components/loader-style-sizes")),
+    },
+    "loader-style-custom": {
+      name: "loader-style-custom",
+      filePath: "preview/components/loader-style-custom.tsx",
+      preview: lazy(() => import("@/preview/components/loader-style-custom"))
     },
   },
 };
