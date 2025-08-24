@@ -137,6 +137,10 @@ export const componentConfig: {
       name: "breadcrumb",
       filePath: "components/retroui/Breadcrumb.tsx",
     },
+    command: {
+      name: "command",
+      filePath: "components/retroui/Command.tsx",
+    },
     "context-menu": {
       name: "context-menu",
       filePath: "components/retroui/ContextMenu.tsx",
@@ -604,6 +608,16 @@ export const componentConfig: {
         () => import("@/preview/components/breadcrumb-link-component"),
       ),
     },
+    "command-style-default": {
+      name: "command-style-default",
+      filePath: "preview/components/command-style-default.tsx",
+      preview: lazy(() => import("@/preview/components/command-style-default")),
+    },
+    "command-style-dialog": {
+      name: "command-style-dialog",
+      filePath: "preview/components/command-style-dialog.tsx",
+      preview: lazy(() => import("@/preview/components/command-style-dialog")),
+    },
     "context-menu-style-default": {
       name: "context-menu-style-default",
       filePath: "preview/components/context-menu-style-default.tsx",
@@ -634,7 +648,7 @@ export const componentConfig: {
     "loader-style-custom": {
       name: "loader-style-custom",
       filePath: "preview/components/loader-style-custom.tsx",
-      preview: lazy(() => import("@/preview/components/loader-style-custom")),
+      preview: lazy(() => import("@/preview/components/loader-style-custom"))
     },
   },
 };
