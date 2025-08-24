@@ -613,6 +613,7 @@ export const componentConfig: {
       name: "command-style-dialog",
       filePath: "preview/components/command-style-dialog.tsx",
       preview: lazy(() => import("@/preview/components/command-style-dialog")),
+    },
     "loader-style-default": {
       name: "loader-style-default",
       filePath: "preview/components/loader-style-default.tsx",
