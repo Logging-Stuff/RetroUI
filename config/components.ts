@@ -141,6 +141,10 @@ export const componentConfig: {
       name: "command",
       filePath: "components/retroui/Command.tsx",
     },
+    "context-menu": {
+      name: "context-menu",
+      filePath: "components/retroui/ContextMenu.tsx",
+    },
   },
   examples: {
     "accordion-style-default": {
@@ -613,6 +617,13 @@ export const componentConfig: {
       name: "command-style-dialog",
       filePath: "preview/components/command-style-dialog.tsx",
       preview: lazy(() => import("@/preview/components/command-style-dialog")),
+    },
+    "context-menu-style-default": {
+      name: "context-menu-style-default",
+      filePath: "preview/components/context-menu-style-default.tsx",
+      preview: lazy(
+        () => import("@/preview/components/context-menu-style-default"),
+      ),
     },
     "loader-style-default": {
       name: "loader-style-default",
