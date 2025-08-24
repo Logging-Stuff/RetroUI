@@ -610,6 +610,7 @@ export const componentConfig: {
       preview: lazy(
         () => import("@/preview/components/context-menu-style-default"),
       ),
+    },
     "loader-style-default": {
       name: "loader-style-default",
       filePath: "preview/components/loader-style-default.tsx",
