@@ -24,4 +24,5 @@ export * from "./Sonner";
 export * from "./Tooltip";
 export * from "./Breadcrumb";
 export * from "./CommandDisplay";
+export * from "./ContextMenu";
 export * from "./Loader";

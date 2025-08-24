@@ -137,6 +137,10 @@ export const componentConfig: {
       name: "breadcrumb",
       filePath: "components/retroui/Breadcrumb.tsx",
     },
+    "context-menu": {
+      name: "context-menu",
+      filePath: "components/retroui/ContextMenu.tsx",
+    },
   },
   examples: {
     "accordion-style-default": {
@@ -598,6 +602,13 @@ export const componentConfig: {
       filePath: "preview/components/breadcrumb-link-component.tsx",
       preview: lazy(
         () => import("@/preview/components/breadcrumb-link-component"),
+      ),
+    },
+    "context-menu-style-default": {
+      name: "context-menu-style-default",
+      filePath: "preview/components/context-menu-style-default.tsx",
+      preview: lazy(
+        () => import("@/preview/components/context-menu-style-default"),
       ),
     },
     "loader-style-default": {
