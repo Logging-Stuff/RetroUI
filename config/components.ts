@@ -68,6 +68,10 @@ export const componentConfig: {
       name: "label",
       filePath: "components/retroui/Label.tsx",
     },
+    loader: {
+      name: "loader",
+      filePath: "components/retroui/Loader.tsx",
+    },
     lineChart: {
       name: "lineChart",
       filePath: "components/retroui/charts/LineChart.tsx",
@@ -132,7 +136,7 @@ export const componentConfig: {
     breadcrumb: {
       name: "breadcrumb",
       filePath: "components/retroui/Breadcrumb.tsx",
-    }
+    },
   },
   examples: {
     "accordion-style-default": {
@@ -236,7 +240,9 @@ export const componentConfig: {
     "bar-chart-style-horizontal": {
       name: "bar-chart-style-horizontal",
       filePath: "preview/charts/bar-chart-style-horizontal.tsx",
-      preview: lazy(() => import("@/preview/charts/bar-chart-style-horizontal")),
+      preview: lazy(
+        () => import("@/preview/charts/bar-chart-style-horizontal"),
+      ),
     },
     "button-style-default": {
       name: "button-style-default",
@@ -422,7 +428,9 @@ export const componentConfig: {
     "table-with-sticky-header": {
       name: "table-with-sticky-header",
       filePath: "preview/components/table-with-sticky-header.tsx",
-      preview: lazy(() => import("@/preview/components/table-with-sticky-header")),
+      preview: lazy(
+        () => import("@/preview/components/table-with-sticky-header"),
+      ),
     },
     "textarea-style-default": {
       name: "textarea-style-default",
@@ -591,6 +599,31 @@ export const componentConfig: {
       preview: lazy(
         () => import("@/preview/components/breadcrumb-link-component"),
       ),
+    },
+    "loader-style-default": {
+      name: "loader-style-default",
+      filePath: "preview/components/loader-style-default.tsx",
+      preview: lazy(() => import("@/preview/components/loader-style-default")),
+    },
+    "loader-style-solid": {
+      name: "loader-style-solid",
+      filePath: "preview/components/loader-style-solid.tsx",
+      preview: lazy(() => import("@/preview/components/loader-style-solid")),
+    },
+    "loader-style-outline": {
+      name: "loader-style-outline",
+      filePath: "preview/components/loader-style-outline.tsx",
+      preview: lazy(() => import("@/preview/components/loader-style-outline")),
+    },
+    "loader-style-sizes": {
+      name: "loader-style-sizes",
+      filePath: "preview/components/loader-style-sizes.tsx",
+      preview: lazy(() => import("@/preview/components/loader-style-sizes")),
+    },
+    "loader-style-custom": {
+      name: "loader-style-custom",
+      filePath: "preview/components/loader-style-custom.tsx",
+      preview: lazy(() => import("@/preview/components/loader-style-custom")),
     },
   },
 };
