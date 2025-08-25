@@ -54,6 +54,7 @@ export const navConfig: INavigationConfig = {
         { title: "Dialog", href: `${componentsRoute}/dialog` },
         { title: "Input", href: `${componentsRoute}/input` },
         { title: "Label", href: `${componentsRoute}/label` },
+        { title: "Loader", href: `${componentsRoute}/loader` },
         { title: "Menu", href: `${componentsRoute}/menu` },
         {
           title: "Popover",
