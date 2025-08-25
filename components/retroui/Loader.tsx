@@ -5,10 +5,10 @@ import { cn } from "@/lib/utils";
 const loaderVariants = cva("flex gap-1", {
   variants: {
     variant: {
-      default: "[&>div]:bg-primary [&>div]:border-black [&>div]:shadow-md",
+      default: "[&>div]:bg-primary [&>div]:border-black",
       secondary:
-        "[&>div]:bg-secondary [&>div]:border-black [&>div]:shadow-md [&>div]:shadow-primary",
-      outline: "[&>div]:bg-transparent [&>div]:border-black [&>div]:shadow-md",
+        "[&>div]:bg-secondary [&>div]:border-black",
+      outline: "[&>div]:bg-transparent [&>div]:border-black",
     },
     size: {
       sm: "[&>div]:w-2 [&>div]:h-2",
