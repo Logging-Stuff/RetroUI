@@ -2,6 +2,8 @@
 title: Loader
 description: A customizable loading indicator with bouncing squares. 🔄
 lastUpdated: 20 Aug, 2025
+links:
+  source: https://github.com/Logging-Stuff/RetroUI/blob/main/components/retroui/Loader.tsx
 ---
 
 <ComponentShowcase name="loader-style-default" />
@@ -73,7 +75,7 @@ import { Loader } from "@/components/ui/loader"
 <Loader variant="secondary" size="lg" />
 
 // Custom configuration
-<Loader 
+<Loader
   count={4}           // Number of squares
   duration={1.2}      // Animation duration in seconds
   delayStep={120}     // Delay between squares in milliseconds
@@ -92,44 +94,51 @@ import { Loader } from "@/components/ui/loader"
 
 ## Props
 
-- * `variant`
-  - Type: `default` | `secondary`  | `outline`
-  - Default: `default`
-  - Description: Defines the style variant for the component
+- - `variant`
 
-- * `size`
-  - Type: `sm` | `md` | `lg`
-  - Default: `md`
-  - Description: Controls the size of the loader squares
+  * Type: `default` | `secondary` | `outline`
+  * Default: `default`
+  * Description: Defines the style variant for the component
 
-- * `count`
-  - Type: `number`
-  - Default: `3`
-  - Description: Sets the number of bouncing squares
+- - `size`
 
-- * `duration`
-  - Type: `number`
-  - Default: `0.5`
-  - Description: Controls the animation duration in seconds
+  * Type: `sm` | `md` | `lg`
+  * Default: `md`
+  * Description: Controls the size of the loader squares
 
-- * `delayStep`
-  - Type: `number`
-  - Default: `100`
-  - Description: Defines the delay between squares in milliseconds
+- - `count`
 
-- * `className`
-  - Type: `string`
-  - Default: `undefined`
-  - Description: Allows for adding additional CSS classes for custom styling
+  * Type: `number`
+  * Default: `3`
+  * Description: Sets the number of bouncing squares
 
-- * `asChild`
-  - Type: `boolean`
-  - Default: `false`
-  - Description: When `true`, merges the component's props onto its immediate child element
+- - `duration`
+
+  * Type: `number`
+  * Default: `0.5`
+  * Description: Controls the animation duration in seconds
+
+- - `delayStep`
+
+  * Type: `number`
+  * Default: `100`
+  * Description: Defines the delay between squares in milliseconds
+
+- - `className`
+
+  * Type: `string`
+  * Default: `undefined`
+  * Description: Allows for adding additional CSS classes for custom styling
+
+- - `asChild`
+  * Type: `boolean`
+  * Default: `false`
+  * Description: When `true`, merges the component's props onto its immediate child element
 
 ## Accessibility
 
 The Loader component includes the following attributes:
+
 - `role="status"`
 - `aria-label="Loading..."`
 
