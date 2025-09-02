@@ -4,12 +4,12 @@ import React, { ButtonHTMLAttributes } from "react";
 import { Slot } from "@radix-ui/react-slot";
 
 const buttonVariants = cva(
-  "font-head transition-all outline-hidden cursor-pointer duration-200 font-medium flex items-center",
+  "font-head transition-all rounded outline-hidden cursor-pointer duration-200 font-medium flex items-center",
   {
     variants: {
       variant: {
         default:
-          "shadow-md hover:shadow-none bg-primary text-black border-2 border-black transition hover:translate-y-1 hover:bg-primary-hover",
+          "shadow-md hover:shadow-none bg-primary text-primary-foreground border-2 border-black transition hover:translate-y-1 hover:bg-primary-hover",
         secondary:
           "shadow-md hover:shadow-none bg-secondary shadow-primary text-secondary-foreground border-2 border-black transition hover:translate-y-1",
         outline:
