@@ -36,7 +36,7 @@ export default function TopNav() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 w-full border-b-2 bg-background">
+    <nav className="sticky z-10 top-0 right-0 w-full border-b-2 bg-background">
       <div className="w-full bg-black text-white">
         <div className="container max-w-6xl mx-auto px-4 py-2 flex justify-center space-x-4 items-center">
           <Text className="text-sm lg:text-center">

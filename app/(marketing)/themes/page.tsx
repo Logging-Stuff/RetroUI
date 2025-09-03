@@ -3,28 +3,42 @@
 import { useState } from "react";
 import {
     Button,
-    Input,
-    Textarea,
     Card,
     Select,
+    Text,
 } from "@/components/retroui";
-import AccordionStyleDefault from "@/preview/components/accordion-style-default";
-import AlertStyleDefaultIcon from "@/preview/components/alert-style-with-icon";
-import AvatarStyleCircle from "@/preview/components/avatar-style-circle-sizes";
-import BadgeStyleVariants from "@/preview/components/badge-style-variants";
+import ChartStyleMultiple from "@/preview/charts/area-chart-style-multiple";
+import CourseCard from "@/preview/blocks/course-card";
+import SignInBlock from "@/preview/blocks/sign-in";
+import BarChartStyleMultiple from "@/preview/charts/bar-chart-style-multiple";
+import TeamMembersBlock from "@/preview/blocks/team-members";
+import CopyTheme from "@/components/CopyTheme";
+import { Theme } from "@/config/theme";
 
-const themes = [
+const themes: {value: Theme, label: string}[] = [
     {
-        value: "default",
+        value: Theme.Default,
         label: "Default",
     },
     {
-        value: "purple",
+        value: Theme.Purple,
         label: "Purple",
     },
     {
-        value: "lime",
-        label: "Lime",
+        value: Theme.Red,
+        label: "Red",
+    },
+    {
+        value: Theme.Lavender,
+        label: "Lavender",
+    },
+    {
+        value: Theme.Orange,
+        label: "Orange",
+    },
+    {
+        value: Theme.Green,
+        label: "Green",
     },
 ];
 
@@ -40,108 +54,89 @@ const variants = [
 ];
 
 export default function Themes() {
-    const [theme, setTheme] = useState(themes[0].value);
+    const [theme, setTheme] = useState<Theme>(themes[0].value);
     const [variant, setVariant] = useState(variants[0].value);
 
-    console.log(theme, variant);
     return (
-        <main>
-            <section className={`theme-${theme} ${variant} container max-w-6xl mx-auto px-4 lg:px-0 lg:my-36`}>
-                <div className="flex gap-6 items-center mb-12">
-                    <Select onValueChange={(value) => setTheme(value)}>
-                        <Select.Trigger>
-                            <Select.Value placeholder="Select Color" />
-                        </Select.Trigger>
-                        <Select.Content>
-                            <Select.Group>
-                                {
-                                    themes.map((theme) => (
-                                        <Select.Item key={theme.value} value={theme.value}>
-                                            {theme.label}
-                                        </Select.Item>
-                                    ))
-                                }
-                            </Select.Group>
-                        </Select.Content>
-                    </Select>
+            <section className={`theme-${theme} ${variant} container max-w-8xl mx-auto py-12`}>
+                <Text as="h1" className="font-normal mb-12">Don't like <span className="text-primary">{theme === Theme.Default ? "Yellow" : theme.slice(0, 1).toUpperCase() + theme.slice(1)}?</span><br />Well, we have more! 🫡</Text>
 
-                    <Select onValueChange={(value) => setVariant(value)}>
-                        <Select.Trigger>
-                            <Select.Value placeholder="Select Variant" />
-                        </Select.Trigger>
-                        <Select.Content>
-                            <Select.Group>
-                                {
-                                    variants.map((variant) => (
-                                        <Select.Item key={variant.value} value={variant.value}>
-                                            {variant.label}
-                                        </Select.Item>
-                                    ))
-                                }
-                            </Select.Group>
-                        </Select.Content>
-                    </Select>
+                <div className="flex gap-6 items-center justify-between mb-6">
+                    <div className="flex gap-6">
+                        <Select onValueChange={(value: Theme) => setTheme(value)}>
+                            <Select.Trigger>
+                                <Select.Value placeholder="Select Color" />
+                            </Select.Trigger>
+                            <Select.Content>
+                                <Select.Group>
+                                    {
+                                        themes.map((theme) => (
+                                            <Select.Item key={theme.value} value={theme.value}>
+                                                {theme.label}
+                                            </Select.Item>
+                                        ))
+                                    }
+                                </Select.Group>
+                            </Select.Content>
+                        </Select>
+
+                        <Select onValueChange={(value) => setVariant(value)}>
+                            <Select.Trigger>
+                                <Select.Value placeholder="Select Variant" />
+                            </Select.Trigger>
+                            <Select.Content>
+                                <Select.Group>
+                                    {
+                                        variants.map((variant) => (
+                                            <Select.Item key={variant.value} value={variant.value}>
+                                                {variant.label}
+                                            </Select.Item>
+                                        ))
+                                    }
+                                </Select.Group>
+                            </Select.Content>
+                        </Select>
+                    </div>
+
+                    <CopyTheme theme={theme} hasRadius={variant === "with-radius"} />
                 </div>
 
+                <div className="grid grid-cols-3 w-full gap-6">
+                    <div className="flex flex-col gap-6">
+                        <Card className="w-full border-muted bg-background shadow-none">
+                            <Card.Content>
+                                <CourseCard />
+                            </Card.Content>
+                        </Card>
 
-                <div className="grid gap-6 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 mb-8">
-                    <Card className="w-full bg-background shadow-none">
-                        <Card.Header>
-                            <Card.Title>Button</Card.Title>
-                        </Card.Header>
-                        <Card.Content>
-                            <div className="flex flex-wrap gap-4">
-                                <Button>Primary</Button>
-                                <Button variant="secondary">Secondary</Button>
-                                <Button variant="outline">Outline</Button>
-                            </div>
-                        </Card.Content>
-                    </Card>
-                    <Card className="w-full bg-background shadow-none">
-                        <Card.Header>
-                            <Card.Title>Badge</Card.Title>
-                        </Card.Header>
-                        <Card.Content>
-                            <BadgeStyleVariants />
-                        </Card.Content>
-                    </Card>
-                    <Card className="w-full bg-background shadow-none">
-                        <Card.Header>
-                            <Card.Title>Avatar</Card.Title>
-                        </Card.Header>
-                        <Card.Content>
-                            <AvatarStyleCircle />
-                        </Card.Content>
-                    </Card>
-                    <Card className="w-full bg-background shadow-none">
-                        <Card.Header>
-                            <Card.Title>Accordion</Card.Title>
-                        </Card.Header>
-                        <Card.Content>
-                            <AccordionStyleDefault />
-                        </Card.Content>
-                    </Card>
-                    <Card className="w-full bg-background shadow-none">
-                        <Card.Header>
-                            <Card.Title>Input & Textarea</Card.Title>
-                        </Card.Header>
-                        <Card.Content>
-                            <Input />
-                            <div className="h-4"></div>
-                            <Textarea className="border-foreground" />
-                        </Card.Content>
-                    </Card>
+                        <Card className="w-full border-muted bg-background shadow-none">
+                            <Card.Content>
+                                <TeamMembersBlock />
+                            </Card.Content>
+                        </Card>
+                    </div>
 
-                    <Card className="w-full bg-background shadow-none">
-                        <Card.Header>
-                            <Card.Title>Alert</Card.Title>
-                        </Card.Header>
+
+                    <div className="flex flex-col gap-6">
+                        <Card className="w-full border-muted bg-background shadow-none">
+                            <Card.Content>
+                                <ChartStyleMultiple />
+                            </Card.Content>
+                        </Card>
+                        <Card className="w-full border-muted bg-background shadow-none">
+                            <Card.Content>
+                                <BarChartStyleMultiple />
+                            </Card.Content>
+                        </Card>
+                    </div>
+
+
+                    <Card className="w-full border-muted bg-background shadow-none">
                         <Card.Content>
-                            <AlertStyleDefaultIcon />
+                            <SignInBlock />
                         </Card.Content>
                     </Card>
                 </div>
             </section>
-        </main>
     );
 }

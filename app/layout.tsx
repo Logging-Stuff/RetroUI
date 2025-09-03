@@ -72,9 +72,7 @@ export default function RootLayout({
       <body
         className={`${head.variable} ${sans.variable} ${mono.variable} bg-background text-foreground`}
       >
-        <div className="relative z-10 pb-24">
-          <TopNav />
-        </div>
+        <TopNav />
         {children}
         <Toaster />
         <SpeedInsights />

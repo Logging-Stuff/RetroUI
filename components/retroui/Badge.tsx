@@ -5,7 +5,7 @@ import React, { HTMLAttributes } from "react";
 const badgeVariants = cva("font-semibold rounded", {
   variants: {
     variant: {
-      default: "bg-gray-200 text-gray-700",
+      default: "bg-muted text-muted-foreground",
       outline: "outline-2 outline-foreground text-foreground",
       solid: "bg-foreground text-background",
       surface: "outline-2 bg-primary text-primary-foreground",
