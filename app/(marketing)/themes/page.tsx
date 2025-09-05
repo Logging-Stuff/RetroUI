@@ -62,7 +62,7 @@ export default function Themes() {
 
     return (
             <section className={`theme-${theme} ${variant} container max-w-8xl mx-auto py-12`}>
-                <Text as="h1" className="font-normal mb-12">Don't like <span className="text-primary">{theme === Theme.Default ? "Yellow" : theme.slice(0, 1).toUpperCase() + theme.slice(1)}?</span><br />Well, we have more! 🫡</Text>
+                <Text as="h1" className="font-normal mb-12">Don&apos;t like <span className="text-primary">{theme === Theme.Default ? "Yellow" : theme.slice(0, 1).toUpperCase() + theme.slice(1)}?</span><br />Well, we have more! 🫡</Text>
 
                 <div className="flex gap-6 items-center justify-between mb-6">
                     <div className="flex gap-6">
