@@ -3,7 +3,7 @@ import * as CheckboxPrimitive from "@radix-ui/react-checkbox";
 import { cva, VariantProps } from "class-variance-authority";
 import { Check } from "lucide-react";
 
-const checkboxVariants = cva("border-2", {
+const checkboxVariants = cva("border-2 rounded", {
   variants: {
     variant: {
       default: "data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground ",

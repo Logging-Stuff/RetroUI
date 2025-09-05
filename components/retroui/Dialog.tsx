@@ -20,7 +20,7 @@ const overlayVariants = cva(
   {
     variants: {
       variant: {
-        default: "inset-0 z-50 bg-black/80",
+        default: "inset-0 z-50 bg-black/85",
         none: "fixed bg-transparent",
       },
     },
@@ -50,18 +50,12 @@ const DialogBackdrop = React.forwardRef<HTMLDivElement, IDialogBackgroupProps>(
 DialogBackdrop.displayName = "DialogBackdrop";
 
 const dialogVariants = cva(
-  `fixed z-50 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
-  flex flex-col border-2 shadow-md gap-4 overflow-y-auto bg-background text-foreground
-  w-full h-fit max-h-[80vh] max-w-[97%] duration-300
+  `fixed left-[50%] top-[50%] z-50 grid rounded overflow-hidden w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border-2 bg-background shadow-lg duration-200 
   data-[state=open]:animate-in 
-  data-[state=open]:slide-in-from-left-1/2 
-  data-[state=open]:slide-in-from-top-[48%]
   data-[state=open]:fade-in-0 
   data-[state=open]:zoom-in-95 
   data-[state=closed]:animate-out 
   data-[state=closed]:fade-out-0 
-  data-[state=closed]:slide-out-to-top-[48%] 
-  data-[state=closed]:slide-out-to-left-1/2 
   data-[state=closed]:zoom-out-95`,
   {
     variants: {
@@ -175,7 +169,7 @@ const dialogHeaderVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-black",
+        default: "bg-primary text-primary-foreground",
       },
       position: {
         fixed: "sticky top-0",

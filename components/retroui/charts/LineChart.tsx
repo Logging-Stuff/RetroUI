@@ -51,7 +51,7 @@ const LineChart = React.forwardRef<HTMLDivElement, LineChartProps>(
     return (
       <div ref={ref} className={cn("h-80 w-full", className)} {...props}>
         <ResponsiveContainer width="100%" height="100%">
-          <RechartsLineChart data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+          <RechartsLineChart data={data} margin={{ top: 0, right: 30, left: 0, bottom: 0 }}>
             {showGrid && (
               <CartesianGrid strokeDasharray="3 3" stroke={gridColor} />
             )}

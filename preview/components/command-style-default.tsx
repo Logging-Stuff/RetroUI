@@ -14,7 +14,7 @@ import {
 export default function CommandStyleDefault() {
   return (
     <div className="space-y-4">
-      <Command className="rounded-lg border shadow-md md:min-w-[450px] max-w-[500px]">
+      <Command className="border shadow-md md:min-w-[450px] max-w-[500px]">
         <Command.Input placeholder="Type a command or search..." />
         <Command.List>
           <Command.Empty>No results found.</Command.Empty>
