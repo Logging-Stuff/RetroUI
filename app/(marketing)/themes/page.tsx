@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import {
-    Button,
     Card,
     Select,
     Text,
@@ -23,6 +22,10 @@ const themes: {value: Theme, label: string}[] = [
     {
         value: Theme.Purple,
         label: "Purple",
+    },
+    {
+        value: Theme.Lime,
+        label: "Lime",
     },
     {
         value: Theme.Red,

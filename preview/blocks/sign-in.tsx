@@ -11,10 +11,10 @@ export default function SignInBlock() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-      <div className="mx-auto w-full max-w-lg overflow-hidden rounded border-2 border-black bg-white">
+      <div className="mx-auto w-full max-w-lg overflow-hidden rounded border-2 bg-card">
         <div className="bg-accent p-6">
-          <Text as="h3">Sign In</Text>
-          <Text className="font-medium text-muted-foreground">
+          <Text as="h3" className="text-accent-foreground">Sign In</Text>
+          <Text className="text-sm text-accent-foreground">
             Welcome back! Enter your details to access your account.
           </Text>
         </div>
