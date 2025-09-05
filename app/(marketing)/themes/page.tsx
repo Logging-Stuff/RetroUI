@@ -64,7 +64,7 @@ export default function Themes() {
             <section className={`theme-${theme} ${variant} container max-w-8xl mx-auto py-12`}>
                 <Text as="h1" className="font-normal mb-12">Don&apos;t like <span className="text-primary">{theme === Theme.Default ? "Yellow" : theme.slice(0, 1).toUpperCase() + theme.slice(1)}?</span><br />Well, we have more! 🫡</Text>
 
-                <div className="flex gap-6 items-center justify-between mb-6">
+                <div className="flex flex-col lg:flex-row gap-6 items-center justify-between mb-6">
                     <div className="flex gap-6">
                         <Select onValueChange={(value: Theme) => setTheme(value)}>
                             <Select.Trigger>
@@ -104,7 +104,7 @@ export default function Themes() {
                     <CopyTheme theme={theme} hasRadius={variant === "with-radius"} />
                 </div>
 
-                <div className="grid grid-cols-3 w-full gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-6">
                     <div className="flex flex-col gap-6">
                         <Card className="w-full border-muted bg-background shadow-none">
                             <Card.Content>
