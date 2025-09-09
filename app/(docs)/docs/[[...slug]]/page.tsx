@@ -9,7 +9,6 @@ import { MoveUpRightIcon } from "lucide-react";
 import { generateToc } from "@/lib/toc";
 import TableOfContents from "@/components/TableOfContents";
 import SideNav from "@/components/SideNav";
-import { Button } from "@/components/retroui/Button";
 
 interface IProps {
   params: { slug: string[] };
@@ -57,7 +56,7 @@ export default async function page({ params }: IProps) {
       </div>
       
       {/* Main Content */}
-      <div className="flex-1 space-y-12 py-12 px-4">
+      <div className="flex-1 space-y-12 py-12 px-4 max-w-2xl mx-auto">
         <div className="border-b border-black pb-6">
           <Text as="h1" className="text-4xl">{doc.title}</Text>
           <p className="text-lg text-muted-foreground mt-2">{doc.description}</p>

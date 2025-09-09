@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import { Toaster } from "@/components/retroui";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { ThemeProvider } from "@/contexts/ThemeContext";
 
 const sans = Space_Grotesk({
   subsets: ["latin"],
@@ -72,9 +73,11 @@ export default function RootLayout({
       <body
         className={`${head.variable} ${sans.variable} ${mono.variable} bg-background text-foreground`}
       >
-        <TopNav />
-        {children}
-        <Toaster />
+        <ThemeProvider>
+          <TopNav />
+          {children}
+          <Toaster />
+        </ThemeProvider>
         <SpeedInsights />
         <Analytics />
       </body>
