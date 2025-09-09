@@ -1,39 +1,15 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight, GithubIcon, MoonIcon, SunIcon } from "lucide-react";
 import HamburgerMenu from "./HamburgerMenu";
 import { Button, Text } from "@/components/retroui";
 import { navConfig } from "@/config/navigation";
+import { useTheme } from "@/contexts/ThemeContext";
 
 export default function TopNav() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  // Apply the saved theme preference on page load
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      document.documentElement.classList.add("dark");
-      setIsDarkMode(true);
-    } else {
-      document.documentElement.classList.remove("dark");
-      setIsDarkMode(false);
-    }
-  }, []);
-
-  const toggleDarkMode = () => {
-    const htmlElement = document.documentElement;
-    if (htmlElement.classList.contains("dark")) {
-      htmlElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-      setIsDarkMode(false);
-    } else {
-      htmlElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-      setIsDarkMode(true);
-    }
-  };
+  const { isDarkMode, toggleTheme } = useTheme();
 
   return (
     <nav className="sticky z-10 top-0 right-0 w-full border-b-2 bg-background">
@@ -107,7 +83,7 @@ export default function TopNav() {
                 Star on GitHub
               </Button>
             </Link>
-            <Button variant="secondary" size="icon" onClick={toggleDarkMode}>
+            <Button variant="secondary" size="icon" onClick={toggleTheme}>
               {isDarkMode ? <SunIcon size="14" /> : <MoonIcon size="14" />}
             </Button>
           </div>

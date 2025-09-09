@@ -24,6 +24,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/footer";
+import WorksWithSection from "@/components/WorksWithSection";
 async function getContributors(): Promise<
   { avatar: string; username: string; url: string }[]
 > {
@@ -232,104 +233,7 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="container max-w-6xl mx-auto px-4 lg:px-0 my-48">
-        <Text as="h2" className="text-center max-w-2xl mx-auto mb-28">
-          Works With Both <span className="text-outlined">SSR</span> and{" "}
-          <span className="text-outlined">SPA</span> Applications.
-        </Text>
-
-        <div className="grid grid-cols-5 gap-8 lg:gap-6 max-w-2xl mx-auto items-center">
-          {/* Vite */}
-          <div>
-            <Image
-              src="/images/logos/vite.png"
-              alt="vite"
-              width={60}
-              height={60}
-              className="block dark:hidden"
-            />
-            <Image
-              src="/images/logos/vite_white.png"
-              alt="vite dark"
-              width={60}
-              height={60}
-              className="hidden dark:block"
-            />
-          </div>
-
-          {/* Next.js */}
-          <div>
-            <Image
-              src="/images/logos/nextjs.png"
-              alt="nextjs"
-              width={60}
-              height={60}
-              className="block dark:hidden"
-            />
-            <Image
-              src="/images/logos/next_white.png"
-              alt="nextjs dark"
-              width={60}
-              height={60}
-              className="hidden dark:block"
-            />
-          </div>
-
-          {/* Remix */}
-          <div>
-            <Image
-              src="/images/logos/remix.png"
-              alt="remix"
-              width={55}
-              height={55}
-              className="block dark:hidden"
-            />
-            <Image
-              src="/images/logos/remix_white.png"
-              alt="remix dark"
-              width={55}
-              height={55}
-              className="hidden dark:block"
-            />
-          </div>
-
-          {/* Astro */}
-          <div>
-            <Image
-              src="/images/logos/astro.png"
-              alt="astro"
-              width={55}
-              height={55}
-              className="block dark:hidden"
-            />
-            <Image
-              src="/images/logos/astro_white.png"
-              alt="astro dark"
-              width={55}
-              height={55}
-              className="hidden dark:block"
-            />
-          </div>
-
-          {/* Gatsby */}
-          <div>
-            <Image
-              src="/images/logos/gatsby.png"
-              alt="gatsby"
-              width={60}
-              height={60}
-              className="block dark:hidden"
-            />
-            <Image
-              src="/images/logos/gatsby_white.png"
-              alt="gatsby dark"
-              width={60}
-              height={60}
-              className="hidden dark:block"
-            />
-          </div>
-        </div>
-      </section>
+      <WorksWithSection />
 
       <section className="container max-w-6xl mx-auto border-2 bg-primary border-black py-16 px-4 lg:p-16 my-36">
         <Text as="h2" className="text-center text-black mb-2">
