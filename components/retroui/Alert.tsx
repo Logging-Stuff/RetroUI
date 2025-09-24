@@ -7,7 +7,7 @@ import { Text } from "@/components/retroui/Text";
 const alertVariants = cva("relative w-full rounded border-2 p-4", {
   variants: {
     variant: {
-      default: "bg-background text-foreground",
+      default: "bg-background text-foreground [&_svg]:shrink-0",
       solid: "bg-black text-white",
     },
     status: {
