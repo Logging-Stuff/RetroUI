@@ -124,7 +124,7 @@
       "type": "registry:component",
       "title": "Retro Button",
       "description": "This bold button makes sure your users click on it and perform the actions you want!",
-      "dependencies": ["class-variance-authority"],
+      "dependencies": ["class-variance-authority", "@radix-ui/react-slot"],
       "files": [
         {
           "path": "components/retroui/Button.tsx",
