@@ -3,9 +3,7 @@
   "name": "accordion-style-default",
   "type": "registry:block",
   "title": "accordion-style-default",
-  "registryDependencies": [
-    "https://retroui.dev/r/accordion.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/accordion.json"],
   "files": [
     {
       "path": "preview/components/accordion-style-default.tsx",

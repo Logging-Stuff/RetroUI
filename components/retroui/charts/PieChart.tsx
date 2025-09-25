@@ -1,27 +1,27 @@
-"use client"
+"use client";
 
-import { cn } from "@/lib/utils"
-import React from "react"
+import { cn } from "@/lib/utils";
+import React from "react";
 import {
   Cell,
   Pie,
   PieChart as RechartsPieChart,
   ResponsiveContainer,
   Tooltip,
-} from "recharts"
+} from "recharts";
 
 interface PieChartProps extends React.HTMLAttributes<HTMLDivElement> {
-  data: Record<string, any>[]
-  dataKey: string
-  nameKey: string
-  colors?: string[]
-  tooltipBgColor?: string
-  tooltipBorderColor?: string
-  valueFormatter?: (value: number) => string
-  showTooltip?: boolean
-  innerRadius?: number
-  outerRadius?: number
-  className?: string
+  data: Record<string, any>[];
+  dataKey: string;
+  nameKey: string;
+  colors?: string[];
+  tooltipBgColor?: string;
+  tooltipBorderColor?: string;
+  valueFormatter?: (value: number) => string;
+  showTooltip?: boolean;
+  innerRadius?: number;
+  outerRadius?: number;
+  className?: string;
 }
 
 const PieChart = React.forwardRef<HTMLDivElement, PieChartProps>(
@@ -30,7 +30,13 @@ const PieChart = React.forwardRef<HTMLDivElement, PieChartProps>(
       data = [],
       dataKey,
       nameKey,
-      colors = ["var(--chart-1)", "var(--chart-2)", "var(--chart-3)", "var(--chart-4)", "var(--chart-5)"],
+      colors = [
+        "var(--chart-1)",
+        "var(--chart-2)",
+        "var(--chart-3)",
+        "var(--chart-4)",
+        "var(--chart-5)",
+      ],
       tooltipBgColor = "var(--background)",
       tooltipBorderColor = "var(--border)",
       valueFormatter = (value: number) => value.toString(),
@@ -40,7 +46,7 @@ const PieChart = React.forwardRef<HTMLDivElement, PieChartProps>(
       className,
       ...props
     },
-    ref
+    ref,
   ) => {
     return (
       <div ref={ref} className={cn("h-80 w-full", className)} {...props}>
@@ -58,26 +64,26 @@ const PieChart = React.forwardRef<HTMLDivElement, PieChartProps>(
               className="w-full h-full"
             >
               {data.map((entry, index) => (
-                <Cell 
-                  key={`cell-${index}`} 
-                  fill={colors[index % colors.length]} 
+                <Cell
+                  key={`cell-${index}`}
+                  fill={colors[index % colors.length]}
                 />
               ))}
             </Pie>
-            
+
             {showTooltip && (
               <Tooltip
                 content={({ active, payload }) => {
-                  if (!active || !payload?.length) return null
-                  
-                  const data = payload[0]
-                  
+                  if (!active || !payload?.length) return null;
+
+                  const data = payload[0];
+
                   return (
-                    <div 
+                    <div
                       className="border p-2 shadow"
-                      style={{ 
+                      style={{
                         backgroundColor: tooltipBgColor,
-                        borderColor: tooltipBorderColor 
+                        borderColor: tooltipBorderColor,
                       }}
                     >
                       <div className="flex flex-col gap-1">
@@ -89,17 +95,17 @@ const PieChart = React.forwardRef<HTMLDivElement, PieChartProps>(
                         </span>
                       </div>
                     </div>
-                  )
+                  );
                 }}
               />
             )}
           </RechartsPieChart>
         </ResponsiveContainer>
       </div>
-    )
-  }
-)
+    );
+  },
+);
 
-PieChart.displayName = "PieChart"
+PieChart.displayName = "PieChart";
 
-export { PieChart, type PieChartProps }
+export { PieChart, type PieChartProps };

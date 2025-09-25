@@ -3,9 +3,7 @@
   "name": "table-style-default",
   "type": "registry:block",
   "title": "table-style-default",
-  "registryDependencies": [
-    "https://retroui.dev/r/table.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/table.json"],
   "files": [
     {
       "path": "preview/components/table-style-default.tsx",

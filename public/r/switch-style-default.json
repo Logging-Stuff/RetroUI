@@ -3,9 +3,7 @@
   "name": "switch-style-default",
   "type": "registry:block",
   "title": "switch-style-default",
-  "registryDependencies": [
-    "https://retroui.dev/r/switch.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/switch.json"],
   "files": [
     {
       "path": "preview/components/switch-style-default.tsx",

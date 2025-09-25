@@ -4,11 +4,7 @@
   "type": "registry:component",
   "title": "Sonner",
   "description": "A beautiful toast component that can grab audience attention from any place.",
-  "dependencies": [
-    "sonner",
-    "lucide-react",
-    "class-variance-authority"
-  ],
+  "dependencies": ["sonner", "lucide-react", "class-variance-authority"],
   "files": [
     {
       "path": "components/retroui/Sonner.tsx",

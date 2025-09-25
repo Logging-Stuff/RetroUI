@@ -3,9 +3,7 @@
   "name": "table-with-sticky-header",
   "type": "registry:block",
   "title": "table-with-sticky-header",
-  "registryDependencies": [
-    "https://retroui.dev/r/table.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/table.json"],
   "files": [
     {
       "path": "preview/components/table-with-sticky-header.tsx",

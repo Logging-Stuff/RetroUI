@@ -3,9 +3,7 @@
   "name": "tooltip-style-primary",
   "type": "registry:block",
   "title": "tooltip-style-primary",
-  "dependencies": [
-    "lucide-react"
-  ],
+  "dependencies": ["lucide-react"],
   "registryDependencies": [
     "https://retroui.dev/r/tooltip.json",
     "https://retroui.dev/r/button.json"

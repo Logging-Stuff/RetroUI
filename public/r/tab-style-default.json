@@ -3,9 +3,7 @@
   "name": "tab-style-default",
   "type": "registry:block",
   "title": "tab-style-default",
-  "registryDependencies": [
-    "https://retroui.dev/r/tab.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/tab.json"],
   "files": [
     {
       "path": "preview/components/tab-style-default.tsx",

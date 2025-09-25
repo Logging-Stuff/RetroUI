@@ -3,9 +3,7 @@
   "name": "button-style-with-icon",
   "type": "registry:block",
   "title": "button-style-with-icon",
-  "registryDependencies": [
-    "https://retroui.dev/r/button.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/button.json"],
   "files": [
     {
       "path": "preview/components/button-style-with-icon.tsx",

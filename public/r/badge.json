@@ -4,9 +4,7 @@
   "type": "registry:component",
   "title": "Badge",
   "description": "The component that looks like a button but isn't clickable!",
-  "dependencies": [
-    "class-variance-authority"
-  ],
+  "dependencies": ["class-variance-authority"],
   "files": [
     {
       "path": "components/retroui/Badge.tsx",

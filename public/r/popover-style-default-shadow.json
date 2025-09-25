@@ -3,9 +3,7 @@
   "name": "popover-style-default-shadow",
   "type": "registry:block",
   "title": "popover-style-default-shadow",
-  "dependencies": [
-    "lucide-react"
-  ],
+  "dependencies": ["lucide-react"],
   "registryDependencies": [
     "https://retroui.dev/r/popover.json",
     "https://retroui.dev/r/label.json",

@@ -4,9 +4,7 @@
   "type": "registry:component",
   "title": "Switch",
   "description": "Let users to turn on or off your marketing emails or notifications.",
-  "dependencies": [
-    "@radix-ui/react-switch"
-  ],
+  "dependencies": ["@radix-ui/react-switch"],
   "files": [
     {
       "path": "components/retroui/Switch.tsx",

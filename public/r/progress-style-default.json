@@ -3,9 +3,7 @@
   "name": "progress-style-default",
   "type": "registry:block",
   "title": "progress-style-default",
-  "registryDependencies": [
-    "https://retroui.dev/r/progress.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/progress.json"],
   "files": [
     {
       "path": "preview/components/progress-style-default.tsx",

@@ -53,6 +53,7 @@ The current version of Vite splits TypeScript configuration into three files, tw
 <br />
 
 ### 4. Edit tsconfig.app.json file
+
 Add the following code to the tsconfig.app.json file to resolve paths, for your IDE:
 
 ```json
@@ -61,16 +62,12 @@ Add the following code to the tsconfig.app.json file to resolve paths, for your 
     // ...
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     }
     // ...
   }
 }
 ```
-
-
 
 <br />
 
@@ -81,11 +78,12 @@ Add the following code to the vite.config.ts so your app can resolve paths witho
 <CliCommand npmCommand="npm install -D @types/node" />
 
 vite.config.ts
+
 ```ts
-import path from "path"
-import tailwindcss from "@tailwindcss/vite"
-import react from "@vitejs/plugin-react"
-import { defineConfig } from "vite"
+import path from "path";
+import tailwindcss from "@tailwindcss/vite";
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -95,12 +93,13 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-})
+});
 ```
 
 <br />
 
 ### 6. Install Shadcn
+
 Run the `shadcn init` command to setup your project:
 
 <CliCommand npmCommand="npx shadcn@latest init" />
@@ -110,6 +109,7 @@ You will be asked a few questions to configure components.json. Select the optio
 <br />
 
 ### 7. Add RetroUI Theme
+
 To make your app look like RetroUI, you need to add the theme to your app. You can later customize it to your liking.
 
 #### 1. Install fonts
@@ -119,19 +119,21 @@ Once your have the fonts, import them in your `index.html` or `styles.css` file:
 
 ```html
 <!-- index.html -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@300..700&display=swap"
+  rel="stylesheet"
+/>
 ```
-or, 
+
+or,
 
 ```css
 /* styles.css */
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 ```
+
 <br />
 
 #### 2. Add Theme
@@ -140,8 +142,8 @@ Save your theme as CSS variables in `styles.css` file:
 
 ```scss
 @theme {
-  --font-head: 'Archivo Black', sans-serif;
-  --font-sans: 'Space Grotesk', sans-serif;
+  --font-head: "Archivo Black", sans-serif;
+  --font-sans: "Space Grotesk", sans-serif;
   --shadow-xs: 1px 1px 0 0 var(--border);
   --shadow-sm: 2px 2px 0 0 var(--border);
   --shadow: 3px 3px 0 0 var(--border);

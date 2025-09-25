@@ -3,9 +3,7 @@
   "name": "dialog-style-default",
   "type": "registry:block",
   "title": "dialog-style-default",
-  "registryDependencies": [
-    "https://retroui.dev/r/dialog.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/dialog.json"],
   "files": [
     {
       "path": "preview/components/dialog-style-default.tsx",

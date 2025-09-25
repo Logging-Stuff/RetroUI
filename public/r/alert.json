@@ -4,9 +4,7 @@
   "type": "registry:component",
   "title": "Alert",
   "description": "Notify your users about important events and updates. 📣",
-  "dependencies": [
-    "class-variance-authority"
-  ],
+  "dependencies": ["class-variance-authority"],
   "files": [
     {
       "path": "components/retroui/Alert.tsx",

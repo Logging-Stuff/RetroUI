@@ -3,9 +3,7 @@
   "name": "sonner-style-error",
   "type": "registry:block",
   "title": "sonner-style-error",
-  "dependencies": [
-    "lucide-react"
-  ],
+  "dependencies": ["lucide-react"],
   "registryDependencies": [
     "https://retroui.dev/r/sonner.json",
     "https://retroui.dev/r/button.json"

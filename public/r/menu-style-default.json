@@ -3,9 +3,7 @@
   "name": "menu-style-default",
   "type": "registry:block",
   "title": "menu-style-default",
-  "registryDependencies": [
-    "https://retroui.dev/r/menu.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/menu.json"],
   "files": [
     {
       "path": "preview/components/menu-style-default.tsx",

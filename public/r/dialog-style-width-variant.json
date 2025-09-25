@@ -3,9 +3,7 @@
   "name": "dialog-style-width-variant",
   "type": "registry:block",
   "title": "dialog-style-width-variant",
-  "registryDependencies": [
-    "https://retroui.dev/r/dialog.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/dialog.json"],
   "files": [
     {
       "path": "preview/components/dialog-style-width-variant.tsx",

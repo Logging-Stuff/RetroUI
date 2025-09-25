@@ -3,9 +3,7 @@
   "name": "table-with-checkbox",
   "type": "registry:block",
   "title": "table-with-checkbox",
-  "registryDependencies": [
-    "https://retroui.dev/r/table.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/table.json"],
   "files": [
     {
       "path": "preview/components/table-with-checkbox.tsx",

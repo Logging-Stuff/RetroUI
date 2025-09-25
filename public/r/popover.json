@@ -5,10 +5,7 @@
   "title": "Popover",
   "author": "Ankan Bhattacharya <https://github.com/ankan002>",
   "description": "A handy small component for your little input needs...😉",
-  "dependencies": [
-    "@radix-ui/react-popover",
-    "class-variance-authority"
-  ],
+  "dependencies": ["@radix-ui/react-popover", "class-variance-authority"],
   "files": [
     {
       "path": "components/retroui/Popover.tsx",

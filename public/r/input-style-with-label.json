@@ -3,9 +3,7 @@
   "name": "input-style-with-label",
   "type": "registry:block",
   "title": "input-style-with-label",
-  "registryDependencies": [
-    "https://retroui.dev/r/input.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/input.json"],
   "files": [
     {
       "path": "preview/components/input-style-with-label.tsx",

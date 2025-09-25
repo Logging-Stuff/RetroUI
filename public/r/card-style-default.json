@@ -3,9 +3,7 @@
   "name": "card-style-default",
   "type": "registry:block",
   "title": "card-style-default",
-  "registryDependencies": [
-    "https://retroui.dev/r/card.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/card.json"],
   "files": [
     {
       "path": "preview/components/card-style-default.tsx",

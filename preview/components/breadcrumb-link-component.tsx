@@ -1,6 +1,6 @@
-import Link from "next/link"
+import Link from "next/link";
 
-import { Breadcrumb } from "@/components/retroui/Breadcrumb"
+import { Breadcrumb } from "@/components/retroui/Breadcrumb";
 
 export default function BreadcrumbLinkComponent() {
   return (
@@ -23,5 +23,5 @@ export default function BreadcrumbLinkComponent() {
         </Breadcrumb.Item>
       </Breadcrumb.List>
     </Breadcrumb>
-  )
+  );
 }

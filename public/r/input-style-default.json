@@ -3,9 +3,7 @@
   "name": "input-style-default",
   "type": "registry:block",
   "title": "input-style-default",
-  "registryDependencies": [
-    "https://retroui.dev/r/input.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/input.json"],
   "files": [
     {
       "path": "preview/components/input-style-default.tsx",

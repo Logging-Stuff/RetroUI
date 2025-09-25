@@ -1,8 +1,6 @@
-import { Badge, Checkbox } from "@/components/retroui"
-import {
-  Table,
-} from "@/components/retroui/Table"
-import { useState } from "react"
+import { Badge, Checkbox } from "@/components/retroui";
+import { Table } from "@/components/retroui/Table";
+import { useState } from "react";
 
 const employees = [
   {
@@ -53,31 +51,34 @@ const employees = [
     status: "Inactive",
     salary: "80,000",
   },
-]
+];
 
 export default function TableWithCheckbox() {
-  const [selectedEmployees, setSelectedEmployees] = useState<Set<string>>(new Set())
+  const [selectedEmployees, setSelectedEmployees] = useState<Set<string>>(
+    new Set(),
+  );
 
   const handleSelectAll = (checked: boolean) => {
     if (checked) {
-      setSelectedEmployees(new Set(employees.map(emp => emp.id)))
+      setSelectedEmployees(new Set(employees.map((emp) => emp.id)));
     } else {
-      setSelectedEmployees(new Set())
+      setSelectedEmployees(new Set());
     }
-  }
+  };
 
   const handleSelectEmployee = (employeeId: string, checked: boolean) => {
-    const newSelected = new Set(selectedEmployees)
+    const newSelected = new Set(selectedEmployees);
     if (checked) {
-      newSelected.add(employeeId)
+      newSelected.add(employeeId);
     } else {
-      newSelected.delete(employeeId)
+      newSelected.delete(employeeId);
     }
-    setSelectedEmployees(newSelected)
-  }
+    setSelectedEmployees(newSelected);
+  };
 
-  const isAllSelected = selectedEmployees.size === employees.length
-  const isIndeterminate = selectedEmployees.size > 0 && selectedEmployees.size < employees.length
+  const isAllSelected = selectedEmployees.size === employees.length;
+  const isIndeterminate =
+    selectedEmployees.size > 0 && selectedEmployees.size < employees.length;
 
   return (
     <Table>
@@ -102,7 +103,9 @@ export default function TableWithCheckbox() {
             <Table.Cell>
               <Checkbox
                 checked={selectedEmployees.has(employee.id)}
-                onCheckedChange={(checked) => handleSelectEmployee(employee.id, Boolean(checked))}
+                onCheckedChange={(checked) =>
+                  handleSelectEmployee(employee.id, Boolean(checked))
+                }
               />
             </Table.Cell>
             <Table.Cell className="font-medium">{employee.name}</Table.Cell>
@@ -110,7 +113,13 @@ export default function TableWithCheckbox() {
             <Table.Cell>{employee.department}</Table.Cell>
             <Table.Cell>
               <Badge
-                variant={employee.status === 'Active' ? 'default' : employee.status === 'On Leave' ? 'outline' : 'solid'}
+                variant={
+                  employee.status === "Active"
+                    ? "default"
+                    : employee.status === "On Leave"
+                      ? "outline"
+                      : "solid"
+                }
                 size="sm"
               >
                 {employee.status}
@@ -122,10 +131,19 @@ export default function TableWithCheckbox() {
       </Table.Body>
       <Table.Footer>
         <Table.Row>
-          <Table.Cell colSpan={5}>Selected: {selectedEmployees.size} / {employees.length}</Table.Cell>
-          <Table.Cell className="text-right font-semibold">$ {employees.reduce((total, employee) => total + Number(employee.salary.replace(',', '')), 0)}</Table.Cell>
+          <Table.Cell colSpan={5}>
+            Selected: {selectedEmployees.size} / {employees.length}
+          </Table.Cell>
+          <Table.Cell className="text-right font-semibold">
+            ${" "}
+            {employees.reduce(
+              (total, employee) =>
+                total + Number(employee.salary.replace(",", "")),
+              0,
+            )}
+          </Table.Cell>
         </Table.Row>
       </Table.Footer>
     </Table>
-  )
+  );
 }

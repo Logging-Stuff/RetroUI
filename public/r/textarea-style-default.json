@@ -3,9 +3,7 @@
   "name": "textarea-style-default",
   "type": "registry:block",
   "title": "textarea-style-default",
-  "registryDependencies": [
-    "https://retroui.dev/r/textarea.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/textarea.json"],
   "files": [
     {
       "path": "preview/components/textarea-style-default.tsx",

@@ -3,9 +3,7 @@
   "name": "button-style-default",
   "type": "registry:block",
   "title": "button-style-default",
-  "registryDependencies": [
-    "https://retroui.dev/r/button.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/button.json"],
   "files": [
     {
       "path": "preview/components/button-style-default.tsx",

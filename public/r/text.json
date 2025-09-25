@@ -4,9 +4,7 @@
   "type": "registry:component",
   "title": "text",
   "description": "Show your texts in different styles. 💅",
-  "dependencies": [
-    "class-variance-authority"
-  ],
+  "dependencies": ["class-variance-authority"],
   "files": [
     {
       "path": "components/retroui/Text.tsx",

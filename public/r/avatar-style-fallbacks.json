@@ -3,9 +3,7 @@
   "name": "avatar-style-fallbacks",
   "type": "registry:block",
   "title": "avatar-style-fallbacks",
-  "registryDependencies": [
-    "https://retroui.dev/r/avatar.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/avatar.json"],
   "files": [
     {
       "path": "preview/components/avatar-style-circle-fallbacks.tsx",

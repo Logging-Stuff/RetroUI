@@ -4,9 +4,7 @@
   "type": "registry:component",
   "title": "Line Chart",
   "description": "Beautiful line chart for data visualization with retro styling",
-  "dependencies": [
-    "recharts"
-  ],
+  "dependencies": ["recharts"],
   "files": [
     {
       "path": "components/retroui/charts/LineChart.tsx",

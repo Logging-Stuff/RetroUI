@@ -1,5 +1,5 @@
-import React from 'react';
-import { TableOfContents as TOCType } from '@/lib/toc';
+import React from "react";
+import { TableOfContents as TOCType } from "@/lib/toc";
 
 interface TableOfContentsProps {
   toc: TOCType;
@@ -9,7 +9,7 @@ function renderTOCItems(items: any[], level = 0) {
   if (!items || items.length === 0) return null;
 
   return (
-    <ul className={`space-y-1 ${level > 0 ? 'ml-4 mt-1' : ''}`}>
+    <ul className={`space-y-1 ${level > 0 ? "ml-4 mt-1" : ""}`}>
       {items.map((item, index) => (
         <li key={index}>
           <a
@@ -32,9 +32,7 @@ export default function TableOfContents({ toc }: TableOfContentsProps) {
 
   return (
     <div className="border border-black p-4 rounded-sm max-h-60 overflow-y-auto sidebar-scroll">
-      <h3 className="mb-3 border-b border-black pb-2">
-        On this Page
-      </h3>
+      <h3 className="mb-3 border-b border-black pb-2">On this Page</h3>
       {renderTOCItems(toc.items)}
     </div>
   );

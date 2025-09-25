@@ -3,9 +3,7 @@
   "name": "toggle-group-style-outline-muted",
   "type": "registry:block",
   "title": "toggle-group-style-outline-muted",
-  "dependencies": [
-    "lucide-react"
-  ],
+  "dependencies": ["lucide-react"],
   "registryDependencies": [
     "https://retroui.dev/r/toggle.json",
     "https://retroui.dev/r/toggle-group.json"

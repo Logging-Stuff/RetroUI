@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { cn } from "@/lib/utils"
-import React from "react"
+import { cn } from "@/lib/utils";
+import React from "react";
 import {
   Area,
   AreaChart as RechartsAreaChart,
@@ -10,22 +10,22 @@ import {
   Tooltip,
   XAxis,
   YAxis,
-} from "recharts"
+} from "recharts";
 
 interface AreaChartProps extends React.HTMLAttributes<HTMLDivElement> {
-  data: Record<string, any>[]
-  index: string
-  categories: string[]
-  strokeColors?: string[]
-  fillColors?: string[]
-  tooltipBgColor?: string
-  tooltipBorderColor?: string
-  gridColor?: string
-  valueFormatter?: (value: number) => string
-  showGrid?: boolean
-  showTooltip?: boolean
-  fill?: "gradient" | "solid"
-  className?: string
+  data: Record<string, any>[];
+  index: string;
+  categories: string[];
+  strokeColors?: string[];
+  fillColors?: string[];
+  tooltipBgColor?: string;
+  tooltipBorderColor?: string;
+  gridColor?: string;
+  valueFormatter?: (value: number) => string;
+  showGrid?: boolean;
+  showTooltip?: boolean;
+  fill?: "gradient" | "solid";
+  className?: string;
 }
 
 const AreaChart = React.forwardRef<HTMLDivElement, AreaChartProps>(
@@ -46,62 +46,80 @@ const AreaChart = React.forwardRef<HTMLDivElement, AreaChartProps>(
       className,
       ...props
     },
-    ref
+    ref,
   ) => {
-    const chartId = React.useId()
+    const chartId = React.useId();
 
     return (
       <div ref={ref} className={cn("h-80 w-full", className)} {...props}>
         <ResponsiveContainer width="100%" height="100%">
-          <RechartsAreaChart data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+          <RechartsAreaChart
+            data={data}
+            margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+          >
             <defs>
               {categories.map((category, index) => {
-                const fillColor = fillColors[index] || fillColors[0]
-                const gradientId = `gradient-${chartId}-${category}`
+                const fillColor = fillColors[index] || fillColors[0];
+                const gradientId = `gradient-${chartId}-${category}`;
                 return (
-                  <linearGradient key={category} id={gradientId} x1="0" y1="0" x2="0" y2="1">
+                  <linearGradient
+                    key={category}
+                    id={gradientId}
+                    x1="0"
+                    y1="0"
+                    x2="0"
+                    y2="1"
+                  >
                     {fill === "gradient" ? (
                       <>
-                        <stop offset="5%" stopColor={fillColor} stopOpacity={0.8} />
-                        <stop offset="95%" stopColor={fillColor} stopOpacity={0} />
+                        <stop
+                          offset="5%"
+                          stopColor={fillColor}
+                          stopOpacity={0.8}
+                        />
+                        <stop
+                          offset="95%"
+                          stopColor={fillColor}
+                          stopOpacity={0}
+                        />
                       </>
                     ) : (
                       <stop stopColor={fillColor} stopOpacity={0.6} />
                     )}
                   </linearGradient>
-                )
+                );
               })}
             </defs>
-            
+
             {showGrid && (
               <CartesianGrid strokeDasharray="3 3" stroke={gridColor} />
             )}
-            
-            <XAxis 
+
+            <XAxis
               dataKey={index}
               axisLine={false}
               tickLine={false}
               className="text-xs fill-muted-foreground"
             />
-            
+
             <YAxis
               axisLine={false}
               tickLine={false}
               className="text-xs fill-muted-foreground"
               tickFormatter={valueFormatter}
             />
-            
+
             {showTooltip && (
               <Tooltip
                 content={({ active, payload, label }) => {
-                  if (!active || !payload?.length) return null
-                  
+                  if (!active || !payload?.length) return null;
+
                   return (
-                    <div 
+                    <div
                       className="border p-2 shadow"
-                      style={{ 
+                      style={{
                         backgroundColor: tooltipBgColor,
-                        borderColor: tooltipBorderColor 
+                        borderColor: tooltipBorderColor,
                       }}
                     >
                       <div className="grid grid-cols-2 gap-2">
@@ -118,22 +136,25 @@ const AreaChart = React.forwardRef<HTMLDivElement, AreaChartProps>(
                             <span className="text-[0.70rem] uppercase text-muted-foreground">
                               {entry.dataKey}
                             </span>
-                            <span className="font-bold" style={{ color: strokeColors[0] }}>
+                            <span
+                              className="font-bold"
+                              style={{ color: strokeColors[0] }}
+                            >
                               {valueFormatter(entry.value as number)}
                             </span>
                           </div>
                         ))}
                       </div>
                     </div>
-                  )
+                  );
                 }}
               />
             )}
-            
+
             {categories.map((category, index) => {
-              const strokeColor = strokeColors[index] || strokeColors[0]
-              const gradientId = `gradient-${chartId}-${category}`
-              
+              const strokeColor = strokeColors[index] || strokeColors[0];
+              const gradientId = `gradient-${chartId}-${category}`;
+
               return (
                 <Area
                   key={category}
@@ -142,15 +163,15 @@ const AreaChart = React.forwardRef<HTMLDivElement, AreaChartProps>(
                   fill={`url(#${gradientId})`}
                   strokeWidth={2}
                 />
-              )
+              );
             })}
           </RechartsAreaChart>
         </ResponsiveContainer>
       </div>
-    )
-  }
-)
+    );
+  },
+);
 
-AreaChart.displayName = "AreaChart"
+AreaChart.displayName = "AreaChart";
 
-export { AreaChart, type AreaChartProps }
+export { AreaChart, type AreaChartProps };

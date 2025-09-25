@@ -8,7 +8,10 @@ import { format } from "date-fns";
 function page() {
   const blogs = allBlogs
     .filter((blog) => blog.status === "published")
-    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+    .sort(
+      (a, b) =>
+        new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
+    );
 
   return (
     <div>
@@ -30,8 +33,10 @@ function page() {
                 <Text as="p" className="mb-2 text-sm text-muted-foreground">
                   {format(new Date(blog.publishedAt), "dd, MMMM yyyy")}
                 </Text>
-                <Card.Title className="line-clamp-2 font-sans font-bold text-2xl">{blog.title}</Card.Title>
-               
+                <Card.Title className="line-clamp-2 font-sans font-bold text-2xl">
+                  {blog.title}
+                </Card.Title>
+
                 {/* <Card.Description className="line-clamp-3">{blog.description}</Card.Description> */}
               </Card.Header>
               <Card.Content className="pt-0">
@@ -42,7 +47,6 @@ function page() {
                   </Avatar>
                   <Text className="font-medium">{blog.author.name}</Text>
                 </div>
-               
               </Card.Content>
             </Card>
           </Link>

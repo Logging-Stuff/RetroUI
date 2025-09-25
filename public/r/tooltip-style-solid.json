@@ -3,9 +3,7 @@
   "name": "tooltip-style-solid",
   "type": "registry:block",
   "title": "tooltip-style-solid",
-  "dependencies": [
-    "lucide-react"
-  ],
+  "dependencies": ["lucide-react"],
   "registryDependencies": [
     "https://retroui.dev/r/tooltip.json",
     "https://retroui.dev/r/button.json"

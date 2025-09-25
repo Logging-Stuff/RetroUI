@@ -4,10 +4,7 @@
   "type": "registry:component",
   "title": "Slider",
   "description": "Let your users pick what they want.",
-  "dependencies": [
-    "@radix-ui/react-slider",
-    "lucide-react"
-  ],
+  "dependencies": ["@radix-ui/react-slider", "lucide-react"],
   "files": [
     {
       "path": "components/retroui/Slider.tsx",

@@ -3,9 +3,7 @@
   "name": "avatar-style-circle-sizes",
   "type": "registry:block",
   "title": "avatar-style-circle-sizes",
-  "registryDependencies": [
-    "https://retroui.dev/r/avatar.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/avatar.json"],
   "files": [
     {
       "path": "preview/components/avatar-style-circle-sizes.tsx",

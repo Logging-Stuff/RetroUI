@@ -3,9 +3,7 @@
   "name": "typography-p",
   "type": "registry:block",
   "title": "typography-p",
-  "registryDependencies": [
-    "https://retroui.dev/r/text.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/text.json"],
   "files": [
     {
       "path": "preview/components/typography-p.tsx",

@@ -4,9 +4,7 @@
   "type": "registry:component",
   "title": "Bar Chart",
   "description": "Beautiful bar chart for data visualization with retro styling",
-  "dependencies": [
-    "recharts"
-  ],
+  "dependencies": ["recharts"],
   "files": [
     {
       "path": "components/retroui/charts/BarChart.tsx",

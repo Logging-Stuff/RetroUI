@@ -41,7 +41,10 @@ export default function WorksWithSection() {
   ];
 
   return (
-    <section className="container max-w-6xl mx-auto px-4 lg:px-0 my-48" id="works-with">
+    <section
+      className="container max-w-6xl mx-auto px-4 lg:px-0 my-48"
+      id="works-with"
+    >
       <Text as="h2" className="text-center max-w-2xl mx-auto mb-28">
         Works With Both <span className="text-outlined">SSR</span> and{" "}
         <span className="text-outlined">SPA</span> Applications.
@@ -52,7 +55,7 @@ export default function WorksWithSection() {
           <div key={framework.name}>
             <Image
               src={isDarkMode ? framework.darkSrc : framework.lightSrc}
-              alt={`${framework.name} ${isDarkMode ? 'dark' : 'light'}`}
+              alt={`${framework.name} ${isDarkMode ? "dark" : "light"}`}
               width={framework.size}
               height={framework.size}
             />

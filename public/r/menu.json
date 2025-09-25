@@ -4,9 +4,7 @@
   "type": "registry:component",
   "title": "Menu",
   "description": "Show your users a list of actions they can take. 📋",
-  "dependencies": [
-    "@radix-ui/react-dropdown-menu"
-  ],
+  "dependencies": ["@radix-ui/react-dropdown-menu"],
   "files": [
     {
       "path": "components/retroui/Menu.tsx",

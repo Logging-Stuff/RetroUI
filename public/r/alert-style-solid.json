@@ -3,9 +3,7 @@
   "name": "alert-style-solid",
   "type": "registry:block",
   "title": "alert-style-solid",
-  "registryDependencies": [
-    "https://retroui.dev/r/alert.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/alert.json"],
   "files": [
     {
       "path": "preview/components/alert-style-solid.tsx",

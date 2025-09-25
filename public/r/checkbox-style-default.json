@@ -3,9 +3,7 @@
   "name": "checkbox-style-default",
   "type": "registry:block",
   "title": "checkbox-style-default",
-  "registryDependencies": [
-    "https://retroui.dev/r/checkbox.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/checkbox.json"],
   "files": [
     {
       "path": "preview/components/checkbox-style-sizes.tsx",

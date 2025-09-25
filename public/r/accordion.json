@@ -4,10 +4,7 @@
   "type": "registry:component",
   "title": "Accordion",
   "description": "This collapsible component let's your users read only the content they care about. 😌",
-  "dependencies": [
-    "@radix-ui/react-accordion",
-    "lucide-react"
-  ],
+  "dependencies": ["@radix-ui/react-accordion", "lucide-react"],
   "files": [
     {
       "path": "components/retroui/Accordion.tsx",

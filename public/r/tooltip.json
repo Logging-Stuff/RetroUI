@@ -5,10 +5,7 @@
   "title": "Tooltip",
   "author": "Ankan Bhattacharya <https://github.com/ankan002>",
   "description": "A cool way to give your users a hint of what a component does...😉",
-  "dependencies": [
-    "@radix-ui/react-tooltip",
-    "class-variance-authority"
-  ],
+  "dependencies": ["@radix-ui/react-tooltip", "class-variance-authority"],
   "files": [
     {
       "path": "components/retroui/Tooltip.tsx",

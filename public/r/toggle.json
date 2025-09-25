@@ -5,10 +5,7 @@
   "title": "Toggle",
   "author": "Ankan Bhattacharya <https://github.com/ankan002>",
   "description": "This crazy toggling button keeps people toggling...😃",
-  "dependencies": [
-    "@radix-ui/react-toggle",
-    "class-variance-authority"
-  ],
+  "dependencies": ["@radix-ui/react-toggle", "class-variance-authority"],
   "files": [
     {
       "path": "components/retroui/Toggle.tsx",

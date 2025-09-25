@@ -4,10 +4,7 @@
   "type": "registry:component",
   "title": "Context Menu",
   "description": "Show contextual actions on right-click.",
-  "dependencies": [
-    "@radix-ui/react-context-menu",
-    "lucide-react"
-  ],
+  "dependencies": ["@radix-ui/react-context-menu", "lucide-react"],
   "files": [
     {
       "path": "components/retroui/ContextMenu.tsx",

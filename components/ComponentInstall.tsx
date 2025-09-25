@@ -19,10 +19,20 @@ const CopyableCommand = ({ command }: { command: string }) => {
   return (
     <div className="flex items-center justify-between gap-2 group">
       <code className="flex-1">{command}</code>
-      <Button size="sm" onClick={copyToClipboard} className="hidden md:block" title="Copy to clipboard">
+      <Button
+        size="sm"
+        onClick={copyToClipboard}
+        className="hidden md:block"
+        title="Copy to clipboard"
+      >
         {copied ? "Copied" : "Copy"}
       </Button>
-      <Button className="md:hidden" size="icon" onClick={copyToClipboard} title="Copy to clipboard mobile">
+      <Button
+        className="md:hidden"
+        size="icon"
+        onClick={copyToClipboard}
+        title="Copy to clipboard mobile"
+      >
         {copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
       </Button>
     </div>

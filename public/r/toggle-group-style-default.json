@@ -3,9 +3,7 @@
   "name": "toggle-group-style-default",
   "type": "registry:block",
   "title": "toggle-group-style-default",
-  "dependencies": [
-    "lucide-react"
-  ],
+  "dependencies": ["lucide-react"],
   "registryDependencies": [
     "https://retroui.dev/r/toggle.json",
     "https://retroui.dev/r/toggle-group.json"

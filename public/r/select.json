@@ -4,10 +4,7 @@
   "type": "registry:component",
   "title": "Select",
   "description": "Let your users pick what they want.",
-  "dependencies": [
-    "@radix-ui/react-select",
-    "lucide-react"
-  ],
+  "dependencies": ["@radix-ui/react-select", "lucide-react"],
   "files": [
     {
       "path": "components/retroui/Select.tsx",

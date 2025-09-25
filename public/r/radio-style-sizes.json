@@ -3,9 +3,7 @@
   "name": "radio-style-sizes",
   "type": "registry:block",
   "title": "radio-style-sizes",
-  "registryDependencies": [
-    "https://retroui.dev/r/radio.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/radio.json"],
   "files": [
     {
       "path": "preview/components/radio-style-sizes.tsx",

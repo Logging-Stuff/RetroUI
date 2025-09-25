@@ -3,12 +3,8 @@
   "name": "toggle-style-outline-muted",
   "type": "registry:block",
   "title": "toggle-style-outline-muted",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "https://retroui.dev/r/toggle.json"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["https://retroui.dev/r/toggle.json"],
   "files": [
     {
       "path": "preview/components/toggle-style-outline-muted.tsx",

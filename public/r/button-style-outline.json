@@ -3,9 +3,7 @@
   "name": "button-style-outline",
   "type": "registry:block",
   "title": "button-style-outline",
-  "registryDependencies": [
-    "https://retroui.dev/r/button.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/button.json"],
   "files": [
     {
       "path": "preview/components/button-style-outline.tsx",

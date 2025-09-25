@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 
 import { Breadcrumb } from "@/components/retroui/Breadcrumb";
 
@@ -26,5 +26,5 @@ export default function BreadcrumbCollapsed() {
         </Breadcrumb.Item>
       </Breadcrumb.List>
     </Breadcrumb>
-  )
+  );
 }

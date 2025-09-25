@@ -3,9 +3,7 @@
   "name": "card-style-testimonial",
   "type": "registry:block",
   "title": "card-style-testimonial",
-  "registryDependencies": [
-    "https://retroui.dev/r/card.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/card.json"],
   "files": [
     {
       "path": "preview/components/card-style-testimonial.tsx",

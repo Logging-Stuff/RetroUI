@@ -3,9 +3,7 @@
   "name": "card-style-commerce",
   "type": "registry:block",
   "title": "card-style-commerce",
-  "registryDependencies": [
-    "https://retroui.dev/r/card.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/card.json"],
   "files": [
     {
       "path": "preview/components/card-style-commerce.tsx",

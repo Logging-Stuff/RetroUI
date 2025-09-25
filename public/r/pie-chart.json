@@ -4,9 +4,7 @@
   "type": "registry:component",
   "title": "Pie Chart",
   "description": "Beautiful pie chart for data visualization with retro styling",
-  "dependencies": [
-    "recharts"
-  ],
+  "dependencies": ["recharts"],
   "files": [
     {
       "path": "components/retroui/charts/PieChart.tsx",

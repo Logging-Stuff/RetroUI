@@ -196,7 +196,8 @@ export default async function Home() {
 
       <section className="container max-w-6xl max-lg:px-4 mx-auto bg-[url('/images/starts_bg.svg')] bg-cover bg-no-repeat py-12">
         <Text as="h2" className="text-center mb-28 max-w-2xl mx-auto">
-          A <span className="text-outlined">Growing</span> Community of Developers and Designers.
+          A <span className="text-outlined">Growing</span> Community of
+          Developers and Designers.
         </Text>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-2xl mx-auto">

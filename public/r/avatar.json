@@ -4,9 +4,7 @@
   "type": "registry:component",
   "title": "Avatar",
   "description": "Default rounded avatar that can show your users profile picture. ✨",
-  "dependencies": [
-    "@radix-ui/react-avatar"
-  ],
+  "dependencies": ["@radix-ui/react-avatar"],
   "files": [
     {
       "path": "components/retroui/Avatar.tsx",

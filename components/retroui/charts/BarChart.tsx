@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { cn } from "@/lib/utils"
-import React from "react"
+import { cn } from "@/lib/utils";
+import React from "react";
 import {
   Bar,
   BarChart as RechartsBarChart,
@@ -10,22 +10,22 @@ import {
   Tooltip,
   XAxis,
   YAxis,
-} from "recharts"
+} from "recharts";
 
 interface BarChartProps extends React.HTMLAttributes<HTMLDivElement> {
-  data: Record<string, any>[]
-  index: string
-  categories: string[]
-  strokeColors?: string[]
-  fillColors?: string[]
-  tooltipBgColor?: string
-  tooltipBorderColor?: string
-  gridColor?: string
-  valueFormatter?: (value: number) => string
-  showGrid?: boolean
-  showTooltip?: boolean
-  alignment?: "vertical" | "horizontal"
-  className?: string
+  data: Record<string, any>[];
+  index: string;
+  categories: string[];
+  strokeColors?: string[];
+  fillColors?: string[];
+  tooltipBgColor?: string;
+  tooltipBorderColor?: string;
+  gridColor?: string;
+  valueFormatter?: (value: number) => string;
+  showGrid?: boolean;
+  showTooltip?: boolean;
+  alignment?: "vertical" | "horizontal";
+  className?: string;
 }
 
 const BarChart = React.forwardRef<HTMLDivElement, BarChartProps>(
@@ -46,30 +46,30 @@ const BarChart = React.forwardRef<HTMLDivElement, BarChartProps>(
       className,
       ...props
     },
-    ref
+    ref,
   ) => {
     return (
       <div ref={ref} className={cn("h-80 w-full", className)} {...props}>
         <ResponsiveContainer width="100%" height="100%">
-          <RechartsBarChart 
-            data={data} 
+          <RechartsBarChart
+            data={data}
             layout={alignment === "horizontal" ? "vertical" : undefined}
             margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
           >
             {showGrid && (
               <CartesianGrid strokeDasharray="3 3" stroke={gridColor} />
             )}
-            
+
             {alignment === "horizontal" ? (
               <>
-                <XAxis 
+                <XAxis
                   type="number"
                   axisLine={false}
                   tickLine={false}
                   className="text-xs fill-muted-foreground"
                   tickFormatter={valueFormatter}
                 />
-                
+
                 <YAxis
                   type="category"
                   dataKey={index}
@@ -81,13 +81,13 @@ const BarChart = React.forwardRef<HTMLDivElement, BarChartProps>(
               </>
             ) : (
               <>
-                <XAxis 
+                <XAxis
                   dataKey={index}
                   axisLine={false}
                   tickLine={false}
                   className="text-xs fill-muted-foreground"
                 />
-                
+
                 <YAxis
                   axisLine={false}
                   tickLine={false}
@@ -96,18 +96,18 @@ const BarChart = React.forwardRef<HTMLDivElement, BarChartProps>(
                 />
               </>
             )}
-            
+
             {showTooltip && (
               <Tooltip
                 content={({ active, payload, label }) => {
-                  if (!active || !payload?.length) return null
-                  
+                  if (!active || !payload?.length) return null;
+
                   return (
-                    <div 
+                    <div
                       className="border p-2 shadow"
-                      style={{ 
+                      style={{
                         backgroundColor: tooltipBgColor,
-                        borderColor: tooltipBorderColor 
+                        borderColor: tooltipBorderColor,
                       }}
                     >
                       <div className="grid grid-cols-2 gap-2">
@@ -124,22 +124,25 @@ const BarChart = React.forwardRef<HTMLDivElement, BarChartProps>(
                             <span className="text-[0.70rem] uppercase text-muted-foreground">
                               {entry.dataKey}
                             </span>
-                            <span className="font-bold" style={{ color: strokeColors[0] }}>
+                            <span
+                              className="font-bold"
+                              style={{ color: strokeColors[0] }}
+                            >
                               {valueFormatter(entry.value as number)}
                             </span>
                           </div>
                         ))}
                       </div>
                     </div>
-                  )
+                  );
                 }}
               />
             )}
-            
+
             {categories.map((category, index) => {
-              const fillColor = fillColors[index] || fillColors[0]
-              const strokeColor = strokeColors[index] || strokeColors[0]
-              
+              const fillColor = fillColors[index] || fillColors[0];
+              const strokeColor = strokeColors[index] || strokeColors[0];
+
               return (
                 <Bar
                   key={category}
@@ -148,15 +151,15 @@ const BarChart = React.forwardRef<HTMLDivElement, BarChartProps>(
                   stroke={strokeColor}
                   strokeWidth={1}
                 />
-              )
+              );
             })}
           </RechartsBarChart>
         </ResponsiveContainer>
       </div>
-    )
-  }
-)
+    );
+  },
+);
 
-BarChart.displayName = "BarChart"
+BarChart.displayName = "BarChart";
 
-export { BarChart, type BarChartProps }
+export { BarChart, type BarChartProps };

@@ -3,12 +3,8 @@
   "name": "toggle-style-default",
   "type": "registry:block",
   "title": "toggle-style-default",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "https://retroui.dev/r/toggle.json"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["https://retroui.dev/r/toggle.json"],
   "files": [
     {
       "path": "preview/components/toggle-style-default.tsx",

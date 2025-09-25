@@ -3,9 +3,7 @@
   "name": "badge-style-default",
   "type": "registry:block",
   "title": "badge-style-default",
-  "registryDependencies": [
-    "https://retroui.dev/r/badge.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/badge.json"],
   "files": [
     {
       "path": "preview/components/badge-style-rounded.tsx",

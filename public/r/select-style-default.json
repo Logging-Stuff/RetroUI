@@ -3,9 +3,7 @@
   "name": "select-style-default",
   "type": "registry:block",
   "title": "select-style-default",
-  "registryDependencies": [
-    "https://retroui.dev/r/select.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/select.json"],
   "files": [
     {
       "path": "preview/components/select-style-default.tsx",

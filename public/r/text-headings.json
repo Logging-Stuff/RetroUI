@@ -3,9 +3,7 @@
   "name": "text-headings",
   "type": "registry:block",
   "title": "text-headings",
-  "registryDependencies": [
-    "https://retroui.dev/r/text.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/text.json"],
   "files": [
     {
       "path": "preview/components/text-headings.tsx",

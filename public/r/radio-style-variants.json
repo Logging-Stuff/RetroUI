@@ -3,9 +3,7 @@
   "name": "radio-style-variants",
   "type": "registry:block",
   "title": "radio-style-variants",
-  "registryDependencies": [
-    "https://retroui.dev/r/radio.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/radio.json"],
   "files": [
     {
       "path": "preview/components/radio-style-variants.tsx",

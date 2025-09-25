@@ -4,10 +4,7 @@
   "type": "registry:component",
   "title": "Label",
   "description": "Label for form fields",
-  "dependencies": [
-    "@radix-ui/react-label",
-    "class-variance-authority"
-  ],
+  "dependencies": ["@radix-ui/react-label", "class-variance-authority"],
   "files": [
     {
       "path": "components/retroui/Label.tsx",

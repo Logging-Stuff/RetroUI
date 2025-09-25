@@ -3,9 +3,7 @@
   "name": "checkbox-style-toggle",
   "type": "registry:block",
   "title": "checkbox-style-toggle",
-  "registryDependencies": [
-    "https://retroui.dev/r/checkbox.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/checkbox.json"],
   "files": [
     {
       "path": "preview/components/checkbox-style-variants.tsx",

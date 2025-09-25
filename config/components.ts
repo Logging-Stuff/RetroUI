@@ -648,7 +648,7 @@ export const componentConfig: {
     "loader-style-custom": {
       name: "loader-style-custom",
       filePath: "preview/components/loader-style-custom.tsx",
-      preview: lazy(() => import("@/preview/components/loader-style-custom"))
+      preview: lazy(() => import("@/preview/components/loader-style-custom")),
     },
   },
 };

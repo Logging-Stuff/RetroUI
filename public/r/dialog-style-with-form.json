@@ -3,9 +3,7 @@
   "name": "dialog-style-with-form",
   "type": "registry:block",
   "title": "dialog-style-with-form",
-  "registryDependencies": [
-    "https://retroui.dev/r/dialog.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/dialog.json"],
   "files": [
     {
       "path": "preview/components/dialog-style-with-form.tsx",

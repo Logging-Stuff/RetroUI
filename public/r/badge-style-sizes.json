@@ -3,9 +3,7 @@
   "name": "badge-style-sizes",
   "type": "registry:block",
   "title": "badge-style-sizes",
-  "registryDependencies": [
-    "https://retroui.dev/r/badge.json"
-  ],
+  "registryDependencies": ["https://retroui.dev/r/badge.json"],
   "files": [
     {
       "path": "preview/components/badge-style-sizes.tsx",

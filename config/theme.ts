@@ -1,19 +1,21 @@
 export enum Theme {
-    Default = "default",
-    Purple = "purple",
-    Lime = "lime",
-    Red = "red",
-    Lavender = "lavender",
-    Orange = "orange",
-    Green = "green",
+  Default = "default",
+  Purple = "purple",
+  Lime = "lime",
+  Red = "red",
+  Lavender = "lavender",
+  Orange = "orange",
+  Green = "green",
 }
 
-
-export const themeConfig = ({hasRadius = false}: {hasRadius?: boolean}) => ({
-    [Theme.Default]: {
-        name: "default",
-        color:
-`:root {
+export const themeConfig = ({
+  hasRadius = false,
+}: {
+  hasRadius?: boolean;
+}) => ({
+  [Theme.Default]: {
+    name: "default",
+    color: `:root {
     --radius: ${hasRadius ? "0.5rem" : "0"};
     --background: #fff;
     --foreground: #000;
@@ -52,11 +54,10 @@ export const themeConfig = ({hasRadius = false}: {hasRadius?: boolean}) => ({
     --border: #5c5c5c;
 }
 `,
-    },
-    [Theme.Purple]: {
-        name: "purple",
-        color: 
-`:root {
+  },
+  [Theme.Purple]: {
+    name: "purple",
+    color: `:root {
     --radius: ${hasRadius ? "0.5rem" : "0"};
     --background: #f5f5f5;
     --foreground: #1a1a1a;
@@ -95,11 +96,10 @@ export const themeConfig = ({hasRadius = false}: {hasRadius?: boolean}) => ({
     --border: #2e2e32;
 }
 `,
-    },
-    [Theme.Lime]: {
-        name: "Lime",
-        color: 
-`:root {
+  },
+  [Theme.Lime]: {
+    name: "Lime",
+    color: `:root {
     --radius: ${hasRadius ? "0.5rem" : "0"};
     --background: #FFFFFF;
     --foreground: #000000;
@@ -142,11 +142,10 @@ export const themeConfig = ({hasRadius = false}: {hasRadius?: boolean}) => ({
     --destructive-foreground: #FFFFFF;
 }
 `,
-    },
-    [Theme.Red]: {
-        name: "Red",
-        color: 
-`:root {
+  },
+  [Theme.Red]: {
+    name: "Red",
+    color: `:root {
     --radius: ${hasRadius ? "0.5rem" : "0"};
     --background: #FCFFE7;
     --foreground: #000000;
@@ -193,11 +192,10 @@ export const themeConfig = ({hasRadius = false}: {hasRadius?: boolean}) => ({
     --ring: #EA435F;
 }
 `,
-    },
-    [Theme.Lavender]: {
-        name: "Lavender",
-        color: 
-`:root {
+  },
+  [Theme.Lavender]: {
+    name: "Lavender",
+    color: `:root {
     --radius: ${hasRadius ? "0.5rem" : "0"};
     --background: #F9F5F2;
     --foreground: #000000;
@@ -245,11 +243,10 @@ export const themeConfig = ({hasRadius = false}: {hasRadius?: boolean}) => ({
 }
 
 `,
-    },
-    [Theme.Orange]: {
-        name: "Orange",
-        color: 
-`:root {
+  },
+  [Theme.Orange]: {
+    name: "Orange",
+    color: `:root {
     --radius: ${hasRadius ? "0.5rem" : "0"};
     --background: #F9F5F2;
     --foreground: #000000;
@@ -296,11 +293,10 @@ export const themeConfig = ({hasRadius = false}: {hasRadius?: boolean}) => ({
     --ring: #F07200;
 }
 `,
-    },
-    [Theme.Green]: {
-        name: "Green",
-        color: 
-`:root {
+  },
+  [Theme.Green]: {
+    name: "Green",
+    color: `:root {
     --radius: ${hasRadius ? "0.5rem" : "0"};
     --background: #F9F5F2;
     --foreground: #000000;
@@ -347,8 +343,7 @@ export const themeConfig = ({hasRadius = false}: {hasRadius?: boolean}) => ({
     --ring: #599D77;
 }
 `,
-    },
+  },
 });
 
-export const themes = Object.keys(themeConfig({hasRadius: false}));
-
+export const themes = Object.keys(themeConfig({ hasRadius: false }));

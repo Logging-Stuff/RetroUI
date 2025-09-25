@@ -4,11 +4,7 @@
   "type": "registry:component",
   "title": "Command",
   "description": "Fast, keyboard-first command palette powered by cmdk.",
-  "dependencies": [
-    "cmdk",
-    "@radix-ui/react-dialog",
-    "lucide-react"
-  ],
+  "dependencies": ["cmdk", "@radix-ui/react-dialog", "lucide-react"],
   "files": [
     {
       "path": "components/retroui/Command.tsx",

@@ -3,9 +3,7 @@
   "name": "sonner-style-default",
   "type": "registry:block",
   "title": "sonner-style-default",
-  "dependencies": [
-    "lucide-react"
-  ],
+  "dependencies": ["lucide-react"],
   "registryDependencies": [
     "https://retroui.dev/r/sonner.json",
     "https://retroui.dev/r/button.json"

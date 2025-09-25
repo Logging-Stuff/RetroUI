@@ -4,9 +4,7 @@
   "type": "registry:component",
   "title": "Tab",
   "description": "Switch between different views using tabs.",
-  "dependencies": [
-    "@headlessui/react"
-  ],
+  "dependencies": ["@headlessui/react"],
   "files": [
     {
       "path": "components/retroui/Tab.tsx",

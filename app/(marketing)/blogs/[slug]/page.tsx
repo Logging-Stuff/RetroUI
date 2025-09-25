@@ -68,10 +68,11 @@ export default function page({ params }: IProps) {
                 key={tag}
                 size="sm"
                 variant="surface"
-                className={`bg-${["red", "green", "blue", "yellow", "purple", "pink"][
-                  blog.tags.indexOf(tag) % 6
+                className={`bg-${
+                  ["red", "green", "blue", "yellow", "purple", "pink"][
+                    blog.tags.indexOf(tag) % 6
                   ]
-                  }-300`}
+                }-300`}
               >
                 {tag}
               </Badge>
@@ -120,8 +121,9 @@ export default function page({ params }: IProps) {
 
           <Link
             target="_blank"
-            href={`https://x.com/share?url=${"https://retroui.dev" + blog.url
-              }&text=${blog.title}.%0ACheck it out 👉`}
+            href={`https://x.com/share?url=${
+              "https://retroui.dev" + blog.url
+            }&text=${blog.title}.%0ACheck it out 👉`}
           >
             <Button size="sm" variant="outline">
               Share on X
@@ -130,11 +132,13 @@ export default function page({ params }: IProps) {
         </div>
       </div>
       <MDX code={blog.body.code} type="blog" />
-      
-      <hr className="my-12"/>
+
+      <hr className="my-12" />
 
       <Button asChild aria-label="Return to all blog posts" variant="secondary">
-        <Link href="/blogs" className="inline-flex">← Back to blogs</Link>
+        <Link href="/blogs" className="inline-flex">
+          ← Back to blogs
+        </Link>
       </Button>
     </div>
   );
