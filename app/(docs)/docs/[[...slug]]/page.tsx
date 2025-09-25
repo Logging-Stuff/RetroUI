@@ -54,12 +54,16 @@ export default async function page({ params }: IProps) {
       <div className="hidden lg:block w-60 flex-shrink-0 sticky top-28 self-start">
         <SideNav />
       </div>
-      
+
       {/* Main Content */}
-      <div className="flex-1 space-y-12 py-12 px-4 max-w-2xl mx-auto">
+      <div className="flex-1 space-y-12 py-12 px-4 max-w-2xl mx-auto w-full">
         <div className="border-b border-black pb-6">
-          <Text as="h1" className="text-4xl">{doc.title}</Text>
-          <p className="text-lg text-muted-foreground mt-2">{doc.description}</p>
+          <Text as="h1" className="text-4xl">
+            {doc.title}
+          </Text>
+          <p className="text-lg text-muted-foreground mt-2">
+            {doc.description}
+          </p>
           {doc.links && (
             <div className="flex space-x-4 text-sm mt-4 text-black">
               {doc.links?.api_reference && (
@@ -90,7 +94,7 @@ export default async function page({ params }: IProps) {
           Last Updated: {format(doc.lastUpdated, "dd MMM, yyy")}
         </p>
       </div>
-      
+
       {/* Table of Contents */}
       <div className="hidden lg:block lg:w-60 flex-shrink-0 sticky top-36 self-start space-y-6">
         <TableOfContents toc={toc} />
