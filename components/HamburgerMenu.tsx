@@ -32,7 +32,7 @@ export default function HamburgerMenu() {
 
       {isOpen && (
         <div className="absolute top-0 bottom-0 h-screen left-0 z-10">
-          <SideNav />
+          <SideNav setIsOpen={setIsOpen} />
         </div>
       )}
     </div>
