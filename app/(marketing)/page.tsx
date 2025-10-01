@@ -84,8 +84,8 @@ export default async function Home() {
                   Get Started
                 </Button>
               </Link>
-              <div className="w-full max-w-90 shadow shadow-primary">
-                <CommandDisplay command='npx shadcn add "retroui.dev/r/button.json"' />
+              <div className="w-full max-w-72 shadow shadow-primary">
+                <CommandDisplay command='npx shadcn add @retroui/button' />
               </div>
             </div>
           </div>

@@ -230,6 +230,20 @@
       ]
     },
     {
+      "name": "loader",
+      "type": "registry:component",
+      "title": "Loader",
+      "description": "A loading indicator",
+      "dependencies": ["class-variance-authority"],
+      "files": [
+        {
+          "path": "components/retroui/Loader.tsx",
+          "target": "components/retroui/Loader.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "menu",
       "type": "registry:component",
       "title": "Menu",
