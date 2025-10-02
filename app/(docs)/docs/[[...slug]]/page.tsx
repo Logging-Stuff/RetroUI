@@ -8,7 +8,6 @@ import { Metadata } from "next";
 import { MoveUpRightIcon } from "lucide-react";
 import { generateToc } from "@/lib/toc";
 import TableOfContents from "@/components/TableOfContents";
-import SideNav from "@/components/SideNav";
 
 interface IProps {
   params: { slug: string[] };
@@ -49,12 +48,7 @@ export default async function page({ params }: IProps) {
 
   const toc = await generateToc(doc.body.raw);
   return (
-    <div className="flex lg:gap-20 items-start">
-      {/* Sidebar */}
-      <div className="hidden lg:block w-60 flex-shrink-0 sticky top-28 self-start">
-        <SideNav />
-      </div>
-
+    <>
       {/* Main Content */}
       <div className="flex-1 space-y-12 py-12 px-4 max-w-2xl mx-auto w-full">
         <div className="border-b border-black pb-6">
@@ -99,6 +93,6 @@ export default async function page({ params }: IProps) {
       <div className="hidden lg:block lg:w-60 flex-shrink-0 sticky top-36 self-start space-y-6">
         <TableOfContents toc={toc} />
       </div>
-    </div>
+    </>
   );
 }
