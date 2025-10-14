@@ -12,7 +12,15 @@ export default function ComponentLayout({
 }>) {
   return (
     <div className="relative max-w-7xl mx-auto">
-      <div className="max-lg:px-4">{children}</div>
+      <div className="max-lg:px-4">
+        <div className="flex lg:gap-20 items-start">
+          {/* Sidebar */}
+          <div className="hidden lg:block w-60 flex-shrink-0 sticky top-28 self-start">
+            <SideNav />
+          </div>
+          {children}
+        </div>
+      </div>
     </div>
   );
 }
