@@ -64,11 +64,17 @@ export default function RootLayout({
             `,
           }}
         />
-        <script
+        {/* <script
           defer
           src="https://cloud.umami.is/script.js"
           data-website-id="97dd6182-c656-4265-97e0-ee9613b88078"
-        />
+        /> */}
+        <script
+          defer
+          data-website-id="dfid_zlQSgC5h2RNuCLHQTf7Fd"
+          data-domain="retroui.dev"
+          src="https://datafa.st/js/script.js">
+        </script>
       </head>
       <body
         className={`${head.variable} ${sans.variable} ${mono.variable} bg-background text-foreground`}
