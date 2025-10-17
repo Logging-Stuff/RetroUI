@@ -57,7 +57,7 @@ const invoices = [
 
 export default function TableStyleDefault() {
     return (
-        <Table>
+        <Table className="max-w-lg mb-6 mx-auto">
             <Table.Header>
                 <Table.Row>
                     <Table.Head className="w-[100px]">Invoice</Table.Head>

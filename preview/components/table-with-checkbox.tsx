@@ -8,7 +8,6 @@ const employees = [
   {
     id: "1",
     name: "Alice Johnson",
-    role: "Software Engineer",
     department: "Engineering",
     status: "Active",
     salary: "85,000",
@@ -16,7 +15,6 @@ const employees = [
   {
     id: "2",
     name: "Bob Smith",
-    role: "Product Manager",
     department: "Product",
     status: "Active",
     salary: "95,000",
@@ -24,7 +22,6 @@ const employees = [
   {
     id: "3",
     name: "Carol Williams",
-    role: "Designer",
     department: "Design",
     status: "On Leave",
     salary: "70,000",
@@ -32,7 +29,6 @@ const employees = [
   {
     id: "4",
     name: "David Brown",
-    role: "DevOps Engineer",
     department: "Engineering",
     status: "Active",
     salary: "90,000",
@@ -40,7 +36,6 @@ const employees = [
   {
     id: "5",
     name: "Eve Davis",
-    role: "QA Engineer",
     department: "Engineering",
     status: "Active",
     salary: "75,000",
@@ -48,7 +43,6 @@ const employees = [
   {
     id: "6",
     name: "Frank Wilson",
-    role: "Marketing Manager",
     department: "Marketing",
     status: "Inactive",
     salary: "80,000",
@@ -77,10 +71,9 @@ export default function TableWithCheckbox() {
   }
 
   const isAllSelected = selectedEmployees.size === employees.length
-  const isIndeterminate = selectedEmployees.size > 0 && selectedEmployees.size < employees.length
 
   return (
-    <Table>
+    <Table className="max-w-lg mb-6 mx-auto">
       <Table.Header>
         <Table.Row>
           <Table.Head className="w-[50px]">
@@ -90,7 +83,6 @@ export default function TableWithCheckbox() {
             />
           </Table.Head>
           <Table.Head>Name</Table.Head>
-          <Table.Head>Role</Table.Head>
           <Table.Head>Department</Table.Head>
           <Table.Head>Status</Table.Head>
           <Table.Head className="text-right">Salary</Table.Head>
@@ -106,7 +98,6 @@ export default function TableWithCheckbox() {
               />
             </Table.Cell>
             <Table.Cell className="font-medium">{employee.name}</Table.Cell>
-            <Table.Cell>{employee.role}</Table.Cell>
             <Table.Cell>{employee.department}</Table.Cell>
             <Table.Cell>
               <Badge
@@ -122,7 +113,7 @@ export default function TableWithCheckbox() {
       </Table.Body>
       <Table.Footer>
         <Table.Row>
-          <Table.Cell colSpan={5}>Selected: {selectedEmployees.size} / {employees.length}</Table.Cell>
+          <Table.Cell colSpan={4}>Selected: {selectedEmployees.size} / {employees.length}</Table.Cell>
           <Table.Cell className="text-right font-semibold">$ {employees.reduce((total, employee) => total + Number(employee.salary.replace(',', '')), 0)}</Table.Cell>
         </Table.Row>
       </Table.Footer>

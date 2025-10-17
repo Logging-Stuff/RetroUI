@@ -49,7 +49,7 @@ export const navConfig: INavigationConfig = {
         { title: "Avatar", href: `${componentsRoute}/avatar` },
         { title: "Badge", href: `${componentsRoute}/badge` },
         { title: "Breadcrumb", href: `${componentsRoute}/breadcrumb` },
-        { title: "Button", href: `${componentsRoute}/button` },
+        { title: "Button", href: `${componentsRoute}/button`, tag: "Updated" },
         { title: "Card", href: `${componentsRoute}/card` },
         { title: "Checkbox", href: `${componentsRoute}/checkbox` },
         { title: "Command", href: `${componentsRoute}/command` },

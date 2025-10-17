@@ -142,6 +142,8 @@ Save your theme as CSS variables in `styles.css` file:
 @theme {
   --font-head: 'Archivo Black', sans-serif;
   --font-sans: 'Space Grotesk', sans-serif;
+  --radius: var(--radius);
+
   --shadow-xs: 1px 1px 0 0 var(--border);
   --shadow-sm: 2px 2px 0 0 var(--border);
   --shadow: 3px 3px 0 0 var(--border);
@@ -169,6 +171,7 @@ Save your theme as CSS variables in `styles.css` file:
 }
 
 :root {
+  --radius: 0;
   --background: #fff;
   --foreground: #000;
   --card: #fff;
@@ -188,6 +191,7 @@ Save your theme as CSS variables in `styles.css` file:
 }
 
 .dark {
+  --radius: 0;
   --background: #1a1a1a;
   --foreground: #f5f5f5;
   --card: #242424;
