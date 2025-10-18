@@ -29,12 +29,12 @@ const mono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Retro Styled React UI Library | Retro UI",
+  title: "NeoBrutalism Styled React Components | RetroUI",
   description:
-    "RetroUI - Retro styled component library built with React and TailwindCSS for modern web apps.",
+    "RetroUI - NeoBrutalism styled component library built with React and TailwindCSS for modern web apps.",
   openGraph: {
     images: "https://retroui.dev/banner.png",
-    title: "Retro Styled React UI Library | Retro UI",
+    title: "NeoBrutalism Styled React Components | RetroUI",
   },
 };
 

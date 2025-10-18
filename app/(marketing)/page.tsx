@@ -70,9 +70,8 @@ export default async function Home() {
             </Text>
 
             <p className="text-lg text-muted-foreground mb-8 mt-4">
-              React and TailwindCSS based UI library built for making unique and
-              modern looking web applications. Perfect for any project using
-              Shadcn/ui.
+              A NeoBrutalism styled React + TailwindCSS UI library for building bold, modern web apps.
+              Perfect for any project using Shadcn/ui.
             </p>
 
             <div className="flex flex-col md:flex-row items-center gap-4">
@@ -205,7 +204,7 @@ export default async function Home() {
               Github Stars
             </Text>
             <Text className="text-outlined text-7xl lg:text-8xl font-head">
-              700+
+              950+
             </Text>
             <Image
               src="/images/shooting_star.svg"
